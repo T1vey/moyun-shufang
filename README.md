@@ -11,9 +11,9 @@
 ![Software](https://img.shields.io/badge/Python%20%2B%20C%2B%2B-PS%20%2F%20PL-5a4e44)
 ![License](https://img.shields.io/badge/Code-MIT-b8322a)
 
-<img src="docs/media/cover_editorial_v2.png" alt="墨韵书坊：项目实拍机械臂与行楷标题，A 版实物编辑设计" width="900">
+<img src="docs/media/cover.png" alt="墨韵书坊：原 A 版水墨机械臂与金线人像" width="900">
 
-[快速开始](docs/quickstart.md) · [系统架构](docs/architecture_overview.md) · [验证与性能](docs/validation_summary.md) · [硬件重建](docs/hardware_build.md) · [八页作品海报](docs/posters/editorial_v2/README.md)
+[快速开始](docs/quickstart.md) · [系统架构](docs/architecture_overview.md) · [验证与性能](docs/validation_summary.md) · [硬件重建](docs/hardware_build.md) · [八页作品海报](docs/posters/ink_a_v3/README.md)
 
 [技术报告 PDF](docs/design_report.pdf)
 
@@ -89,13 +89,13 @@ python scripts/run_tcb705.py --simulation --profile robots/tcb705/profile.demo.j
 | [`hw/reports/`](hw/reports/) · [`reports/`](reports/) | 综合、实现、仿真与板端验证记录 |
 | [`tests/`](tests/README.md) · [`scripts/`](scripts/README.md) | 软件回归、构建、部署与调试工具 |
 | [`skills/pynq-release-audit/`](skills/pynq-release-audit/SKILL.md) | 可迁移的 PYNQ 发布核对技能与只读检查脚本 |
-| [`docs/posters/editorial_v2/`](docs/posters/editorial_v2/README.md) | A 版修订：独立封面、八页详情、PDF 与排版源码；保留初版三份方案 |
+| [`docs/posters/ink_a_v3/`](docs/posters/ink_a_v3/README.md) | 原 A 版主视觉、下方文字修订与七页详情；PDF、PNG 与排版源码 |
 
 ## 参赛提交与复现
 
 本仓库按用户提供的 `ZYNQArm1029.zip`（2026-10-29 源码快照）整理。为保留现有导入与部署关系，应用目录维持原布局，早期 SO-101 兼容模块与 TCB705 主线分开说明。当前器件为 **XC7Z020CLG400-2**，现有构建工具为 **Vivado / Vitis 2024.2**。
 
-源码、必要输入、测试与结果报告入库；虚拟环境、API 密钥、实机私有标定、构建缓存、原始归档和本机二进制不入库。匹配平台的 bit/hwh 必须按脚本重建；商业 SDK 由设备持有者从厂商取得。见[提交清单](docs/submission_checklist.md)和[来源记录](THIRD_PARTY_NOTICES.md)。当前海报采用项目实拍、实写作品与界面截图，封面机械臂通过 AI 去背景排版，详见素材记录。
+源码、必要输入、测试与结果报告入库；虚拟环境、API 密钥、实机私有标定、构建缓存、原始归档和本机二进制不入库。匹配平台的 bit/hwh 必须按脚本重建；商业 SDK 由设备持有者从厂商取得。见[提交清单](docs/submission_checklist.md)和[来源记录](THIRD_PARTY_NOTICES.md)。当前海报保留原 A 版水墨创作主视觉，详情页使用项目实拍、实写作品与界面截图，详见素材记录。
 
 ## 许可
 

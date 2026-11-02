@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.11 — original A artwork with focused text refinement
+
+- Preserve original A artwork, paper, colors, title, subtitle, tagline and seal as original PDF content.
+- Refine only the cover's lower copy, typography, numeric layout and footer; verify the upper rendered region is pixel-identical.
+- Keep seven detail pages and match their paper, ink, gold and red visual style to A.
+- Restore the original A repository banner and publish the focused revision as the current poster set.
+
 ## 2026.11 — editorial poster revision
 
 - Select direction A and replace the illustrated cover with a cutout from the project's robot photograph.

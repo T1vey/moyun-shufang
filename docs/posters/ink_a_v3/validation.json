@@ -1,0 +1,23 @@
+{
+  "original_pdf_sha256": "5214ad965070c0f87f2fe32e15340bf5ee7d32936e9c08d80c871a061cf59c07",
+  "retained_original_operations": 45,
+  "original_upper_area_above_y_pt": 330,
+  "original_upper_elements": [
+    "artwork",
+    "rice paper",
+    "title",
+    "subtitle",
+    "tagline",
+    "seal",
+    "palette"
+  ],
+  "upper_pixel_difference_bbox": null,
+  "upper_rendered_rows_unchanged": 1734,
+  "pages": 8,
+  "scope": "original cover upper area preserved; lower wording/fonts/layout revised; details retain A visual direction",
+  "cover_bytes": 2992968,
+  "book_bytes": 7754768,
+  "all_eight_pages_visually_reviewed": true,
+  "key_text_and_a3_dimensions": "PASS",
+  "source_publication_check": "429 Python sources parse; no credential-like tokens"
+}
