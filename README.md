@@ -13,7 +13,7 @@
 
 <img src="docs/media/cover.png" alt="墨韵书坊：原 A 版水墨机械臂与金线人像" width="900">
 
-[快速开始](docs/quickstart.md) · [系统架构](docs/architecture_overview.md) · [验证与性能](docs/validation_summary.md) · [硬件重建](docs/hardware_build.md) · [八页作品海报](docs/posters/ink_a_v3/README.md)
+[作品详情](#作品详情) · [快速开始](docs/quickstart.md) · [系统架构](docs/architecture_overview.md) · [验证与性能](docs/validation_summary.md) · [硬件重建](docs/hardware_build.md) · [八页作品海报](docs/posters/ink_a_v3/README.md)
 
 [技术报告 PDF](docs/design_report.pdf)
 
@@ -28,6 +28,72 @@
 | 3,500 常用字与 88 项笔画模块 | 手机上传、云端线稿、中心线提取 | 屏上手写、笔画复写、离线识字 |
 | 文字排版、诗词、春联与名帖入口 | 连续笔画、抬落笔与七轴轨迹规划 | 3,755 类汉字识别、板端音频朗读 |
 | 毛笔提按由标定高度与笔画模板表达 | 硬笔绘图与本地线稿库 | 独立的任务会话、停止与取消处理 |
+
+## 作品详情
+
+[毛笔书法](#毛笔书法) · [照片绘画](#照片绘画) · [手写交互](#手写交互) · [系统架构](#系统架构) · [七轴逆解](#七轴逆解) · [性能与验证](#性能与验证) · [实写作品](#实写作品)
+
+点击图片可查看原图。
+
+[完整八页 PDF](docs/posters/ink_a_v3/moyun_ink_a_8p.pdf) · [单页主海报 PDF](docs/posters/ink_a_v3/moyun_a_text_refined.pdf)
+
+### 毛笔书法
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-2.png">
+    <img src="docs/posters/ink_a_v3/page-2.png" alt="毛笔书法：字库、笔画模块与文字排版" width="900">
+  </a>
+</p>
+
+### 照片绘画
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-3.png">
+    <img src="docs/posters/ink_a_v3/page-3.png" alt="照片绘画：扫码、线稿、路径与纸上作品" width="900">
+  </a>
+</p>
+
+### 手写交互
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-4.png">
+    <img src="docs/posters/ink_a_v3/page-4.png" alt="手写交互与离线识字" width="900">
+  </a>
+</p>
+
+### 系统架构
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-5.png">
+    <img src="docs/posters/ink_a_v3/page-5.png" alt="Zynq 的 ARM、FPGA 与机械臂控制器架构" width="900">
+  </a>
+</p>
+
+### 七轴逆解
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-6.png">
+    <img src="docs/posters/ink_a_v3/page-6.png" alt="七轴逆解的三级 DATAFLOW 流水" width="900">
+  </a>
+</p>
+
+### 性能与验证
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-7.png">
+    <img src="docs/posters/ink_a_v3/page-7.png" alt="RTL 吞吐、资源、离线回放与板端规划对照" width="900">
+  </a>
+</p>
+
+### 实写作品
+
+<p align="center">
+  <a href="docs/posters/ink_a_v3/page-8.png">
+    <img src="docs/posters/ink_a_v3/page-8.png" alt="毛笔实写、硬笔人像、界面与工程资料" width="900">
+  </a>
+</p>
+
+[返回作品详情目录 ↑](#作品详情)
 
 ## 软硬件协同
 
