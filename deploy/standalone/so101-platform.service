@@ -1,0 +1,15 @@
+[Unit]
+Description=SO101 MD0700R and IK platform loader
+Before=so101-workbench.service so101-md0700r.service so101-gt911.service lightdm.service
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/so101/desktop.env
+ExecStart=/usr/local/bin/so101-platform-start
+RemainAfterExit=yes
+# A timed-out accelerator retains DMA ownership until it drains. Never SIGKILL.
+TimeoutStartSec=infinity
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=multi-user.target

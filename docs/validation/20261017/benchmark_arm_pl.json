@@ -1,0 +1,528 @@
+{
+  "platform": "Linux-5.4.0-xilinx-v2020.2-armv7l-with-glibc2.29",
+  "build_id": "tcb705_r4_fclk1_20261017_r2",
+  "artifact_hashes": {
+    "tcb705_planner.bit": "b03a526eba535f64a5c8e163f60865a29bfb8a66754ed94e3fd7597b45360d6a",
+    "tcb705_planner.hwh": "8bd0297b878e672043571ccb4a89827907805f0b17f50ff2d630dbe5e03d94a8",
+    "tcb705_planner.registers.json": "393f5a51834a04235c57234a4e44ce1e8d65f21f4dac6b7ef28bb17158070a11"
+  },
+  "physical_motion": false,
+  "attach_once_s": 7.102672582000196,
+  "timing": "steady application session; one-time PYNQ attach reported separately",
+  "results": [
+    {
+      "case": "two_strokes",
+      "strokes": 2,
+      "durations_s": {
+        "cpu": [
+          0.7841736899999887,
+          0.8337177469998096,
+          0.7479066330001842
+        ],
+        "pl": [
+          1.0521252500002447,
+          0.9887758000004396,
+          1.2438153419998343
+        ]
+      },
+      "cpu_median_s": 0.7841736899999887,
+      "pl_median_s": 1.0521252500002447,
+      "runs": [
+        {
+          "max_q_difference_rad": 4.926848016895136e-06,
+          "max_time_difference_s": 3.1425290458741983e-07,
+          "max_cartesian_difference_m": 1.6097600062698136e-07,
+          "max_orientation_difference_rad": 4.897021271334632e-07,
+          "comparison_limits": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.0035,
+            "time_s": 0.0004
+          },
+          "direct_comparison_within_1um": true,
+          "production_geometry_checks_passed": true,
+          "metrics": {
+            "ik_iterations": 482,
+            "time_stretch": 3.289591661275954,
+            "nodes": 187,
+            "duration_s": 25.373746930025472,
+            "corner_stops": 0,
+            "max_path_error_m": 1.7252325601233822e-06,
+            "max_orientation_error_rad": 8.661972072401116e-06,
+            "max_joint_step_rad": 0.007506750609264756,
+            "ik_batches": 3,
+            "ik_cpu_batches": 1,
+            "ik_batch_limit": 64,
+            "ik_prefix_invalidations": 0,
+            "pl_batch_starts": 3,
+            "pl_rows_cpu_verified": 122,
+            "pl_rows_cpu_rejected": 1,
+            "pl_last_rejection": {
+              "row": 0,
+              "status": 1,
+              "iterations": 1,
+              "position_error_m": 1.2036826233897361e-06,
+              "orientation_error_rad": 6.496496143880868e-06,
+              "pl_position_error_m": 1.203682623397288e-06,
+              "pl_orientation_error_rad": 6.49643507788354e-06
+            },
+            "ik_accel_fallbacks": 1,
+            "ik_accel_errors": 0,
+            "ik_accel_unavailable_reason": "PL returned no CPU-verified candidate; native CPU batch used",
+            "ik_backend": "ZYNQ_PL_7R_BATCH",
+            "joint_peak_velocity_rad_s": [
+              0.06696247596710611,
+              0.040334825229479045,
+              0.026217078974938565,
+              0.12783455022606502,
+              0.02483846902654777,
+              0.09207870907067074,
+              0.0496726945170215
+            ],
+            "joint_peak_acceleration_rad_s2": [
+              0.11075457382828406,
+              0.07610828038312475,
+              0.04042453969527765,
+              0.1993376519785402,
+              0.047411150785232774,
+              0.17376695887863192,
+              0.10210341274926978
+            ],
+            "joint_peak_jerk_rad_s3": [
+              3.94059503723924,
+              1.6320395441108506,
+              0.9636880272920093,
+              3.940595037239241,
+              1.092762210515329,
+              3.6960521777250497,
+              3.83033316946651
+            ],
+            "geometry_fk_batches": 2,
+            "geometry_probe_samples": 1674,
+            "geometry_batch_limit": 1024,
+            "planning_s": 1.043768165000074,
+            "frames": 6345,
+            "motion_algorithm_version": "tcb705-c2-v2-batch",
+            "motion_mode": "tcb705",
+            "collision_model_verified": false,
+            "pl_session_attach_s": 7.102672582000196
+          }
+        },
+        {
+          "max_q_difference_rad": 4.926848016895136e-06,
+          "max_time_difference_s": 3.1425290458741983e-07,
+          "max_cartesian_difference_m": 1.6097600062698136e-07,
+          "max_orientation_difference_rad": 4.897021271334632e-07,
+          "comparison_limits": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.0035,
+            "time_s": 0.0004
+          },
+          "direct_comparison_within_1um": true,
+          "production_geometry_checks_passed": true,
+          "metrics": {
+            "ik_iterations": 482,
+            "time_stretch": 3.289591661275954,
+            "nodes": 187,
+            "duration_s": 25.373746930025472,
+            "corner_stops": 0,
+            "max_path_error_m": 1.7252325601233822e-06,
+            "max_orientation_error_rad": 8.661972072401116e-06,
+            "max_joint_step_rad": 0.007506750609264756,
+            "ik_batches": 3,
+            "ik_cpu_batches": 1,
+            "ik_batch_limit": 64,
+            "ik_prefix_invalidations": 0,
+            "pl_batch_starts": 3,
+            "pl_rows_cpu_verified": 122,
+            "pl_rows_cpu_rejected": 1,
+            "pl_last_rejection": {
+              "row": 0,
+              "status": 1,
+              "iterations": 1,
+              "position_error_m": 1.2036826233897361e-06,
+              "orientation_error_rad": 6.496496143880868e-06,
+              "pl_position_error_m": 1.203682623397288e-06,
+              "pl_orientation_error_rad": 6.49643507788354e-06
+            },
+            "ik_accel_fallbacks": 1,
+            "ik_accel_errors": 0,
+            "ik_accel_unavailable_reason": "PL returned no CPU-verified candidate; native CPU batch used",
+            "ik_backend": "ZYNQ_PL_7R_BATCH",
+            "joint_peak_velocity_rad_s": [
+              0.06696247596710611,
+              0.040334825229479045,
+              0.026217078974938565,
+              0.12783455022606502,
+              0.02483846902654777,
+              0.09207870907067074,
+              0.0496726945170215
+            ],
+            "joint_peak_acceleration_rad_s2": [
+              0.11075457382828406,
+              0.07610828038312475,
+              0.04042453969527765,
+              0.1993376519785402,
+              0.047411150785232774,
+              0.17376695887863192,
+              0.10210341274926978
+            ],
+            "joint_peak_jerk_rad_s3": [
+              3.94059503723924,
+              1.6320395441108506,
+              0.9636880272920093,
+              3.940595037239241,
+              1.092762210515329,
+              3.6960521777250497,
+              3.83033316946651
+            ],
+            "geometry_fk_batches": 2,
+            "geometry_probe_samples": 1674,
+            "geometry_batch_limit": 1024,
+            "planning_s": 0.980241341999772,
+            "frames": 6345,
+            "motion_algorithm_version": "tcb705-c2-v2-batch",
+            "motion_mode": "tcb705",
+            "collision_model_verified": false,
+            "pl_session_attach_s": 7.102672582000196
+          }
+        },
+        {
+          "max_q_difference_rad": 4.926848016895136e-06,
+          "max_time_difference_s": 3.1425290458741983e-07,
+          "max_cartesian_difference_m": 1.6097600062698136e-07,
+          "max_orientation_difference_rad": 4.897021271334632e-07,
+          "comparison_limits": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.0035,
+            "time_s": 0.0004
+          },
+          "direct_comparison_within_1um": true,
+          "production_geometry_checks_passed": true,
+          "metrics": {
+            "ik_iterations": 482,
+            "time_stretch": 3.289591661275954,
+            "nodes": 187,
+            "duration_s": 25.373746930025472,
+            "corner_stops": 0,
+            "max_path_error_m": 1.7252325601233822e-06,
+            "max_orientation_error_rad": 8.661972072401116e-06,
+            "max_joint_step_rad": 0.007506750609264756,
+            "ik_batches": 3,
+            "ik_cpu_batches": 1,
+            "ik_batch_limit": 64,
+            "ik_prefix_invalidations": 0,
+            "pl_batch_starts": 3,
+            "pl_rows_cpu_verified": 122,
+            "pl_rows_cpu_rejected": 1,
+            "pl_last_rejection": {
+              "row": 0,
+              "status": 1,
+              "iterations": 1,
+              "position_error_m": 1.2036826233897361e-06,
+              "orientation_error_rad": 6.496496143880868e-06,
+              "pl_position_error_m": 1.203682623397288e-06,
+              "pl_orientation_error_rad": 6.49643507788354e-06
+            },
+            "ik_accel_fallbacks": 1,
+            "ik_accel_errors": 0,
+            "ik_accel_unavailable_reason": "PL returned no CPU-verified candidate; native CPU batch used",
+            "ik_backend": "ZYNQ_PL_7R_BATCH",
+            "joint_peak_velocity_rad_s": [
+              0.06696247596710611,
+              0.040334825229479045,
+              0.026217078974938565,
+              0.12783455022606502,
+              0.02483846902654777,
+              0.09207870907067074,
+              0.0496726945170215
+            ],
+            "joint_peak_acceleration_rad_s2": [
+              0.11075457382828406,
+              0.07610828038312475,
+              0.04042453969527765,
+              0.1993376519785402,
+              0.047411150785232774,
+              0.17376695887863192,
+              0.10210341274926978
+            ],
+            "joint_peak_jerk_rad_s3": [
+              3.94059503723924,
+              1.6320395441108506,
+              0.9636880272920093,
+              3.940595037239241,
+              1.092762210515329,
+              3.6960521777250497,
+              3.83033316946651
+            ],
+            "geometry_fk_batches": 2,
+            "geometry_probe_samples": 1674,
+            "geometry_batch_limit": 1024,
+            "planning_s": 1.2287823599999683,
+            "frames": 6345,
+            "motion_algorithm_version": "tcb705-c2-v2-batch",
+            "motion_mode": "tcb705",
+            "collision_model_verified": false,
+            "pl_session_attach_s": 7.102672582000196
+          }
+        }
+      ]
+    },
+    {
+      "case": "portrait_excerpt_8strokes_100mm",
+      "strokes": 8,
+      "durations_s": {
+        "cpu": [
+          10.719345081000029,
+          10.872379348000322,
+          10.658699248000175
+        ],
+        "pl": [
+          16.61932937199981,
+          15.71592894100013,
+          15.655050460999973
+        ]
+      },
+      "cpu_median_s": 10.719345081000029,
+      "pl_median_s": 15.71592894100013,
+      "runs": [
+        {
+          "max_q_difference_rad": 2.1172130666213818e-05,
+          "max_time_difference_s": 8.325293674715795e-05,
+          "max_cartesian_difference_m": 3.970027006432735e-06,
+          "max_orientation_difference_rad": 5.778884717722412e-07,
+          "comparison_limits": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.0035,
+            "time_s": 0.0004
+          },
+          "direct_comparison_within_1um": false,
+          "production_geometry_checks_passed": true,
+          "metrics": {
+            "ik_iterations": 7080,
+            "time_stretch": 6.8500064063699915,
+            "nodes": 2467,
+            "duration_s": 397.85239562581745,
+            "corner_stops": 38,
+            "max_path_error_m": 2.1668118294903658e-05,
+            "max_orientation_error_rad": 8.661972072401116e-06,
+            "max_joint_step_rad": 0.003962666768015044,
+            "ik_batches": 39,
+            "ik_cpu_batches": 1,
+            "ik_batch_limit": 64,
+            "ik_prefix_invalidations": 0,
+            "pl_batch_starts": 39,
+            "pl_rows_cpu_verified": 2402,
+            "pl_rows_cpu_rejected": 1,
+            "pl_last_rejection": {
+              "row": 0,
+              "status": 1,
+              "iterations": 1,
+              "position_error_m": 1.2036826233897361e-06,
+              "orientation_error_rad": 6.496496143880868e-06,
+              "pl_position_error_m": 1.203682623397288e-06,
+              "pl_orientation_error_rad": 6.49643507788354e-06
+            },
+            "ik_accel_fallbacks": 1,
+            "ik_accel_errors": 0,
+            "ik_accel_unavailable_reason": "PL returned no CPU-verified candidate; native CPU batch used",
+            "ik_backend": "ZYNQ_PL_7R_BATCH",
+            "joint_peak_velocity_rad_s": [
+              0.06852885021627794,
+              0.037464844951483244,
+              0.02245313719881702,
+              0.08769672259487947,
+              0.024446261485380743,
+              0.08436616456152896,
+              0.03360954782494058
+            ],
+            "joint_peak_acceleration_rad_s2": [
+              0.13487353953087008,
+              0.06669861805543523,
+              0.044188814744388204,
+              0.1712899682315138,
+              0.04656097256103188,
+              0.14715186185382276,
+              0.09822397971186936
+            ],
+            "joint_peak_jerk_rad_s3": [
+              3.9405950372392424,
+              1.7161913399671727,
+              1.1636657326290971,
+              3.940595037239243,
+              1.1706299553385402,
+              3.8091570560630363,
+              3.9405950372392424
+            ],
+            "geometry_fk_batches": 22,
+            "geometry_probe_samples": 22194,
+            "geometry_batch_limit": 1024,
+            "planning_s": 15.971809599999688,
+            "frames": 99465,
+            "motion_algorithm_version": "tcb705-c2-v2-batch",
+            "motion_mode": "tcb705",
+            "collision_model_verified": false,
+            "pl_session_attach_s": 7.102672582000196
+          }
+        },
+        {
+          "max_q_difference_rad": 2.1172130666213818e-05,
+          "max_time_difference_s": 8.325293674715795e-05,
+          "max_cartesian_difference_m": 3.970027006432735e-06,
+          "max_orientation_difference_rad": 5.778884717722412e-07,
+          "comparison_limits": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.0035,
+            "time_s": 0.0004
+          },
+          "direct_comparison_within_1um": false,
+          "production_geometry_checks_passed": true,
+          "metrics": {
+            "ik_iterations": 7080,
+            "time_stretch": 6.8500064063699915,
+            "nodes": 2467,
+            "duration_s": 397.85239562581745,
+            "corner_stops": 38,
+            "max_path_error_m": 2.1668118294903658e-05,
+            "max_orientation_error_rad": 8.661972072401116e-06,
+            "max_joint_step_rad": 0.003962666768015044,
+            "ik_batches": 39,
+            "ik_cpu_batches": 1,
+            "ik_batch_limit": 64,
+            "ik_prefix_invalidations": 0,
+            "pl_batch_starts": 39,
+            "pl_rows_cpu_verified": 2402,
+            "pl_rows_cpu_rejected": 1,
+            "pl_last_rejection": {
+              "row": 0,
+              "status": 1,
+              "iterations": 1,
+              "position_error_m": 1.2036826233897361e-06,
+              "orientation_error_rad": 6.496496143880868e-06,
+              "pl_position_error_m": 1.203682623397288e-06,
+              "pl_orientation_error_rad": 6.49643507788354e-06
+            },
+            "ik_accel_fallbacks": 1,
+            "ik_accel_errors": 0,
+            "ik_accel_unavailable_reason": "PL returned no CPU-verified candidate; native CPU batch used",
+            "ik_backend": "ZYNQ_PL_7R_BATCH",
+            "joint_peak_velocity_rad_s": [
+              0.06852885021627794,
+              0.037464844951483244,
+              0.02245313719881702,
+              0.08769672259487947,
+              0.024446261485380743,
+              0.08436616456152896,
+              0.03360954782494058
+            ],
+            "joint_peak_acceleration_rad_s2": [
+              0.13487353953087008,
+              0.06669861805543523,
+              0.044188814744388204,
+              0.1712899682315138,
+              0.04656097256103188,
+              0.14715186185382276,
+              0.09822397971186936
+            ],
+            "joint_peak_jerk_rad_s3": [
+              3.9405950372392424,
+              1.7161913399671727,
+              1.1636657326290971,
+              3.940595037239243,
+              1.1706299553385402,
+              3.8091570560630363,
+              3.9405950372392424
+            ],
+            "geometry_fk_batches": 22,
+            "geometry_probe_samples": 22194,
+            "geometry_batch_limit": 1024,
+            "planning_s": 15.080072375999862,
+            "frames": 99465,
+            "motion_algorithm_version": "tcb705-c2-v2-batch",
+            "motion_mode": "tcb705",
+            "collision_model_verified": false,
+            "pl_session_attach_s": 7.102672582000196
+          }
+        },
+        {
+          "max_q_difference_rad": 2.1172130666213818e-05,
+          "max_time_difference_s": 8.325293674715795e-05,
+          "max_cartesian_difference_m": 3.970027006432735e-06,
+          "max_orientation_difference_rad": 5.778884717722412e-07,
+          "comparison_limits": {
+            "position_m": 0.0001,
+            "orientation_rad": 0.0035,
+            "time_s": 0.0004
+          },
+          "direct_comparison_within_1um": false,
+          "production_geometry_checks_passed": true,
+          "metrics": {
+            "ik_iterations": 7080,
+            "time_stretch": 6.8500064063699915,
+            "nodes": 2467,
+            "duration_s": 397.85239562581745,
+            "corner_stops": 38,
+            "max_path_error_m": 2.1668118294903658e-05,
+            "max_orientation_error_rad": 8.661972072401116e-06,
+            "max_joint_step_rad": 0.003962666768015044,
+            "ik_batches": 39,
+            "ik_cpu_batches": 1,
+            "ik_batch_limit": 64,
+            "ik_prefix_invalidations": 0,
+            "pl_batch_starts": 39,
+            "pl_rows_cpu_verified": 2402,
+            "pl_rows_cpu_rejected": 1,
+            "pl_last_rejection": {
+              "row": 0,
+              "status": 1,
+              "iterations": 1,
+              "position_error_m": 1.2036826233897361e-06,
+              "orientation_error_rad": 6.496496143880868e-06,
+              "pl_position_error_m": 1.203682623397288e-06,
+              "pl_orientation_error_rad": 6.49643507788354e-06
+            },
+            "ik_accel_fallbacks": 1,
+            "ik_accel_errors": 0,
+            "ik_accel_unavailable_reason": "PL returned no CPU-verified candidate; native CPU batch used",
+            "ik_backend": "ZYNQ_PL_7R_BATCH",
+            "joint_peak_velocity_rad_s": [
+              0.06852885021627794,
+              0.037464844951483244,
+              0.02245313719881702,
+              0.08769672259487947,
+              0.024446261485380743,
+              0.08436616456152896,
+              0.03360954782494058
+            ],
+            "joint_peak_acceleration_rad_s2": [
+              0.13487353953087008,
+              0.06669861805543523,
+              0.044188814744388204,
+              0.1712899682315138,
+              0.04656097256103188,
+              0.14715186185382276,
+              0.09822397971186936
+            ],
+            "joint_peak_jerk_rad_s3": [
+              3.9405950372392424,
+              1.7161913399671727,
+              1.1636657326290971,
+              3.940595037239243,
+              1.1706299553385402,
+              3.8091570560630363,
+              3.9405950372392424
+            ],
+            "geometry_fk_batches": 22,
+            "geometry_probe_samples": 22194,
+            "geometry_batch_limit": 1024,
+            "planning_s": 14.995783023000058,
+            "frames": 99465,
+            "motion_algorithm_version": "tcb705-c2-v2-batch",
+            "motion_mode": "tcb705",
+            "collision_model_verified": false,
+            "pl_session_attach_s": 7.102672582000196
+          }
+        }
+      ]
+    }
+  ]
+}

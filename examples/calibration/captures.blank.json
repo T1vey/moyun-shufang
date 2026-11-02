@@ -1,0 +1,413 @@
+{
+  "schema": "so101-kinematic-captures-v1",
+  "source": "measured",
+  "initial_pen_length_mm": 95.0,
+  "note": "Replace each null with a real stationary light-contact encoder reading. Add separate split=validation contacts; do not copy training readings.",
+  "captures": [
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        -50.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        -50.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        -50.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        -50.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        -50.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        -50.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        -50.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        -50.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        -50.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        0.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        0.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        0.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        0.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        0.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        0.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        0.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        0.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        0.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        50.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        50.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        -50.0,
+        50.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        50.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        50.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        0.0,
+        50.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        50.0
+      ],
+      "pose_label": "vertical",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        50.0
+      ],
+      "pose_label": "forward",
+      "split": "fit"
+    },
+    {
+      "counts": {
+        "1": null,
+        "2": null,
+        "3": null,
+        "4": null,
+        "5": null
+      },
+      "xy_mm": [
+        50.0,
+        50.0
+      ],
+      "pose_label": "backward",
+      "split": "fit"
+    }
+  ]
+}

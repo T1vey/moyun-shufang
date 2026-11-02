@@ -1,0 +1,3 @@
+SOURCE_PREFLIGHT nodes=21680 original_strict=21680 max_position_m=9.9994655584049277e-008 max_orientation_rad=6.7206411190044614e-007 max_joint_step=0.0029552208638310429 physical_motion=false
+FULL_TRAJECTORY targets=21679 pl_accepted=21679 cpu_fallback=0 unresolved=0 rejected_calls=0 total_calls=339 old_strict=12838 offline_budget_failures=0 host_seconds=0.55864100000000005 physical_motion=false
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 64

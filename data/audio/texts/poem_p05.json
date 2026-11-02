@@ -1,0 +1,17 @@
+{
+  "id": "poem_p05",
+  "category": "poem",
+  "title": "江雪",
+  "author": "柳宗元",
+  "dynasty": "唐",
+  "sentences": [
+    "千山鸟飞绝，",
+    "万径人踪灭。",
+    "孤舟蓑笠翁，",
+    "独钓寒江雪。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

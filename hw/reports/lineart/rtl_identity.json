@@ -1,0 +1,226 @@
+{
+  "functional_rtl_match": true,
+  "note": "HLS cosim adds/removes deadlock instrumentation under synthesis translate_off; raw files are not all byte-identical. The included monitor is not hardware logic.",
+  "files": [
+    {
+      "file": "tcb_lineart_accel.v",
+      "comparison": "matches after removing simulation-only HLS deadlock monitor and unused flag",
+      "packaged_sha256": "ee6c56300fb500f055770408bad1ee40cb9fe9d7e0cab5dea4fa562577ab4868",
+      "synthesized_sha256": "5c7527146ff7cee935d7e05ba6dfd0e6d36764aa6ebd43dccf083597eb17eaba"
+    },
+    {
+      "file": "tcb_lineart_accel_bitselect_1ns_64ns_32ns_1_1_1.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "edcaeaa5646907280c8d5e3cb1601201f3d9a86a8574d6ecce45accd6ec4d8da",
+      "synthesized_sha256": "edcaeaa5646907280c8d5e3cb1601201f3d9a86a8574d6ecce45accd6ec4d8da"
+    },
+    {
+      "file": "tcb_lineart_accel_bitset_64ns_64ns_32ns_1ns_64_1_1.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "7d091fe68c87026ebda7da3f92c8251dbf920233d0fc33f6983f1a2401b09eca",
+      "synthesized_sha256": "7d091fe68c87026ebda7da3f92c8251dbf920233d0fc33f6983f1a2401b09eca"
+    },
+    {
+      "file": "tcb_lineart_accel_cascade.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "821f0161b3682568c5265d6d53fb0a524ab63275136ba791374bbcb48cbe7122",
+      "synthesized_sha256": "821f0161b3682568c5265d6d53fb0a524ab63275136ba791374bbcb48cbe7122"
+    },
+    {
+      "file": "tcb_lineart_accel_control_s_axi.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "6864f295f96e653f9cf5d9c8deb7313d9602f90644eb6968101483a32b40ad8f",
+      "synthesized_sha256": "6864f295f96e653f9cf5d9c8deb7313d9602f90644eb6968101483a32b40ad8f"
+    },
+    {
+      "file": "tcb_lineart_accel_entry_proc.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "3f849fb852e18c6307cfecc1bcc1de5c110922d163a79b1fbc1ddda9c846939a",
+      "synthesized_sha256": "3f849fb852e18c6307cfecc1bcc1de5c110922d163a79b1fbc1ddda9c846939a"
+    },
+    {
+      "file": "tcb_lineart_accel_fifo_w11_d2_S.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "919b0f3bca7b4f1c8f9378129e8dfdaa29458eeb804fbaddb2bdddfafebbc60f",
+      "synthesized_sha256": "919b0f3bca7b4f1c8f9378129e8dfdaa29458eeb804fbaddb2bdddfafebbc60f"
+    },
+    {
+      "file": "tcb_lineart_accel_fifo_w11_d3_S.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "4fcf1bea3674c11ebd02542bf6c2dd6a9fa5275d2342192ffe06c6963b235f7d",
+      "synthesized_sha256": "4fcf1bea3674c11ebd02542bf6c2dd6a9fa5275d2342192ffe06c6963b235f7d"
+    },
+    {
+      "file": "tcb_lineart_accel_fifo_w1_d8_S.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "23bfb2f6a274da012c1c197a281f531bc8f8fd63d2b7d14113bb24afa11a3175",
+      "synthesized_sha256": "23bfb2f6a274da012c1c197a281f531bc8f8fd63d2b7d14113bb24afa11a3175"
+    },
+    {
+      "file": "tcb_lineart_accel_fifo_w22_d10_S.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "2cd564b479e1da447179cea73ae01398bb02f813d1fc067d9ff0c27c58399b95",
+      "synthesized_sha256": "2cd564b479e1da447179cea73ae01398bb02f813d1fc067d9ff0c27c58399b95"
+    },
+    {
+      "file": "tcb_lineart_accel_fifo_w64_d11_S.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "be05d7255a10e5f063f8b682e17d8710c7159ad9204ecdd6f2ff10ccdf595f4d",
+      "synthesized_sha256": "be05d7255a10e5f063f8b682e17d8710c7159ad9204ecdd6f2ff10ccdf595f4d"
+    },
+    {
+      "file": "tcb_lineart_accel_flow_control_loop_pipe_sequential_init.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "e47d3836850e799c3cb176aed8ce67ad448484d5bfa454e0b99c507dc64e6010",
+      "synthesized_sha256": "e47d3836850e799c3cb176aed8ce67ad448484d5bfa454e0b99c507dc64e6010"
+    },
+    {
+      "file": "tcb_lineart_accel_gmem_m_axi.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "87f60017bd6b379edd9d2029fb08f7e9a5346d425a69d0a5c62417e2ead4939f",
+      "synthesized_sha256": "87f60017bd6b379edd9d2029fb08f7e9a5346d425a69d0a5c62417e2ead4939f"
+    },
+    {
+      "file": "tcb_lineart_accel_hls_deadlock_detection_unit.v",
+      "comparison": "HLS simulation-only deadlock detector"
+    },
+    {
+      "file": "tcb_lineart_accel_mul_11ns_11ns_22_1_1.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "b11cfae36634ea6737d431e71a1680c6f5ed872ce1ee9c7972cc523f11ce7cb8",
+      "synthesized_sha256": "b11cfae36634ea6737d431e71a1680c6f5ed872ce1ee9c7972cc523f11ce7cb8"
+    },
+    {
+      "file": "tcb_lineart_accel_pack.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "673f08c5415f9e11f8baf44b7ade4a6a944abd30e803707449643f1d12e050ff",
+      "synthesized_sha256": "673f08c5415f9e11f8baf44b7ade4a6a944abd30e803707449643f1d12e050ff"
+    },
+    {
+      "file": "tcb_lineart_accel_pack_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "e8919fb8a5f950eee6ae919cdd94174e0a0c9a5de175f86ea972b2862784b7bd",
+      "synthesized_sha256": "e8919fb8a5f950eee6ae919cdd94174e0a0c9a5de175f86ea972b2862784b7bd"
+    },
+    {
+      "file": "tcb_lineart_accel_sparsemux_17_3_1_1_1.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "8b3c6364927d87a524ce17947ecbc60df5879abe580cad54ad1eaee55e278fc5",
+      "synthesized_sha256": "8b3c6364927d87a524ce17947ecbc60df5879abe580cad54ad1eaee55e278fc5"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_0_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "42495dfc4f912b03a7327ba5597c5eccaf3986549845b5e3ab926302640baa81",
+      "synthesized_sha256": "42495dfc4f912b03a7327ba5597c5eccaf3986549845b5e3ab926302640baa81"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_0_Pipeline_VITIS_LOOP_44_4_rows_RAM_T2P_BRAM_1R1W.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "fa9caaf805e04b22f8fba7ae756d9a7d3d393796df5a97e694c83a592364ee26",
+      "synthesized_sha256": "fa9caaf805e04b22f8fba7ae756d9a7d3d393796df5a97e694c83a592364ee26"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_0_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "6fd5199aa9e4e0b2a14d41f370c0920e3ad6d6d4d294711af47061f0d22407e8",
+      "synthesized_sha256": "6fd5199aa9e4e0b2a14d41f370c0920e3ad6d6d4d294711af47061f0d22407e8"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_1_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "964ae4132abb064d8f3dc3e4a0b007f0abea6c7d2e5f7074bf0fd0f03b4dc910",
+      "synthesized_sha256": "964ae4132abb064d8f3dc3e4a0b007f0abea6c7d2e5f7074bf0fd0f03b4dc910"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_1_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "1c4f90bda0e4e858648c524d549bcfe6f048e72cfba2680ccd9c531502d5cc38",
+      "synthesized_sha256": "1c4f90bda0e4e858648c524d549bcfe6f048e72cfba2680ccd9c531502d5cc38"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_2_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "1d6f75effd4e08085963c54397ef626c2183b4432818d0f4afcb6efac4796ba7",
+      "synthesized_sha256": "1d6f75effd4e08085963c54397ef626c2183b4432818d0f4afcb6efac4796ba7"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_2_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "8836b7e171c43145f890a5f2188cdf0788e17d2577bbc632218b3470ee95e716",
+      "synthesized_sha256": "8836b7e171c43145f890a5f2188cdf0788e17d2577bbc632218b3470ee95e716"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_3_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "f3b611940b7a7526c476c4183efc2134594c2d45f477e8e438da0ed6c2002f3e",
+      "synthesized_sha256": "f3b611940b7a7526c476c4183efc2134594c2d45f477e8e438da0ed6c2002f3e"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_3_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "c15ca98790d85238699f44cc75ae677b3ab10dc42316ff89e86cd650a2b4ec8c",
+      "synthesized_sha256": "c15ca98790d85238699f44cc75ae677b3ab10dc42316ff89e86cd650a2b4ec8c"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_4_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "db8f5ad658c210eb68753d9d5a662996619630b60476dbc1b3ec492a127dcf9e",
+      "synthesized_sha256": "db8f5ad658c210eb68753d9d5a662996619630b60476dbc1b3ec492a127dcf9e"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_4_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "48bb24f2d9b82d880609f1422c5b18762053b86e1376dcfcf22be657ade9f970",
+      "synthesized_sha256": "48bb24f2d9b82d880609f1422c5b18762053b86e1376dcfcf22be657ade9f970"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_5_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "7c5f58846f5b9e29c7de8b6ee325a023d4ccd02e842019fee9d862fa659f45c4",
+      "synthesized_sha256": "7c5f58846f5b9e29c7de8b6ee325a023d4ccd02e842019fee9d862fa659f45c4"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_5_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "7289644a5b8da08df980e8f7a7d773d066ff295414504a691b3e1ebd904e5f50",
+      "synthesized_sha256": "7289644a5b8da08df980e8f7a7d773d066ff295414504a691b3e1ebd904e5f50"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_6_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "3a7ab6b5190206f4551ca31b1abed7b7003c016b77c347befe42627b86340b2d",
+      "synthesized_sha256": "3a7ab6b5190206f4551ca31b1abed7b7003c016b77c347befe42627b86340b2d"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_6_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "70e947f0fa8fd8f2104010d939a2256e434ef0f0d90992d2fecea1ef1c609b61",
+      "synthesized_sha256": "70e947f0fa8fd8f2104010d939a2256e434ef0f0d90992d2fecea1ef1c609b61"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_7_Pipeline_VITIS_LOOP_44_4.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "33d811fbb0e5c62a3b701ad173c956439f777b97fe16dd7188def896395c8886",
+      "synthesized_sha256": "33d811fbb0e5c62a3b701ad173c956439f777b97fe16dd7188def896395c8886"
+    },
+    {
+      "file": "tcb_lineart_accel_thin_stage_7_s.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "768890af1d99eb79c2f6b537198a6c5b85b976353d338b869a1a81a0165041ba",
+      "synthesized_sha256": "768890af1d99eb79c2f6b537198a6c5b85b976353d338b869a1a81a0165041ba"
+    },
+    {
+      "file": "tcb_lineart_accel_unpack.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "14ddb25dec77ad64713593e920d57c65a0bc2d96d8db2a4bb015f676825fe331",
+      "synthesized_sha256": "14ddb25dec77ad64713593e920d57c65a0bc2d96d8db2a4bb015f676825fe331"
+    },
+    {
+      "file": "tcb_lineart_accel_unpack_Pipeline_VITIS_LOOP_5_1_VITIS_LOOP_7_2.v",
+      "comparison": "exact text match",
+      "packaged_sha256": "f6718c09281643ffcf082ba8b49c5e495ba84b804fb8889f9a9371064dc92ad0",
+      "synthesized_sha256": "f6718c09281643ffcf082ba8b49c5e495ba84b804fb8889f9a9371064dc92ad0"
+    }
+  ]
+}

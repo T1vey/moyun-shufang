@@ -1,0 +1,9 @@
+{
+  "schema": "so101-runtime-v1",
+  "ik_engine": "wls",
+  "pl_mode": "target",
+  "overlay": "overlay/drawing_target.bit",
+  "ip_name": "z20_ik_target_0",
+  "port": 8765,
+  "note": "Vivado 2024.2 complete-target IP; requires matching compiled bit/hwh/register map"
+}

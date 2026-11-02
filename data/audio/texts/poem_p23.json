@@ -1,0 +1,17 @@
+{
+  "id": "poem_p23",
+  "category": "poem",
+  "title": "凉州词",
+  "author": "王翰",
+  "dynasty": "唐",
+  "sentences": [
+    "葡萄美酒夜光杯，",
+    "欲饮琵琶马上催。",
+    "醉卧沙场君莫笑，",
+    "古来征战几人回。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

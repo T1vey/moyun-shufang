@@ -1,0 +1,8 @@
+{
+  "abi": "tcb705-planner-accel-v1",
+  "files": {
+    "tcb705_planner.bit": "256eb0191a47521b36f6c0a81e6907750d7350c7871eb0289301277bebb9be3e",
+    "tcb705_planner.hwh": "bdafd7791574351e8ab896c52bd07347f09c6c813416069d4b218cc09fff2387",
+    "tcb705_planner.registers.json": "393f5a51834a04235c57234a4e44ce1e8d65f21f4dac6b7ef28bb17158070a11"
+  }
+}

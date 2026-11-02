@@ -1,0 +1,99 @@
+{
+  "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "hardware_connected": false,
+  "physical_motion": false,
+  "cloud_stubbed": true,
+  "suites": [
+    {
+      "suite": "test_tcb705.py",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 9.478408099999797
+    },
+    {
+      "suite": "test_tcb_acceleration.py",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.7490254000003915
+    },
+    {
+      "suite": "test_tcb_platform.py",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.023174200001449208
+    },
+    {
+      "suite": "test_tcb_session.py",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.017302799999015406
+    },
+    {
+      "suite": "test_armvision_calibration.py",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 4.284345600000961
+    },
+    {
+      "suite": "test_tcb_commissioning.py",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.1154988999987836
+    },
+    {
+      "suite": "test_user_gui_workflow.py",
+      "tests": 23,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.4671548000005714
+    },
+    {
+      "suite": "test_drawing_quality.py",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.5765253999998095
+    },
+    {
+      "suite": "test_cloud_transport.py",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.020943299999999
+    },
+    {
+      "suite": "test_planner_accel_lifetime.py",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.6672280000002502
+    },
+    {
+      "suite": "test_md0700r_runtime.py",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.025287499998739804
+    }
+  ],
+  "passed": true,
+  "tests": 151
+}

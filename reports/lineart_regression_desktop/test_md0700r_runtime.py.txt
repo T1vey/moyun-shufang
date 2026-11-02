@@ -1,0 +1,11 @@
+test_board_scripts_parse_using_python38_grammar (test_md0700r_runtime.UserspaceDisplaySafetyTests.test_board_scripts_parse_using_python38_grammar) ... ok
+test_close_keeps_buffer_and_reset_assertion_after_dma_drain (test_md0700r_runtime.UserspaceDisplaySafetyTests.test_close_keeps_buffer_and_reset_assertion_after_dma_drain) ... ok
+test_failed_mmio_does_not_release_live_dma_buffer (test_md0700r_runtime.UserspaceDisplaySafetyTests.test_failed_mmio_does_not_release_live_dma_buffer) ... ok
+test_hardware_owner_services_do_not_force_kill_pending_dma (test_md0700r_runtime.UserspaceDisplaySafetyTests.test_hardware_owner_services_do_not_force_kill_pending_dma) ... ok
+test_panel_primary_colors_and_amber_do_not_exchange_red_blue (test_md0700r_runtime.UserspaceDisplaySafetyTests.test_panel_primary_colors_and_amber_do_not_exchange_red_blue) ... ok
+test_partial_init_without_dma_is_safe_to_close (test_md0700r_runtime.UserspaceDisplaySafetyTests.test_partial_init_without_dma_is_safe_to_close) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.065s
+
+OK

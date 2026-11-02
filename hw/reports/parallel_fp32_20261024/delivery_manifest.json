@@ -1,0 +1,203 @@
+{
+  "status": "PASS",
+  "build_date": "2026-10-24",
+  "project_root": "D:\\zhiliao\\TCB705_ZYNQ-10-15\\ZYNQArm",
+  "vivado_project": "C:\\fpga_build\\p32full_20261024\\tcb705_parallel_fp32.xpr",
+  "vivado_project_sha256": "14cf7bf270c4005d517accc7ffb847ccc6aece6ee5b591bb7bab6991f2b0cedb",
+  "clock_hz": 100000000,
+  "rtl_minimum_points_per_second": 116103.98563213178,
+  "software_tests_passed": 245,
+  "full_trajectory_targets": 21679,
+  "deployed": false,
+  "robot_motion": false,
+  "files": {
+    "hw/reports/parallel_fp32_20261024/full_trajectory/calls.csv": {
+      "bytes": 12836,
+      "sha256": "2fdb81b7afe8e49ded0158f15e323c6041fc4f2dbe7419c35afb88267d3bc382"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/full_trajectory.cpp": {
+      "bytes": 6784,
+      "sha256": "241b953ffe8751226f7960d47fcfd3d97b66812668ab637645f3bded76e77276"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/prepare.py": {
+      "bytes": 2203,
+      "sha256": "db84d30fe5db89bb8d2cf9be95f3b828df3c6cfe14ad2f7e7ad57676626c501a"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/provenance.json": {
+      "bytes": 3073,
+      "sha256": "7d62da14874b87e82b39a1367a01967426d319384890346b81318fd0f5266c03"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/README.md": {
+      "bytes": 2302,
+      "sha256": "aac27f98259bb6355c63028f5e8c8e26601a7c668425c6bf9111dcf01287f9cd"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/rows.csv": {
+      "bytes": 5620248,
+      "sha256": "45741b2c06c619d4444de667f840245c9a75a9e273ffc556a2bde254dbaf632f"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/run.log": {
+      "bytes": 495,
+      "sha256": "f65da1fe315b71270ce12630e81b6c39c5b889820291980396dd3694e63b9f01"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/summarize.py": {
+      "bytes": 6141,
+      "sha256": "0417520fba8333a6828f6b18b2d86e9f82fd7a8d88aea414fcc483ae5c1c696f"
+    },
+    "hw/reports/parallel_fp32_20261024/full_trajectory/summary.json": {
+      "bytes": 11967,
+      "sha256": "2fd480dda1a13fae088d3556de5962e0ed50b270213aed684bbf6d6a7ea96a3b"
+    },
+    "hw/reports/parallel_fp32_20261024/hls/contract_cosim.rpt": {
+      "bytes": 1258,
+      "sha256": "85dcd015034248ccb2340b06700d85c367af1232c36d696f7c04cb526a054737"
+    },
+    "hw/reports/parallel_fp32_20261024/hls/synthesis.rpt": {
+      "bytes": 82139,
+      "sha256": "0c0d35928604f7de45c93efe560760c7acdb1866815f54a2892055e495bbebf5"
+    },
+    "hw/reports/parallel_fp32_20261024/hls/throughput_cosim.rpt": {
+      "bytes": 1258,
+      "sha256": "03a0f7e13e3c939d8f602bb78c1cf5e50b9d82c3b077e94b55f138fc565d5055"
+    },
+    "hw/reports/parallel_fp32_20261024/hls/throughput_cycles.xml": {
+      "bytes": 216,
+      "sha256": "8dd3f54723ff69f974afb1724fc39dd3aa97dab7812127e634bc48f9b1957bb8"
+    },
+    "hw/reports/parallel_fp32_20261024/hls/validation_summary.json": {
+      "bytes": 22778,
+      "sha256": "e6a6f10e13a10cbdca358910e5979379da7ffc049e901533ad9b02d4fbfdab72"
+    },
+    "hw/reports/parallel_fp32_20261024/hls/xilinx_com_hls_tcb_planner_parallel_1_0.zip": {
+      "bytes": 786350,
+      "sha256": "467c9ba7de5fc60438f0a07933bd2cec7dea8962d53e9d88389803cc4672cc49"
+    },
+    "hw/reports/parallel_fp32_20261024/implementation_audit.md": {
+      "bytes": 5158,
+      "sha256": "e77370981d7b28884ce532206e009c157b4db32c073259c005672fe4778420fa"
+    },
+    "hw/reports/parallel_fp32_20261024/README.md": {
+      "bytes": 13562,
+      "sha256": "badd75868e29e42321424662c86a7ba947c3419d94a8dcd36535df17b99f1425"
+    },
+    "hw/reports/parallel_fp32_20261024/software/final_software_validation.json": {
+      "bytes": 5496,
+      "sha256": "8aae1fc01e7b384e635183df9dbd37b11bfaa20f4da9df0c706825626f5f15cf"
+    },
+    "hw/reports/parallel_fp32_20261024/software/final_software_validation.log": {
+      "bytes": 37876,
+      "sha256": "62f65b46157dae90f066f996970adb7c2b1d4bf484be7d1a46dd295956f59302"
+    },
+    "hw/reports/parallel_fp32_20261024/software/final_software_validation_initial.json": {
+      "bytes": 5108,
+      "sha256": "9b32758b158ceb09b956032f303e8296bcacddd6da80a6bb0788909a1267bfb3"
+    },
+    "hw/reports/parallel_fp32_20261024/software/final_software_validation_retry.json": {
+      "bytes": 2217,
+      "sha256": "ba6b01ea59436548d2aeb10a25ef1d386d956a56c0e9d0634a94b0ee74e4556d"
+    },
+    "hw/reports/parallel_fp32_20261024/software/final_software_validation_retry.log": {
+      "bytes": 2470,
+      "sha256": "e49c5c14380fbc564c6c0b27a10326db633ba889948c3e80615166bc588ac4c2"
+    },
+    "hw/reports/parallel_fp32_20261024/software/run_final_software_validation.py": {
+      "bytes": 4746,
+      "sha256": "cb59d53a3056a641a235d53f48fb250a8ea2c0c70e3a56d18d1481e07eb3c311"
+    },
+    "hw/reports/parallel_fp32_20261024/validation.json": {
+      "bytes": 2039,
+      "sha256": "cbd4cc491dfb99b062052adceab0cb64cb82c4ba59bb06a7dc5b72b7f2100797"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/accelerator_mode.txt": {
+      "bytes": 14,
+      "sha256": "2ec5b3a7a04834cf2e5b2f377cc8bb87cb98a158cc6fc232e84848f2127ac7d8"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/build_console.log": {
+      "bytes": 318905,
+      "sha256": "47481897b57a8d732d905e9bfdb2326c8bad932a7dacef4a6367518ffdf85179"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/build_verified.json": {
+      "bytes": 68,
+      "sha256": "78e165dd81bc00586a020a244adea17a4867ee78760e3b889d8e85f04593c579"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/bus_skew.rpt": {
+      "bytes": 207332,
+      "sha256": "45a47b4c57916651da102406a04397041020d8a1300fbc894c2a3cf3d7f18f76"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/cdc.rpt": {
+      "bytes": 32728,
+      "sha256": "28661e4afe0a4154b89c30771dd1500d8c26abaab50351d1f8e2187299a5e01d"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/check_timing.rpt": {
+      "bytes": 3267,
+      "sha256": "9318c1d28bcfcfde8203dffb8724d1b499125af96c21c8d89c4335a98aa494e6"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/clocks.rpt": {
+      "bytes": 6757,
+      "sha256": "6ce671031646793837185a1d577d2e02d5d39d7e83cde23c78b0c8754ee29f9a"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/drc.rpt": {
+      "bytes": 318585,
+      "sha256": "c9156ab91d636e1e19bb86229781a21f9b0c23020fd9c34746c673aab9aab8f3"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/methodology.rpt": {
+      "bytes": 80298,
+      "sha256": "6bfa3b6069eb6c5f87524fc32119057b76285d80fec3d3b5e66fb681fd3ea6c5"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/tcb705_parallel_fp32.xsa": {
+      "bytes": 1700677,
+      "sha256": "715a9c75d1d6bcd23f1a6cfc0f0ff2067a445b575d3e69b0ea52687308c9e6ac"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/tcb705_parallel_fp32_routed.dcp": {
+      "bytes": 36657997,
+      "sha256": "a77618afc8aebb59fe5faec53bc22ea2029fbc0c7faec66c5879c37b47e8e807"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/tcb705_planner_fp32.bit": {
+      "bytes": 4045674,
+      "sha256": "ec1db16330d675eb18479e5b33ac73b80614e8cc32ba0ef3f1b19dedd2f2f0fb"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/tcb705_planner_fp32.hwh": {
+      "bytes": 784872,
+      "sha256": "448fbad3dd4d4f767567dc9dcbdcc598de4193d8098c0026cb8ced01648594d6"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/timing_summary.rpt": {
+      "bytes": 202402,
+      "sha256": "4189bb0fc153fc021a4cc928d77d21f47b6fa3183a9195a9ecbbb17a39b186f2"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/utilization.rpt": {
+      "bytes": 14188,
+      "sha256": "1e88eef64d40dc68e24dfe601d071bb054b955ffefa74bd715724e5182605b85"
+    },
+    "hw/reports/parallel_fp32_20261024/vivado/utilization_hierarchical.rpt": {
+      "bytes": 1258479,
+      "sha256": "14d81f3335787a7fea64c1da6fd135949d38412ee0d4c375a57d96fbdeab9e66"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/ge_pl.dtbo": {
+      "bytes": 945,
+      "sha256": "9bc8cc0a49ca0f8471d65aa30987bb512ca60c8ea5ad0c35f64dd9c6754a5176"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/platform.json": {
+      "bytes": 2561,
+      "sha256": "55307e14150b39acd76f67c2a233ca1a84fb215bb7ee6a2fca91b3b944f913c1"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/tcb705_planner_fp32.artifacts.json": {
+      "bytes": 369,
+      "sha256": "6efcf26df3179559e27039a6f7fd30dcb364d4f7dd02c2303abb4e7eafae31e1"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/tcb705_planner_fp32.bit": {
+      "bytes": 4045674,
+      "sha256": "ec1db16330d675eb18479e5b33ac73b80614e8cc32ba0ef3f1b19dedd2f2f0fb"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/tcb705_planner_fp32.hwh": {
+      "bytes": 784872,
+      "sha256": "448fbad3dd4d4f767567dc9dcbdcc598de4193d8098c0026cb8ced01648594d6"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/tcb705_planner_fp32.registers.json": {
+      "bytes": 409,
+      "sha256": "54f70314a57b1fc31876165c415e074a20e070e619bc4aaf6c9048d103529ebe"
+    },
+    "overlay/tcb705_parallel_fp32_20261024/tcb_brush_recog.registers.json": {
+      "bytes": 264,
+      "sha256": "e811b790552eed44b2adba48f06287014eae4d06fb1a80437a9ac0d4319f721f"
+    }
+  }
+}

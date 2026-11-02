@@ -1,0 +1,23 @@
+test_ab_reverse_order_preserves_same_bounds (test_armvision_calibration.CalibrationTests.test_ab_reverse_order_preserves_same_bounds) ... ok
+test_canvas_corners_match_original_armvision_formula (test_armvision_calibration.CalibrationTests.test_canvas_corners_match_original_armvision_formula) ... ok
+test_capture_points_and_landing_are_independent (test_armvision_calibration.CalibrationTests.test_capture_points_and_landing_are_independent) ... ok
+test_capture_rejects_partial_nonfinite_feedback (test_armvision_calibration.CalibrationTests.test_capture_rejects_partial_nonfinite_feedback) ... ok
+test_derived_fields_cannot_silently_disagree (test_armvision_calibration.CalibrationTests.test_derived_fields_cannot_silently_disagree) ... ok
+test_import_exact_values_without_unrelated_settings (test_armvision_calibration.CalibrationTests.test_import_exact_values_without_unrelated_settings) ... ok
+test_import_rejects_missing_or_duplicate_values (test_armvision_calibration.CalibrationTests.test_import_rejects_missing_or_duplicate_values) ... ok
+test_native_plan_uses_8mm_between_strokes_and_60mm_at_end (test_armvision_calibration.CalibrationTests.test_native_plan_uses_8mm_between_strokes_and_60mm_at_end) ... ok
+test_no_swap_uses_original_positive_xy_mapping (test_armvision_calibration.CalibrationTests.test_no_swap_uses_original_positive_xy_mapping) ... ok
+test_units_and_verification_not_promoted (test_armvision_calibration.CalibrationTests.test_units_and_verification_not_promoted) ... ok
+test_unsupported_orientation_is_preserved_and_not_used_as_default (test_armvision_calibration.CalibrationTests.test_unsupported_orientation_is_preserved_and_not_used_as_default) ... ok
+test_workbench_defaults_persistence_and_invalid_update (test_armvision_calibration.CalibrationTests.test_workbench_defaults_persistence_and_invalid_update) ... ok
+test_invalid_connection_cannot_issue_requests (test_armvision_calibration.WebFeedbackTests.test_invalid_connection_cannot_issue_requests) ... ok
+test_missing_values_are_errors_not_zero (test_armvision_calibration.WebFeedbackTests.test_missing_values_are_errors_not_zero) ... ok
+test_nan_feedback_is_rejected (test_armvision_calibration.WebFeedbackTests.test_nan_feedback_is_rejected) ... ok
+test_only_login_and_same_six_world_variables_are_read (test_armvision_calibration.WebFeedbackTests.test_only_login_and_same_six_world_variables_are_read) ... ok
+test_unconfigured_read_is_rejected_before_network (test_armvision_calibration.WebFeedbackTests.test_unconfigured_read_is_rejected_before_network) ... ok
+test_workbench_job_reads_world_without_sdk_or_motion (test_armvision_calibration.WebFeedbackTests.test_workbench_job_reads_world_without_sdk_or_motion) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 4.417s
+
+OK

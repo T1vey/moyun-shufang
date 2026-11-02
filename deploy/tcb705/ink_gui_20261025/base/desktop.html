@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="zh-CN" class="calm">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#120c08">
+<title>糖画坊 · 天链七轴</title>
+<link rel="stylesheet" href="/static/base.css?v=panel-static-20261021">
+<link rel="stylesheet" href="/static/desktop.css">
+<link rel="stylesheet" href="/static/local-lineart.css">
+<link rel="stylesheet" href="/static/gallery.css">
+<link rel="stylesheet" href="/static/calligraphy.css?v=masterpiece-20261025-1">
+<script src="/static/qr.js" defer></script>
+<script src="/static/gallery.js" defer></script>
+<script src="/static/panel-request.js?v=20261021-1" defer></script>
+<script src="/static/calligraphy.js?v=global-speed-20261021-2" defer></script>
+<script src="/static/masterpiece.js?v=20261025-1" defer></script>
+<script src="/static/desktop.js?v=masterpiece-20261025-1" defer></script>
+</head>
+<body>
+<header class="bar">
+  <div class="title">
+    <svg class="logo-fish" viewBox="0 0 64 64" aria-hidden="true">
+      <defs><linearGradient id="sugar-g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffdc94"/><stop offset="1" stop-color="#e08a22"/></linearGradient></defs>
+      <path class="draw" pathLength="1" stroke-width="4" d="M8 22C12 27 14 30 17 32C25 19 43 18 54 32C43 46 25 45 17 32C14 35 12 38 8 43C11 36 11 29 8 22"/>
+      <path class="draw" pathLength="1" stroke-width="3" d="M33 21C35 15 40 13 45 15M27 25C31 29 31 35 27 39M34 23C38 28 38 36 34 41M44 29a2 2 0 1 0 4 0a2 2 0 1 0-4 0M30 44C31 48 34 50 38 50"/>
+      <path class="stick" d="M31 37V63"/>
+    </svg>
+    <span class="brand brush">糖画坊</span><span class="brand-note">照片或线稿 · 都能入画</span>
+  </div>
+  <div class="bar-end">
+    <button id="open-calligraphy" class="btn" type="button" disabled>书法模式</button>
+      <button id="open-masterpiece" class="btn" type="button" disabled>名帖表演</button>
+      <button id="open-handwriting" class="btn" type="button" disabled>手写模式</button>
+      <button id="open-vision" class="btn" type="button">字迹识别</button>
+    <div class="connection" role="status"><span id="connection-led" class="led"></span><span id="connection-text">正在连接</span></div>
+    <div id="speed-box" class="speed-box" role="group" aria-label="机械臂速度" hidden><span class="speed-label">速度</span><button id="speed-down" class="btn speed-step" type="button" aria-label="减速">−</button><b id="speed-value" aria-live="polite">--%</b><button id="speed-up" class="btn speed-step" type="button" aria-label="加速">+</button></div>
+    <button id="open-settings" class="btn settings" type="button" aria-label="设置与调试">
+      <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 5.5h8M15 5.5h2M3 10h2M9 10h8M3 14.5h6M13 14.5h4"/><circle cx="13" cy="5.5" r="2"/><circle cx="7" cy="10" r="2"/><circle cx="11" cy="14.5" r="2"/></svg>设置
+    </button>
+  </div>
+</header>
+<main class="shell">
+  <section class="stage" aria-label="糖画预测图与工作状态">
+    <div class="stage-heading"><span class="seal">画</span><h1 id="preview-heading">选择一张心仪的图</h1><span id="preview-label" class="preview-label" hidden>预测效果</span></div>
+    <figure id="slab" class="slab">
+      <div id="empty-preview" class="empty-preview">
+        <svg class="idle-fish" viewBox="0 0 240 240" aria-hidden="true"><defs><linearGradient id="idle-g" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#ffe2a6"/><stop offset="1" stop-color="#d9861f"/></linearGradient></defs><g fill="none" stroke="url(#idle-g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"><path d="M30 75C43 86 50 100 62 115C95 66 163 68 203 115C164 163 96 164 62 115C48 129 40 142 30 151C41 125 43 100 30 75Z"/><path d="M100 79C119 105 118 134 99 151M125 77C145 102 145 133 127 153M156 83C173 99 174 133 157 145M105 73C123 53 150 47 164 62M106 161C119 181 135 182 151 169M78 94C89 100 89 128 78 135"/><circle cx="181" cy="111" r="6"/></g><path d="M119 139V226" stroke="#e6cf97" stroke-width="6" stroke-linecap="round"/></svg>
+        <strong id="empty-title" class="brush">拍一张 · 浇一幅</strong><p id="empty-message">扫码上传照片，剩下的交给糖画坊</p>
+      </div>
+      <img id="prediction" class="prediction" alt="待绘制的线稿图片或预设笔画预览" hidden>
+      <img id="lineart-original" class="prediction lineart-original" alt="所选本地线条图原图，尚不是绘画轨迹" hidden>
+      <figcaption id="prediction-error" class="prediction-error" role="alert" hidden>预览暂时无法显示，请稍候重试。</figcaption>
+    </figure>
+    <section id="workflow-card" class="workflow-card" aria-live="polite" aria-atomic="true">
+      <div class="workflow-copy"><span id="phase-seal" class="seal">候</span><div><h2 id="workflow-title">等待上传</h2><p id="workflow-message">手机扫码选图后，将自动生成糖画并规划轨迹。</p></div></div>
+      <div id="workflow-progress" class="workflow-progress" role="progressbar" aria-label="处理进度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" hidden><i id="progress-fill"></i></div>
+      <div class="workflow-actions">
+        <button id="start-drawing" class="btn ink main-action" type="button" hidden disabled>确认并开始绘制</button>
+        <button id="cancel-job" class="btn stop-action" type="button" hidden>取消处理</button>
+        <button id="reset-job" class="btn main-action" type="button" hidden>制作下一幅</button>
+        <button id="text-next-page" class="btn ink main-action" type="button" hidden>已换好纸，继续下一页</button>
+      </div>
+      <p id="action-error" class="action-error" role="alert" hidden></p>
+    </section>
+  </section>
+  <aside class="side" aria-label="选择绘画图片">
+    <section class="local-card" aria-labelledby="local-title">
+      <h2 id="local-title"><span class="seal">稿</span>已有线稿，直接画</h2>
+      <button id="choose-lineart" class="btn local-choose" type="button" disabled>选择本地线条图</button>
+      <p id="lineart-name" class="lineart-name">未选择文件</p>
+      <button id="prepare-lineart" class="btn ink local-prepare" type="button" disabled>一键画画</button>
+      <p class="local-hint">打开图库，点选喜欢的线稿<br>保持原图比例 · 无需云端生成</p>
+    </section>
+    <section class="qr-card">
+      <h2><span class="seal">壹</span>扫码绘画 / 写字</h2>
+      <div class="qr-tile"><span class="qr-corner tl"></span><span class="qr-corner tr"></span><span class="qr-corner bl"></span><span class="qr-corner br"></span><div id="qr" class="qr" role="img" aria-label="手机上传页面二维码"><span>正在获取地址</span></div><p class="qr-cta brush">拍一张 · 浇一幅</p></div>
+      <p id="wifi-hint" class="wifi-hint">手机连接 <b>ESP8200</b> 后扫码</p>
+      <code id="pair-url" class="pair-url">正在连接…</code>
+      <p id="upload-hint" class="upload-hint">浏览器打开 · 传照片或输入汉字</p>
+    </section>
+    <div id="phone-status" class="phone-status"><span class="led"></span><span>等待手机连接</span></div>
+  </aside>
+</main>
+<div id="gallery-modal" class="modal-layer" hidden>
+  <section class="dialog-panel gallery-panel" role="dialog" aria-modal="true" aria-labelledby="gallery-title" tabindex="-1">
+    <header class="dialog-header"><div class="dialog-heading"><span class="seal">稿</span><div><h2 id="gallery-title">本地线稿图库</h2><p id="gallery-count">正在读取已保存的线稿…</p></div></div><button id="gallery-close" class="btn" type="button">返回</button></header>
+    <div class="gallery-toolbar"><input id="gallery-search" class="text-input" type="search" placeholder="搜索线稿名称" aria-label="搜索线稿名称"><button id="gallery-refresh" class="btn" type="button">刷新</button><button id="gallery-import" class="btn" type="button">导入线稿</button><input id="gallery-files" type="file" accept="image/png,image/jpeg,image/webp,.png,.jpg,.jpeg,.webp" multiple hidden></div>
+    <p id="gallery-message" class="gallery-message" role="status" hidden></p>
+    <div class="gallery-body"><div id="gallery-grid" class="gallery-grid" aria-label="已保存的线稿"></div><aside class="gallery-detail"><div class="gallery-preview"><img id="gallery-preview" alt="当前选中的线稿" hidden><p id="gallery-preview-empty">点选一张线稿<br>在这里查看大图</p></div><strong id="gallery-selected-name">尚未选择</strong><p id="gallery-selected-info">所有已保存的线稿都会显示在图库中。</p></aside></div>
+    <footer class="dialog-footer"><span id="gallery-selection-hint">选好后点“一键画画”</span><button id="gallery-use" class="btn ink" type="button" disabled>使用这张线稿</button></footer>
+  </section>
+</div>
+<div id="motion-modal" class="modal-layer" hidden>
+  <section class="dialog-panel motion-panel" role="dialog" aria-modal="true" aria-labelledby="motion-title" tabindex="-1"><header class="dialog-header"><div class="dialog-heading"><span class="seal">绘</span><h2 id="motion-title">确认本次绘画</h2></div></header><div class="motion-content"><p>开始后机械臂将按当前预测图运动。</p><label class="safety-check"><input id="motion-safe" type="checkbox">我已核对本次预测图，确认有人守在急停旁、周围无人。</label></div><footer class="dialog-footer"><button id="motion-cancel" class="btn" type="button">返回预览</button><button id="motion-confirm" class="btn ink" type="button" disabled>确认并开始绘制</button></footer></section>
+</div>
+<div id="toast" class="toast" role="status" hidden></div>
+<div id="masterpiece-modal" class="modal-layer" hidden>
+  <section class="dialog-panel mp-panel" role="dialog" aria-modal="true" aria-labelledby="mp-title" tabindex="-1">
+    <header class="dialog-header"><div class="dialog-heading"><span class="seal">帖</span><div><h2 id="mp-title">名帖表演</h2><p>选一幅名家字帖，书写其中最有名的一句 · 70 mm 竖排，每列三字，从左往右换列 · 速度默认 70%</p></div></div><div><button id="mp-close" class="btn" type="button">返回</button></div></header>
+    <div id="mp-grid" class="mp-grid" aria-label="名帖"></div>
+    <p id="mp-message" class="brush-message" role="status"></p>
+    <footer class="dialog-footer"><span id="mp-selected">请选择一幅名帖</span><div class="brush-footer-actions"><button id="mp-write" class="btn ink" type="button" disabled>规划并表演</button></div></footer>
+  </section>
+</div>
+<div id="calligraphy-modal" class="modal-layer" hidden>
+  <section id="brush-panel" class="dialog-panel brush-panel" role="dialog" aria-modal="true" aria-labelledby="brush-title" tabindex="-1">
+    <header class="dialog-header"><div class="dialog-heading"><span class="seal">书</span><div><h2 id="brush-title">书法 · 笔画工坊</h2><p>墨管供墨 · 毛长 9 mm · 最粗直径 2 mm</p></div></div><div><button id="brush-back" class="btn" type="button" hidden>返回模块</button> <button id="brush-close" class="btn" type="button">返回绘画</button></div></header>
+    <div class="brush-tabs" role="group" aria-label="模块类别"><button id="brush-basic" class="btn ink" type="button" aria-pressed="true">基本笔画</button><button id="brush-radical" class="btn" type="button" aria-pressed="false">偏旁部首</button></div>
+    <div class="brush-body">
+      <div class="brush-library">
+        <div class="brush-filters">
+          <input id="brush-search" type="search" aria-label="搜索笔画或偏旁" placeholder="名称 / 拼音，如 提手旁、ti_shou" autocomplete="off">
+          <select id="brush-category" aria-label="笔画与偏旁分类"><option value="">全部分类</option></select>
+        </div>
+        <div id="brush-grid" class="brush-grid" aria-label="预设书法模块"></div>
+        <nav class="brush-pagination" aria-label="模块翻页"><button id="brush-prev" class="btn" type="button">上一页</button><span id="brush-count" role="status" aria-live="polite"></span><button id="brush-next" class="btn" type="button">下一页</button></nav>
+      </div>
+      <aside class="brush-detail">
+        <div id="brush-preview" class="brush-preview" role="img" aria-label="所选模块提按示意图"></div>
+        <strong id="brush-name">横</strong><p id="brush-info"></p>
+        <label class="brush-field">模块大小 <select id="brush-size"><option value="20">20 mm</option><option value="30">30 mm</option><option value="40" selected>40 mm</option><option value="50">50 mm</option><option value="60">60 mm</option></select></label>
+        <p class="brush-note">在已标定纸面居中书写。粗细为提按示意，实际墨迹需试写标定。</p>
+        <details id="brush-calibration"><summary>毛笔标定参数</summary>
+          <label class="brush-field">实测下压上限 / mm<input id="brush-depth" type="number" min="0.01" max="4" step="0.01" placeholder="填写实测值"></label>
+          <label class="brush-field">书写与归位速度<output id="brush-speed">跟随主界面速度</output></label>
+          <label class="brush-check"><input id="brush-verified" type="checkbox">已用当前毛笔核对工具 TCP、落纸零点与可用下压量</label>
+          <button id="brush-save" class="btn" type="button">保存毛笔参数</button>
+          <p class="brush-note">从笔尖刚好接触纸面开始计算，填写已确认的可用下压量（0.01～4.00 mm）；毛长不能直接换算下压量。保存不会修改落笔工作高度。</p>
+        </details>
+      </aside>
+    </div>
+    <p id="brush-message" class="brush-message" role="status"></p>
+    <footer class="dialog-footer"><span id="brush-selection-hint">选择模块后，点“书写所选”开始规划并执行。</span><div class="brush-footer-actions"><button id="brush-plan" class="btn" type="button">仅规划预览</button><button id="brush-write" class="btn ink" type="button">书写所选</button></div></footer>
+  </section>
+</div>
+</body>
+</html>
+

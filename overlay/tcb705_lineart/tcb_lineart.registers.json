@@ -1,0 +1,12 @@
+{
+  "abi": "tcb705-lineart-v1",
+  "top": "tcb_lineart_accel",
+  "header_sha256": "caec3507f4f840f6e61918fd165c0011f5a2e351b26a55b87c44ddbebd9fb77c",
+  "src": 24,
+  "dst": 36,
+  "width": 48,
+  "height": 56,
+  "deleted": 64,
+  "identity": 80,
+  "return": 16
+}

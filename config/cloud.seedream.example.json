@@ -1,0 +1,9 @@
+{
+  "protocol": "image_json",
+  "endpoint": "https://ark.cn-beijing.volces.com/api/v3/images/generations",
+  "model": "doubao-seedream-5-0-flash-260915",
+  "api_key_env": "SO101_ARK_API_KEY",
+  "timeout_s": 300,
+  "send_n": false,
+  "extra": {"size": "1024x1024", "output_format": "png", "response_format": "b64_json", "watermark": false}
+}

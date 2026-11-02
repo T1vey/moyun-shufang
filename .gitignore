@@ -1,0 +1,37 @@
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.local.json
+*.local.yaml
+*.pem
+*.key
+secrets.*
+# Runtime and build outputs
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+tmp/
+tcb705_data/
+uploads/
+*.sqlite
+*.db
+*.dll
+*.so
+*.pyd
+*.o
+*.obj
+*.bit
+*.hwh
+*.xsa
+*.dcp
+*.dtbo
+*.jou
+*.log
+!hw/reports/**/*.log
+!reports/**/*.log
+.DS_Store
+Thumbs.db

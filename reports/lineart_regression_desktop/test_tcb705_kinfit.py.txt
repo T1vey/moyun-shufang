@@ -1,0 +1,9 @@
+test_corrections_are_bounded (test_tcb705_kinfit.GeometryFitTests.test_corrections_are_bounded) ... ok
+test_link_geometry_corrections_recovered (test_tcb705_kinfit.GeometryFitTests.test_link_geometry_corrections_recovered) ... ok
+test_recovers_mapping_and_validates (test_tcb705_kinfit.KinematicFitTests.test_recovers_mapping_and_validates) ... ok
+test_rejects_poor_spread_and_noise (test_tcb705_kinfit.KinematicFitTests.test_rejects_poor_spread_and_noise) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 30.969s
+
+OK

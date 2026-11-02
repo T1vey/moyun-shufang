@@ -1,0 +1,59 @@
+{
+  "status": "PASS",
+  "clock_hz": 100000000,
+  "points_per_transaction": 64,
+  "transaction_cycles": [
+    55123,
+    55043,
+    55043
+  ],
+  "transaction_points_per_second": [
+    116103.98563213178,
+    116272.7322275312,
+    116272.7322275312
+  ],
+  "minimum_points_per_second": 116103.98563213178,
+  "hls_resources": {
+    "BRAM_18K": 30,
+    "DSP": 48,
+    "FF": 35829,
+    "LUT": 34825,
+    "URAM": 0
+  },
+  "routed": {
+    "setup_slack_ns": 0.23,
+    "hold_slack_ns": 0.011,
+    "drc_errors": 0
+  },
+  "source_sha256": {
+    "parallel_atan2_fp32.hpp": "ca6c2feb9df12c3e6a05789431a7ecf419dd93d61fcd111890faf3bd5195d6c9",
+    "parallel_math_fp32.hpp": "d7653448ddf375e0fc83fc1a6e9b25ea9f9d78d3364289544ac5f19059b947a6",
+    "parallel_srs_fp32.hpp": "be50f5b256e44e7bafcc10625df4afaf2e076fe118e7ab200e0dccd50f3fd1b6",
+    "parallel_srs_pipeline_fp32.hpp": "984d58bad5faa48f84bce9a50a21d1608f0dc262adec7fd65c20a68c2be6b1ae",
+    "tcb_planner_parallel.cpp": "0ff9a40504571bae8b1f6b7eca9ca4b9384eb145198c91c372c420963eb0d021",
+    "tcb_planner_parallel.h": "6c51c83079f652541f5dda006ca93f4b2f2220b4f8349513dc1ec14c82e52843"
+  },
+  "artifacts": {
+    "tcb705_planner_fp32.bit": {
+      "bytes": 4045674,
+      "sha256": "ec1db16330d675eb18479e5b33ac73b80614e8cc32ba0ef3f1b19dedd2f2f0fb"
+    },
+    "tcb705_planner_fp32.hwh": {
+      "bytes": 784872,
+      "sha256": "448fbad3dd4d4f767567dc9dcbdcc598de4193d8098c0026cb8ced01648594d6"
+    },
+    "tcb705_parallel_fp32.xsa": {
+      "bytes": 1700677,
+      "sha256": "715a9c75d1d6bcd23f1a6cfc0f0ff2067a445b575d3e69b0ea52687308c9e6ac"
+    }
+  },
+  "compute_precision": "FP32; integer CORDIC; packed FP64 DDR transport",
+  "offline_numerical_budget": {
+    "position_m": 1e-05,
+    "orientation_rad": 0.0001
+  },
+  "runtime_fk_verification": false,
+  "deployed": false,
+  "robot_moved": false,
+  "scope": "RTL AXI test model plus full-platform routed timing. Excludes Python, real DDR contention, CPU fallback, and robot execution."
+}

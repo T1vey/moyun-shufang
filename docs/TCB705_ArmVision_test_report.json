@@ -1,0 +1,51 @@
+{
+  "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "hardware_connected": false,
+  "physical_motion": false,
+  "cloud_stubbed": true,
+  "suites": [
+    {
+      "suite": "test_tcb705.py",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 7.995725700000094
+    },
+    {
+      "suite": "test_armvision_calibration.py",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.5806753000001663
+    },
+    {
+      "suite": "test_user_gui_workflow.py",
+      "tests": 23,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.51765730000011
+    },
+    {
+      "suite": "test_drawing_quality.py",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.5310410000001866
+    },
+    {
+      "suite": "test_cloud_transport.py",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.02086819999999534
+    }
+  ],
+  "passed": true,
+  "tests": 90
+}

@@ -1,0 +1,16 @@
+test_import_requires_token_and_same_origin_and_survives_restart (test_user_gui_gallery.GalleryHttpTests.test_import_requires_token_and_same_origin_and_survives_restart) ... ok
+test_listing_and_thumbnail_do_not_run_pipeline (test_user_gui_gallery.GalleryHttpTests.test_listing_and_thumbnail_do_not_run_pipeline) ... ok
+test_missing_selection_does_not_occupy_workflow (test_user_gui_gallery.GalleryHttpTests.test_missing_selection_does_not_occupy_workflow) ... ok
+test_prepare_skips_cloud_and_waits_for_motion_confirmation (test_user_gui_gallery.GalleryHttpTests.test_prepare_skips_cloud_and_waits_for_motion_confirmation) ... ok
+test_remote_clients_and_host_rebinding_cannot_browse_library (test_user_gui_gallery.GalleryHttpTests.test_remote_clients_and_host_rebinding_cannot_browse_library) ... ok
+test_changed_image_cannot_be_selected_by_old_id (test_user_gui_gallery.LibraryTests.test_changed_image_cannot_be_selected_by_old_id) ... ok
+test_import_persists_and_keeps_name_and_aspect (test_user_gui_gallery.LibraryTests.test_import_persists_and_keeps_name_and_aspect) ... ok
+test_invalid_and_non_art_files_are_not_exposed (test_user_gui_gallery.LibraryTests.test_invalid_and_non_art_files_are_not_exposed) ... ok
+test_legacy_label_uses_china_time_even_when_board_uses_utc (test_user_gui_gallery.LibraryTests.test_legacy_label_uses_china_time_even_when_board_uses_utc) ... ok
+test_saved_and_cloud_images_are_discoverable_without_duplicates (test_user_gui_gallery.LibraryTests.test_saved_and_cloud_images_are_discoverable_without_duplicates) ... ok
+test_truncated_and_animated_imports_are_rejected (test_user_gui_gallery.LibraryTests.test_truncated_and_animated_imports_are_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 3.055s
+
+OK

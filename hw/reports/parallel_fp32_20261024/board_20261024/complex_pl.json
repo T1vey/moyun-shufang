@@ -1,0 +1,314 @@
+{
+ "capabilities": {
+  "version": "0.2.0-tcb705-pl-batch",
+  "robot_type": "TCB705",
+  "simulation": false,
+  "drawing_pipeline_version": "drawing-quality-v2",
+  "allow_real": true,
+  "motion_supported": false,
+  "physical_authorized": false,
+  "sugar_calibration_ready": true,
+  "sugar_calibration_detail": "使用 ArmVision A/B、落笔 Z 与 UVW",
+  "motion_algorithm_version": "tcb705-c2-v2-batch",
+  "motion_modes": [
+   "tcb705"
+  ],
+  "production_motion_modes": [
+   "tcb705"
+  ],
+  "default_motion_mode": "tcb705",
+  "ik_backend": "ZYNQ_PL_7R_BATCH",
+  "ik_metrics": {
+   "faulted": false,
+   "abi": "tcb705-planner-fp32-v2",
+   "artifact_hashes": {
+    "tcb705_planner_fp32.bit": "ec1db16330d675eb18479e5b33ac73b80614e8cc32ba0ef3f1b19dedd2f2f0fb",
+    "tcb705_planner_fp32.hwh": "448fbad3dd4d4f767567dc9dcbdcc598de4193d8098c0026cb8ced01648594d6",
+    "tcb705_planner_fp32.registers.json": "54f70314a57b1fc31876165c415e074a20e070e619bc4aaf6c9048d103529ebe"
+   },
+   "pl_load_policy": "attach",
+   "build_id": "tcb705-parallel-fp32-20261024",
+   "clock_hz": 100000000,
+   "lineart": {
+    "available": false,
+    "backend": "CPU",
+    "reason": "loaded platform has no lineart accelerator; CPU selected"
+   }
+  },
+  "background_plan_save_supported": false,
+  "drawing_size_supported": true,
+  "readiness": {
+   "physical_ready": true,
+   "missing": [],
+   "offline_ready": true,
+   "execution_path": "sdk_joint"
+  },
+  "token": "FDuvQZGtCGLbjDrYw8b2PsARKjicoAknlpazB0cqnrg",
+  "session_id": "20261024_152455_43e46c34",
+  "events": [
+   {
+    "time_utc": "2026-10-24T15:28:23.804317+00:00",
+    "event": "JOB_BEGIN",
+    "detail": {
+     "id": "ce4a4a3032904f6cb414050e24c78c96",
+     "kind": "strokes",
+     "mode": null
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:24.036067+00:00",
+    "event": "JOB_END",
+    "detail": {
+     "id": "ce4a4a3032904f6cb414050e24c78c96",
+     "status": "DONE",
+     "detail": "PC 端笔画已登记"
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:24.170894+00:00",
+    "event": "JOB_BEGIN",
+    "detail": {
+     "id": "f51a58d27e624077b2f791b62b5cb40a",
+     "kind": "plan",
+     "mode": null
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:46.074576+00:00",
+    "event": "TCB_JOB_END",
+    "detail": {
+     "id": "f51a58d27e624077b2f791b62b5cb40a",
+     "kind": "plan",
+     "status": "DONE"
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:46.208471+00:00",
+    "event": "JOB_BEGIN",
+    "detail": {
+     "id": "285d578f240948679c642460fe9e87d8",
+     "kind": "strokes",
+     "mode": null
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:46.441055+00:00",
+    "event": "JOB_END",
+    "detail": {
+     "id": "285d578f240948679c642460fe9e87d8",
+     "status": "DONE",
+     "detail": "PC 端笔画已登记"
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:46.598214+00:00",
+    "event": "JOB_BEGIN",
+    "detail": {
+     "id": "7d44a9a140ef485f910e5c33247acb54",
+     "kind": "plan",
+     "mode": null
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:55.774006+00:00",
+    "event": "TCB_JOB_END",
+    "detail": {
+     "id": "7d44a9a140ef485f910e5c33247acb54",
+     "kind": "plan",
+     "status": "DONE"
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:55.916621+00:00",
+    "event": "JOB_BEGIN",
+    "detail": {
+     "id": "52ce756672294e1693760cfa60520eb3",
+     "kind": "strokes",
+     "mode": null
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:56.158872+00:00",
+    "event": "JOB_END",
+    "detail": {
+     "id": "52ce756672294e1693760cfa60520eb3",
+     "status": "DONE",
+     "detail": "PC 端笔画已登记"
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:28:56.308981+00:00",
+    "event": "JOB_BEGIN",
+    "detail": {
+     "id": "e3550b77661949b188d2bf3986c880e7",
+     "kind": "plan",
+     "mode": null
+    }
+   },
+   {
+    "time_utc": "2026-10-24T15:29:05.500390+00:00",
+    "event": "TCB_JOB_END",
+    "detail": {
+     "id": "e3550b77661949b188d2bf3986c880e7",
+     "kind": "plan",
+     "status": "DONE"
+    }
+   }
+  ],
+  "cloud_configured": false
+ },
+ "runs": [
+  {
+   "run": 0,
+   "strokes_s": 0.319,
+   "plan_wall_s": 37.943,
+   "status": "DONE",
+   "detail": "七轴规划准备完毕 · 真实执行尚未开放",
+   "error": null,
+   "metrics": {
+    "ik_iterations": 0,
+    "time_stretch": 8.255377680790438,
+    "nodes": 21680,
+    "duration_s": 2552.2421897342365,
+    "corner_stops": 458,
+    "max_path_error_m": null,
+    "max_orientation_error_rad": null,
+    "max_joint_step_rad": 0.0029554367065429688,
+    "ik_batches": 339,
+    "ik_cpu_batches": 0,
+    "ik_batch_limit": 64,
+    "ik_prefix_invalidations": 0,
+    "ik_cpu_batch_s": 0.0,
+    "ik_pl_batch_s": 11.092294115000186,
+    "pl_batch_starts": 339,
+    "pl_rows_cpu_verified": 0,
+    "pl_rows_cpu_rejected": 0,
+    "pl_rows_joint_checked": 21679,
+    "pl_rows_joint_rejected": 0,
+    "pl_runtime_fk_verification": false,
+    "pl_last_rejection": null,
+    "ik_accel_fallbacks": 0,
+    "ik_accel_errors": 0,
+    "ik_accel_unavailable_reason": null,
+    "ik_backend": "ZYNQ_PL_7R_BATCH",
+    "joint_peak_velocity_rad_s": [
+     0.0218602356326767,
+     0.0805813334427183,
+     0.10193004779237545,
+     0.14336205651716566,
+     0.06134633964690352,
+     0.08926236110829834,
+     0.11817729985982516
+    ],
+    "joint_peak_acceleration_rad_s2": [
+     0.0480966441508738,
+     0.09619434536592712,
+     0.14455166227418198,
+     0.18833546225687745,
+     0.10748075009532737,
+     0.1073578011557882,
+     0.15995134771660763
+    ],
+    "joint_peak_jerk_rad_s3": [
+     3.940595037239242,
+     3.0659651809737385,
+     3.9405950372392433,
+     3.9405950372392433,
+     3.830094867025974,
+     3.9405950372392424,
+     3.940595037239243
+    ],
+    "geometry_fk_batches": 0,
+    "geometry_probe_samples": 0,
+    "runtime_geometry_verification": false,
+    "geometry_error_evaluated": false,
+    "planning_s": 36.45422184300003,
+    "frames": 638062,
+    "motion_algorithm_version": "tcb705-c2-v3-no-runtime-fk",
+    "motion_mode": "tcb705",
+    "collision_model_verified": false,
+    "pl_session_attach_s": 12.744838420000008,
+    "execution_prepare_s": 0.899,
+    "execution_blocks": 21679,
+    "history_saved": false,
+    "memory_ready": true
+   }
+  },
+  {
+   "run": 1,
+   "strokes_s": 0.301,
+   "plan_wall_s": 40.574,
+   "status": "DONE",
+   "detail": "七轴规划准备完毕 · 真实执行尚未开放",
+   "error": null,
+   "metrics": {
+    "ik_iterations": 0,
+    "time_stretch": 8.255377680790438,
+    "nodes": 21680,
+    "duration_s": 2552.2421897342365,
+    "corner_stops": 458,
+    "max_path_error_m": null,
+    "max_orientation_error_rad": null,
+    "max_joint_step_rad": 0.0029554367065429688,
+    "ik_batches": 339,
+    "ik_cpu_batches": 0,
+    "ik_batch_limit": 64,
+    "ik_prefix_invalidations": 0,
+    "ik_cpu_batch_s": 0.0,
+    "ik_pl_batch_s": 11.382043484000974,
+    "pl_batch_starts": 339,
+    "pl_rows_cpu_verified": 0,
+    "pl_rows_cpu_rejected": 0,
+    "pl_rows_joint_checked": 21679,
+    "pl_rows_joint_rejected": 0,
+    "pl_runtime_fk_verification": false,
+    "pl_last_rejection": null,
+    "ik_accel_fallbacks": 0,
+    "ik_accel_errors": 0,
+    "ik_accel_unavailable_reason": null,
+    "ik_backend": "ZYNQ_PL_7R_BATCH",
+    "joint_peak_velocity_rad_s": [
+     0.0218602356326767,
+     0.0805813334427183,
+     0.10193004779237545,
+     0.14336205651716566,
+     0.06134633964690352,
+     0.08926236110829834,
+     0.11817729985982516
+    ],
+    "joint_peak_acceleration_rad_s2": [
+     0.0480966441508738,
+     0.09619434536592712,
+     0.14455166227418198,
+     0.18833546225687745,
+     0.10748075009532737,
+     0.1073578011557882,
+     0.15995134771660763
+    ],
+    "joint_peak_jerk_rad_s3": [
+     3.940595037239242,
+     3.0659651809737385,
+     3.9405950372392433,
+     3.9405950372392433,
+     3.830094867025974,
+     3.9405950372392424,
+     3.940595037239243
+    ],
+    "geometry_fk_batches": 0,
+    "geometry_probe_samples": 0,
+    "runtime_geometry_verification": false,
+    "geometry_error_evaluated": false,
+    "planning_s": 36.69902747800006,
+    "frames": 638062,
+    "motion_algorithm_version": "tcb705-c2-v3-no-runtime-fk",
+    "motion_mode": "tcb705",
+    "collision_model_verified": false,
+    "pl_session_attach_s": 12.744838420000008,
+    "execution_prepare_s": 0.925,
+    "execution_blocks": 21679,
+    "history_saved": false,
+    "memory_ready": true
+   }
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{"suite": "test_tcb705.py", "tests": 21, "failures": 0, "errors": 0, "skipped": 0, "seconds": 9.853238199999396}
+{"suite": "test_tcb705_web.py", "tests": 34, "failures": 0, "errors": 0, "skipped": 0, "seconds": 5.707841299999927}
+{"suite": "test_tcb705_kinfit.py", "tests": 4, "failures": 0, "errors": 0, "skipped": 0, "seconds": 31.086812699999427}
+{"suite": "test_tcb_acceleration.py", "tests": 12, "failures": 0, "errors": 0, "skipped": 0, "seconds": 1.0820082999998704}
+{"suite": "test_tcb_platform.py", "tests": 8, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.023707999999714957}
+{"suite": "test_ge_pl_contract.py", "tests": 6, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.5824476000007053}
+{"suite": "test_tcb_session.py", "tests": 4, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.012903100000585255}
+{"suite": "test_armvision_calibration.py", "tests": 18, "failures": 0, "errors": 0, "skipped": 0, "seconds": 4.427362399999765}
+{"suite": "test_tcb_commissioning.py", "tests": 16, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.1275826999999481}
+{"suite": "test_tcb705_lineart_plan.py", "tests": 10, "failures": 0, "errors": 0, "skipped": 0, "seconds": 2.809666500000276}
+{"suite": "test_user_gui_gallery.py", "tests": 11, "failures": 0, "errors": 0, "skipped": 0, "seconds": 3.0657357000000047}
+{"suite": "test_cloud_gallery.py", "tests": 10, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.8511043999997128}
+{"suite": "test_user_gui_workflow.py", "tests": 32, "failures": 0, "errors": 0, "skipped": 0, "seconds": 3.3396105000001626}
+{"suite": "test_drawing_quality.py", "tests": 16, "failures": 0, "errors": 0, "skipped": 0, "seconds": 3.462308899999698}
+{"suite": "test_lineart_accel.py", "tests": 9, "failures": 0, "errors": 0, "skipped": 0, "seconds": 21.221675399999185}
+{"suite": "test_cloud_transport.py", "tests": 12, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.029589900000246416}
+{"suite": "test_planner_accel_lifetime.py", "tests": 15, "failures": 0, "errors": 0, "skipped": 0, "seconds": 1.2747045000005528}
+LCD frame drain timed out; retaining buffer until DMA is idle
+{"suite": "test_md0700r_runtime.py", "tests": 6, "failures": 0, "errors": 0, "skipped": 0, "seconds": 0.037494400000468886}

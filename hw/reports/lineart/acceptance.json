@@ -1,0 +1,74 @@
+{
+  "schema": "tcb705-lineart-build-evidence-v1",
+  "contract": {
+    "abi": "tcb705-lineart-v1",
+    "ip_name": "tcb_lineart_accel_0",
+    "base": 1073807360,
+    "size": 65536,
+    "clock_hz": 100000000,
+    "stages": 8,
+    "max_dimension": 1536,
+    "packing": "row-major-lsb-first-u64"
+  },
+  "timing": {
+    "setup_slack_ns": 0.116,
+    "hold_slack_ns": 0.014,
+    "drc_errors": 0
+  },
+  "resources": {
+    "Slice LUTs": 39238.0,
+    "Slice Registers": 43347.0,
+    "Block RAM Tile": 37.0,
+    "DSPs": 68.0
+  },
+  "software_tests": 244,
+  "gallery_images": 14,
+  "csim_cases": 25,
+  "cosim_cases": 10,
+  "artifacts": {
+    "tcb705_planner.bit": {
+      "bytes": 4045674,
+      "sha256": "5dd9af8eb01979c4680049887232cc3fd5a11420940d33ef2132552927a683a4"
+    },
+    "tcb705_planner.hwh": {
+      "bytes": 679433,
+      "sha256": "4ed2250495f14fa5fcb9761db9585d28d6d1ff9911a5983954e081ae4e45d44b"
+    },
+    "tcb705_md0700r.xsa": {
+      "bytes": 1647632,
+      "sha256": "3d67fe5b4ed6c332f2ab810ac9036a8bf1ee1aabd2f263e47b06e366dd51f9e3"
+    }
+  },
+  "hls_sources_sha256": {
+    "tcb_lineart_accel.cpp": "dd217dd3972edc928e17ff6ea23e16e13efb124c733e9724192ae33cc2ea31bc",
+    "tcb_lineart_accel.h": "c3c937d6bbf3ee6997bed4310257a89ffd8890685adbd54a6ebfd175eda9d407",
+    "tb_lineart.cpp": "705be2011fdadb25ea0d90b0ecf7a154cba0ea11983b43695ea582e293f50bfb",
+    "lineart_2024.cfg": "1f4f2b7c7cfe48ed59609f7f4df86ed4a25b2461dad3da54807f46779a7eaa10"
+  },
+  "timing_checks": {
+    "no_clock": 0,
+    "constant_clock": 0,
+    "pulse_width_clock": 0,
+    "unconstrained_internal_endpoints": 0,
+    "no_input_delay": 5,
+    "no_output_delay": 34,
+    "multiple_clock": 1,
+    "generated_clocks": 0,
+    "loops": 0,
+    "partial_input_delay": 0,
+    "partial_output_delay": 0,
+    "latch_loops": 0
+  },
+  "inherited_methodology_critical_warnings": {
+    "TIMING-4": 1,
+    "TIMING-27": 1,
+    "TIMING-54": 4
+  },
+  "inherited_cdc_critical_counts": {
+    "CDC-1": 2,
+    "CDC-13": 6
+  },
+  "board_acceptance": false,
+  "board_note": "Pending: board network connection unavailable; no new bitstream programmed.",
+  "physical_robot_motion": false
+}

@@ -1,0 +1,592 @@
+{
+ "schema": "quiz-v1",
+ "version": "quiz-20261026-v1",
+ "notice": "题目答案均出自书法百科对应条目。",
+ "items": [
+  {
+   "id": "k01",
+   "question": "被后世尊为“书圣”的是哪位书法家？",
+   "options": [
+    "王羲之",
+    "颜真卿",
+    "柳公权",
+    "苏轼"
+   ],
+   "answer": 0,
+   "explain": "东晋王羲之被后世尊为“书圣”，代表作《兰亭序》。",
+   "entry": "masters/wang-xizhi"
+  },
+  {
+   "id": "k02",
+   "question": "被誉为“天下第一行书”的是哪件作品？",
+   "options": [
+    "兰亭序",
+    "祭侄文稿",
+    "黄州寒食帖",
+    "蜀素帖"
+   ],
+   "answer": 0,
+   "explain": "王羲之《兰亭序》被誉为“天下第一行书”。",
+   "entry": "works/lanting-xu"
+  },
+  {
+   "id": "k03",
+   "question": "被誉为“天下第二行书”的是哪件作品？",
+   "options": [
+    "祭侄文稿",
+    "兰亭序",
+    "黄州寒食帖",
+    "张翰帖"
+   ],
+   "answer": 0,
+   "explain": "颜真卿《祭侄文稿》被誉为“天下第二行书”。",
+   "entry": "works/jizhi-wengao"
+  },
+  {
+   "id": "k04",
+   "question": "被誉为“天下第三行书”的是哪件作品？",
+   "options": [
+    "黄州寒食帖",
+    "蜀素帖",
+    "祭侄文稿",
+    "赤壁赋"
+   ],
+   "answer": 0,
+   "explain": "苏轼《黄州寒食帖》被誉为“天下第三行书”。",
+   "entry": "works/hanshi-tie"
+  },
+  {
+   "id": "k05",
+   "question": "“颜筋柳骨”中的“柳”指的是谁？",
+   "options": [
+    "柳公权",
+    "柳宗元",
+    "柳永",
+    "柳如是"
+   ],
+   "answer": 0,
+   "explain": "“颜筋柳骨”说的是颜真卿和柳公权两人的书风。",
+   "entry": "masters/liu-gongquan"
+  },
+  {
+   "id": "k06",
+   "question": "宋徽宗赵佶自创的书体叫什么？",
+   "options": [
+    "瘦金体",
+    "六分半书",
+    "馆阁体",
+    "颜体"
+   ],
+   "answer": 0,
+   "explain": "宋徽宗赵佶自创“瘦金体”，笔画瘦硬挺拔。",
+   "entry": "masters/zhao-ji"
+  },
+  {
+   "id": "k07",
+   "question": "“六分半书”是谁的书体？",
+   "options": [
+    "郑板桥",
+    "王铎",
+    "董其昌",
+    "文徵明"
+   ],
+   "answer": 0,
+   "explain": "清代郑板桥把隶、楷、行、草融为一体，自称“六分半书”。",
+   "entry": "masters/ming-qing"
+  },
+  {
+   "id": "k08",
+   "question": "“永字八法”中的“磔”指的是哪一笔？",
+   "options": [
+    "捺",
+    "撇",
+    "点",
+    "钩"
+   ],
+   "answer": 0,
+   "explain": "永字八法中“磔”指捺，要一波三折、舒展有力。",
+   "entry": "technique/yong-eight"
+  },
+  {
+   "id": "k09",
+   "question": "“永字八法”中的“勒”指的是哪一笔？",
+   "options": [
+    "横",
+    "竖",
+    "提",
+    "撇"
+   ],
+   "answer": 0,
+   "explain": "“勒”指横，像勒住马缰，要有向内收敛的力量。",
+   "entry": "technique/yong-eight"
+  },
+  {
+   "id": "k10",
+   "question": "隶书“蚕头燕尾”中的“燕尾”是指什么？",
+   "options": [
+    "收笔上挑",
+    "起笔藏锋",
+    "中段加粗",
+    "转折方折"
+   ],
+   "answer": 0,
+   "explain": "汉隶横画收笔上挑如燕尾，起笔如蚕头。",
+   "entry": "scripts/clerical"
+  },
+  {
+   "id": "k11",
+   "question": "秦统一六国后规范通行的标准字体是？",
+   "options": [
+    "小篆",
+    "隶书",
+    "楷书",
+    "金文"
+   ],
+   "answer": 0,
+   "explain": "秦统一后整理规范了小篆，史称“书同文”。",
+   "entry": "scripts/seal"
+  },
+  {
+   "id": "k12",
+   "question": "甲骨文主要出土于哪里？",
+   "options": [
+    "河南安阳",
+    "陕西西安",
+    "山东曲阜",
+    "河南洛阳"
+   ],
+   "answer": 0,
+   "explain": "甲骨文主要出土于河南安阳的殷墟。",
+   "entry": "scripts/oracle"
+  },
+  {
+   "id": "k13",
+   "question": "金文又叫什么？",
+   "options": [
+    "钟鼎文",
+    "卜辞",
+    "简帛文",
+    "摩崖文"
+   ],
+   "answer": 0,
+   "explain": "青铜礼器以钟和鼎最重要，所以金文又叫“钟鼎文”。",
+   "entry": "scripts/bronze"
+  },
+  {
+   "id": "k14",
+   "question": "“楷书四大家”中唯一的元代人是谁？",
+   "options": [
+    "赵孟頫",
+    "欧阳询",
+    "颜真卿",
+    "柳公权"
+   ],
+   "answer": 0,
+   "explain": "赵孟頫是“楷书四大家”中唯一的元代人，其余三位是唐代人。",
+   "entry": "masters/zhao-mengfu"
+  },
+  {
+   "id": "k15",
+   "question": "东汉时被尊为“草圣”的书法家是谁？",
+   "options": [
+    "张芝",
+    "怀素",
+    "王献之",
+    "钟繇"
+   ],
+   "answer": 0,
+   "explain": "东汉张芝被尊为“草圣”。",
+   "entry": "scripts/cursive"
+  },
+  {
+   "id": "k16",
+   "question": "“颠张醉素”指的是哪两位书法家？",
+   "options": [
+    "张旭和怀素",
+    "张芝和怀素",
+    "张旭和智永",
+    "张芝和王献之"
+   ],
+   "answer": 0,
+   "explain": "唐代狂草的代表张旭和怀素，人称“颠张醉素”。",
+   "entry": "masters/zhang-huai"
+  },
+  {
+   "id": "k17",
+   "question": "《九成宫醴泉铭》是谁书写的？",
+   "options": [
+    "欧阳询",
+    "颜真卿",
+    "柳公权",
+    "褚遂良"
+   ],
+   "answer": 0,
+   "explain": "《九成宫醴泉铭》由魏徵撰文、欧阳询书写。",
+   "entry": "works/jiuchenggong"
+  },
+  {
+   "id": "k18",
+   "question": "《玄秘塔碑》是谁书写的？",
+   "options": [
+    "柳公权",
+    "颜真卿",
+    "欧阳询",
+    "赵孟頫"
+   ],
+   "answer": 0,
+   "explain": "《玄秘塔碑》由裴休撰文、柳公权书写。",
+   "entry": "works/xuanmi-ta"
+  },
+  {
+   "id": "k19",
+   "question": "《多宝塔碑》是谁书写的？",
+   "options": [
+    "颜真卿",
+    "柳公权",
+    "欧阳询",
+    "褚遂良"
+   ],
+   "answer": 0,
+   "explain": "《多宝塔碑》是颜真卿四十四岁时所书。",
+   "entry": "works/duobao-ta"
+  },
+  {
+   "id": "k20",
+   "question": "“文房四宝”指的是哪四样？",
+   "options": [
+    "笔墨纸砚",
+    "琴棋书画",
+    "诗书画印",
+    "笔架笔洗"
+   ],
+   "answer": 0,
+   "explain": "笔、墨、纸、砚合称“文房四宝”。",
+   "entry": "studio/four"
+  },
+  {
+   "id": "k21",
+   "question": "宣纸因产地古属哪里而得名？",
+   "options": [
+    "宣州",
+    "徽州",
+    "湖州",
+    "端州"
+   ],
+   "answer": 0,
+   "explain": "宣纸产于安徽泾县一带，古属宣州。",
+   "entry": "studio/paper"
+  },
+  {
+   "id": "k22",
+   "question": "湖笔讲究的“四德”是什么？",
+   "options": [
+    "尖、齐、圆、健",
+    "浓、淡、干、湿",
+    "横、竖、撇、捺",
+    "起、行、收、提"
+   ],
+   "answer": 0,
+   "explain": "湖笔讲究笔尖锐利、笔毛齐整、笔头圆满、弹性强健。",
+   "entry": "studio/brush"
+  },
+  {
+   "id": "k23",
+   "question": "端砚产于哪里？",
+   "options": [
+    "广东肇庆",
+    "安徽歙县",
+    "甘肃洮州",
+    "浙江湖州"
+   ],
+   "answer": 0,
+   "explain": "端砚产于广东肇庆，古称端州。",
+   "entry": "studio/inkstone"
+  },
+  {
+   "id": "k24",
+   "question": "印章上文字凸起、盖出红色字的叫什么？",
+   "options": [
+    "朱文",
+    "白文",
+    "阴文",
+    "款识"
+   ],
+   "answer": 0,
+   "explain": "文字凸起、盖出红字的叫朱文，也叫阳文。",
+   "entry": "seals/zhu-bai"
+  },
+  {
+   "id": "k25",
+   "question": "印章上文字凹下、盖出红底白字的叫什么？",
+   "options": [
+    "白文",
+    "朱文",
+    "阳文",
+    "边款"
+   ],
+   "answer": 0,
+   "explain": "文字凹下、盖出红底白字的叫白文，也叫阴文。",
+   "entry": "seals/zhu-bai"
+  },
+  {
+   "id": "k26",
+   "question": "西泠印社的首任社长是谁？",
+   "options": [
+    "吴昌硕",
+    "齐白石",
+    "邓石如",
+    "文彭"
+   ],
+   "answer": 0,
+   "explain": "1913年西泠印社成立，吴昌硕被推举为首任社长。",
+   "entry": "seals/seal-masters"
+  },
+  {
+   "id": "k27",
+   "question": "提出“印从书出”的篆刻家是谁？",
+   "options": [
+    "邓石如",
+    "文彭",
+    "吴昌硕",
+    "齐白石"
+   ],
+   "answer": 0,
+   "explain": "清代邓石如提出“印从书出”，把篆书风格融入印中。",
+   "entry": "seals/seal-masters"
+  },
+  {
+   "id": "k28",
+   "question": "传统贴春联时，上联贴在哪一边？",
+   "options": [
+    "右边",
+    "左边",
+    "门楣",
+    "门心"
+   ],
+   "answer": 0,
+   "explain": "面对大门，上联贴在右边，下联贴在左边。",
+   "entry": "couplets/posting"
+  },
+  {
+   "id": "k29",
+   "question": "春联起源于古代的什么？",
+   "options": [
+    "桃符",
+    "窗花",
+    "灯笼",
+    "年画"
+   ],
+   "answer": 0,
+   "explain": "春联起源于过年挂在门上的桃符。",
+   "entry": "couplets/origin"
+  },
+  {
+   "id": "k30",
+   "question": "“新年纳余庆，嘉节号长春”相传是谁题写的？",
+   "options": [
+    "孟昶",
+    "朱元璋",
+    "王安石",
+    "苏轼"
+   ],
+   "answer": 0,
+   "explain": "相传五代后蜀国君孟昶题写此联，常被视为最早的春联。",
+   "entry": "couplets/origin"
+  },
+  {
+   "id": "k31",
+   "question": "福字倒贴取的是什么谐音？",
+   "options": [
+    "福到了",
+    "福多了",
+    "福来了",
+    "福满了"
+   ],
+   "answer": 0,
+   "explain": "“福倒了”谐音“福到了”，寓意福气到来。",
+   "entry": "couplets/fu"
+  },
+  {
+   "id": "k32",
+   "question": "绝句每首有几句？",
+   "options": [
+    "四句",
+    "八句",
+    "六句",
+    "十二句"
+   ],
+   "answer": 0,
+   "explain": "绝句每首四句，律诗每首八句。",
+   "entry": "poetry/jueju"
+  },
+  {
+   "id": "k33",
+   "question": "被称为“诗圣”的诗人是谁？",
+   "options": [
+    "杜甫",
+    "李白",
+    "王维",
+    "白居易"
+   ],
+   "answer": 0,
+   "explain": "杜甫诗作沉郁顿挫、关心民生，被称为“诗圣”。",
+   "entry": "poetry/poets"
+  },
+  {
+   "id": "k34",
+   "question": "被称为“诗佛”的诗人是谁？",
+   "options": [
+    "王维",
+    "李白",
+    "杜甫",
+    "孟浩然"
+   ],
+   "answer": 0,
+   "explain": "王维的诗画意浓、禅意深，被称为“诗佛”。",
+   "entry": "poetry/poets"
+  },
+  {
+   "id": "k35",
+   "question": "近体诗一般押什么声的韵？",
+   "options": [
+    "平声",
+    "仄声",
+    "上声",
+    "入声"
+   ],
+   "answer": 0,
+   "explain": "近体诗一般偶数句押韵，而且押平声韵。",
+   "entry": "poetry/tones"
+  },
+  {
+   "id": "k36",
+   "question": "马致远的《天净沙·秋思》被誉为什么？",
+   "options": [
+    "秋思之祖",
+    "婉约之宗",
+    "豪放之首",
+    "诗中有画"
+   ],
+   "answer": 0,
+   "explain": "《天净沙·秋思》寥寥几笔勾勒秋日羁旅图，被誉为“秋思之祖”。",
+   "entry": "poetry/qu"
+  },
+  {
+   "id": "k37",
+   "question": "魏碑以哪个朝代最为兴盛？",
+   "options": [
+    "北魏",
+    "北宋",
+    "东汉",
+    "盛唐"
+   ],
+   "answer": 0,
+   "explain": "魏碑泛指南北朝北方碑刻，以北魏最为兴盛。",
+   "entry": "scripts/weibei"
+  },
+  {
+   "id": "k38",
+   "question": "智永把用坏的笔头埋在一起，称为什么？",
+   "options": [
+    "退笔冢",
+    "铁门限",
+    "洗砚池",
+    "笔架山"
+   ],
+   "answer": 0,
+   "explain": "相传智永用坏的笔头装满几大竹篓，埋在一起称为“退笔冢”。",
+   "entry": "masters/zhiyong"
+  },
+  {
+   "id": "k39",
+   "question": "写字讲究“指实掌虚”，说的是哪方面的要领？",
+   "options": [
+    "执笔",
+    "研墨",
+    "坐姿",
+    "章法"
+   ],
+   "answer": 0,
+   "explain": "“指实掌虚”是执笔的要领：手指稳、掌心空。",
+   "entry": "technique/grip"
+  },
+  {
+   "id": "k40",
+   "question": "落款中写受赠人称呼的部分叫什么？",
+   "options": [
+    "上款",
+    "下款",
+    "单款",
+    "引首"
+   ],
+   "answer": 0,
+   "explain": "上款写受赠人称呼，下款写书写者姓名、时间和地点。",
+   "entry": "technique/signature"
+  },
+  {
+   "id": "k41",
+   "question": "《兰亭序》今天最著名的摹本叫什么？",
+   "options": [
+    "神龙本",
+    "定武本",
+    "宋拓本",
+    "真迹本"
+   ],
+   "answer": 0,
+   "explain": "冯承素摹本卷首钤有“神龙”小印，被称为“神龙本”。",
+   "entry": "works/lanting-xu"
+  },
+  {
+   "id": "k42",
+   "question": "《曹全碑》是什么书体？",
+   "options": [
+    "隶书",
+    "楷书",
+    "行书",
+    "篆书"
+   ],
+   "answer": 0,
+   "explain": "《曹全碑》是东汉隶书，秀美飘逸。",
+   "entry": "works/caoquan-bei"
+  },
+  {
+   "id": "k43",
+   "question": "石鼓文属于哪种书体？",
+   "options": [
+    "大篆",
+    "小篆",
+    "隶书",
+    "楷书"
+   ],
+   "answer": 0,
+   "explain": "石鼓文是大篆的代表，上承金文，下启小篆。",
+   "entry": "works/shigu-wen"
+  },
+  {
+   "id": "k44",
+   "question": "传统印泥的主要颜料是什么？",
+   "options": [
+    "朱砂",
+    "赭石",
+    "胭脂",
+    "藤黄"
+   ],
+   "answer": 0,
+   "explain": "传统印泥以朱砂、艾绒和蓖麻油等调制而成。",
+   "entry": "seals/inkpad"
+  },
+  {
+   "id": "k45",
+   "question": "因举止癫狂被称为“米颠”的书法家是谁？",
+   "options": [
+    "米芾",
+    "苏轼",
+    "黄庭坚",
+    "蔡襄"
+   ],
+   "answer": 0,
+   "explain": "米芾爱石成痴、举止癫狂，人称“米颠”。",
+   "entry": "masters/mi-fu"
+  }
+ ]
+}

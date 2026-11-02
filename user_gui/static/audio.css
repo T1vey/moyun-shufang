@@ -1,0 +1,37 @@
+/* Existing 墨韵书坊 palette and fonts; compatible with WebKitGTK 2.28. */
+/* Eleven equal mode cards and a compact QR cell; use the existing .mode design. */
+.home-on .home { grid-template-columns:repeat(6,minmax(0,1fr)); }
+.home-qr { grid-column:6; grid-row:2; padding:8px; }
+.home-qr .qr { width:116px; height:116px; }
+.home-qr h2 { margin-bottom:6px; font-size:18px; }
+.home-qr p { margin-top:6px; }
+@media(max-height:520px) { .home-qr .qr { width:88px; height:88px; } .home-qr h2 { font-size:15px; } .home-qr p { margin-top:4px; font-size:12px; } }
+.au-panel { width:98vw; height:96vh; max-width:1200px; }
+.au-body { display:grid; grid-template-columns:276px 1fr; grid-gap:16px; flex:1; min-height:0; padding:12px 18px; }
+.au-library { display:flex; flex-direction:column; min-height:0; }
+.au-tabs { display:flex; margin-bottom:10px; }
+.au-tabs .btn { flex:1; min-height:46px; font-size:19px; }
+.au-tabs .btn + .btn { margin-left:8px; }
+.au-tabs [aria-pressed=true] { background:var(--ink); color:var(--paper); }
+.au-list { overflow-y:auto; min-height:0; flex:1; padding-right:6px; }
+.au-card { display:block; width:100%; text-align:left; margin-bottom:8px; padding:10px 14px; min-height:72px; background:var(--paper); border:1px solid var(--bamboo); border-radius:4px; color:var(--ink); }
+.au-card b { display:block; font:23px var(--brush); }
+.au-card span { display:block; margin-top:5px; font-size:16px; color:var(--text-3); }
+.au-card[aria-pressed=true] { border:2px solid var(--seal); padding:9px 13px; background:#f8e8cf; }
+.au-reading { min-width:0; min-height:0; display:flex; flex-direction:column; background:var(--paper); border:1px solid var(--bamboo); padding:12px 20px; }
+.au-reading h3 { margin:0; text-align:center; font:30px var(--brush); }
+#au-author { text-align:center; color:var(--text-3); font-size:17px; margin:5px 0 8px; }
+.au-text { flex:1; min-height:0; overflow-y:auto; position:relative; padding:0 8px; }
+.au-text p { margin:4px 0; padding:4px 8px; font:25px/1.5 var(--sans); border-left:3px solid transparent; }
+.au-text p.current { background:#f5dfb5; color:var(--seal); border-left-color:var(--seal); }
+#au-source { font-size:13px; line-height:1.4; color:var(--text-3); margin-top:8px; }
+.au-footer { display:block; padding:10px 18px; }
+.au-controls { display:flex; align-items:center; }
+.au-controls .btn { min-height:50px; min-width:106px; margin-right:10px; font-size:22px; }
+#au-progress { margin-left:auto; font:18px var(--sans); white-space:nowrap; }
+.au-volume-row { display:flex; align-items:center; margin-top:8px; font-size:17px; }
+.au-volume-row input { width:180px; margin:0 12px; height:30px; }
+.au-volume-row select { margin-left:20px; padding:5px 10px; font:17px var(--sans); color:var(--ink); background:var(--paper); border:1px solid var(--bamboo); }
+#au-message { margin-left:auto; color:var(--seal); font-size:16px; max-width:360px; }
+.read-along { font-size:17px; white-space:nowrap; margin-right:12px; }
+.read-along input { width:22px; height:22px; vertical-align:middle; }

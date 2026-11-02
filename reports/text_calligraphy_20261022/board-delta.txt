@@ -1,0 +1,7 @@
+TEST_HARNESS_DELTA ['tests/test_calligraphy.py', 'tools/package_text_calligraphy.py']
+----------------------------------------------------------------------
+Ran 1 test in 0.710s
+
+OK
+
+REMOTE_EXIT=0

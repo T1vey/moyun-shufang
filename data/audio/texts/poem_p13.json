@@ -1,0 +1,17 @@
+{
+  "id": "poem_p13",
+  "category": "poem",
+  "title": "登乐游原",
+  "author": "李商隐",
+  "dynasty": "唐",
+  "sentences": [
+    "向晚意不适，",
+    "驱车登古原。",
+    "夕阳无限好，",
+    "只是近黄昏。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>名帖描红工作台</title>
+<style>
+:root{--paper:#f4ecdc;--panel:#fbf7ee;--ink:#1f1a16;--ink2:#6b5e50;--line:#d8c8a6;--seal:#b3261e;--blue:#2f6db5;--ok:#2e7d4f}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--paper);color:var(--ink);font:15px/1.5 "Microsoft YaHei","PingFang SC",sans-serif}
+body{display:grid;grid-template-columns:300px 1fr 280px;grid-template-rows:56px 1fr;height:100vh;overflow:hidden}
+header{grid-column:1/4;display:flex;align-items:center;gap:18px;padding:0 20px;background:var(--ink);color:#f6ecd8}
+header h1{margin:0;font:400 24px "STKaiti","KaiTi",serif;letter-spacing:.12em}
+header .seal{width:34px;height:34px;border-radius:4px;background:var(--seal);color:#fbeee0;display:grid;place-items:center;font:20px "STKaiti","KaiTi",serif}
+header .grow{flex:1}
+#total{font-size:16px}
+#saved{min-width:110px;text-align:right;color:#cfe8d6}
+#saved.err{color:#ffb4a8}
+aside{overflow:auto;background:var(--panel);border-right:1px solid var(--line);padding:12px}
+.work{margin-bottom:16px}
+.work h2{margin:0 0 6px;font:400 18px "STKaiti","KaiTi",serif}
+.work h2 small{font:13px "Microsoft YaHei",sans-serif;color:var(--ink2);margin-left:6px}
+.chars{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.chars button{position:relative;height:52px;border:1px solid var(--line);border-radius:6px;background:#fff;font:26px "STKaiti","KaiTi",serif;color:var(--ink);cursor:pointer}
+.chars button.done{background:#e7f2ea;border-color:#9cc8aa}
+.chars button.cur{outline:3px solid var(--seal);outline-offset:-1px}
+.chars button i{position:absolute;right:3px;bottom:1px;font:11px "Microsoft YaHei",sans-serif;font-style:normal;color:var(--ok)}
+main{position:relative;overflow:hidden;background:#e9dfca;cursor:crosshair;touch-action:none}
+main.pan{cursor:grab}
+canvas{position:absolute;left:0;top:0}
+.side{background:var(--panel);border-left:1px solid var(--line);padding:16px;display:flex;flex-direction:column;gap:12px;overflow:auto}
+.big{display:flex;align-items:center;gap:14px}
+.big b{font:400 72px/1 "STKaiti","KaiTi",serif}
+.big div{font-size:15px;color:var(--ink2)}
+.count{font-size:20px}
+.count b{font-size:30px;color:var(--seal)}
+.btn{display:block;width:100%;height:52px;border:1px solid #b49b70;border-radius:8px;background:#fff;color:var(--ink);font:17px "Microsoft YaHei",sans-serif;cursor:pointer}
+.btn:hover{background:#fff7e6}
+.btn.ink{background:var(--ink);color:#f6ecd8;border-color:var(--ink)}
+.btn.on{background:#e3ecf7;border-color:var(--blue);color:var(--blue)}
+.row{display:flex;gap:8px}.row .btn{flex:1}
+.keys{font-size:13px;color:var(--ink2);line-height:1.9}
+.keys kbd{display:inline-block;min-width:22px;padding:0 5px;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;background:#fff;font:12px Consolas,monospace;text-align:center}
+#empty{position:absolute;inset:0;display:grid;place-items:center;font-size:20px;color:var(--ink2)}
+#empty[hidden]{display:none}
+</style>
+</head>
+<body>
+<header><span class="seal">描</span><h1>名帖描红工作台</h1><span class="grow"></span><span id="total"></span><span id="saved"></span></header>
+<aside id="list"></aside>
+<main id="stage"><canvas id="cv"></canvas><div id="empty">正在读取字图…</div></main>
+<section class="side">
+  <div class="big"><b id="cur-char"></b><div id="cur-info"></div></div>
+  <div class="count">已描 <b id="n-drawn">0</b> 笔 / 标准 <span id="n-std">0</span> 笔</div>
+  <button class="btn" id="undo" type="button">撤销上一笔</button>
+  <button class="btn" id="clear" type="button">清空本字重描</button>
+  <div class="row"><button class="btn" id="prev" type="button">上一字</button><button class="btn ink" id="next" type="button">下一字</button></div>
+  <button class="btn on" id="ghost" type="button">参考笔顺：开</button>
+  <button class="btn" id="fit" type="button">还原视图</button>
+  <div class="keys">
+    <div>按住左键描一笔，松开即保存</div>
+    <div><kbd>Ctrl</kbd>+<kbd>Z</kbd> 撤销　<kbd>←</kbd><kbd>→</kbd> 换字</div>
+    <div>滚轮缩放　按住右键或空格拖动</div>
+    <div><kbd>H</kbd> 参考笔顺开关　<kbd>F</kbd> 还原视图</div>
+  </div>
+</section>
+<script>
+"use strict";
+var $=function(id){return document.getElementById(id);};
+var cv=$("cv"),ctx=cv.getContext("2d"),stage=$("stage");
+var data=null,flat=[],cur=0,img=null,strokes=[],drawing=null,ghost=true,progress={};
+var view={s:1,x:0,y:0},pan=null,space=false,dpr=1;
+var PX=1024;
+
+function key(c){return c.work+"/"+(c.index<10?"0":"")+c.index;}
+function setSaved(text,err){var s=$("saved");s.textContent=text;s.className=err?"err":"";}
+
+function resize(){
+  dpr=window.devicePixelRatio||1;var r=stage.getBoundingClientRect();
+  cv.width=Math.round(r.width*dpr);cv.height=Math.round(r.height*dpr);cv.style.width=r.width+"px";cv.style.height=r.height+"px";
+  draw();
+}
+function fit(){
+  var r=stage.getBoundingClientRect(),s=Math.min(r.width,r.height)*0.94/PX;
+  view={s:s,x:(r.width-PX*s)/2,y:(r.height-PX*s)/2};draw();
+}
+function toImg(e){var r=cv.getBoundingClientRect();return [(e.clientX-r.left-view.x)/view.s,(e.clientY-r.top-view.y)/view.s];}
+
+function arrow(p,q,size,color){
+  var a=Math.atan2(q[1]-p[1],q[0]-p[0]);ctx.fillStyle=color;ctx.beginPath();
+  ctx.moveTo(q[0],q[1]);ctx.lineTo(q[0]-size*Math.cos(a-0.45),q[1]-size*Math.sin(a-0.45));
+  ctx.lineTo(q[0]-size*Math.cos(a+0.45),q[1]-size*Math.sin(a+0.45));ctx.closePath();ctx.fill();
+}
+function path(pts){ctx.beginPath();ctx.moveTo(pts[0][0],pts[0][1]);for(var i=1;i<pts.length;i++)ctx.lineTo(pts[i][0],pts[i][1]);ctx.stroke();}
+function tail(pts){var n=pts.length,j=Math.max(0,n-6);return [pts[j],pts[n-1]];}
+
+function draw(){
+  ctx.setTransform(1,0,0,1,0,0);ctx.clearRect(0,0,cv.width,cv.height);
+  if(!img)return;
+  ctx.setTransform(dpr*view.s,0,0,dpr*view.s,dpr*view.x,dpr*view.y);
+  ctx.fillStyle="#fff";ctx.fillRect(0,0,PX,PX);
+  ctx.drawImage(img,0,0,PX,PX);
+  ctx.lineCap="round";ctx.lineJoin="round";
+  var c=flat[cur],k=1/view.s;
+  if(ghost&&c.auto){
+    c.auto.forEach(function(p,i){
+      if(p.length<2)return;
+      var next=i===strokes.length;
+      ctx.setLineDash(next?[]:[10*k,8*k]);
+      ctx.strokeStyle=next?"rgba(47,109,181,.85)":"rgba(47,109,181,.28)";ctx.lineWidth=(next?5:3)*k;path(p);
+      ctx.setLineDash([]);
+      if(next){
+        var t=tail(p);arrow(t[0],t[1],22*k,"rgba(47,109,181,.9)");
+        ctx.fillStyle="rgba(47,109,181,.9)";ctx.beginPath();ctx.arc(p[0][0],p[0][1],9*k,0,7);ctx.fill();
+      }
+    });
+  }
+  var all=strokes.concat(drawing?[drawing]:[]);
+  all.forEach(function(s,i){
+    var pts=s.points;if(!pts.length)return;
+    ctx.strokeStyle="rgba(214,40,30,.92)";ctx.lineWidth=4*k;
+    if(pts.length>1){path(pts);var t=tail(pts);if(Math.hypot(t[1][0]-t[0][0],t[1][1]-t[0][1])>1)arrow(t[0],t[1],18*k,"rgba(214,40,30,.95)");}
+    ctx.fillStyle="#d6281e";ctx.beginPath();ctx.arc(pts[0][0],pts[0][1],13*k,0,7);ctx.fill();
+    ctx.fillStyle="#fff";ctx.font="bold "+(16*k)+"px Microsoft YaHei";ctx.textAlign="center";ctx.textBaseline="middle";
+    ctx.fillText(String(i+1),pts[0][0],pts[0][1]+k);
+  });
+}
+
+function renderList(){
+  var box=$("list");box.textContent="";var done=0;
+  data.works.forEach(function(w){
+    var sec=document.createElement("div");sec.className="work";
+    var h=document.createElement("h2");h.textContent=w.author+"《"+w.title+"》";var sm=document.createElement("small");sm.textContent=w.script;h.appendChild(sm);sec.appendChild(h);
+    var g=document.createElement("div");g.className="chars";
+    w.chars.forEach(function(c){
+      var b=document.createElement("button");b.type="button";b.textContent=c.char;
+      var n=progress[key(c)]||0;if(n>0){b.className="done";done++;var i=document.createElement("i");i.textContent=n;b.appendChild(i);}
+      if(flat[cur]===c)b.className+=" cur";
+      b.onclick=function(){go(flat.indexOf(c));};g.appendChild(b);
+    });
+    sec.appendChild(g);box.appendChild(sec);
+  });
+  $("total").textContent="已描 "+done+" / "+flat.length+" 字";
+}
+function renderSide(){
+  var c=flat[cur];$("cur-char").textContent=c.char;
+  $("cur-info").textContent=c.author+"《"+c.title+"》 第 "+(c.index+1)+" 字"+(c.written&&c.written!==c.char?"（原迹作「"+c.written+"」）":"");
+  $("n-drawn").textContent=strokes.length;$("n-std").textContent=c.standard;
+}
+
+async function save(){
+  var c=flat[cur];
+  try{
+    var r=await fetch("/api/ann/"+c.work+"/"+c.index,{method:"POST",headers:{"Content-Type":"application/json"},
+      body:JSON.stringify({character:c.char,strokes:strokes})});
+    var d=await r.json();if(!r.ok)throw Error(d.error||"保存失败");
+    progress[key(c)]=strokes.length;setSaved("已保存 "+d.saved.slice(11));renderList();
+  }catch(e){setSaved("保存失败",true);}
+}
+async function go(i){
+  if(i<0||i>=flat.length)return;
+  cur=i;var c=flat[cur];strokes=[];drawing=null;img=null;draw();
+  var im=new Image();im.onload=function(){if(flat[cur]===c){img=im;$("empty").hidden=true;draw();}};im.src=c.image;
+  try{var r=await fetch("/api/ann/"+c.work+"/"+c.index);var d=await r.json();if(flat[cur]===c)strokes=d.strokes||[];}catch(e){}
+  renderSide();renderList();draw();
+}
+
+stage.addEventListener("contextmenu",function(e){e.preventDefault();});
+stage.addEventListener("pointerdown",function(e){
+  if(e.button===2||e.button===1||space){pan={x:e.clientX,y:e.clientY,vx:view.x,vy:view.y};stage.setPointerCapture(e.pointerId);stage.classList.add("pan");return;}
+  if(e.button!==0||!img)return;
+  stage.setPointerCapture(e.pointerId);
+  var p=toImg(e);drawing={points:[[+p[0].toFixed(2),+p[1].toFixed(2),0,+(e.pressure||0.5).toFixed(3)]],t0:performance.now()};draw();
+});
+stage.addEventListener("pointermove",function(e){
+  if(pan){view.x=pan.vx+e.clientX-pan.x;view.y=pan.vy+e.clientY-pan.y;draw();return;}
+  if(!drawing)return;
+  var evs=e.getCoalescedEvents?e.getCoalescedEvents():[e];
+  evs.forEach(function(ev){var p=toImg(ev),last=drawing.points[drawing.points.length-1];
+    if(Math.hypot(p[0]-last[0],p[1]-last[1])<0.6)return;
+    drawing.points.push([+p[0].toFixed(2),+p[1].toFixed(2),Math.round(performance.now()-drawing.t0),+(ev.pressure||0.5).toFixed(3)]);});
+  draw();
+});
+function endStroke(){
+  if(pan){pan=null;stage.classList.remove("pan");return;}
+  if(!drawing)return;var s={points:drawing.points};drawing=null;
+  if(s.points.length<2){draw();return;}
+  strokes.push(s);renderSide();draw();save();
+}
+stage.addEventListener("pointerup",endStroke);stage.addEventListener("pointercancel",endStroke);
+stage.addEventListener("wheel",function(e){
+  e.preventDefault();var r=cv.getBoundingClientRect(),mx=e.clientX-r.left,my=e.clientY-r.top,f=Math.exp(-e.deltaY*0.0015);
+  var s=Math.min(8,Math.max(0.2,view.s*f));f=s/view.s;view.x=mx-(mx-view.x)*f;view.y=my-(my-view.y)*f;view.s=s;draw();
+},{passive:false});
+
+function undo(){if(!strokes.length)return;strokes.pop();renderSide();draw();save();}
+function clearAll(){if(!strokes.length)return;if(!confirm("清空「"+flat[cur].char+"」已描的 "+strokes.length+" 笔？"))return;strokes=[];renderSide();draw();save();}
+function toggleGhost(){ghost=!ghost;var b=$("ghost");b.textContent="参考笔顺："+(ghost?"开":"关");b.className="btn"+(ghost?" on":"");draw();}
+$("undo").onclick=undo;$("clear").onclick=clearAll;$("ghost").onclick=toggleGhost;$("fit").onclick=fit;
+$("prev").onclick=function(){go(cur-1);};$("next").onclick=function(){go(cur+1);};
+window.addEventListener("keydown",function(e){
+  if(e.key===" "){space=true;stage.classList.add("pan");e.preventDefault();return;}
+  if((e.ctrlKey||e.metaKey)&&e.key.toLowerCase()==="z"){e.preventDefault();undo();return;}
+  if(e.key==="ArrowLeft"||e.key==="PageUp"){e.preventDefault();go(cur-1);}
+  else if(e.key==="ArrowRight"||e.key==="PageDown"||e.key==="Enter"){e.preventDefault();go(cur+1);}
+  else if(e.key==="h"||e.key==="H")toggleGhost();
+  else if(e.key==="f"||e.key==="F")fit();
+});
+window.addEventListener("keyup",function(e){if(e.key===" "){space=false;if(!pan)stage.classList.remove("pan");}});
+window.addEventListener("resize",function(){resize();});
+
+(async function(){
+  try{
+    data=await (await fetch("manifest.json",{cache:"no-store"})).json();
+    progress=await (await fetch("/api/progress")).json();
+    data.works.forEach(function(w){w.chars.forEach(function(c){c.work=w.id;c.title=w.title;c.author=w.author;flat.push(c);});});
+    resize();fit();
+    var first=flat.findIndex(function(c){return !progress[key(c)];});
+    go(first<0?0:first);
+  }catch(e){$("empty").textContent="读取失败：请用「启动描红工作台」打开";}
+})();
+</script>
+</body>
+</html>

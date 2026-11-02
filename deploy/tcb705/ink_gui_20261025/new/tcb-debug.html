@@ -1,0 +1,23 @@
+<!doctype html><html lang="zh-CN" class="calm"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>墨韵书坊 设置</title><link rel="stylesheet" href="/static/base.css"><link rel="stylesheet" href="/static/tcb-debug.css"><link rel="stylesheet" href="/static/ink-theme.css?v=ink-20261025-1"></head><body><header><div><h1><span class="brand brush">墨韵书坊</span><span class="header-divider"></span>设置与调试</h1><p id="mode" class="badge">正在读取状态</p></div><button id="back" class="btn">返回用户界面</button></header><main>
+<section id="speed-section" class="speed"><h2><span class="seal">速</span>机械臂速度</h2><p>画线和空中移动使用同一个速度（控制器程序速度百分比，0～100）。保存后立即生效（SDK 控制时，正在绘制的这一幅也会马上改速），不需要重启，已有规划仍然有效。速度越快，转角越容易被削圆、线条越容易抖；请逐档提高，并在旁守着急停。</p><div class="speed-row"><input id="arm-speed-range" type="range" min="0" max="100" step="1" aria-label="机械臂速度滑块"><input id="arm-speed" type="number" min="0" max="100" step="1" aria-label="机械臂速度（%）"><span class="speed-unit">%</span></div><p id="speed-now"></p><div><button id="save-speed" class="btn ink">保存速度</button></div><p id="speed-status"></p></section>
+<section id="calibration" class="calibration"><h2><span class="seal">设</span>绘画区域与落笔标定</h2><p>将笔尖移到绘画区域的两个对角点，分别读取 A、B；移到纸面落笔位置后获取落笔点。采集期间保持机械臂静止，读取按钮不会移动机械臂。</p>
+<div class="fields">
+<label><span>X/A（mm）</span><input id="ax" type="number" step="0.001"></label><label><span>X/B（mm）</span><input id="bx" type="number" step="0.001"></label>
+<label><span>Y/A（mm）</span><input id="ay" type="number" step="0.001"></label><label><span>Y/B（mm）</span><input id="by" type="number" step="0.001"></label>
+<button id="read-a" class="btn">读取A点坐标</button><button id="read-b" class="btn">读取B点坐标</button>
+<p id="range" class="wide range"></p>
+<label><span>机器人 ID</span><input id="robot" type="number" step="1" min="1" max="32"></label><label><span>姿态 U（°）</span><input id="u" type="number" step="0.001"></label>
+<label><span>姿态 V（°）</span><input id="v" type="number" step="0.001"></label><label><span>姿态 W（°）</span><input id="w" type="number" step="0.001"></label>
+<button id="read-landing" class="btn wide">获取落笔点（Z、U、V、W）</button>
+<label><span>落笔 Z（mm）</span><input id="z" type="number" step="0.001"></label><label><span>抬笔高度（mm）</span><input id="lift" type="number" step="0.1" min="0.1"></label>
+<label><span>最后抬笔高度差</span><input id="final-lift" type="number" step="0.1" min="0.1" aria-label="最后抬笔高度差（mm）"></label><label><span>原软件速度（%）</span><input id="speed" type="number" step="1" min="1" max="100"></label>
+</div><p>两点顺序不限，保存时自动计算范围；最后抬笔高度从纸面算起。“原软件速度”只是 ArmVision 导入的记录值，不影响实际执行；实际速度在上方“机械臂速度”中设置。</p>
+<details><summary>控制器连接与坐标选项</summary><div class="fields">
+<label><span>控制器 IP</span><input id="remote-ip" type="text" placeholder="控制器实际 IPv4 地址"></label><label><span>Web 端口</span><input id="web-port" type="number" min="1" max="65535"></label>
+<label><span>板子有线 IP</span><input id="local-ip" type="text" placeholder="与控制器相连的 ZYNQ 网口 IPv4"></label><label><span>SDK 端口</span><input id="sdk-port" type="number" min="1" max="65535"></label>
+<label><span>交换 X/Y</span><select id="swap"><option value="true">是（原软件设置）</option><option value="false">否</option></select></label><label><span>工具 Tool</span><input id="tool" type="number" step="1" min="0"></label>
+<label><span>坐标 Coord</span><input id="coord" type="number" step="1" min="0"></label><label><span>外部工具 Extool</span><input id="extool" type="number" step="1" min="0"></label>
+</div><p>A/B 与落笔点通过原 Web 接口读取；七轴、法兰及工具核对通过 SDK 网口读取。板子有线 IP 必须已配置在实际网卡上，此处保存不会修改网络。控制器未到货时可留空。</p><button id="snapshot" class="btn">保存并只读采集坐标核对样本</button></details>
+<div><button id="refresh" class="btn">重新读取配置</button><button id="save-calibration" class="btn ink">保存标定参数</button></div><p id="calibration-status"></p></section>
+<section><h2><span class="seal">绘</span>规划验证</h2><p id="plan-help">加载标定后按完整绘画范围映射图像。TCP 与本地模型核对完成后才能进行七轴规划。</p><select id="shape" aria-label="验证图形"><option value="square">方形</option><option value="circle">圆形</option><option value="two-strokes">双笔画</option></select><button id="plan" class="btn">生成预测图</button><button id="execute" class="btn">模拟执行</button><button id="stop" class="btn">取消当前任务</button><img id="preview" alt="最终关节轨迹的预测图" hidden><details><summary>高级模型配置</summary><p>TCP、关节零位和动态限制需要独立核对。普通纸面标定使用上方表单。</p><textarea id="config" spellcheck="false" aria-label="天链配置"></textarea><button id="save" class="btn">保存高级配置</button><button id="read" class="btn">只读七轴反馈</button></details></section>
+<section><h2><span class="seal">录</span>任务结果</h2><pre id="result">准备就绪</pre></section></main><script src="/static/tcb-debug.js"></script></body></html>

@@ -1,0 +1,12 @@
+{
+  "date_local": "2026-10-17",
+  "timezone": "Asia/Shanghai",
+  "build_id": "tcb705_r4_fclk1_20261017_r2",
+  "evidence": "user_confirmation_after_software_reboot",
+  "question": "确认实体屏幕颜色、天链设置页读取 A/B 点及落笔点、触摸和返回主界面正常",
+  "user_answer": "颜色、触摸和往返都正常",
+  "physical_display_colors_passed": true,
+  "physical_touch_and_navigation_passed": true,
+  "physical_robot_calibration_performed": false,
+  "physical_robot_motion_performed": false
+}

@@ -1,0 +1,17 @@
+{
+  "id": "poem_p35",
+  "category": "poem",
+  "title": "小池",
+  "author": "杨万里",
+  "dynasty": "宋",
+  "sentences": [
+    "泉眼无声惜细流，",
+    "树阴照水爱晴柔。",
+    "小荷才露尖尖角，",
+    "早有蜻蜓立上头。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

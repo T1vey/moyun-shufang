@@ -1,0 +1,342 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sat Oct 17 15:51:42 2026
+| Host         : DESKTOP-FPGA running 64-bit major release  (build 9200)
+| Command      : report_timing -to [get_ports {{ge_pl_rgmii_td[*]} ge_pl_rgmii_tx_ctl}] -max_paths 5 -file D:/zhiliao/TCB705_ZYNQ-10-15/ZYNQArm/hw/reports/ge_pl/rgmii_tx_timing.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.715ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (falling edge-triggered cell ODDR clocked by gmii_clk_125m_out  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ge_pl_rgmii_tx_ctl
+                            (output port clocked by system_ge_pl_bridge_0_rgmii_tx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             system_ge_pl_bridge_0_rgmii_tx_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            0.000ns  (system_ge_pl_bridge_0_rgmii_tx_clk fall@4.000ns - gmii_clk_125m_out fall@4.000ns)
+  Data Path Delay:        3.177ns  (logic 3.176ns (99.969%)  route 0.001ns (0.031%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           -1.000ns
+  Clock Path Skew:        2.892ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    8.837ns = ( 20.837 - 12.000 ) 
+    Source Clock Delay      (SCD):    6.591ns = ( 10.591 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.645ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gmii_clk_125m_out fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.994     4.994    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.085     5.079 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.704     6.783    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.077     6.860 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884     8.744    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.085     8.829 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.762    10.591    <hidden>
+    OLOGIC_X1Y125        ODDR                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y125        ODDR (Prop_oddr_C_Q)         0.418    11.009 r  <hidden>
+                         net (fo=1, routed)           0.001    11.010    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_tx_ctl_obuf
+    K18                  OBUF (Prop_obuf_I_O)         2.758    13.768 r  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_tx_ctl_obuf_i/O
+                         net (fo=0)                   0.000    13.768    ge_pl_rgmii_tx_ctl
+    K18                                                               r  ge_pl_rgmii_tx_ctl (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock system_ge_pl_bridge_0_rgmii_tx_clk fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.905     4.905    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.077     4.983 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.522     6.504    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.073     6.577 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     8.292    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.077     8.369 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.552     9.920    <hidden>
+    OLOGIC_X1Y147        ODDR (Prop_oddr_C_Q)         0.363    10.283 f  <hidden>
+                         net (fo=1, routed)           0.001    10.284    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/I
+    B20                  OBUF (Prop_obuf_I_O)         2.553    12.837 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txc_obuf_i/O
+                         net (fo=0)                   0.000    12.837    ge_pl_rgmii_txc
+    B20                                                               f  ge_pl_rgmii_txc (OUT)
+                         clock pessimism              0.645    13.483    
+                         output delay                 1.000    14.483    
+  -------------------------------------------------------------------
+                         required time                         14.483    
+                         arrival time                         -13.768    
+  -------------------------------------------------------------------
+                         slack                                  0.715    
+
+Slack (MET) :             0.715ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (falling edge-triggered cell ODDR clocked by gmii_clk_125m_out  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ge_pl_rgmii_td[1]
+                            (output port clocked by system_ge_pl_bridge_0_rgmii_tx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             system_ge_pl_bridge_0_rgmii_tx_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            0.000ns  (system_ge_pl_bridge_0_rgmii_tx_clk fall@4.000ns - gmii_clk_125m_out fall@4.000ns)
+  Data Path Delay:        3.161ns  (logic 3.160ns (99.968%)  route 0.001ns (0.032%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           -1.000ns
+  Clock Path Skew:        2.876ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    8.837ns = ( 20.837 - 12.000 ) 
+    Source Clock Delay      (SCD):    6.607ns = ( 10.607 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.645ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gmii_clk_125m_out fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.994     4.994    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.085     5.079 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.704     6.783    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.077     6.860 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884     8.744    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.085     8.829 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.778    10.607    <hidden>
+    OLOGIC_X1Y148        ODDR                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y148        ODDR (Prop_oddr_C_Q)         0.418    11.025 r  <hidden>
+                         net (fo=1, routed)           0.001    11.026    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txd_obuf[1]
+    C20                  OBUF (Prop_obuf_I_O)         2.742    13.767 r  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/obuf_data[1].rgmii_txd_obuf_i/O
+                         net (fo=0)                   0.000    13.767    ge_pl_rgmii_td[1]
+    C20                                                               r  ge_pl_rgmii_td[1] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock system_ge_pl_bridge_0_rgmii_tx_clk fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.905     4.905    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.077     4.983 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.522     6.504    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.073     6.577 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     8.292    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.077     8.369 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.552     9.920    <hidden>
+    OLOGIC_X1Y147        ODDR (Prop_oddr_C_Q)         0.363    10.283 f  <hidden>
+                         net (fo=1, routed)           0.001    10.284    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/I
+    B20                  OBUF (Prop_obuf_I_O)         2.553    12.837 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txc_obuf_i/O
+                         net (fo=0)                   0.000    12.837    ge_pl_rgmii_txc
+    B20                                                               f  ge_pl_rgmii_txc (OUT)
+                         clock pessimism              0.645    13.483    
+                         output delay                 1.000    14.483    
+  -------------------------------------------------------------------
+                         required time                         14.483    
+                         arrival time                         -13.767    
+  -------------------------------------------------------------------
+                         slack                                  0.715    
+
+Slack (MET) :             0.726ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (falling edge-triggered cell ODDR clocked by gmii_clk_125m_out  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ge_pl_rgmii_td[3]
+                            (output port clocked by system_ge_pl_bridge_0_rgmii_tx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             system_ge_pl_bridge_0_rgmii_tx_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            0.000ns  (system_ge_pl_bridge_0_rgmii_tx_clk fall@4.000ns - gmii_clk_125m_out fall@4.000ns)
+  Data Path Delay:        3.152ns  (logic 3.151ns (99.968%)  route 0.001ns (0.032%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           -1.000ns
+  Clock Path Skew:        2.878ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    8.837ns = ( 20.837 - 12.000 ) 
+    Source Clock Delay      (SCD):    6.605ns = ( 10.605 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.645ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gmii_clk_125m_out fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.994     4.994    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.085     5.079 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.704     6.783    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.077     6.860 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884     8.744    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.085     8.829 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.776    10.605    <hidden>
+    OLOGIC_X1Y141        ODDR                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y141        ODDR (Prop_oddr_C_Q)         0.418    11.023 r  <hidden>
+                         net (fo=1, routed)           0.001    11.024    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txd_obuf[3]
+    D20                  OBUF (Prop_obuf_I_O)         2.733    13.757 r  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/obuf_data[3].rgmii_txd_obuf_i/O
+                         net (fo=0)                   0.000    13.757    ge_pl_rgmii_td[3]
+    D20                                                               r  ge_pl_rgmii_td[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock system_ge_pl_bridge_0_rgmii_tx_clk fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.905     4.905    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.077     4.983 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.522     6.504    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.073     6.577 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     8.292    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.077     8.369 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.552     9.920    <hidden>
+    OLOGIC_X1Y147        ODDR (Prop_oddr_C_Q)         0.363    10.283 f  <hidden>
+                         net (fo=1, routed)           0.001    10.284    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/I
+    B20                  OBUF (Prop_obuf_I_O)         2.553    12.837 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txc_obuf_i/O
+                         net (fo=0)                   0.000    12.837    ge_pl_rgmii_txc
+    B20                                                               f  ge_pl_rgmii_txc (OUT)
+                         clock pessimism              0.645    13.483    
+                         output delay                 1.000    14.483    
+  -------------------------------------------------------------------
+                         required time                         14.483    
+                         arrival time                         -13.757    
+  -------------------------------------------------------------------
+                         slack                                  0.726    
+
+Slack (MET) :             0.726ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (falling edge-triggered cell ODDR clocked by gmii_clk_125m_out  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ge_pl_rgmii_td[2]
+                            (output port clocked by system_ge_pl_bridge_0_rgmii_tx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             system_ge_pl_bridge_0_rgmii_tx_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            0.000ns  (system_ge_pl_bridge_0_rgmii_tx_clk fall@4.000ns - gmii_clk_125m_out fall@4.000ns)
+  Data Path Delay:        3.152ns  (logic 3.151ns (99.968%)  route 0.001ns (0.032%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           -1.000ns
+  Clock Path Skew:        2.878ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    8.837ns = ( 20.837 - 12.000 ) 
+    Source Clock Delay      (SCD):    6.605ns = ( 10.605 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.645ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gmii_clk_125m_out fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.994     4.994    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.085     5.079 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.704     6.783    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.077     6.860 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884     8.744    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.085     8.829 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.776    10.605    <hidden>
+    OLOGIC_X1Y142        ODDR                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y142        ODDR (Prop_oddr_C_Q)         0.418    11.023 r  <hidden>
+                         net (fo=1, routed)           0.001    11.024    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txd_obuf[2]
+    D19                  OBUF (Prop_obuf_I_O)         2.733    13.757 r  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/obuf_data[2].rgmii_txd_obuf_i/O
+                         net (fo=0)                   0.000    13.757    ge_pl_rgmii_td[2]
+    D19                                                               r  ge_pl_rgmii_td[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock system_ge_pl_bridge_0_rgmii_tx_clk fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.905     4.905    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.077     4.983 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.522     6.504    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.073     6.577 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     8.292    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.077     8.369 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.552     9.920    <hidden>
+    OLOGIC_X1Y147        ODDR (Prop_oddr_C_Q)         0.363    10.283 f  <hidden>
+                         net (fo=1, routed)           0.001    10.284    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/I
+    B20                  OBUF (Prop_obuf_I_O)         2.553    12.837 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txc_obuf_i/O
+                         net (fo=0)                   0.000    12.837    ge_pl_rgmii_txc
+    B20                                                               f  ge_pl_rgmii_txc (OUT)
+                         clock pessimism              0.645    13.483    
+                         output delay                 1.000    14.483    
+  -------------------------------------------------------------------
+                         required time                         14.483    
+                         arrival time                         -13.757    
+  -------------------------------------------------------------------
+                         slack                                  0.726    
+
+Slack (MET) :             0.754ns  (required time - arrival time)
+  Source:                 <hidden>
+                            (falling edge-triggered cell ODDR clocked by gmii_clk_125m_out  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Destination:            ge_pl_rgmii_td[0]
+                            (output port clocked by system_ge_pl_bridge_0_rgmii_tx_clk  {rise@0.000ns fall@4.000ns period=8.000ns})
+  Path Group:             system_ge_pl_bridge_0_rgmii_tx_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            0.000ns  (system_ge_pl_bridge_0_rgmii_tx_clk fall@4.000ns - gmii_clk_125m_out fall@4.000ns)
+  Data Path Delay:        3.124ns  (logic 3.123ns (99.968%)  route 0.001ns (0.032%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           -1.000ns
+  Clock Path Skew:        2.878ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    8.837ns = ( 20.837 - 12.000 ) 
+    Source Clock Delay      (SCD):    6.605ns = ( 10.605 - 4.000 ) 
+    Clock Pessimism Removal (CPR):    0.645ns
+  Timing Exception:       MultiCycle Path   Setup -end   0
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock gmii_clk_125m_out fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.994     4.994    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.085     5.079 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.704     6.783    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.077     6.860 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.884     8.744    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.085     8.829 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.776    10.605    <hidden>
+    OLOGIC_X1Y143        ODDR                                         f  <hidden>
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X1Y143        ODDR (Prop_oddr_C_Q)         0.418    11.023 r  <hidden>
+                         net (fo=1, routed)           0.001    11.024    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txd_obuf[0]
+    D18                  OBUF (Prop_obuf_I_O)         2.705    13.729 r  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/obuf_data[0].rgmii_txd_obuf_i/O
+                         net (fo=0)                   0.000    13.729    ge_pl_rgmii_td[0]
+    D18                                                               r  ge_pl_rgmii_td[0] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock system_ge_pl_bridge_0_rgmii_tx_clk fall edge)
+                                                      4.000     4.000 f  
+    PS7_X0Y0             PS7                          0.000     4.000 f  system_i/processing_system7_0/inst/PS7_i/FCLKCLK[2]
+                         net (fo=1, routed)           0.905     4.905    system_i/processing_system7_0/inst/FCLK_CLK_unbuffered[2]
+    BUFGCTRL_X0Y20       BUFG (Prop_bufg_I_O)         0.077     4.983 f  system_i/processing_system7_0/inst/buffer_fclk_clk_2.FCLK_CLK_2_BUFG/O
+                         net (fo=241, routed)         1.522     6.504    system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/clkin
+    MMCME2_ADV_X1Y2      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                      0.073     6.577 f  system_i/ge_pl_bridge/U0/i_system_ge_pl_bridge_0_clocking/mmcm_adv_inst/CLKOUT0
+                         net (fo=1, routed)           1.714     8.292    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/lopt
+    BUFGCTRL_X0Y16       BUFGCTRL (Prop_bufgctrl_I1_O)
+                                                      0.077     8.369 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/O
+                         net (fo=47, routed)          1.552     9.920    <hidden>
+    OLOGIC_X1Y147        ODDR (Prop_oddr_C_Q)         0.363    10.283 f  <hidden>
+                         net (fo=1, routed)           0.001    10.284    system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/I
+    B20                  OBUF (Prop_obuf_I_O)         2.553    12.837 f  system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/rgmii_txc_obuf_i/O
+                         net (fo=0)                   0.000    12.837    ge_pl_rgmii_txc
+    B20                                                               f  ge_pl_rgmii_txc (OUT)
+                         clock pessimism              0.645    13.483    
+                         output delay                 1.000    14.483    
+  -------------------------------------------------------------------
+                         required time                         14.483    
+                         arrival time                         -13.729    
+  -------------------------------------------------------------------
+                         slack                                  0.754    
+
+
+
+

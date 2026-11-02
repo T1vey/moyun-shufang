@@ -1,0 +1,15 @@
+[Unit]
+Description=SO101 GT911 local touch input
+BindsTo=so101-md0700r.service
+After=so101-md0700r.service
+PartOf=so101-md0700r.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/so101-gt911-start
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=8
+
+[Install]
+WantedBy=multi-user.target

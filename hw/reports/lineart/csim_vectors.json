@@ -1,0 +1,202 @@
+[
+  {
+    "name": "random_1x1",
+    "shape": [
+      1,
+      1
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_1536x1",
+    "shape": [
+      1,
+      1536
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_1x1536",
+    "shape": [
+      1536,
+      1
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_65x3",
+    "shape": [
+      3,
+      65
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_17x19",
+    "shape": [
+      19,
+      17
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_64x65",
+    "shape": [
+      65,
+      64
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_127x73",
+    "shape": [
+      73,
+      127
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_1536x64",
+    "shape": [
+      64,
+      1536
+    ],
+    "passes": 1
+  },
+  {
+    "name": "empty",
+    "shape": [
+      31,
+      33
+    ],
+    "passes": 1
+  },
+  {
+    "name": "solid",
+    "shape": [
+      71,
+      77
+    ],
+    "passes": 5
+  },
+  {
+    "name": "checker",
+    "shape": [
+      51,
+      57
+    ],
+    "passes": 1
+  },
+  {
+    "name": "20261002_194317_043321_legacy_b4f67d28.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261002_202121_224468_legacy_3bffa07c.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_185428_498276_legacy_4f02960d.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_214111_285308_legacy_42c3c541.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_214129_313221_legacy_062ba6e7.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_214145_296229_legacy_f97a21f0.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_214314_503835_legacy_e4d6b955.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_215721_992454_legacy_f14d1bc6.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_220153_913102_legacy_dac5cba7.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_220947_074835_legacy_52871452.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261003_222404_049978_legacy_fce2d0fd.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261004_003949_425856_legacy_24958dfa.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261004_173005_190281_seedream_b340d080.png",
+    "shape": [
+      1024,
+      1024
+    ],
+    "passes": 3
+  },
+  {
+    "name": "20261007_214055_014090_seedream_a78a8441.png",
+    "shape": [
+      1024,
+      988
+    ],
+    "passes": 3
+  }
+]

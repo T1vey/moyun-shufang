@@ -1,0 +1,16 @@
+{
+  "repository": "E1pco/Hardware-Accelerated_System_for_IK_Solution_Based_on_LeRobot",
+  "commit": "ab4207c87a4317d835adb914ca9e4db7948e6aa3",
+  "files": {
+    "others/hw_solver_wrapper.py": "43b3b60a3ced7807d3dfa8f24626ac92136105c0ee9f040ce250f3bd7b551015",
+    "others/ik/et.py": "495831d541fdf11029ba33edda17f816b8e41ed34bf6866810cd5574762c565b",
+    "others/ik/utils.py": "5b4419635ab5417f9ffc9f0a29dd87be29f3dd3dcd694ed69cd203c500e82817",
+    "others/ik/robot.py": "64fcb2c54b088e394c47153f05fb9539de226e14526394b55a572309c831e3c6",
+    "others/ik/base.py": "08b893f8e8c9051e5141b1b32ef1e058808a3cfbd6a4cae1b5d76af77ed01e52",
+    "others/ik/solvers.py": "0fab826b6159d39aa22f4fc3c686dee644962e8904eae066770b55dd099336f7",
+    "src/ik_solver_hls/xf_solver_lm_so101.cpp": "6b2ef109672d90d06657e1074709f58547c6748533f0d2c785f4417b467c95f4",
+    "src/ik_solver_hls/lm_solver_so101.hpp": "774d4c5b926186f3eb2f61b070f8266a50153431bfe3feec24664c7946c2bf60",
+    "src/ik_solver_hls/xf_solver_L1.hpp": "1d3bf6d4afbfa773c02e5e07084a184e9db56659be06c0763bc7810e5a6d5fc1",
+    "README.md": "fc80ca1c62feb7b84636445da50f9218275029abf13c833514e226ea140f7765"
+  }
+}

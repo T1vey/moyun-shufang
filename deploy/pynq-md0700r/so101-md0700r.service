@@ -1,0 +1,16 @@
+[Unit]
+Description=SO101 userspace MD0700R display
+BindsTo=so101-workbench.service so101-platform.service
+After=so101-workbench.service so101-platform.service
+PartOf=so101-workbench.service so101-platform.service
+Wants=so101-gt911.service
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/so101-md0700r-start
+Restart=on-failure
+RestartSec=3
+TimeoutStopSec=infinity
+
+[Install]
+WantedBy=multi-user.target

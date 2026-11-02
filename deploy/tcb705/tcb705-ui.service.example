@@ -1,0 +1,19 @@
+[Unit]
+Description=TCB705 drawing UI and offline ZYNQ planner
+After=network.target
+
+[Service]
+Type=simple
+User=xilinx
+WorkingDirectory=/home/xilinx/ZYNQArm
+Environment=OPENBLAS_NUM_THREADS=1
+Environment=OMP_NUM_THREADS=1
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/home/xilinx/ZYNQArm/.venv/bin/python -B scripts/run_tcb705.py --simulation --no-browser --data-dir /home/xilinx/tcb705_data --secrets-file /home/xilinx/.config/so101/secrets.local.json
+Restart=on-failure
+RestartSec=5
+KillMode=control-group
+TimeoutStopSec=15
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,28 @@
+/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/pl_server/device.py:79: UserWarning: No devices found, is the XRT environment sourced?
+  warnings.warn(
+LINEART_ATTACH_PREPARE {'ready': False, 'reason': 'No Devices Found', 'seconds': 8.634402446999957}
+======================================================================
+FAIL: test_panel_request_timeout_and_late_reply_never_retry (tests.test_calligraphy.PresetTests)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/xilinx/tcb705_releases/20261022_text300_r1/ZYNQArm/tests/test_calligraphy.py", line 277, in test_panel_request_timeout_and_late_reply_never_retry
+    self.assertEqual(result.returncode,0,result.stderr)
+AssertionError: 1 != 0 : [eval]:4
+const context={window:{},setTimeout,clearTimeout,AbortController,
+                                                 ^
+
+ReferenceError: AbortController is not defined
+    at [eval]:4:50
+    at Script.runInThisContext (vm.js:120:18)
+    at Object.runInThisContext (vm.js:309:38)
+    at Object.<anonymous> ([eval]-wrapper:10:26)
+    at Module._compile (internal/modules/cjs/loader.js:999:30)
+    at evalScript (internal/process/execution.js:94:25)
+    at internal/main/eval_string.js:23:3
+
+
+----------------------------------------------------------------------
+Ran 111 tests in 635.519s
+
+FAILED (failures=1)
+/usr/lib/python3.8/asyncio/base_events.py:654: ResourceWarning: unclosed event loop <_UnixSelectorEventLoop running=False closed=False debug=False>

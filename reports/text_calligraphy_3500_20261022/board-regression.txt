@@ -1,0 +1,8 @@
+/usr/local/share/pynq-venv/lib/python3.8/site-packages/pynq/pl_server/device.py:79: UserWarning: No devices found, is the XRT environment sourced?
+  warnings.warn(
+LINEART_ATTACH_PREPARE {'ready': False, 'reason': 'No Devices Found', 'seconds': 8.483743507999861}
+----------------------------------------------------------------------
+Ran 112 tests in 495.772s
+
+OK
+/usr/lib/python3.8/asyncio/base_events.py:654: ResourceWarning: unclosed event loop <_UnixSelectorEventLoop running=False closed=False debug=False>

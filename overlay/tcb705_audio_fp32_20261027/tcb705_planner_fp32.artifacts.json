@@ -1,0 +1,8 @@
+{
+  "abi": "tcb705-planner-fp32-v2",
+  "files": {
+    "tcb705_planner_fp32.bit": "2ebbff00ee4ebf270817fa4e1b19af4807d46ba303d13522a6991e1fcf746dfc",
+    "tcb705_planner_fp32.hwh": "9154cf50f95551dae71f951e6c941690ce050e279bbe6c7ec6ba6f7101a4e2ee",
+    "tcb705_planner_fp32.registers.json": "54f70314a57b1fc31876165c415e074a20e070e619bc4aaf6c9048d103529ebe"
+  }
+}

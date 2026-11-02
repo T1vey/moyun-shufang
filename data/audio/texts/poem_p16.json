@@ -1,0 +1,17 @@
+{
+  "id": "poem_p16",
+  "category": "poem",
+  "title": "望庐山瀑布",
+  "author": "李白",
+  "dynasty": "唐",
+  "sentences": [
+    "日照香炉生紫烟，",
+    "遥看瀑布挂前川。",
+    "飞流直下三千尺，",
+    "疑是银河落九天。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

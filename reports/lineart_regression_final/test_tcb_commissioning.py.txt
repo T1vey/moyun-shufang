@@ -1,0 +1,21 @@
+test_bad_holdout_not_hidden_by_base_fit (test_tcb_commissioning.CoordinateTests.test_bad_holdout_not_hidden_by_base_fit) ... ok
+test_controller_base_transform_applies_to_fk_ik_jacobian_and_frames (test_tcb_commissioning.CoordinateTests.test_controller_base_transform_applies_to_fk_ik_jacobian_and_frames) ... ok
+test_invalid_base_transform_rejected (test_tcb_commissioning.CoordinateTests.test_invalid_base_transform_rejected) ... ok
+test_known_base_and_tool_recovered_without_verification_flags (test_tcb_commissioning.CoordinateTests.test_known_base_and_tool_recovered_without_verification_flags) ... ok
+test_moving_or_changed_context_is_rejected (test_tcb_commissioning.CoordinateTests.test_moving_or_changed_context_is_rejected) ... ok
+test_pivot_degenerate_and_shifted_contact_are_rejected (test_tcb_commissioning.CoordinateTests.test_pivot_degenerate_and_shifted_contact_are_rejected) ... ok
+test_pivot_recovers_translation_and_not_orientation (test_tcb_commissioning.CoordinateTests.test_pivot_recovers_translation_and_not_orientation) ... ok
+test_pose_convention_must_be_explicit (test_tcb_commissioning.CoordinateTests.test_pose_convention_must_be_explicit) ... ok
+test_repeated_pose_is_not_mapping_evidence (test_tcb_commissioning.CoordinateTests.test_repeated_pose_is_not_mapping_evidence) ... ok
+test_wrong_joint_sign_fails_holdout (test_tcb_commissioning.CoordinateTests.test_wrong_joint_sign_fails_holdout) ... ok
+test_wrong_tcp_is_detected_separately_from_mapping (test_tcb_commissioning.CoordinateTests.test_wrong_tcp_is_detected_separately_from_mapping) ... ok
+test_config_allows_unset_addresses_but_not_invalid_values (test_tcb_commissioning.NetworkTests.test_config_allows_unset_addresses_but_not_invalid_values) ... ok
+test_missing_address_and_wrong_interface_rejected (test_tcb_commissioning.NetworkTests.test_missing_address_and_wrong_interface_rejected) ... ok
+test_route_checks_without_network_mutations (test_tcb_commissioning.NetworkTests.test_route_checks_without_network_mutations) ... ok
+test_unicast_and_two_different_addresses_required (test_tcb_commissioning.NetworkTests.test_unicast_and_two_different_addresses_required) ... ok
+test_native_stream_failure_injection (test_tcb_commissioning.StreamTests.test_native_stream_failure_injection) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.115s
+
+OK

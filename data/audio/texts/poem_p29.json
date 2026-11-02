@@ -1,0 +1,17 @@
+{
+  "id": "poem_p29",
+  "category": "poem",
+  "title": "泊船瓜洲",
+  "author": "王安石",
+  "dynasty": "宋",
+  "sentences": [
+    "京口瓜洲一水间，",
+    "钟山只隔数重山。",
+    "春风又绿江南岸，",
+    "明月何时照我还。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

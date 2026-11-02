@@ -1,0 +1,9 @@
+test_faulted_session_keeps_dma_owner_but_uses_cpu (test_tcb_session.SessionTests.test_faulted_session_keeps_dma_owner_but_uses_cpu) ... ok
+test_fork_cannot_attach_or_release_parent_session (test_tcb_session.SessionTests.test_fork_cannot_attach_or_release_parent_session) ... ok
+test_metrics_are_per_plan_not_lifetime (test_tcb_session.SessionTests.test_metrics_are_per_plan_not_lifetime) ... ok
+test_reuses_single_owned_core_and_closes_once (test_tcb_session.SessionTests.test_reuses_single_owned_core_and_closes_once) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.002s
+
+OK

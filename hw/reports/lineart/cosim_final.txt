@@ -1,0 +1,652 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Tue Oct 20 01:55:03 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+
+INFO: [HLS 200-2005] Using work_dir C:/fpga_build/tcb705_lineart_20261020/hls 
+
+INFO: [HLS 200-2006] Changing directory to C:/fpga_build/tcb705_lineart_20261020
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying ini 'syn.file=tcb_lineart_accel.cpp' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/fpga_build/tcb705_lineart_20261020/src/tcb_lineart_accel.cpp' to the project
+
+INFO: [HLS 200-1465] Applying ini 'syn.file=tcb_lineart_accel.h' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(6)
+
+INFO: [HLS 200-10] Adding design file 'C:/fpga_build/tcb705_lineart_20261020/src/tcb_lineart_accel.h' to the project
+
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_lineart.cpp' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(7)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga_build/tcb705_lineart_20261020/src/tb_lineart.cpp' to the project
+
+INFO: [HLS 200-1465] Applying ini 'tb.file=lineart_vectors.bin' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(8)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga_build/tcb705_lineart_20261020/src/lineart_vectors.bin' to the project
+
+INFO: [HLS 200-1465] Applying ini 'syn.top=tcb_lineart_accel' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(4)
+
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(1)
+
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(9)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12%' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(10)
+
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.2ns.
+
+INFO: [HLS 200-1465] Applying ini 'cosim.rtl=verilog' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(16)
+
+INFO: [HLS 200-1465] Applying ini 'cosim.tool=xsim' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(17)
+
+INFO: [HLS 200-1465] Applying ini 'csim.clean=true' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(12)
+
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=false' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(13)
+
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(14)
+
+INFO: [HLS 200-1465] Applying ini 'syn.compile.pipeline_loops=0' from C:/fpga_build/tcb705_lineart_20261020/src/lineart_2024.cfg(11)
+
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+
+   Build using "D:/Xilinx/Vitis/2024.2/vcxx/libexec/clang++"
+   Compiling tb_lineart.cpp_pre.cpp.tb.cpp
+   Compiling apatb_tcb_lineart_accel.cpp
+   Compiling tcb_lineart_accel.cpp_pre.cpp.tb.cpp
+   Compiling apatb_tcb_lineart_accel_ir.ll
+   Generating cosim.tv.exe
+INFO: [COSIM 212-302] Starting C TB testing ... 
+
+LINEART_PASS case=0 size=1x1 passes=1
+
+LINEART_PASS case=1 size=65x3 passes=1
+
+LINEART_PASS case=2 size=17x19 passes=1
+
+LINEART_PASS case=3 size=1536x17 passes=1
+
+LINEART_PASS case=4 size=17x1536 passes=1
+
+LINEART_PASS case=5 size=33x31 passes=1
+
+LINEART_PASS case=6 size=77x71 passes=10
+
+LINEART_PASS case=7 size=96x96 passes=1
+
+LINEART_PASS case=8 size=96x96 passes=1
+
+LINEART_PASS case=9 size=96x96 passes=1
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 26112
+
+INFO: [COSIM 212-333] Generating C post check test bench ...
+
+INFO: [COSIM 212-12] Generating RTL test bench ...
+
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+
+INFO: [COSIM 212-323] Starting verilog simulation. 
+
+INFO: [COSIM 212-15] Starting XSIM ...
+
+
+
+C:\fpga_build\tcb705_lineart_20261020\hls\hls\sim\verilog>set PATH= 
+
+
+
+C:\fpga_build\tcb705_lineart_20261020\hls\hls\sim\verilog>call D:/Xilinx/Vivado/2024.2/bin/xelab xil_defaultlib.apatb_tcb_lineart_accel_top glbl -Oenable_linking_all_libraries  -prj tcb_lineart_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm  -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib "ieee_proposed=./ieee_proposed" -s tcb_lineart_accel  
+
+Vivado Simulator v2024.2.0
+
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+Running: D:/Xilinx/Vivado/2024.2/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_tcb_lineart_accel_top glbl -Oenable_linking_all_libraries -prj tcb_lineart_accel.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims_ver -L xpm -L floating_point_v7_0_24 -L floating_point_v7_1_19 --lib ieee_proposed=./ieee_proposed -s tcb_lineart_accel 
+
+Multi-threading is on. Using 22 slave threads.
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/glbl.v" into library work
+
+INFO: [VRFC 10-311] analyzing module glbl
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/AESL_axi_master_gmem.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module AESL_axi_master_gmem
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/AESL_axi_slave_control.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_control
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/AESL_deadlock_detection_unit.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detect_unit
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/AESL_deadlock_detector.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_detector
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/AESL_deadlock_report_unit.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module AESL_deadlock_report_unit
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel.autotb.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module apatb_tcb_lineart_accel_top
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_bitselect_1ns_64ns_32ns_1_1_1.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_bitselect_1ns_64ns_32ns_1_1_1
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_bitset_64ns_64ns_32ns_1ns_64_1_1.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_bitset_64ns_64ns_32ns_1ns_64_1_1
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_cascade.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_cascade
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_control_s_axi.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_control_s_axi
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_entry_proc.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_entry_proc
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_fifo_w11_d2_S.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w11_d2_S
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w11_d2_S_ShiftReg
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_fifo_w11_d3_S.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w11_d3_S
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w11_d3_S_ShiftReg
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_fifo_w1_d8_S.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w1_d8_S
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w1_d8_S_ShiftReg
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_fifo_w22_d10_S.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w22_d10_S
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w22_d10_S_ShiftReg
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_fifo_w64_d11_S.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w64_d11_S
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_fifo_w64_d11_S_ShiftReg
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_flow_control_loop_pipe_sequential_init.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_flow_control_loop_pipe_sequential_init
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_gmem_m_axi.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_load
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_store
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_read
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_write
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_burst_converter
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_throttle
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_reg_slice
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_fifo
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_srl
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_gmem_m_axi_mem
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_mul_11ns_11ns_22_1_1.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_mul_11ns_11ns_22_1_1
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_pack.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_pack
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_pack_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_pack_Pipeline_VITIS_LOOP_14_1_VITIS_LOOP_16_2
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_sparsemux_17_3_1_1_1.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_sparsemux_17_3_1_1_1
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_0_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_0_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_0_Pipeline_VITIS_LOOP_44_4_rows_RAM_T2P_BRAM_1R1W.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_0_Pipeline_VITIS_LOOP_44_4_rows_RAM_T2P_BRAM_1R1W
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_0_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_0_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_1_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_1_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_1_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_1_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_2_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_2_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_2_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_2_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_3_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_3_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_3_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_3_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_4_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_4_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_4_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_4_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_5_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_5_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_5_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_5_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_6_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_6_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_6_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_6_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_7_Pipeline_VITIS_LOOP_44_4.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_7_Pipeline_VITIS_LOOP_44_4
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_thin_stage_7_s.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_thin_stage_7_s
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_unpack.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_unpack
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel_unpack_Pipeline_VITIS_LOOP_5_1_VITIS_LOOP_7_2.v" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module tcb_lineart_accel_unpack_Pipeline_VITIS_LOOP_5_1_VITIS_LOOP_7_2
+
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/dataflow_monitor.sv" into library xil_defaultlib
+
+INFO: [VRFC 10-311] analyzing module dataflow_monitor
+
+Starting static elaboration
+
+Pass Through NonSizing Optimizer
+
+Completed static elaboration
+
+Starting simulation data flow analysis
+
+Completed simulation data flow analysis
+
+Time Resolution for simulation is 1ps
+
+Compiling package xil_defaultlib.$unit_dataflow_monitor_sv
+
+Compiling module xil_defaultlib.tcb_lineart_accel_entry_proc
+
+Compiling module xil_defaultlib.tcb_lineart_accel_bitselect_1ns_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_flow_control_l...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_unpack_Pipelin...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_unpack
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_0_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_0_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_0_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_1_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_1_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_2_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_2_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_3_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_3_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_4_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_4_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_5_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_5_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_6_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_6_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_7_P...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_thin_stage_7_s
+
+Compiling module xil_defaultlib.tcb_lineart_accel_bitset_64ns_64...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_pack_Pipeline_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_pack
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w64_d11_S...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w64_d11_S...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w11_d3_S_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w11_d3_S_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w1_d8_S_S...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w1_d8_S_d...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w22_d10_S...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w22_d10_S...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w11_d2_S_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_fifo_w11_d2_S_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_cascade
+
+Compiling module xil_defaultlib.tcb_lineart_accel_control_s_axi
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_srl...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_mem...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_srl...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_srl...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_sto...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_mem...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_loa...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_reg...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_bur...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_srl...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_reg...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_srl...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_srl...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_fif...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_thr...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_reg...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_wri...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_reg...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi_rea...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_gmem_m_axi(CON...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_mul_11ns_11ns_...
+
+Compiling module xil_defaultlib.tcb_lineart_accel_sparsemux_17_3...
+
+Compiling module xil_defaultlib.tcb_lineart_accel
+
+Compiling module xil_defaultlib.AESL_axi_master_gmem
+
+Compiling module xil_defaultlib.AESL_axi_slave_control
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detect_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_report_unit(PROC_N...
+
+Compiling module xil_defaultlib.AESL_deadlock_detector_2
+
+Compiling module xil_defaultlib.df_fifo_intf_default
+
+Compiling module xil_defaultlib.df_process_intf_default
+
+Compiling module xil_defaultlib.nodf_module_intf_default
+
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=5)
+
+Compiling module xil_defaultlib.seq_loop_intf(FSM_WIDTH=4)
+
+Compiling module xil_defaultlib.upc_loop_intf(FSM_WIDTH=1)
+
+Compiling module xil_defaultlib.dataflow_monitor_1
+
+Compiling module xil_defaultlib.apatb_tcb_lineart_accel_top
+
+Compiling module work.glbl
+
+Built simulation snapshot tcb_lineart_accel
+
+
+
+****** xsim v2024.2 (64-bit)
+
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+
+  **** Start of session at: Tue Oct 20 01:56:29 2026
+
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+
+
+source xsim.dir/tcb_lineart_accel/xsim_script.tcl
+
+# xsim {tcb_lineart_accel} -autoloadwcfg -tclbatch {tcb_lineart_accel.tcl}
+
+Time resolution is 1 ps
+
+source tcb_lineart_accel.tcl
+
+## run all
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+
+//
+
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+
+////////////////////////////////////////////////////////////////////////////////////
+
+// RTL Simulation : 0 / 20 [0.00%] @ "125000"
+
+// RTL Simulation : 1 / 20 [0.00%] @ "2875000"
+
+// RTL Simulation : 2 / 20 [0.00%] @ "12615000"
+
+// RTL Simulation : 3 / 20 [0.00%] @ "20735000"
+
+// RTL Simulation : 4 / 20 [0.00%] @ "407575000"
+
+// RTL Simulation : 5 / 20 [0.00%] @ "764085000"
+
+// RTL Simulation : 6 / 20 [0.00%] @ "780755000"
+
+// RTL Simulation : 7 / 20 [0.00%] @ "848005000"
+
+// RTL Simulation : 8 / 20 [0.00%] @ "915065000"
+
+// RTL Simulation : 9 / 20 [0.00%] @ "982125000"
+
+// RTL Simulation : 10 / 20 [0.00%] @ "1049185000"
+
+// RTL Simulation : 11 / 20 [0.00%] @ "1116245000"
+
+// RTL Simulation : 12 / 20 [0.00%] @ "1183305000"
+
+// RTL Simulation : 13 / 20 [0.00%] @ "1250365000"
+
+// RTL Simulation : 14 / 20 [0.00%] @ "1317425000"
+
+// RTL Simulation : 15 / 20 [0.00%] @ "1384485000"
+
+// RTL Simulation : 16 / 20 [0.00%] @ "1451545000"
+
+// RTL Simulation : 17 / 20 [0.00%] @ "1559025000"
+
+// RTL Simulation : 18 / 20 [0.00%] @ "1666315000"
+
+// RTL Simulation : 19 / 20 [0.00%] @ "1773605000"
+
+// RTL Simulation : 20 / 20 [100.00%] @ "1774255000"
+
+////////////////////////////////////////////////////////////////////////////////////
+
+$finish called at time : 1774315 ns : File "C:/fpga_build/tcb705_lineart_20261020/hls/hls/sim/verilog/tcb_lineart_accel.autotb.v" Line 483
+
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:19 . Memory (MB): peak = 200.395 ; gain = 0.000
+
+## quit
+
+INFO: xsimkernel Simulation Memory Usage: 93820 KB (Peak: 93820 KB), Simulation CPU Usage: 19046 ms
+
+INFO: [Common 17-206] Exiting xsim at Tue Oct 20 01:56:50 2026...
+
+INFO: [COSIM 212-316] Starting C post checking ...
+
+LINEART_PASS case=0 size=1x1 passes=1
+
+LINEART_PASS case=1 size=65x3 passes=1
+
+LINEART_PASS case=2 size=17x19 passes=1
+
+LINEART_PASS case=3 size=1536x17 passes=1
+
+LINEART_PASS case=4 size=17x1536 passes=1
+
+LINEART_PASS case=5 size=33x31 passes=1
+
+LINEART_PASS case=6 size=77x71 passes=10
+
+LINEART_PASS case=7 size=96x96 passes=1
+
+LINEART_PASS case=8 size=96x96 passes=1
+
+LINEART_PASS case=9 size=96x96 passes=1
+
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+
+INFO: [HLS 200-112] Total CPU user time: 7 seconds. Total CPU system time: 6 seconds. Total elapsed time: 102.656 seconds; peak allocated memory: 691.066 MB.
+
+INFO: [vitis-run 60-791] Total elapsed time: 0h 1m 48s

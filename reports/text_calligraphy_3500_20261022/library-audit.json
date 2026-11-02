@@ -1,0 +1,13 @@
+{
+  "count": 3500,
+  "strokes": 33959,
+  "legacy_retained_unchanged": 300,
+  "source_order_and_direction_matches": 3500,
+  "missing": 0,
+  "database_bytes": 27697152,
+  "database_integrity": "ok",
+  "jsonl_and_db_equal": true,
+  "native_sample_count": 53,
+  "version": "common3500-20261022-9c3b110f7218",
+  "physical_motion": false
+}

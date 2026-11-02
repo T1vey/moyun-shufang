@@ -1,0 +1,23 @@
+{
+  "source_project": "D:\\zhiliao\\work107\\SO101_FPGA_ArmSystem-105\\SO101_FPGA_ArmSystem",
+  "sdk_version": "V2.4.1",
+  "host_minimum": "1.9.82",
+  "sdk_redistribution": "Vendor binary; original license/authorization applies.",
+  "imported": {
+    "robots/tcb705/model_source/tcb705.urdf": "7fe37cbc79ccb10a4701f3f4305cdca662ae3483fb2108be29d8ce4ba988ac11",
+    "robots/tcb705/model_source/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "vendor/huacheng/include/export.h": "1752cdf51dbe1b0d95a67d821fb1c7163c356e1dd3ebf4e0a1f342ffef76439e",
+    "vendor/huacheng/include/io.h": "12dd4f223f342e406b3d47c7f2ed0cc0cc1b9f207de1d81207faa40427d23fce",
+    "vendor/huacheng/include/not_export.h": "29b807b51c7502d96ec9b034825e0a0c37228971dcd87302b595f1061f9be920",
+    "vendor/huacheng/include/robot.h": "8812e77fd224378af6d89274d1644c344e85eada32ad3ee1ab3aae7165b32b03",
+    "vendor/huacheng/include/xoip.h": "89c53d7b8bf6f64fcb2e0187801cfc476246614e73fc2daa4d65e39fbaec445f",
+    "vendor/huacheng/armhf/libxoip.so": "adcacf19bc8efe1666b4c86d5a527836bebda67d9130c356fced9d8aeb49567e"
+  },
+  "armvision_calibration": {
+    "path": "D:\\ArmVision2.0_User\\backend\\config\\settings.yaml",
+    "sha256": "9f610438389a88b5ceb8f51b85326ed5bf3ec77487416424f9f2570830d2b1ac",
+    "imported_fields_only": true,
+    "physical_setup_verified": false,
+    "note": "原文件保存的是排序后的范围；初始 A/B 按最小/最大角显示。重新采集保留两点原始值。"
+  }
+}

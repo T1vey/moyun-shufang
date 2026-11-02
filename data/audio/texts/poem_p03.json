@@ -1,0 +1,17 @@
+{
+  "id": "poem_p03",
+  "category": "poem",
+  "title": "登鹳雀楼",
+  "author": "王之涣",
+  "dynasty": "唐",
+  "sentences": [
+    "白日依山尽，",
+    "黄河入海流。",
+    "欲穷千里目，",
+    "更上一层楼。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

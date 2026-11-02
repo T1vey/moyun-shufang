@@ -1,0 +1,17 @@
+{
+  "id": "poem_p25",
+  "category": "poem",
+  "title": "清明",
+  "author": "杜牧",
+  "dynasty": "唐",
+  "sentences": [
+    "清明时节雨纷纷，",
+    "路上行人欲断魂。",
+    "借问酒家何处有，",
+    "牧童遥指杏花村。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

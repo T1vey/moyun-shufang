@@ -1,0 +1,17 @@
+{
+  "id": "poem_p09",
+  "category": "poem",
+  "title": "画",
+  "author": "王维",
+  "dynasty": "唐",
+  "sentences": [
+    "远看山有色，",
+    "近听水无声。",
+    "春去花还在，",
+    "人来鸟不惊。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

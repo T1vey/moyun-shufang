@@ -1,0 +1,32 @@
+[
+ {
+  "run": 0,
+  "wall_s": 13.662,
+  "nodes": 4744,
+  "frames": 177866,
+  "planning_s": 12.530885921999982,
+  "ik_cpu_batch_s": 0.4972235519999231,
+  "ik_pl_batch_s": 0.0,
+  "ik_cpu_batches": 75,
+  "pl_batch_starts": 0,
+  "geometry_fk_batches": 42,
+  "geometry_probe_samples": 42687,
+  "ik_backend": "ZYNQ_CPU_NATIVE_7R_BATCH",
+  "duration_s": 711.4564058270407
+ },
+ {
+  "run": 1,
+  "wall_s": 11.357,
+  "nodes": 4744,
+  "frames": 177866,
+  "planning_s": 10.042826483999988,
+  "ik_cpu_batch_s": 0.5072504769999568,
+  "ik_pl_batch_s": 0.0,
+  "ik_cpu_batches": 75,
+  "pl_batch_starts": 0,
+  "geometry_fk_batches": 42,
+  "geometry_probe_samples": 42687,
+  "ik_backend": "ZYNQ_CPU_NATIVE_7R_BATCH",
+  "duration_s": 711.4564058270407
+ }
+]

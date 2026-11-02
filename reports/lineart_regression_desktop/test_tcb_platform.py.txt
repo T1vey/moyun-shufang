@@ -1,0 +1,13 @@
+test_busy_lease_prevents_even_metadata_attachment (test_tcb_platform.PlatformTests.test_busy_lease_prevents_even_metadata_attachment) ... ok
+test_downloader_leases_before_download_and_closes_buffers (test_tcb_platform.PlatformTests.test_downloader_leases_before_download_and_closes_buffers) ... ok
+test_five_axis_receipt_cannot_attach_seven_axis (test_tcb_platform.PlatformTests.test_five_axis_receipt_cannot_attach_seven_axis) ... ok
+test_fresh_process_attaches_explicit_ddr_without_download (test_tcb_platform.PlatformTests.test_fresh_process_attaches_explicit_ddr_without_download) ... ok
+test_missing_or_ambiguous_ddr_releases_idle_lease (test_tcb_platform.PlatformTests.test_missing_or_ambiguous_ddr_releases_idle_lease) ... ok
+test_missing_receipt_prevents_pynq_and_lease (test_tcb_platform.PlatformTests.test_missing_receipt_prevents_pynq_and_lease) ... ok
+test_physical_clock_must_match_sealed_hardware (test_tcb_platform.PlatformTests.test_physical_clock_must_match_sealed_hardware) ... ok
+test_reset_polarity_and_wiring_are_checked_before_mmio (test_tcb_platform.PlatformTests.test_reset_polarity_and_wiring_are_checked_before_mmio) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.014s
+
+OK

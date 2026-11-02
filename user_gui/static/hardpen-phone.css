@@ -1,0 +1,11 @@
+/* 手机硬笔 (2026-10-29): the third tab, styled like 毛笔写字. */
+#hardpen-writing[hidden] { display:none!important; }
+#hp-text { display:block; box-sizing:border-box; width:100%; margin:10px 0 18px; padding:14px; resize:vertical; font-size:21px; line-height:1.6; color:var(--sugar-hi); background:var(--bg-1); border:1px solid var(--line-2); border-radius:12px; }
+#hp-count { float:right; color:var(--text-2); font-size:13px; }
+#hp-characters { line-height:2; letter-spacing:4px; overflow-wrap:anywhere; font-size:17px; max-height:320px; overflow-y:auto; }
+#hp-preview-btn, #hp-submit, #hp-next, #hp-stop, #hp-new { width:100%; margin:8px 0; }
+#hp-page { color:var(--sugar-hi); background:var(--bg-1); border:1px solid var(--line); border-radius:6px; padding:6px; }
+#hp-canvas { display:block; width:100%; border:1px solid var(--line-2); border-radius:12px; background:#211910; }
+#hp-saved { color:var(--sugar-hi); }
+#hp-stop { color:#ffb2a6; border-color:rgba(201,58,44,.6); }
+#hp-error { margin:14px 0; }

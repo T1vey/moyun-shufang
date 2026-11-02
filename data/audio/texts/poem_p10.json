@@ -1,0 +1,17 @@
+{
+  "id": "poem_p10",
+  "category": "poem",
+  "title": "竹里馆",
+  "author": "王维",
+  "dynasty": "唐",
+  "sentences": [
+    "独坐幽篁里，",
+    "弹琴复长啸。",
+    "深林人不知，",
+    "明月来相照。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

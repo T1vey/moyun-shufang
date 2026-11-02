@@ -1,0 +1,17 @@
+{
+  "id": "poem_p26",
+  "category": "poem",
+  "title": "题西林壁",
+  "author": "苏轼",
+  "dynasty": "宋",
+  "sentences": [
+    "横看成岭侧成峰，",
+    "远近高低各不同。",
+    "不识庐山真面目，",
+    "只缘身在此山中。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

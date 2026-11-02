@@ -1,0 +1,15 @@
+test_desktop_page_css_has_no_inset_shorthand (test_tcb705_lineart_plan.BoardKioskCss.test_desktop_page_css_has_no_inset_shorthand) ... ok
+test_config_accepts_800k_and_rejects_more (test_tcb705_lineart_plan.FrameBudget.test_config_accepts_800k_and_rejects_more) ... ok
+test_long_gallery_drawing_now_plans (test_tcb705_lineart_plan.FrameBudget.test_long_gallery_drawing_now_plans) ... ok
+test_demo_profile_matches_real_sampling (test_tcb705_lineart_plan.GalleryLineartPlan.test_demo_profile_matches_real_sampling) ... ok
+test_duck_from_gallery_plans_in_demo (test_tcb705_lineart_plan.GalleryLineartPlan.test_duck_from_gallery_plans_in_demo) ... ok
+test_collision_same_first_hit (test_tcb705_lineart_plan.NativeEqualsNumpy.test_collision_same_first_hit) ... ok
+test_sampling_bitwise (test_tcb705_lineart_plan.NativeEqualsNumpy.test_sampling_bitwise) ... ok
+test_worker_thread_gets_a_loop_before_attach (test_tcb705_lineart_plan.PlanningThreadEventLoop.test_worker_thread_gets_a_loop_before_attach) ... ok
+test_preview_is_simplified_within_tolerance (test_tcb705_lineart_plan.PreviewSize.test_preview_is_simplified_within_tolerance) ... ok
+test_browser_round_trip_and_speed_change_keep_digest (test_tcb705_lineart_plan.SpeedSettingKeepsPlans.test_browser_round_trip_and_speed_change_keep_digest) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.799s
+
+OK

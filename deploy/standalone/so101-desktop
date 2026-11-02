@@ -1,0 +1,8 @@
+#!/bin/sh
+set -eu
+. /etc/so101/desktop.env
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+xset s off
+xset -dpms
+openbox &
+exec /usr/bin/python3 "$SO101_APP/scripts/run_touch_gui.py" --data-dir "$SO101_DATA"

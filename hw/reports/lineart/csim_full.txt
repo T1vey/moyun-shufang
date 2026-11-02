@@ -1,0 +1,165 @@
+
+****** vitis-run v2024.2 (64-bit)
+  **** SW Build 5238363 on 2024-11-10-08:15:25
+  **** Start of session at: Tue Oct 20 01:35:52 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+  **** HLS Build v2024.2 5238294
+
+INFO: [HLS 200-2005] Using work_dir C:/fpga_build/tcb705_lineart_csim8_20261020/hls 
+
+INFO: [HLS 200-2006] Changing directory to C:/fpga_build/tcb705_lineart_csim8_20261020
+
+INFO: [HLS 200-1505] Using default flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying ini 'syn.file=tcb_lineart_accel.cpp' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(5)
+
+INFO: [HLS 200-10] Adding design file 'C:/fpga_build/tcb705_lineart_csim8_20261020/src/tcb_lineart_accel.cpp' to the project
+
+INFO: [HLS 200-1465] Applying ini 'syn.file=tcb_lineart_accel.h' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(6)
+
+INFO: [HLS 200-10] Adding design file 'C:/fpga_build/tcb705_lineart_csim8_20261020/src/tcb_lineart_accel.h' to the project
+
+INFO: [HLS 200-1465] Applying ini 'tb.file=tb_lineart.cpp' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(7)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga_build/tcb705_lineart_csim8_20261020/src/tb_lineart.cpp' to the project
+
+INFO: [HLS 200-1465] Applying ini 'tb.file=lineart_vectors.bin' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(8)
+
+INFO: [HLS 200-10] Adding test bench file 'C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_vectors.bin' to the project
+
+INFO: [HLS 200-1465] Applying ini 'syn.top=tcb_lineart_accel' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(4)
+
+INFO: [HLS 200-1465] Applying ini 'flow_target=vivado' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(3)
+
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+
+Resolution: For help on HLS 200-1505 see docs.xilinx.com/access/sources/dita/topic?Doc_Version=2024.2%20English&url=ug1448-hls-guidance&resourceid=200-1505.html
+
+INFO: [HLS 200-1465] Applying ini 'part=xc7z020clg400-2' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(1)
+
+INFO: [HLS 200-1611] Setting target device to 'xc7z020-clg400-2'
+
+INFO: [HLS 200-1465] Applying ini 'clock=10ns' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(9)
+
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+
+INFO: [HLS 200-1465] Applying ini 'clock_uncertainty=12%' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(10)
+
+INFO: [SYN 201-201] Setting up clock 'default' with an uncertainty of 1.2ns.
+
+INFO: [HLS 200-1465] Applying ini 'cosim.rtl=verilog' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(16)
+
+INFO: [HLS 200-1465] Applying ini 'cosim.tool=xsim' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(17)
+
+INFO: [HLS 200-1465] Applying ini 'csim.clean=true' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(12)
+
+INFO: [HLS 200-1465] Applying ini 'csim.code_analyzer=false' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(13)
+
+INFO: [HLS 200-1465] Applying ini 'package.output.format=ip_catalog' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(14)
+
+INFO: [HLS 200-1465] Applying ini 'syn.compile.pipeline_loops=0' from C:/fpga_build/tcb705_lineart_csim8_20261020/src/lineart_2024.cfg(11)
+
+INFO: [SIM 211-2] *************** CSIM start ***************
+
+INFO: [SIM 211-4] CSIM will launch CLANG as the compiler.
+
+INFO: [HLS 200-2036] Building debug C Simulation binaries
+
+   Compiling ../../../../src/tb_lineart.cpp in debug mode
+   Compiling ../../../../src/tcb_lineart_accel.cpp in debug mode
+   Generating csim.exe
+In file included from ../../../../src/tb_lineart.cpp:1:
+In file included from ../../../../src/tcb_lineart_accel.h:2:
+In file included from D:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+In file included from ../../../../src/tcb_lineart_accel.cpp:1:
+In file included from ../../../../src/tcb_lineart_accel.h:2:
+In file included from D:/Xilinx/Vitis/2024.2/include/ap_int.h:10:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_common.h:658:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/ap_private.h:68:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_half.h:26:
+In file included from D:/Xilinx/Vitis/2024.2/include/etc/hls_half_fpo.h:19:
+In file included from D:/Xilinx/Vitis/2024.2/include/hls_fpo.h:140:
+In file included from D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:150:
+D:/Xilinx/Vitis/2024.2/include/gmp.h:58:9: warning: '__GMP_LIBGMP_DLL' macro redefined [-Wmacro-redefined]
+#define __GMP_LIBGMP_DLL  0
+        ^
+D:/Xilinx/Vitis/2024.2/include/floating_point_v7_1_bitacc_cmodel.h:142:9: note: previous definition is here
+#define __GMP_LIBGMP_DLL 1
+        ^
+1 warning generated.
+LINEART_PASS case=0 size=1x1 passes=1
+
+LINEART_PASS case=1 size=1536x1 passes=1
+
+LINEART_PASS case=2 size=1x1536 passes=1
+
+LINEART_PASS case=3 size=65x3 passes=1
+
+LINEART_PASS case=4 size=17x19 passes=1
+
+LINEART_PASS case=5 size=64x65 passes=1
+
+LINEART_PASS case=6 size=127x73 passes=1
+
+LINEART_PASS case=7 size=1536x64 passes=1
+
+LINEART_PASS case=8 size=33x31 passes=1
+
+LINEART_PASS case=9 size=77x71 passes=5
+
+LINEART_PASS case=10 size=57x51 passes=1
+
+LINEART_PASS case=11 size=1024x1024 passes=3
+
+LINEART_PASS case=12 size=1024x1024 passes=3
+
+LINEART_PASS case=13 size=1024x1024 passes=3
+
+LINEART_PASS case=14 size=1024x1024 passes=3
+
+LINEART_PASS case=15 size=1024x1024 passes=3
+
+LINEART_PASS case=16 size=1024x1024 passes=3
+
+LINEART_PASS case=17 size=1024x1024 passes=3
+
+LINEART_PASS case=18 size=1024x1024 passes=3
+
+LINEART_PASS case=19 size=1024x1024 passes=3
+
+LINEART_PASS case=20 size=1024x1024 passes=3
+
+LINEART_PASS case=21 size=1024x1024 passes=3
+
+LINEART_PASS case=22 size=1024x1024 passes=3
+
+LINEART_PASS case=23 size=1024x1024 passes=3
+
+LINEART_PASS case=24 size=988x1024 passes=3
+
+INFO [HLS SIM]: The maximum depth reached by any hls::stream() instance in the design is 1048576
+
+INFO: [SIM 211-1] CSim done with 0 errors.
+
+INFO: [SIM 211-3] *************** CSIM finish ***************
+
+INFO: [HLS 200-112] Total CPU user time: 3 seconds. Total CPU system time: 3 seconds. Total elapsed time: 569.934 seconds; peak allocated memory: 620.094 MB.
+
+INFO: [vitis-run 60-791] Total elapsed time: 0h 9m 35s

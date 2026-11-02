@@ -1,0 +1,17 @@
+{
+  "id": "poem_p32",
+  "category": "poem",
+  "title": "芙蓉楼送辛渐",
+  "author": "王昌龄",
+  "dynasty": "唐",
+  "sentences": [
+    "寒雨连江夜入吴，",
+    "平明送客楚山孤。",
+    "洛阳亲友如相问，",
+    "一片冰心在玉壶。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

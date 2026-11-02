@@ -1,0 +1,17 @@
+{
+  "id": "poem_p21",
+  "category": "poem",
+  "title": "九月九日忆山东兄弟",
+  "author": "王维",
+  "dynasty": "唐",
+  "sentences": [
+    "独在异乡为异客，",
+    "每逢佳节倍思亲。",
+    "遥知兄弟登高处，",
+    "遍插茱萸少一人。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

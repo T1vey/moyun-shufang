@@ -1,0 +1,15 @@
+test_bad_cloud_response_does_not_add_library_entry (test_cloud_gallery.CloudLibraryTests.test_bad_cloud_response_does_not_add_library_entry) ... ok
+test_bytes_metadata_and_both_generations_survive_restart (test_cloud_gallery.CloudLibraryTests.test_bytes_metadata_and_both_generations_survive_restart) ... ok
+test_extension_matches_actual_cloud_format_and_export_preserves_bytes (test_cloud_gallery.CloudLibraryTests.test_extension_matches_actual_cloud_format_and_export_preserves_bytes) ... ok
+test_import_recovers_originals_once_and_ignores_extraction_directories (test_cloud_gallery.CloudLibraryTests.test_import_recovers_originals_once_and_ignores_extraction_directories) ... ok
+test_recent_first_and_no_global_index_dependency (test_cloud_gallery.CloudLibraryTests.test_recent_first_and_no_global_index_dependency) ... ok
+test_generation_saves_to_library_and_updates_selection_only_on_tk_thread (test_cloud_gallery.CloudStudioTests.test_generation_saves_to_library_and_updates_selection_only_on_tk_thread) ... ok
+test_history_selection_then_upload_uses_saved_image_without_cloud_call (test_cloud_gallery.CloudStudioTests.test_history_selection_then_upload_uses_saved_image_without_cloud_call) ... ok
+test_late_old_plan_history_does_not_replace_new_image (test_cloud_gallery.CloudStudioTests.test_late_old_plan_history_does_not_replace_new_image) ... ok
+test_pending_generation_blocks_old_plan_selection_and_image_switch (test_cloud_gallery.CloudStudioTests.test_pending_generation_blocks_old_plan_selection_and_image_switch) ... ok
+test_save_failure_clears_busy_state_and_shows_error (test_cloud_gallery.CloudStudioTests.test_save_failure_clears_busy_state_and_shows_error) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.839s
+
+OK

@@ -1,0 +1,17 @@
+{
+  "id": "poem_p36",
+  "category": "poem",
+  "title": "春日",
+  "author": "朱熹",
+  "dynasty": "宋",
+  "sentences": [
+    "胜日寻芳泗水滨，",
+    "无边光景一时新。",
+    "等闲识得东风面，",
+    "万紫千红总是春。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

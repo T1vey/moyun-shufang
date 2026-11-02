@@ -1,0 +1,18 @@
+{
+  "config_words": 16,
+  "input_words": 28,
+  "output_words": 40,
+  "result_words": 52,
+  "cancel_words": 64,
+  "mode": 76,
+  "count": 84,
+  "output_capacity": 92,
+  "job_id": 100,
+  "generation": 108,
+  "abi": "tcb705-planner-fp32-v2",
+  "top": "tcb_planner_parallel",
+  "header_sha256": "73623d20ddff8ac5efa781ee4658727a1b1f95e7343e60af8cb39c25c5479a07",
+  "supported_modes": [
+    1
+  ]
+}

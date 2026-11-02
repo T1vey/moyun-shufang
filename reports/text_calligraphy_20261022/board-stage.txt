@@ -1,0 +1,19 @@
+# Warning: tcb705-ui.service changed on disk, the version systemd has loaded is outdated.
+# This output shows the current version of the unit's original fragment and drop-in files.
+# If fragments or drop-ins were added or removed, they are not properly reflected in this output.
+# Run 'systemctl daemon-reload' to reload units.
+# Warning: so101-md0700r.service changed on disk, the version systemd has loaded is outdated.
+# This output shows the current version of the unit's original fragment and drop-in files.
+# If fragments or drop-ins were added or removed, they are not properly reflected in this output.
+# Run 'systemctl daemon-reload' to reload units.
+# Warning: so101-gt911.service changed on disk, the version systemd has loaded is outdated.
+# This output shows the current version of the unit's original fragment and drop-in files.
+# If fragments or drop-ins were added or removed, they are not properly reflected in this output.
+# Run 'systemctl daemon-reload' to reload units.
+# Warning: so101-platform.service changed on disk, the version systemd has loaded is outdated.
+# This output shows the current version of the unit's original fragment and drop-in files.
+# If fragments or drop-ins were added or removed, they are not properly reflected in this output.
+# Run 'systemctl daemon-reload' to reload units.
+{"staged": "/home/xilinx/tcb705_releases/20261022_text300_r1/ZYNQArm", "files": 47, "machine_sha256": "72c4ebd4e18bd88e34a48ba718de32c18dea69282bd0bdfe3dbe1dd5b242236f"}
+
+REMOTE_EXIT=1

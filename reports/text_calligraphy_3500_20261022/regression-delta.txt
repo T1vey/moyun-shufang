@@ -1,0 +1,8 @@
+test_corrupt_manifest_or_missing_database_row_is_rejected (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_corrupt_manifest_or_missing_database_row_is_rejected) ... ok
+test_new_common_characters_and_missing_character (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_new_common_characters_and_missing_character) ... ok
+test_runtime_cache_stays_bounded (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_runtime_cache_stays_bounded) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.291s
+
+OK

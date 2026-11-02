@@ -1,0 +1,9 @@
+# PYNQ 2.7 / ARMv7 / Python 3.8: compiled numerics and image packages use
+# the vendor image or Ubuntu apt binaries. See deploy/install_z20.sh.
+# Do not pip-upgrade numpy/scipy/OpenCV on the board as part of deployment.
+ezdxf==0.17.2
+svgpathtools==1.6.1
+typing_extensions==4.13.2
+pyserial==3.5
+svgwrite==1.4.3
+pyparsing==2.4.7

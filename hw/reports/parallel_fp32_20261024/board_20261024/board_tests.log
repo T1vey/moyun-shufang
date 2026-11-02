@@ -1,0 +1,112 @@
+test_failed_row_cannot_use_success_nan_statistics (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_fp32_quiet_nan_means_unknown_and_preserves_prefix (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_identity_cannot_be_switched_by_header_flags (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_legacy_nan_and_new_infinity_or_fabricated_zero_rejected (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_nonfinite_joint_and_iteration_rejected (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_old_finite_rows_remain_supported (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_reserved_header_bytes_rejected (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_signaling_nan_or_unexpected_payload_rejected (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_unknown_or_partial_capabilities_rejected (tests.test_tcb_fp32_contract.CompletionTests) ... ok
+test_clock_ranges_are_bound_to_top_identity (tests.test_tcb_fp32_contract.IdentityTests) ... ok
+test_export_selects_exact_old_or_new_identity (tests.test_tcb_fp32_contract.IdentityTests) ... ok
+test_fp32_metadata_requires_explicit_ik_only_modes (tests.test_tcb_fp32_contract.IdentityTests) ... ok
+test_physical_100mhz_is_only_allowed_for_new_identity (tests.test_tcb_fp32_contract.IdentityTests) ... ok
+test_new_and_legacy_exports_keep_distinct_names_and_identity (tests.test_tcb_fp32_contract.PackageIdentityTests) ... ok
+test_new_header_cannot_silently_package_legacy_bitfile (tests.test_tcb_fp32_contract.PackageIdentityTests) ... ok
+test_cli_prints_unknown_without_zero_or_crash (tests.test_tcb_unknown_residuals.UnknownResidualTests) ... ok
+test_fp32_joint_rejection_also_keeps_residual_unknown (tests.test_tcb_unknown_residuals.UnknownResidualTests) ... ok
+test_fp32_success_and_partial_diagnostics_are_json_null (tests.test_tcb_unknown_residuals.UnknownResidualTests) ... ok
+test_legacy_measured_residual_is_preserved (tests.test_tcb_unknown_residuals.UnknownResidualTests) ... ok
+test_cancel_before_accepting_joint_checked_rows (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_cancel_during_cpu_fallback_discards_computed_batch (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_cancelled_before_launch_does_not_call_transport (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_cancelled_cached_prefix_is_discarded (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_cancelled_nonempty_prefix_is_not_returned_to_the_plan (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_cancelled_zero_prefix_never_launches_cpu_or_verifies_empty_rows (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_complete_batch_checks_joints_without_recomputing_fk (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_dispatcher_consumes_prefix_then_resumes_at_failed_target_with_last_seed (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_geometric_residual_is_explicitly_not_rechecked (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_joint_limit_still_rejects_success_row_and_suffix (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_joint_step_still_rejects_success_row_and_suffix (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_partial_one_row_returns_no_candidate (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_partial_three_rows_preserves_only_first_two (tests.test_tcb_partial_prefix.PartialPrefixTests) ... ok
+test_actual_handwriting_compiler_does_not_recheck_ik_geometry (tests.test_tcb_execution_without_runtime_fk.ExecutionPreparationTests) ... ok
+test_invalid_node_limits_cancellation_and_shortcuts_still_rejected (tests.test_tcb_execution_without_runtime_fk.ExecutionPreparationTests) ... ok
+test_real_prepare_and_build_keep_all_rounded_nodes_and_gui_speed (tests.test_tcb_execution_without_runtime_fk.ExecutionPreparationTests) ... ok
+test_sdk_keeps_existing_queue_without_per_block_speed_or_sleep (tests.test_tcb_execution_without_runtime_fk.ExecutionPreparationTests) ... ok
+test_no_batch_fk_but_real_timed_frames_and_cloud_preview (tests.test_tcb_planning_without_runtime_fk.PlanningWithoutRuntimeFKTests) ... ok
+test_nonfinite_execution_samples_still_rejected (tests.test_tcb_planning_without_runtime_fk.PlanningWithoutRuntimeFKTests) ... ok
+test_out_of_limit_execution_samples_still_rejected (tests.test_tcb_planning_without_runtime_fk.PlanningWithoutRuntimeFKTests) ... ok
+test_polynomial_joint_limit_check_remains (tests.test_tcb_planning_without_runtime_fk.PlanningWithoutRuntimeFKTests) ... ok
+test_boot_and_receipt_changes_invalidate_positive_cache (tests.test_lineart_capability.CapabilityTests) ... ok
+test_cpu_selection_never_probes_and_forced_pl_reports_absence (tests.test_lineart_capability.CapabilityTests) ... ok
+test_identity_changes_invalidate_even_with_coarse_file_timestamps (tests.test_lineart_capability.CapabilityTests) ... ok
+test_lineart_absence_does_not_disable_healthy_planner (tests.test_lineart_capability.CapabilityTests) ... ok
+test_missing_ip_is_cached_and_never_attached_per_image (tests.test_lineart_capability.CapabilityTests) ... ok
+test_new_release_invalidates_missing_cache_and_validates_hwh (tests.test_lineart_capability.CapabilityTests) ... ok
+test_change_during_attach_not_cached (tests.test_lineart_attachment.AttachmentCache) ... ok
+test_each_operation_owns_a_fresh_lease (tests.test_lineart_attachment.AttachmentCache) ... ok
+test_every_access_rehashes_bytes_receipt_and_process (tests.test_lineart_attachment.AttachmentCache) ... ERROR
+test_metadata_reused_but_changes_force_validation (tests.test_lineart_attachment.AttachmentCache) ... ok
+test_prepare_does_not_start_dma_and_releases_lease (tests.test_lineart_attachment.AttachmentCache) ... ok
+test_prepare_failure_is_reported (tests.test_lineart_attachment.AttachmentCache) ... ok
+test_calibration_gate_precedes_cloud_and_ready_keeps_existing_generation (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_cancellation_after_reconnect_stops_only_owned_active_job (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_continuous_disconnect_is_bounded_without_another_write (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_failed_job_and_http_error_are_not_hidden_by_reconnect (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_local_extraction_preserves_aspect_and_uses_faithful_strokes (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_missing_job_after_restart_fails_after_three_snapshots (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_plan_reconnects_to_same_job_and_waits_for_publication (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_quality_warning_does_not_turn_finished_execution_into_failure (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_successful_snapshot_resets_continuous_disconnect_window (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_tcb_execute_sends_confirmation_and_accepts_joint_done (tests.test_user_gui_workflow.BoardPollingTests) ... ok
+test_general_part_always_first_and_custom_is_bounded (tests.test_user_gui_workflow.CloudPromptTests) ... ok
+test_provider_error_code_is_shown_but_not_its_message (tests.test_user_gui_workflow.CloudPromptTests) ... ok
+test_launch_commands_keep_backend_and_ui_separate (tests.test_user_gui_workflow.DesktopTests) ... ok
+test_bad_subject_or_empty_own_prompt_refused_before_upload (tests.test_user_gui_workflow.HttpTests) ... ok
+test_control_needs_screen_token_and_same_origin (tests.test_user_gui_workflow.HttpTests) ... ok
+test_local_upload_requires_screen_authority_and_skips_cloud (tests.test_user_gui_workflow.HttpTests) ... ok
+test_phone_subject_and_own_prompt_reach_cloud (tests.test_user_gui_workflow.HttpTests) ... ok
+test_upload_runs_pipeline_but_not_motion (tests.test_user_gui_workflow.HttpTests) ... ok
+test_abandoned_next_upload_releases_its_reservation (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_backend_cannot_be_repointed_to_external_host (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_bad_local_lineart_does_not_fall_back_to_cloud (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_calligraphy_keeps_authored_preview (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_cancel_cloud_does_not_submit_strokes_or_motion (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_close_after_uncertain_execution_requests_stop (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_image_decode_rejects_truncated_and_mismatched_content (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_large_source_preview_is_bounded_without_changing_original (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_local_lineart_skips_cloud_and_waits_for_confirmation (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_lost_execute_response_keeps_stop_without_replay (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_phone_only_reads_its_own_job (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_portrait_displays_cloud_image_without_trajectory_preview (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_prepare_never_executes_and_confirmation_is_single_use (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_quality_warning_finishes_ui_without_claiming_verified_return (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_restart_never_restores_execution_authority (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_second_phone_cannot_replace_ready_image (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_settings_and_upload_exclude_each_other (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_source_preview_normalizes_exif_orientation_once (tests.test_user_gui_workflow.WorkflowTests) ... ok
+test_fixed_homography_identity (tests.test_brush_vision.BrushVisionTest) ... ok
+test_pl_driver_path_with_emulated_core (tests.test_brush_vision.BrushVisionTest)
+Service through VisionPL: DMA buffer sizes and word layouts of all three modes. ... ok
+test_rect_and_projection_round_trip (tests.test_brush_vision.BrushVisionTest) ... ok
+test_segment_splits_two_glyphs (tests.test_brush_vision.BrushVisionTest) ... ok
+test_service_recognises_and_scores (tests.test_brush_vision.BrushVisionTest) ... ok
+test_thin_strokes_with_shadow_and_dark_table (tests.test_brush_vision.BrushVisionTest) ... ok
+
+======================================================================
+ERROR: test_every_access_rehashes_bytes_receipt_and_process (tests.test_lineart_attachment.AttachmentCache)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm/tests/test_lineart_attachment.py", line 58, in test_every_access_rehashes_bytes_receipt_and_process
+    a=b._attachment_key(manifest)
+  File "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm/lineart_backend.py", line 95, in _attachment_key
+    raise ValueError('platform receipt must be root-owned and not publicly writable')
+ValueError: platform receipt must be root-owned and not publicly writable
+
+----------------------------------------------------------------------
+Ran 94 tests in 51.806s
+
+FAILED (errors=1)
+TCB705_PLATFORM_SEALED /tmp/tmpdqbkn0mu/sealed/platform.json
+TCB705_PLATFORM_SEALED /tmp/tmpw2j_254q/sealed/platform.json

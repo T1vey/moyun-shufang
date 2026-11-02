@@ -1,0 +1,14 @@
+{
+  "previous": "/home/xilinx/tcb705_releases/20261022_text300_r1/ZYNQArm",
+  "release": "/home/xilinx/tcb705_releases/20261022_text3500_r1/ZYNQArm",
+  "machine_sha256": "735b3325525db7fa9dd71efa57715a5d53dbf3d60a55a44115d5bbf83e47afb2",
+  "archive_sha256": "a953e010794ad24faf01d6a55051edb1174063782ff6047f12af8bcb6345d5c0",
+  "robot_motion": false,
+  "platform_sha256": "39dc89905d0e7d556480fbe2df5f9dca6e5f6fbc835db4e8fc014e9203b2a9e8",
+  "activated": true,
+  "characters": 3500,
+  "font_size_mm": [
+    40,
+    70
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "bridge_tri_speed.txt": {
+    "source_sha256": "6bffd7ee1dd500fc59c9f6872bbc74da67b5a47e6abccbaa06363136b6f3342a",
+    "pass_marker": "Test completed successfully"
+  },
+  "reset_topology.txt": {
+    "source_sha256": "e7de68391f4b0e40e57766a6d1c2d86f5b189ceda6e252c16238019536611013",
+    "pass_marker": "GE_PL_RESET_STARTUP_AND_RELOCK_PASS"
+  }
+}

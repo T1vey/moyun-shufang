@@ -1,0 +1,28 @@
+"use strict";
+(function(){
+  var $=function(id){return document.getElementById(id);}, items=[], selected=null, loading=false, importing=false, epoch=0, config=null, focusBefore=null;
+  function message(text,error){$("gallery-message").textContent=text;$("gallery-message").hidden=!text;$("gallery-message").className="gallery-message"+(error?" error":"");}
+  function date(item){return new Date(item.modified*1000).toLocaleDateString('zh-CN');}
+  function pick(item){selected=item;$("gallery-preview").src=item.url;$("gallery-preview").hidden=false;$("gallery-preview-empty").hidden=true;$("gallery-selected-name").textContent=item.name;$("gallery-selected-info").textContent=item.width+" × "+item.height+" 像素 · "+date(item);$("gallery-use").disabled=false;Array.prototype.forEach.call($("gallery-grid").children,function(tile){tile.setAttribute('aria-pressed',String(tile.dataset.id===item.id));});}
+  function render(){
+    var query=$("gallery-search").value.trim().toLowerCase(), visible=items.filter(function(item){return (item.name+" "+item.filename).toLowerCase().indexOf(query)>=0;});
+    $("gallery-count").textContent="共 "+items.length+" 张已保存线稿"+(query?" · 找到 "+visible.length+" 张":" · 点选即可预览");
+    var grid=$("gallery-grid");grid.textContent="";
+    visible.forEach(function(item){var tile=document.createElement('button');tile.type='button';tile.className='art-tile';tile.dataset.id=item.id;tile.setAttribute('aria-pressed',String(!!selected&&selected.id===item.id));tile.setAttribute('aria-label','选择线稿 '+item.name);var img=document.createElement('img');img.src=item.thumbnail;img.alt=item.name;img.loading='lazy';tile.appendChild(img);var check=document.createElement('span');check.className='art-check';check.textContent='✓';tile.appendChild(check);var name=document.createElement('span');name.className='art-name';name.textContent=item.name;name.title=item.filename;tile.appendChild(name);var time=document.createElement('span');time.className='art-date';time.textContent=date(item);tile.appendChild(time);tile.onclick=function(){pick(item);};grid.appendChild(tile);});
+    if(!visible.length){var empty=document.createElement('p');empty.className='gallery-empty';empty.textContent=items.length?'没有找到匹配的线稿，请换个名称搜索。':'图库还是空的。点击“导入线稿”，保存后下次可直接选择。';grid.appendChild(empty);}
+  }
+  async function refresh(){if(loading)return;loading=true;var version=++epoch;$("gallery-refresh").disabled=true;message('正在读取线稿…');try{var r=await fetch('/api/lineart-library',{cache:'no-store'});var d=await r.json();if(!r.ok)throw Error(d.error||'图库读取失败');if(version!==epoch)return;items=d.items||[];if(selected&&!items.some(function(i){return i.id===selected.id;})){selected=null;$("gallery-use").disabled=true;$("gallery-preview").hidden=true;$("gallery-preview-empty").hidden=false;$("gallery-selected-name").textContent='尚未选择';$("gallery-selected-info").textContent='原线稿已移走，请重新选择。';}render();message('');}catch(e){message(e.message||'无法连接图库，请重试',true);}finally{loading=false;$("gallery-refresh").disabled=false;}}
+  function close(){if(importing)return;$("gallery-modal").hidden=true;if(focusBefore)focusBefore.focus();}
+  window.LineartGallery={open:function(options){config=options;focusBefore=document.activeElement;$("gallery-modal").hidden=false;$("gallery-search").value='';$("gallery-close").focus();refresh();}};
+  document.addEventListener('DOMContentLoaded',function(){
+    $("gallery-close").onclick=close;$("gallery-refresh").onclick=refresh;$("gallery-search").oninput=render;
+    $("gallery-use").onclick=function(){if(!selected||!config)return;var choice=selected;close();config.select(choice);};
+    // Board kiosk (?kiosk=1): no window manager, a GTK file chooser could not be closed by touch.
+    if(/[?&]kiosk=1/.test(location.search))$("gallery-import").hidden=true;
+    $("gallery-import").onclick=function(){$("gallery-files").click();};
+    $("gallery-files").onchange=async function(){var files=Array.prototype.slice.call(this.files||[]);this.value='';if(!files.length)return;importing=true;$("gallery-import").disabled=true;$("gallery-use").disabled=true;$("gallery-close").disabled=true;var last=null,errors=[];for(var i=0;i<files.length;i++){message('正在保存线稿 '+(i+1)+' / '+files.length);try{var file=files[i];if(!file.size||file.size>20*1024*1024)throw Error('图片不能为空，且需小于 20 MB');var type=file.type||({png:'image/png',jpg:'image/jpeg',jpeg:'image/jpeg',webp:'image/webp'}[file.name.split('.').pop().toLowerCase()]||'');var r=await fetch('/api/lineart-library/import?name='+encodeURIComponent(file.name),{method:'POST',headers:{'Content-Type':type,'X-Screen-Token':config.token()},body:file});var d=await r.json();if(!r.ok)throw Error(d.error||'保存失败');last=d.item;}catch(e){errors.push(files[i].name+'：'+e.message);}}
+      importing=false;$("gallery-import").disabled=false;$("gallery-close").disabled=false;await refresh();if(last){$("gallery-search").value='';render();pick(last);}else{$("gallery-use").disabled=!selected;}message(errors.length?errors.join('；'):'已保存到图库，下次可以直接选择。',!!errors.length);
+    };
+    document.addEventListener('keydown',function(e){var layer=!$("motion-modal").hidden?$("motion-modal"):!$("gallery-modal").hidden?$("gallery-modal"):null;if(!layer)return;if(e.key==='Escape'){e.preventDefault();if(layer.id==='gallery-modal')close();else $("motion-cancel").click();}if(e.key==='Tab'){var nodes=Array.prototype.filter.call(layer.querySelectorAll('button,input,[tabindex="0"]'),function(n){return !n.disabled&&n.offsetParent!==null;});if(!nodes.length)return;var first=nodes[0],last=nodes[nodes.length-1];if(e.shiftKey&&document.activeElement===first){last.focus();e.preventDefault();}else if(!e.shiftKey&&document.activeElement===last){first.focus();e.preventDefault();}}});
+  });
+})();

@@ -1,0 +1,27 @@
+/dts-v1/;
+/plugin/;
+
+/* Loaded only after the matching PL platform and GEM1 clock initialization.
+ * GPIO 54 reset is owned by start_ge_pl.py, before PHY identification.
+ * The FPGA bridge selects the TX frequency through MDIO, not Linux tx_clk.
+ */
+&gem1 {
+    status = "okay";
+    phy-mode = "gmii";
+    local-mac-address = [02 0a 35 00 22 02];
+    clocks = <&clkc 31>, <&clkc 31>;
+    clock-names = "pclk", "hclk";
+    phy-handle = <&ge_pl_phy>;
+    mdio {
+        #address-cells = <1>;
+        #size-cells = <0>;
+        ge_pl_phy: ethernet-phy@4 {
+            reg = <4>;
+        };
+        gmii-to-rgmii@8 {
+            compatible = "xlnx,gmii-to-rgmii-1.0";
+            reg = <8>;
+            phy-handle = <&ge_pl_phy>;
+        };
+    };
+};

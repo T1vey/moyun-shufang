@@ -1,0 +1,17 @@
+# Navigator Z20 V3.9 schematic, GE_PL YT8531 RGMII, bank 34 / 3.3 V.
+# External RX clock is in timing.xdc; DDR I/O delays are in AMD bridge XDC.
+set_property -dict {PACKAGE_PIN F20 IOSTANDARD LVCMOS33} [get_ports ge_pl_mdio_mdc]
+set_property -dict {PACKAGE_PIN F19 IOSTANDARD LVCMOS33} [get_ports ge_pl_mdio_mdio_io]
+set_property -dict {PACKAGE_PIN K17 IOSTANDARD LVCMOS33} [get_ports ge_pl_rgmii_rxc]
+set_property -dict {PACKAGE_PIN E17 IOSTANDARD LVCMOS33} [get_ports ge_pl_rgmii_rx_ctl]
+set_property -dict {PACKAGE_PIN B19 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_rd[0]}]
+set_property -dict {PACKAGE_PIN A20 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_rd[1]}]
+set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_rd[2]}]
+set_property -dict {PACKAGE_PIN H16 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_rd[3]}]
+set_property -dict {PACKAGE_PIN B20 IOSTANDARD LVCMOS33} [get_ports ge_pl_rgmii_txc]
+set_property -dict {PACKAGE_PIN K18 IOSTANDARD LVCMOS33} [get_ports ge_pl_rgmii_tx_ctl]
+set_property -dict {PACKAGE_PIN D18 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_td[0]}]
+set_property -dict {PACKAGE_PIN C20 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_td[1]}]
+set_property -dict {PACKAGE_PIN D19 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_td[2]}]
+set_property -dict {PACKAGE_PIN D20 IOSTANDARD LVCMOS33} [get_ports {ge_pl_rgmii_td[3]}]
+set_property -dict {PACKAGE_PIN G15 IOSTANDARD LVCMOS33} [get_ports ge_pl_phy_reset_n]

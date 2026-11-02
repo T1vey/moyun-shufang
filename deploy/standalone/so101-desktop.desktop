@@ -1,0 +1,5 @@
+[Desktop Entry]
+Name=SO101 MD0700R
+Comment=Local robot drawing console
+Exec=/usr/local/bin/so101-desktop
+Type=Application

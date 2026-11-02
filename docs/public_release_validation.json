@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-02",
+  "scope": "desktop offline; no FPGA load or robot motion",
+  "python": "3.11.13",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "modules": [
+    "test_tcb_fp32_contract",
+    "test_tcb_partial_prefix",
+    "test_tcb_unknown_residuals",
+    "test_glyph_library_integrity",
+    "test_audio_player",
+    "test_audio_es8388",
+    "test_audio_resampling",
+    "test_hwr"
+  ],
+  "tests_run": 87,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "elapsed_s": 2.089,
+  "passed": true
+}

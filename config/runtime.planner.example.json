@@ -1,0 +1,11 @@
+{
+  "schema": "so101-runtime-v1",
+  "ik_engine": "wls",
+  "pl_mode": "planner",
+  "overlay": "overlay/planner_platform/drawing_planner.bit",
+  "ip_name": "planner_accel_v2_0",
+  "pl_load_policy": "attach",
+  "platform_manifest": "overlay/planner_platform/platform.json",
+  "port": 8765,
+  "note": "Planner v2 profile for the sealed PYNQ MMIO display / PL GT911 platform; no DTBO is used. Requires the matching platform service readiness receipt before attach. Board IK85/IK64/FK1024 and ARM native checks passed on 2026-10-11; see docs/PLANNER_BOARD_DEPLOYMENT_20261011.md for deployment and reboot acceptance. Does not reload PL per job. FK_ROWS is shadow-only."
+}

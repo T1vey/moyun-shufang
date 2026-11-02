@@ -1,0 +1,6 @@
+Warning: The unit file, source configuration file or drop-ins of so101-gt911.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Warning: The unit file, source configuration file or drop-ins of so101-md0700r.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+Warning: The unit file, source configuration file or drop-ins of tcb705-ui.service changed on disk. Run 'systemctl daemon-reload' to reload units.
+{"previous": "/home/xilinx/tcb705_releases/20261021_calligraphy_v4_r1/ZYNQArm", "release": "/home/xilinx/tcb705_releases/20261022_text300_r1/ZYNQArm", "machine_sha256": "72c4ebd4e18bd88e34a48ba718de32c18dea69282bd0bdfe3dbe1dd5b242236f", "archive_sha256": "fdff943ec141402d498285436c60cda76d60aabfa51784effcd540d7d3f18217", "robot_motion": false, "platform_sha256": "39dc89905d0e7d556480fbe2df5f9dca6e5f6fbc835db4e8fc014e9203b2a9e8", "activated": true, "characters": 300, "font_size_mm": [40, 70]}
+
+REMOTE_EXIT=0

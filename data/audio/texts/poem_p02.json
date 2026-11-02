@@ -1,0 +1,17 @@
+{
+  "id": "poem_p02",
+  "category": "poem",
+  "title": "春晓",
+  "author": "孟浩然",
+  "dynasty": "唐",
+  "sentences": [
+    "春眠不觉晓，",
+    "处处闻啼鸟。",
+    "夜来风雨声，",
+    "花落知多少。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

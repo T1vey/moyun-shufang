@@ -1,0 +1,16 @@
+# PC browser gateway, image-to-path processing and regression tests.
+# Desktop hand-follow GUIs have separate optional requirements-pc.txt.
+numpy>=1.20
+scipy>=1.7
+Pillow>=8
+opencv-python>=4.5,<5
+scikit-image>=0.17
+ezdxf==0.17.2
+svgpathtools==1.6.1
+pyserial==3.5
+typing_extensions==4.13.2
+svgwrite==1.4.3
+pyparsing==2.4.7
+truststore==0.10.4; sys_platform == "win32"
+paramiko>=2.12,<4
+sshtunnel==0.4.0

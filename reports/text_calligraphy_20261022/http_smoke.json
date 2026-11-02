@@ -1,0 +1,50 @@
+{
+  "simulation": true,
+  "physical_motion": false,
+  "job_id": "e12efa4e91ac456189b0110bfaf34c02",
+  "first_page": {
+    "job_id": "e12efa4e91ac456189b0110bfaf34c02",
+    "phase": "awaiting_paper",
+    "progress": 100,
+    "message": "本页模拟完成，点击继续验证下一页",
+    "page_index": 0,
+    "page_count": 2,
+    "text": "一二三四五六七",
+    "font_size_mm": 40.0,
+    "can_cancel": true,
+    "can_next_page": true,
+    "revision": 6,
+    "motion_uncertain": false
+  },
+  "final": {
+    "job_id": "e12efa4e91ac456189b0110bfaf34c02",
+    "phase": "completed",
+    "progress": 100,
+    "message": "全部文字模拟完成，未发送任何机械臂运动",
+    "page_index": 1,
+    "page_count": 2,
+    "text": "一二三四五六七",
+    "font_size_mm": 40.0,
+    "can_cancel": false,
+    "can_next_page": false,
+    "revision": 11,
+    "motion_uncertain": false
+  },
+  "phases": [
+    "planning",
+    "drawing",
+    "awaiting_paper",
+    "planning",
+    "drawing",
+    "completed"
+  ],
+  "checks": [
+    "paired phone input",
+    "3 columns / 2 rows",
+    "native IK",
+    "frozen trajectory simulation",
+    "duplicate submit not replayed",
+    "paper confirmation",
+    "second page complete"
+  ]
+}

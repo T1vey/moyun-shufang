@@ -1,0 +1,26 @@
+test_display_proxy_and_user_confirmation_flow (test_tcb705.HttpTests.test_display_proxy_and_user_confirmation_flow) ... ok
+test_history_restores_only_plan_without_execution (test_tcb705.HttpTests.test_history_restores_only_plan_without_execution) ... ok
+test_legacy_motion_rejected_and_auth_required (test_tcb705.HttpTests.test_legacy_motion_rejected_and_auth_required) ... ok
+test_non_simulation_cannot_execute_even_with_verified_flags (test_tcb705.HttpTests.test_non_simulation_cannot_execute_even_with_verified_flags) ... ok
+test_public_pipeline_register_plan_preview_and_execute (test_tcb705.HttpTests.test_public_pipeline_register_plan_preview_and_execute) ... ok
+test_armvision_is_default_and_demo_is_separate (test_tcb705.NumericalTests.test_armvision_is_default_and_demo_is_separate) ... ok
+test_fk_matches_independent_chain (test_tcb705.NumericalTests.test_fk_matches_independent_chain) ... ok
+test_ik_nearby_seed_pose_accuracy_and_branch_continuity (test_tcb705.NumericalTests.test_ik_nearby_seed_pose_accuracy_and_branch_continuity) ... ok
+test_jacobian_finite_difference (test_tcb705.NumericalTests.test_jacobian_finite_difference) ... ok
+test_nonfinite_and_invalid_geometry_rejected (test_tcb705.NumericalTests.test_nonfinite_and_invalid_geometry_rejected) ... ok
+test_obstacle_at_tool_is_rejected (test_tcb705.NumericalTests.test_obstacle_at_tool_is_rejected) ... ok
+test_sdk_mapping_permutation_sign_and_offset (test_tcb705.NumericalTests.test_sdk_mapping_permutation_sign_and_offset) ... ok
+test_all_samples_vertical_and_lift_exactly_30mm (test_tcb705.PlanTests.test_all_samples_vertical_and_lift_exactly_30mm) ... ok
+test_bad_input_and_cancellation_and_budget (test_tcb705.PlanTests.test_bad_input_and_cancellation_and_budget) ... ok
+test_c2_and_analytic_dynamic_limits (test_tcb705.PlanTests.test_c2_and_analytic_dynamic_limits) ... ok
+test_draw_does_not_connect_separate_strokes (test_tcb705.PlanTests.test_draw_does_not_connect_separate_strokes) ... ok
+test_frozen_plan_and_configuration_change (test_tcb705.PlanTests.test_frozen_plan_and_configuration_change) ... ok
+test_native_runner_and_hardware_gate (test_tcb705.PlanTests.test_native_runner_and_hardware_gate) ... ok
+test_native_runner_rejects_corrupt_binary (test_tcb705.PlanTests.test_native_runner_rejects_corrupt_binary) ... ok
+test_sharp_corners_do_not_slow_entire_stroke (test_tcb705.PlanTests.test_sharp_corners_do_not_slow_entire_stroke) ... ok
+test_y_down_conversion (test_tcb705.PlanTests.test_y_down_conversion) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 9.505s
+
+OK

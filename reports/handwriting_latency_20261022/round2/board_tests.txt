@@ -1,0 +1,16 @@
+test_actual_rounded_joint_limits_are_checked (test_short_stroke.ShortStrokeTests) ... ok
+test_actual_segment_collision_failure_propagates (test_short_stroke.ShortStrokeTests) ... ok
+test_batch_prefix_refinement_matches_original_planner (test_short_stroke.ShortStrokeTests) ... ok
+test_cancellation_and_no_sdk_connection (test_short_stroke.ShortStrokeTests) ... ok
+test_curve_cache_is_immutable_and_tracks_edits_and_scale (test_short_stroke.ShortStrokeTests) ... ok
+test_matches_full_planner_geometry_and_guards_non_executable_contract (test_short_stroke.ShortStrokeTests) ... ok
+test_modified_pressure_and_multiple_strokes_are_rejected (test_short_stroke.ShortStrokeTests) ... ok
+test_prefetch_cannot_hide_non_finite_angles (test_short_stroke.ShortStrokeTests) ... ok
+test_rounding_matches_real_sdk_serialization (test_short_stroke.ShortStrokeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 13.296s
+
+OK
+
+REMOTE_EXIT=0

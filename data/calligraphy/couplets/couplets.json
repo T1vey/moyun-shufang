@@ -1,0 +1,197 @@
+{
+ "schema": "couplets-v1",
+ "version": "couplets-20261025-v1",
+ "style": "kai",
+ "notice": "传统春联（公有领域）。上联末字仄声、下联末字平声；上联贴右、下联贴左，横批从右往左读。",
+ "items": [
+  {
+   "id": "c01",
+   "upper": "天增岁月人增寿",
+   "lower": "春满乾坤福满门",
+   "banner": "福满人间",
+   "category": "福寿"
+  },
+  {
+   "id": "c02",
+   "upper": "一帆风顺年年好",
+   "lower": "万事如意步步高",
+   "banner": "吉星高照",
+   "category": "吉祥"
+  },
+  {
+   "id": "c03",
+   "upper": "和顺一门有百福",
+   "lower": "平安二字值千金",
+   "banner": "万象更新",
+   "category": "吉祥"
+  },
+  {
+   "id": "c04",
+   "upper": "春回大地千山秀",
+   "lower": "日照神州百业兴",
+   "banner": "国泰民安",
+   "category": "新春"
+  },
+  {
+   "id": "c05",
+   "upper": "爆竹声声辞旧岁",
+   "lower": "梅花点点报新春",
+   "banner": "万象更新",
+   "category": "新春"
+  },
+  {
+   "id": "c06",
+   "upper": "五湖四海皆春色",
+   "lower": "万水千山尽得辉",
+   "banner": "万象更新",
+   "category": "新春"
+  },
+  {
+   "id": "c07",
+   "upper": "春雨丝丝润万物",
+   "lower": "红梅点点绣千山",
+   "banner": "春满人间",
+   "category": "新春"
+  },
+  {
+   "id": "c08",
+   "upper": "福旺财旺运道旺",
+   "lower": "家兴人兴事业兴",
+   "banner": "喜气盈门",
+   "category": "吉祥"
+  },
+  {
+   "id": "c09",
+   "upper": "花开富贵家家乐",
+   "lower": "灯照吉祥岁岁欢",
+   "banner": "吉星高照",
+   "category": "吉祥"
+  },
+  {
+   "id": "c10",
+   "upper": "年年顺景则源广",
+   "lower": "岁岁平安福寿多",
+   "banner": "吉星高照",
+   "category": "福寿"
+  },
+  {
+   "id": "c11",
+   "upper": "精耕细作丰收岁",
+   "lower": "勤俭持家有余年",
+   "banner": "国泰民安",
+   "category": "通用"
+  },
+  {
+   "id": "c12",
+   "upper": "一年四季行好运",
+   "lower": "八方财宝进家门",
+   "banner": "家和业兴",
+   "category": "吉祥"
+  },
+  {
+   "id": "c13",
+   "upper": "绿竹别其三分景",
+   "lower": "红梅正报万家春",
+   "banner": "春回大地",
+   "category": "新春"
+  },
+  {
+   "id": "c14",
+   "upper": "喜居宝地千年旺",
+   "lower": "福照家门万事兴",
+   "banner": "喜迎新春",
+   "category": "吉祥"
+  },
+  {
+   "id": "c15",
+   "upper": "门迎春夏秋冬福",
+   "lower": "户纳东西南北财",
+   "banner": "平安如意",
+   "category": "吉祥"
+  },
+  {
+   "id": "c16",
+   "upper": "迎新春江山锦绣",
+   "lower": "辞旧岁事泰辉煌",
+   "banner": "春满人间",
+   "category": "新春"
+  },
+  {
+   "id": "c17",
+   "upper": "春风迎新岁",
+   "lower": "瑞雪兆丰年",
+   "banner": "国泰民安",
+   "category": "新春"
+  },
+  {
+   "id": "c18",
+   "upper": "爆竹声声脆",
+   "lower": "梅花朵朵香",
+   "banner": "五福临门",
+   "category": "新春"
+  },
+  {
+   "id": "c19",
+   "upper": "天地和为贵",
+   "lower": "家庭善最先",
+   "banner": "和气致祥",
+   "category": "通用"
+  },
+  {
+   "id": "c20",
+   "upper": "春来花似锦",
+   "lower": "福到喜盈门",
+   "banner": "喜迎新春",
+   "category": "新春"
+  },
+  {
+   "id": "c21",
+   "upper": "吉星临福地",
+   "lower": "紫气满华堂",
+   "banner": "紫气东来",
+   "category": "吉祥"
+  },
+  {
+   "id": "c22",
+   "upper": "一年春作首",
+   "lower": "六事礼为先",
+   "banner": "春回大地",
+   "category": "通用"
+  },
+  {
+   "id": "c23",
+   "upper": "人和家业旺",
+   "lower": "春到福门开",
+   "banner": "喜气盈门",
+   "category": "吉祥"
+  },
+  {
+   "id": "c24",
+   "upper": "门迎百福",
+   "lower": "户纳千祥",
+   "banner": "春回大地",
+   "category": "吉祥"
+  },
+  {
+   "id": "c25",
+   "upper": "万事如意",
+   "lower": "一年平安",
+   "banner": "新春大吉",
+   "category": "吉祥"
+  },
+  {
+   "id": "c26",
+   "upper": "福星高照",
+   "lower": "喜气盈门",
+   "banner": "万事如意",
+   "category": "吉祥"
+  },
+  {
+   "id": "c27",
+   "upper": "春临大地",
+   "lower": "福满人间",
+   "banner": "万象更新",
+   "category": "新春"
+  }
+ ]
+}

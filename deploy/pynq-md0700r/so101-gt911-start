@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+. /etc/so101/desktop.env
+exec "${SO101_PYTHON:-/usr/bin/python3}" -B "$SO101_APP/deploy/pynq-md0700r/gt911_input.py" --runtime "$SO101_APP" --platform-manifest "$SO101_PLATFORM"

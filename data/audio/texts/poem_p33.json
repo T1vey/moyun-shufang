@@ -1,0 +1,17 @@
+{
+  "id": "poem_p33",
+  "category": "poem",
+  "title": "望天门山",
+  "author": "李白",
+  "dynasty": "唐",
+  "sentences": [
+    "天门中断楚江开，",
+    "碧水东流至此回。",
+    "两岸青山相对出，",
+    "孤帆一片日边来。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

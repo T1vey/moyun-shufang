@@ -1,0 +1,3 @@
+# Desktop source release: OpenCV 4.10 loads the provided opset-9 HCCR model.
+-r requirements-workbench.txt
+opencv-python==4.10.0.84

@@ -1,0 +1,34 @@
+6: eth1: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc pfifo_fast state DOWN mode DEFAULT group default qlen 1000
+    link/ether 02:0a:35:00:22:02 brd ff:ff:ff:ff:ff:ff promiscuity 0 minmtu 68 maxmtu 1500 addrgenmode eui64 numtxqueues 1 numrxqueues 1 gso_max_size 65536 gso_max_segs 65535 
+0
+down
+192.168.4.4 dev eth1 src 192.168.4.23 uid 1000 
+    cache 
+Settings for eth1:
+	Supported ports: [ TP MII ]
+	Supported link modes:   10baseT/Half 10baseT/Full 
+	                        100baseT/Half 100baseT/Full 
+	                        1000baseT/Full 
+	Supported pause frame use: Symmetric Receive-only
+	Supports auto-negotiation: Yes
+	Supported FEC modes: Not reported
+	Advertised link modes:  10baseT/Half 10baseT/Full 
+	                        100baseT/Half 100baseT/Full 
+	                        1000baseT/Full 
+	Advertised pause frame use: No
+	Advertised auto-negotiation: Yes
+	Advertised FEC modes: Not reported
+	Speed: Unknown!
+	Duplex: Unknown! (255)
+	Port: MII
+	PHYAD: 4
+	Transceiver: internal
+	Auto-negotiation: on
+	Link detected: no
+Cannot get wake-on-lan settings: Operation not permitted
+CONFIG {"robot_id": 1, "paper": {"origin_m": [-0.35939, -0.067854, 0.21930000000000002], "x_axis": [0, 1, 0], "y_axis": [-1, 0, 0], "width_mm": 148.51999999999998, "height_mm": 150.21500000000003}, "tool_rotation": [[-1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [-0.0, 0.0, -1.0]]}
+PORT 80 timeout timed out
+PORT 8001 OSError [Errno 113] No route to host
+CONTROLLER_READ_FAILED URLError <urlopen error timed out>
+
+REMOTE_EXIT=0

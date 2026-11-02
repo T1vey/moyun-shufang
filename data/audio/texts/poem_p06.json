@@ -1,0 +1,17 @@
+{
+  "id": "poem_p06",
+  "category": "poem",
+  "title": "鹿柴",
+  "author": "王维",
+  "dynasty": "唐",
+  "sentences": [
+    "空山不见人，",
+    "但闻人语响。",
+    "返景入深林，",
+    "复照青苔上。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

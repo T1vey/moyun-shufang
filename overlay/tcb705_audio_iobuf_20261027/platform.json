@@ -1,0 +1,89 @@
+{
+  "schema": "so101-platform-v1",
+  "build_id": "tcb705-parallel-fp32-audio-iobuf-20261027",
+  "display": "md0700r-1024x600",
+  "display_backend": "pynq-mmio",
+  "kernel_release": null,
+  "dtbo": null,
+  "bitfile": "tcb705_planner_fp32.bit",
+  "ip_name": "tcb_planner_parallel_0",
+  "accelerator_abi": "tcb705-planner-fp32-v2",
+  "accelerator_clock_hz": 100000000,
+  "touch_backend": "gt911-pl-gpio",
+  "display_contract": {
+    "schema": "so101-md0700r-mmio-v1",
+    "width": 1024,
+    "height": 600,
+    "pixel_clock_hz": 51200000,
+    "framebuffer_format": 29,
+    "stride_bytes": 3072,
+    "x11_display": ":9",
+    "touch_packet_offset": 8,
+    "register_window_bytes": 65536,
+    "ips": {
+      "clock": {
+        "instance": "clk_wiz_0",
+        "base": 1136852992
+      },
+      "lcd_id": {
+        "instance": "lcd_out_lcd_id",
+        "base": 1092616192
+      },
+      "pwm": {
+        "instance": "lcd_out_lcd_pl_pwm",
+        "base": 1136656384
+      },
+      "vtc": {
+        "instance": "lcd_out_lcd_vtc",
+        "base": 1136721920
+      },
+      "framebuffer": {
+        "instance": "lcd_out_v_frmbuf_rd_0",
+        "base": 1136787456
+      },
+      "reset_touch": {
+        "instance": "rest_gpio",
+        "base": 1092747264
+      }
+    },
+    "touch_module": "touch_pl",
+    "touch_packet_format": "gt911-seq10-pressed1-valid1-x10-y10"
+  },
+  "files": {
+    "ge_pl.dtbo": "9bc8cc0a49ca0f8471d65aa30987bb512ca60c8ea5ad0c35f64dd9c6754a5176",
+    "tcb705_planner_fp32.artifacts.json": "d23840e36d9ff13c7c2a98a3723c0c2868648d845491f3874d9973f50b42a89c",
+    "tcb705_planner_fp32.bit": "7c80b1470355357526bc667dc524c7dd8329e2dc135f78c2bf3f51cdbc24a4fc",
+    "tcb705_planner_fp32.hwh": "60f9f55d1898f131a4991300b101868075c4617eb418d379b177e6d4b4f9d98c",
+    "tcb705_planner_fp32.registers.json": "54f70314a57b1fc31876165c415e074a20e070e619bc4aaf6c9048d103529ebe",
+    "tcb_brush_recog.registers.json": "e811b790552eed44b2adba48f06287014eae4d06fb1a80437a9ac0d4319f721f"
+  },
+  "board_acceptance": "SEE_BOARD_REPORT_AND_BOOT_RECEIPT",
+  "ge_pl": {
+    "dtbo": "ge_pl.dtbo",
+    "phy_address": 4,
+    "bridge_address": 8,
+    "reset_gpio_offset": 54,
+    "reference_clock_hz": 200000000,
+    "kernel_release": "5.4.0-xilinx-v2020.2"
+  },
+  "vision": {
+    "abi": "tcb705-brushrecog-v1",
+    "ip_name": "tcb_brush_recog_0",
+    "base": 1074003968,
+    "size": 65536,
+    "clock_hz": 100000000,
+    "camera": "usb-uvc-yuyv-640x480",
+    "registers": "tcb_brush_recog.registers.json"
+  },
+  "audio": {
+    "abi": "tcb705-audio-v1",
+    "ip_name": "audio_out_0",
+    "base": 1074135040,
+    "size": 65536,
+    "identity": 1096107057,
+    "version": 539365415,
+    "clock_hz": 100000000,
+    "sample_rate": 48000,
+    "fifo_samples": 16384
+  }
+}

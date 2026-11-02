@@ -1,0 +1,17 @@
+test_base_transform_supported_in_hardware_chain (test_tcb_acceleration.AccelerationTests.test_base_transform_supported_in_hardware_chain) ... ok
+test_cancel_and_bad_model_do_not_return_success (test_tcb_acceleration.AccelerationTests.test_cancel_and_bad_model_do_not_return_success) ... ok
+test_cpu_chain_matches_scalar_exactly (test_tcb_acceleration.AccelerationTests.test_cpu_chain_matches_scalar_exactly) ... ok
+test_empty_hardware_prefix_records_cpu_fallback (test_tcb_acceleration.AccelerationTests.test_empty_hardware_prefix_records_cpu_fallback) ... ok
+test_fk_rows_full_seven_axis_pose (test_tcb_acceleration.AccelerationTests.test_fk_rows_full_seven_axis_pose) ... ok
+test_hls_chain_is_accepted_after_cpu_validation (test_tcb_acceleration.AccelerationTests.test_hls_chain_is_accepted_after_cpu_validation) ... ok
+test_native_extrema_match_numpy_random_all_orders (test_tcb_acceleration.AccelerationTests.test_native_extrema_match_numpy_random_all_orders) ... ok
+test_plan_hls_matches_within_one_sdk_float_ulp_and_full_geometry_gates (test_tcb_acceleration.AccelerationTests.test_plan_hls_matches_within_one_sdk_float_ulp_and_full_geometry_gates) ... ok
+test_rejected_hardware_proposal_uses_cpu (test_tcb_acceleration.AccelerationTests.test_rejected_hardware_proposal_uses_cpu) ... ok
+test_repeated_nearby_endpoint_and_degenerate_roots (test_tcb_acceleration.AccelerationTests.test_repeated_nearby_endpoint_and_degenerate_roots) ... ok
+test_seed_change_invalidates_speculative_suffix (test_tcb_acceleration.AccelerationTests.test_seed_change_invalidates_speculative_suffix) ... ok
+test_wrong_generation_rejected (test_tcb_acceleration.AccelerationTests.test_wrong_generation_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 1.068s
+
+OK

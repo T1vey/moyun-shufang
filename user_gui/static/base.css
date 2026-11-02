@@ -1,0 +1,167 @@
+/* 糖画坊 · SO-101 — design tokens
+   焦糖暖底，琥珀糖色做主色，朱砂印章做点缀；状态色仍只用于系统状态。 */
+:root {
+  color-scheme: dark;
+
+  /* surfaces: 炒糖锅底的深褐 */
+  --bg-0: #120c08;
+  --bg-1: #1a120c;
+  --bg-2: #231910;
+  --bg-3: #2e2116;
+  --line: rgba(255, 210, 150, .09);
+  --line-2: rgba(255, 210, 150, .17);
+
+  /* text: 米纸色 */
+  --text: #f7ead6;
+  --text-2: #cbb497;
+  --text-3: #8a735a;
+
+  /* sugar */
+  --sugar: #f3ad45;
+  --sugar-hi: #ffe2a6;
+  --sugar-deep: #b8661a;
+  --seal: #c93a2c;
+  --bamboo: #e6cf97;
+  --sugar-grad: linear-gradient(180deg, #ffd27e 0%, #f3ad45 45%, #d9861f 100%);
+
+  /* state */
+  --ok: #8fd694;
+  --sync: #f3ad45;
+  --err: #ef5d4f;
+
+  /* action ink = 糖色按钮 */
+  --ink: #f3ad45;
+  --ink-text: #2a1505;
+
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px;
+
+  --t-xs: 11px; --t-sm: 12px; --t-md: 13px; --t-lg: 15px; --t-xl: 20px;
+  --sans: "Inter", "Segoe UI Variable Text", "Segoe UI", "PingFang SC", "HarmonyOS Sans SC", "Microsoft YaHei UI", "Microsoft YaHei", system-ui, sans-serif;
+  --mono: "JetBrains Mono", "SF Mono", "Cascadia Mono", ui-monospace, Menlo, Consolas, "Microsoft YaHei UI", monospace;
+  /* 毛笔字：本机字体，离线可用 */
+  --brush: "STXingkai", "华文行楷", "Xingkai SC", "STKaiti", "KaiTi", "楷体", "Kaiti SC", serif;
+
+  --r1: 3px; --r2: 6px; --r3: 10px; --r4: 14px;
+
+  --ease: cubic-bezier(.3, .7, .2, 1);
+  --spring: cubic-bezier(.34, 1.56, .64, 1);
+
+  font-family: var(--sans);
+  font-size: var(--t-md);
+  line-height: 1.5;
+  color: var(--text);
+  background: var(--bg-0);
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--bg-0); }
+body {
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(243, 173, 69, .10), transparent 60%),
+    radial-gradient(900px 500px at 110% 110%, rgba(201, 58, 44, .08), transparent 60%),
+    var(--bg-0);
+}
+button, input, select { font: inherit; color: inherit; }
+button { cursor: pointer; }
+button:disabled { cursor: not-allowed; }
+:focus-visible { outline: 2px solid var(--sugar); outline-offset: 2px; }
+[hidden] { display: none !important; }
+.mono { font-family: var(--mono); font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.brush { font-family: var(--brush); font-weight: 400; letter-spacing: .04em; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: var(--s2);
+  height: 30px; padding: 0 var(--s3); border-radius: var(--r2);
+  border: 1px solid var(--line-2); background: var(--bg-2); color: var(--text);
+  font-size: var(--t-md); font-weight: 500; white-space: nowrap;
+  transition: background .15s var(--ease), border-color .15s var(--ease), transform .15s var(--spring), box-shadow .2s var(--ease), color .15s;
+}
+.btn:hover:not(:disabled) { background: var(--bg-3); border-color: rgba(243, 173, 69, .35); }
+.btn:active:not(:disabled) { transform: scale(.96); }
+.btn:disabled { color: var(--text-3); }
+.btn.ink {
+  position: relative; overflow: hidden;
+  background: var(--sugar-grad); color: var(--ink-text); border-color: #e39a35;
+  box-shadow: inset 0 1px 0 rgba(255, 245, 220, .7), 0 6px 18px -6px rgba(243, 173, 69, .55);
+  font-weight: 600;
+}
+.btn.ink::after { /* 糖面流光 */
+  content: ""; position: absolute; top: 0; right: 0; bottom: 0; left: 0; pointer-events: none;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 250, 235, .55) 50%, transparent 65%);
+  transform: translateX(-120%); animation: gloss 4.2s 1.2s var(--ease) infinite;
+}
+.btn.ink:hover:not(:disabled) { background: var(--sugar-grad); filter: brightness(1.06); box-shadow: inset 0 1px 0 rgba(255, 245, 220, .7), 0 8px 24px -6px rgba(243, 173, 69, .75); }
+.btn.ink:disabled { background: var(--bg-3); border-color: var(--line); color: var(--text-3); box-shadow: none; }
+.btn.ink:disabled::after { display: none; }
+.btn.quiet { background: transparent; border-color: transparent; color: var(--text-2); }
+.btn.quiet:hover:not(:disabled) { color: var(--sugar-hi); background: var(--bg-2); border-color: transparent; }
+.btn svg { width: 14px; height: 14px; flex: none; }
+@keyframes gloss { 0%, 55% { transform: translateX(-120%); } 85%, 100% { transform: translateX(120%); } }
+
+/* segmented control with sliding sugar pill */
+.seg { position: relative; display: inline-flex; padding: 2px; gap: 2px; border: 1px solid var(--line-2); border-radius: 999px; background: var(--bg-1); }
+.seg button {
+  position: relative; z-index: 1; height: 26px; padding: 0 var(--s3); border: 0; border-radius: 999px; background: transparent; color: var(--text-2);
+  font-size: var(--t-sm); font-weight: 500; white-space: nowrap; transition: color .2s var(--ease), background .2s var(--ease);
+}
+.seg button:hover { color: var(--text); }
+.seg button[aria-pressed="true"] { background: rgba(243, 173, 69, .16); color: var(--sugar-hi); box-shadow: inset 0 0 0 1px rgba(243, 173, 69, .45); }
+
+/* state LED */
+.led { position: relative; width: 7px; height: 7px; border-radius: 50%; background: var(--text-3); flex: none; }
+.led.ok { background: var(--ok); }
+.led.sync { background: var(--sync); }
+.led.err { background: var(--err); }
+.led.ok::after, .led.sync::after {
+  content: ""; position: absolute; top: -3px; right: -3px; bottom: -3px; left: -3px; border-radius: 50%; border: 1px solid currentColor;
+  color: inherit; animation: ping 1.8s var(--ease) infinite;
+}
+.led.ok::after { color: var(--ok); } .led.sync::after { color: var(--sync); animation-duration: .9s; }
+@keyframes ping { from { transform: scale(.6); opacity: .9; } to { transform: scale(2.1); opacity: 0; } }
+
+/* form fields */
+.field { display: block; }
+.field > span { display: block; font-size: var(--t-xs); color: var(--text-3); margin-bottom: var(--s1); }
+.field select, .field input[type=number] {
+  width: 100%; height: 32px; padding: 0 var(--s2); border-radius: var(--r2);
+  border: 1px solid var(--line-2); background: var(--bg-2); font-size: var(--t-md);
+  transition: border-color .15s, box-shadow .15s;
+}
+.field select:hover, .field input[type=number]:hover { border-color: rgba(243, 173, 69, .35); }
+.field select:focus, .field input[type=number]:focus { outline: 0; border-color: var(--sugar); box-shadow: 0 0 0 3px rgba(243, 173, 69, .18); }
+.field input[type=number] { font-family: var(--mono); }
+.field select {
+  appearance: none; padding-right: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23f3ad45'/%3E%3C/svg%3E");
+  background-repeat: no-repeat; background-position: right 9px center;
+}
+.field select option { background: var(--bg-2); }
+
+/* 朱砂印章 */
+.seal {
+  display: inline-grid; place-items: center; flex: none;
+  width: 22px; height: 22px; border-radius: 4px; background: var(--seal); color: #ffe9df;
+  font-family: var(--brush); font-size: 14px; line-height: 1;
+  box-shadow: inset 0 0 0 1.5px rgba(255, 220, 200, .55), inset 0 0 6px rgba(80, 0, 0, .4);
+  transform: rotate(-4deg);
+}
+
+/* 糖画 Logo：笔画逐段描出 */
+.logo-fish path, .logo-fish circle { fill: none; stroke: url(#sugar-g); stroke-linecap: round; stroke-linejoin: round; }
+.logo-fish .draw { stroke-dasharray: 1; stroke-dashoffset: 1; animation: pour 1.1s var(--ease) forwards; }
+.logo-fish .draw:nth-of-type(2) { animation-delay: .9s; } .logo-fish .draw:nth-of-type(3) { animation-delay: 1.1s; }
+.logo-fish .draw:nth-of-type(4) { animation-delay: 1.25s; } .logo-fish .draw:nth-of-type(5) { animation-delay: 1.4s; }
+.logo-fish .draw:nth-of-type(6) { animation-delay: 1.55s; } .logo-fish .draw:nth-of-type(7) { animation-delay: 1.7s; }
+.logo-fish .stick { stroke: var(--bamboo); stroke-width: 2.4; stroke-linecap: round; transform: translateY(14px); opacity: 0; animation: stick .5s 1.9s var(--spring) forwards; }
+.logo-fish { filter: drop-shadow(0 0 4px rgba(243, 173, 69, .45)); overflow: visible; }
+@keyframes pour { to { stroke-dashoffset: 0; } }
+@keyframes stick { to { transform: none; opacity: 1; } }
+
+/* 动效默认开启（这是展示用的界面，系统“关闭动画效果”时也照常播放）；屏幕页右上角可手动关掉 */
+/* WebKitGTK on the ARM32 panel must not schedule near-zero-duration animations.
+   Disable their clocks completely, then expose the finished static logo. */
+.calm *, .calm *::before, .calm *::after { animation: none !important; transition: none !important; }
+.calm .logo-fish .draw { stroke-dashoffset: 0; }
+.calm .logo-fish .stick { transform: none; opacity: 1; }
+.calm .led::after, .calm .btn.ink::after { display: none; }

@@ -1,0 +1,14 @@
+{
+  "version": "so101-upstream-ab4207c-nominal-v1",
+  "model_status": "nominal_simulation_only",
+  "source_commit": "ab4207c87a4317d835adb914ca9e4db7948e6aa3",
+  "source_files": ["others/ik/robot.py:create_so101_5dof", "src/ik_solver_hls/lm_solver_so101.hpp:SO101_Params"],
+  "units": "m_rad",
+  "convention": "T = product(translate_before_joint_i * positive_right_hand_axis_rotation(q_i)); tip = T * tool_translation",
+  "offsets_m": [[0.0612,0,0.0598],[0.02943,0,0.05504],[0.02798,0,0.1127],[0.15504,0,0.00519],[0.0593,0,0.00996]],
+  "axes": [[0,0,1],[0,1,0],[0,1,0],[0,1,0],[1,0,0]],
+  "limits_rad": [[-1.91986,1.91986],[-1.74533,1.74533],[-1.69,1.69],[-1.65806,1.65806],[-2.74385,2.84121]],
+  "tool_translation_m": [0,0,0],
+  "tool_axis_local": [1,0,0],
+  "tool_note": "Zero tool length matches upstream flange endpoint. +X is an explicit simulation task convention, NOT a measured pen mounting. Real pen tip/axis, encoder zero and limits remain uncalibrated."
+}

@@ -1,0 +1,22 @@
+{
+  "repository": "https://github.com/Xilinx/Vitis_Libraries",
+  "tag": "v2024.2_rel",
+  "commit": "80bc4808a99ab76ab304d80640047c2a64ae47dd",
+  "files": {
+    "LICENSE.txt": "5d3016bfaa895975fa5e815e4a18911c4a3f73e2773cedb4e4382cfe9e2613fd",
+    "solver/L1/include/hw/back_substitute.hpp": "b44b5f1e05ad75aecc604abde2374325e212180ca7e90d1d56973e1fa65133b2",
+    "solver/L1/include/hw/cholesky.hpp": "d36b6dd2db57b7cde7b2af35e81c540fedbfb3424d18346a77fd497f1bc3c945",
+    "solver/L1/include/hw/cholesky_inverse.hpp": "e86ae7c9d899e0b89af8647b1be218650d4cfe7c29a501eec1ef5abdfc5e5956",
+    "solver/L1/include/hw/matrix_multiply.hpp": "aefc2e406415ef5fa04090a5e79d304750834755ab7a311e898f25b3ab65b932",
+    "solver/L1/include/hw/pseudosqrt.hpp": "8ecb77ce6b61e6ccc35cb0b6f44704767bf74c624b401d8dae74778fb932221d",
+    "solver/L1/include/hw/qr_inverse.hpp": "843c44cf89c6f039205c98fd627e20321166a4aba2c4752d0433d66a70f3f74b",
+    "solver/L1/include/hw/qrd.hpp": "f460264851886e727c08af6835d699887a2bcb9694f353afffc52e192d03db87",
+    "solver/L1/include/hw/qrdfloat.hpp": "6c3c12b292e093f153e2b0b1d9de7bb46fe30c2ee9fe9c085229a96d2a37d17a",
+    "solver/L1/include/hw/qrf.hpp": "608d91fb2d4d401f47ff0b32d5cf7302f4fe38f3d8c67b872cdafcbd2a190474",
+    "solver/L1/include/hw/svd.hpp": "62ebe2fa5e2c407838f16133cd4badcc73b3cd7c2ca88c295ef6484227b337af",
+    "solver/L1/include/hw/utils/x_matrix_utils.hpp": "46141eb05fd831cc7e296a4fef998df9f89484939b98b683fb7eccc50e90091b",
+    "solver/LICENSE.txt": "081ee891b6039279f97419a71ad12c6ff08b6755d108e20a0ac82ed9bdb75a35",
+    "solver/L2/include/hw/MatrixDecomposition/potrf.hpp": "df74aefbaaadd6b81d489a6c91bb48148da20d2c9ea7b6981047b2fd555dce48",
+    "solver/L2/include/hw/math_helper.hpp": "3611386192e3d21f1c8ecd4bda29be06756eacd467f76943e619d0bc57cf3cea"
+  }
+}

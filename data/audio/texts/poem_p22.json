@@ -1,0 +1,17 @@
+{
+  "id": "poem_p22",
+  "category": "poem",
+  "title": "出塞",
+  "author": "王昌龄",
+  "dynasty": "唐",
+  "sentences": [
+    "秦时明月汉时关，",
+    "万里长征人未还。",
+    "但使龙城飞将在，",
+    "不教胡马度阴山。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

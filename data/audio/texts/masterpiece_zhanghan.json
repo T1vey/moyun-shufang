@@ -1,0 +1,20 @@
+{
+  "id": "masterpiece_zhanghan",
+  "category": "masterpiece",
+  "title": "张翰帖",
+  "author": "欧阳询",
+  "dynasty": "唐",
+  "sentences": [
+    "张翰字季鹰，吴郡人。",
+    "有清才，善属文，而纵任不拘，时人号之为江东步兵。",
+    "后谓同郡顾荣曰：天下纷纭，祸难未已。",
+    "夫有四海之名者，求退良难。",
+    "吾本山林间人，无望于时。",
+    "子善以明防前，以智虑后。",
+    "荣执其手怆然，翰因见秋风起，乃思吴中菰菜鲈鱼，遂命驾而归。"
+  ],
+  "source_url": "https://www.dpm.org.cn/collection/handwriting/234567.html",
+  "source_note": "故宫博物院释文；「手」字据《晋书》补入。普通话合成，多音字待人工试听。",
+  "verification_status": "source-transcription-normalized",
+  "source_sha256": "396959909ff0c05c8039264d26e3f6c84365c33f98c1b5920ee8c379f5cb2ec4"
+}

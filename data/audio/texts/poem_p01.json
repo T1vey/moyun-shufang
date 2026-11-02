@@ -1,0 +1,17 @@
+{
+  "id": "poem_p01",
+  "category": "poem",
+  "title": "静夜思",
+  "author": "李白",
+  "dynasty": "唐",
+  "sentences": [
+    "床前明月光，",
+    "疑是地上霜。",
+    "举头望明月，",
+    "低头思故乡。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

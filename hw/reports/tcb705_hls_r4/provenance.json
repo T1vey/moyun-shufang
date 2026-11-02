@@ -1,0 +1,16 @@
+{
+  "schema": "tcb705-hls-build-v1",
+  "tool": "Vitis HLS 2024.2",
+  "part": "xc7z020clg400-2",
+  "clock_ns": 10,
+  "csim": "PASS",
+  "cosim": "PASS",
+  "source_sha256": {
+    "pl_math7.hpp": "17c4b3ab5c427050340bfbbf1ad9a5f65e037bbf7981942966e8663d7a9fc6e1",
+    "tb_tcb_planner.cpp": "864d8f1e40aac6d4d9010976c7e2bb2bfcf00b8601c5a49f04c2f609c8b704d7",
+    "tcb_planner_2024.cfg": "49d2c1bfd22b1a18a9f1951527a45da01c6cc14f9a58444c54c689cd5c919fe0",
+    "tcb_planner_accel.cpp": "b2fa2856ec943521907bae787b89a4fdace07bda4c590fe3d32735d90cf27ab3",
+    "tcb_planner_accel.h": "89ff24173439a4c75a4c76cdc082ac0c24febec363cf85c59800ca72e8812be9",
+    "vectors.txt": "0d4f42d8ec7e4ed8f669bd434fa4a259946741fb18ae855855f4b731f742883c"
+  }
+}

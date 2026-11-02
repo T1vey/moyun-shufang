@@ -1,0 +1,227 @@
+TCB705 接口返回成功但机械臂不运动：离线核查
+核查日期：2026-10-17
+范围：本地说明书、头文件、库文件静态检查，以及断开机械臂之前保存的实机日志。
+本轮没有连接控制器，没有发送运动指令，没有替换板端软件或升级固件。
+
+一、结论和证据强度
+
+1. 已确认：当时 ZYNQ 测试进程加载的 SDK 是 V2.4.1，控制器主机软件是
+   1.9.71-main.aarch64.TIANLIAN.26c8ffa。
+   V2.4.1 说明书要求控制器至少 v1.9.82；V2.3.11 说明书也要求至少 v1.9.80。
+   因此，现有组合低于这两份说明书规定的支持范围。不能靠只换成 V2.3.11 解决。
+
+2. 已确认：网络连通和基本反馈读取成功，不等于运动功能兼容。
+   七轴关节角及六维末端反馈可读；forwardKinematics 调用失败，输出为空。
+   新运动学接口在 V2.3.11 才新增，旧主机不支持是合理解释，但不是唯一解释。
+
+3. 已确认：两次 SDK 测试都返回 0，但坐标无变化；独立 Web 反馈也未变化，
+   用户现场确认完全没有移动。不能将这次返回值记作“运动成功”。
+   ARM32 库静态控制流表明，本次 needBlock=false、needCallback=false 的分支
+   根据请求响应返回结果，不等待运动完成。其返回 0 不能证明伺服已经执行。
+
+4. 尚未确定：版本不匹配是否是唯一根因。
+   不经过 ARM32 SDK 的 Web 单点接口也没带来动作；但该测试与原 ArmVision 的
+   完整准备流程并不相同，且没有完成控制器侧驱动就绪、示教器脱离状态等检查。
+   准确结论是“已找到需要先解决的兼容性问题”，不是“已经证明升级一定能动”。
+
+二、V2.4.1 是怎么查出来的
+
+实机日志：
+  build/tcb705/deployment/probe_robot_restored_cabling_20261017.log，第 7 行。
+  sdk_version = V2.4.1
+  host_version = 1.9.71-main.aarch64.TIANLIAN.26c8ffa
+
+查询源码：
+  native/huacheng_bridge/sdk_probe.cpp 输出这两个字段。
+  native/huacheng_bridge/sdk_adapter.cpp 中：
+    library_version() -> HCXSDKLib::VersionManager::getLibVersion()
+    host_version()    -> HCXSDKLib::VersionManager::getHostVersion()
+
+这是断开前板端程序的实际运行结果，不是从文件名或 PDF 标题推断。
+“SDK V2.4.1”指进程加载的 libxoip.so；“主机 1.9.71”指机械臂控制器的软件。
+两者都不是 ZYNQ 上 Linux/PYNQ 的系统版本。
+
+本地交付库与工程 vendor/huacheng/armhf/libxoip.so 的 SHA-256 相同：
+  adcacf19bc8efe1666b4c86d5a527836bebda67d9130c356fced9d8aeb49567e
+库的 ELF 标识为 32 位 ARM。它已在板上成功加载、查询版本和读取关节位置，
+所以当前问题不能解释为“ZYNQ 无法加载这个 ARM32 库”。
+
+工程 vendor/huacheng/include/robot.h 与仓库 V2.4.1/robot.h 完全一致：
+  SHA-256 = 8812e77fd224378af6d89274d1644c344e85eada32ad3ee1ab3aae7165b32b03
+未发现这次编译用了 V2.3.11 旧头文件的证据。
+
+三、文档和原项目的版本对照
+
+SDK 版本        文档列出的最低机器人软件版本       与实读 1.9.71 的关系
+V2.3.1          V1.9.65 及以上                   达到该数值门槛，仍须确认天链定制分支
+V2.3.9          V1.9.76 及以上                   低于要求
+V2.3.10         V1.9.78 及以上                   低于要求
+V2.3.11         v1.9.80 及以上                   低于要求
+V2.4.1          v1.9.82 及以上                   低于要求
+
+依据：V2.3.11 与 V2.4.1 说明书各自 PDF 第 1 页的“版本记录”，已渲染核对表格。
+用户给的“相关说明书”V2.3.11 PDF 与 SDK/V2.3.11 目录里的 PDF 字节一致。
+
+原 ArmVision 的本地库：
+  D:/ArmVision2.0_User/backend/vendor/tianlian_xoip/xoip.dll
+  SHA-256 = 0dd4b68a4114b513db10915def4df700f728ebca86707fcd280de1c591d0cce8
+静态检查其导出的 VersionManager::getLibVersion：导出 RVA 0x54450，
+返回常量位于 RVA 0x4754c0，内容为 V2.3.1。
+该结论来自 PE 文件静态检查；本轮没有加载 DLL 或连接设备。
+
+这解释了为什么“原项目使用过这台机械臂”不能推出“更新的 ARM32 库也完整兼容”。
+原 DLL 是 Windows x64 库，不能直接复制到 ARM32 Linux 执行；需要厂商提供
+针对这台 1.9.71 天链控制器的 ARMv7/armhf 对应版本及配套头文件。
+
+V2.3.11 与 V2.4.1 的主要接口差异：
+  moveWorlds2             -> moveLine
+  moveJoints2             -> moveJoints
+  interpolation_en       -> interrupt
+  RobotActionParam 新增 splineWaypoints、angularSpeed 等字段。
+不是只改函数名字就能降级。不能混用 V2.3.11 头文件和 V2.4.1 动态库；
+同名结构体的二进制布局已经改变。
+
+四、为什么返回“成功”却不运动
+
+1. 先区分不同接口的成功含义
+   init_data/getLinkStatus：连接状态；不是驱动就绪证明。
+   /api/robot/line 的 code=0：此请求返回成功；没有独立的到位证明。
+   moveLine 的 uint64_t：V2.4.1 文档第 16、60 页将 0 写为完成/同步成功，
+   1 写为失败，>=10 写为回调序号。V2.3.11 第 14、47 页对 moveWorlds2 同样说明。
+   文档另明确 needBlock=true 才阻塞到运动完成。本次两个标志均为 false，
+   因而不能脱离调用方式，仅凭“0”认定机械臂已到达目标。
+
+2. ARM32 实际库的静态控制流补充
+   moveLine 入口虚拟地址 0x201900。
+   0x20193e、0x20194a 读取 needBlock、needCallback；两者都为 false 时序号置零。
+   0x2019be 调用内部请求函数 0x1f94f0。
+   内部函数在 0x1f9726 调用 PHCRpcClient::SendRequest，随后检查响应字段是否为零。
+   请求返回成功、两个标志都为 false 时，moveLine 返回零，未进入阻塞等待分支。
+   这证明本次返回成功与“实际运动已完成”不是同一个验收条件。
+   此为局部二进制分析，不代表已看到控制器内部源码，也未定位控制器忽略命令的具体分支。
+
+3. 总使能关闭同样不能只看函数返回
+   ARM32 robotEnableOrNot(false) 在写控制变量后可直接返回 true，
+   未等待 getRobotEnableStatus 变为 false。
+   实机 restore 日志也记录：请求返回 true，但随后采样 single_enabled=0、
+   global_enabled=1。该日志仅证明采样时总使能尚未确认关闭，不能据此断言
+   它永远不会关闭，也不能把当前断开状态写成已安全下电。
+
+4. 对上次测试的纠正
+   第一轮只确认单臂使能，之后发现总使能仍为 0；第二轮已补上总使能并确认变为 1，
+   仍然不动，因此“忘记总使能”不是能解释全部测试的原因。
+   上次没有把 SDK/主机版本支持范围作为运动前置条件，这一点应补上。
+   把 needBlock 改为 true 或开启回调可以改善结果判定，但不能修复版本兼容性；
+   不能用无限等待替代超时和独立位置检查。
+
+五、尚需区分的控制器状态问题
+
+1. 示教器通信模式不等于运动操作模式
+   setHostCommunicationMode(1) 的含义是主机与示教器使用以太网通信。
+   它不等于“进入自动运行”“获取外部运动控制权”或“解除示教器相关条件”。
+   文档第 5～6 页另外提供 detachHMI/getDetachHMIStatus，不能混为一谈。
+   上次未读取有效脱离状态，用户反馈是“没接示教器或不清楚”，因此状态未确认。
+
+2. 原 Web 流程没有被完整复现
+   D:/ArmVision2.0_User/backend/utils/tianlian_xoip_sender.py
+   web_line_point / web_line_relative 会先 POST /api/power，mode=manual，
+   然后检查伺服状态，再 POST /api/robot/line。
+   上次 0.5 mm 测试沿用了已读到的手动状态和总使能，没有重做 /api/power。
+   因此它证明“Web 单点请求也没有产生运动”，不能证明原 ArmVision 完整流程失效，
+   更不能以此排除所有控制模式、使能流程问题。
+
+3. EtherCAT 就绪状态仍未知
+   日志中 master 0 和 1 都是 query_ok=0、op=0。
+   op 是调用失败后保留的初始化值，不能解释成“已确认 EtherCAT 不在 OP”。
+   需要兼容 SDK 的有效查询或控制器原生诊断来确认。
+
+4. 历史急停不是当前急停的证明
+   报警 10802 文本为“R1紧急停止；请检查手持急停，或 STO 是否按下；轴错误”。
+   保存记录 history=1；当时 API 没有报告活动报警，软急停查询为正常。
+   因此可将示教器/STO/驱动链列为复核项，但不能直接认定用户当前按着急停。
+
+5. 目标可达性和报警屏蔽尚未充分验证
+   旧标定高度得到用户确认，但没有取得本控制器有效的目标逆解及限位检查结果。
+   getAlarmNotPrompt 的 bit1 可屏蔽路径规划失败提示，本次没有读取其值。
+   因此没有活动报警不等于路径规划一定成功。
+   下次应先只读当前位姿及当前附近目标的可达性，勿先尝试约 78 mm 的下降段。
+
+六、处理顺序
+
+优先方案：保留现有 1.9.71 控制器，向厂商取得兼容的 ARMv7/armhf SDK。
+原 ArmVision V2.3.1 可作为版本线索，具体以厂商针对 TIANLIAN 定制分支的确认和
+完整库/头文件配对为准。不能仅凭“1.9.71 大于 1.9.65”宣布整套功能验收完成。
+
+备选方案：由厂商提供适用于此 TCB705 及其驱动、插件配置的 >=1.9.82 控制器版本，
+确认保留机型、零点、限位、工具、工作区及原工程配置后，与现有 ARM32 V2.4.1 配套。
+不能把通用主机包或另一代天链 SDK 的固件直接刷入这台控制器。
+本轮没有进行任何固件升级。
+
+重新连接后的验收顺序：
+  a. 只读版本、活动报警、脱离示教器状态、实际驱动就绪状态；核实反馈采集有效。
+  b. 确认使用厂商支持的 SDK/控制器组合，再核对总使能与单臂使能的完整流程。
+  c. 独立记录请求结果、运动状态、指令关节角/位姿和反馈关节角/位姿。
+     - 指令未变化：重点查命令兼容、控制权、暂停、可达性和规划失败。
+     - 指令变化而反馈不变：重点查驱动使能、总线、STO/抱闸及控制器诊断。
+     - 两者变化但界面不变：才重点查显示或反馈订阅刷新。
+  d. 现场条件确认后，从当前位置附近低速、单次、有界的小位移验证开始。
+     命令超时不得自动重发；收到响应后仍须验证实际位移、到位和最终空闲。
+  e. 小位移验证成功，再进行纸面落笔、50 mm 直线及抬笔测试。
+
+建议代码改动（本轮仅分析，尚未部署这些改动）：
+  - 在所有运动入口增加 SDK/控制器版本组合检查；只读诊断仍可独立运行。
+  - 记录 COMMAND_ACCEPTED、MOTION_STARTED、TARGET_REACHED 三个独立状态。
+  - 对使能/下使能增加有时限的状态确认；不得用请求返回值替代确认。
+  - 非阻塞运动采用已验证的完成回调与实际位置双重确认，并保留无进展检测。
+  - 诊断同时采集 getJoints(...,false/true)、getWorlds(...,false/true)，
+    将 EtherCAT 查询失败表示为 UNKNOWN，不能降格成正常或直接写作非 OP。
+  - 不为解决本问题关闭保护、屏蔽报警、强制写运行键或改走未验证的关节透传。
+
+七、可复制给华成/天链的具体说明
+
+您好，我们用 ZYNQ7020（ARMv7/armhf，Linux glibc 2.31）作为上位主控。
+板端 VersionManager::getLibVersion() 实读为 V2.4.1；控制器实读为
+1.9.71-main.aarch64.TIANLIAN.26c8ffa，机械臂 TCB705，机器人 ID 1。
+原 ArmVision 随附 Windows xoip.dll 的 getLibVersion 返回常量为 V2.3.1。
+
+查说明书发现 V2.3.11 要求控制器 >=1.9.80，V2.4.1 要求 >=1.9.82。
+目前基本关节/末端反馈能读，但 forwardKinematics 返回 false；
+moveLine 在非阻塞、无回调模式返回 0，实际反馈连续 4 秒不变，机械臂现场也没动作。
+总使能和单臂使能都显示开启后的第二次测试仍如此。
+
+请优先提供兼容该 1.9.71 TIANLIAN 控制器的 ARMv7/armhf libxoip.so、
+配套头文件、依赖要求及最小的七轴单点运动例程；原 V2.3.1 若可用，请确认。
+如必须升级，请提供适用于这台 TCB705 定制控制器的固件和升级/配置备份要求，
+并确认现有 ARM32 V2.4.1 库与之兼容，不仅是能登录读取。
+
+另请确认：不接示教器时的合法控制方式、驱动就绪判据，以及 SDK 全局/单臂
+使能与 Web /api/power mode=manual 的关系。我们希望获取实际运动失败原因，
+而不是通过屏蔽报警或绕过保护来让机器人动起来。
+
+八、证据文件索引
+
+说明书（PDF 页码从 1 开始）：
+  D:/zhiliao/TCB705_ZYNQ-10-15/05_华成XSDK资料_2026-10-16/xsdk-update-main/
+    相关说明书/华成具身SDKV2.3.11版本说明书.pdf
+    关键页：1、3、5～7、11～14、18～20、24、42～43、46～47。
+    SDK/V2.4.1(require host version at least 1.9.82 )/华成具身SDK版本说明书V2.4.1.pdf
+    关键页：1、3～4、13～17、60。
+
+项目内实机证据（断开前保存）：
+  build/tcb705/deployment/probe_robot_restored_cabling_20261017.log
+  build/tcb705/deployment/line50_execute_20261017.log
+  build/tcb705/deployment/line50_enable_diagnosis.log
+  build/tcb705/deployment/line50_execute_v2_20261017.log
+  build/tcb705/deployment/line50_motor_state.log
+  build/tcb705/deployment/line50_independent_web_state.log
+  build/tcb705/deployment/line50_web_half_mm.log
+  build/tcb705/deployment/line50_alarm_history.log
+  build/tcb705/deployment/line50_restore_idle.log
+
+本轮离线证据：
+  build/tcb705/sdk_offline_analysis/ 下的 PDF 分页文本、关键页图片、
+  moveLine_armhf_disassembly.txt、moveLine_internal_armhf_disassembly.txt、
+  enable_armhf_disassembly.txt、enable_status_armhf_disassembly.txt 及 evidence.json。
+
+状态边界：机械臂已断开，本轮未能验证修复后的运动。
+上次退出时单臂使能已关闭，总使能关闭未得到确认；不要把断网等同于下电。

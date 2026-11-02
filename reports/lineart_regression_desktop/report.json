@@ -1,0 +1,131 @@
+{
+  "python": "3.11.13 | packaged by Anaconda, Inc. | (main, Jun  5 2025, 13:03:15) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "hardware_connected": false,
+  "physical_motion": false,
+  "cloud_stubbed": true,
+  "suites": [
+    {
+      "suite": "test_tcb705.py",
+      "tests": 21,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 9.886095299999852
+    },
+    {
+      "suite": "test_tcb705_web.py",
+      "tests": 34,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 5.695837499999925
+    },
+    {
+      "suite": "test_tcb705_kinfit.py",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 30.984110800000053
+    },
+    {
+      "suite": "test_tcb_acceleration.py",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.081813499999953
+    },
+    {
+      "suite": "test_tcb_platform.py",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.02400889999989886
+    },
+    {
+      "suite": "test_ge_pl_contract.py",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.6054008999999496
+    },
+    {
+      "suite": "test_tcb_session.py",
+      "tests": 4,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.02088450000019293
+    },
+    {
+      "suite": "test_armvision_calibration.py",
+      "tests": 18,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 4.38067140000021
+    },
+    {
+      "suite": "test_tcb_commissioning.py",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.2004943000001731
+    },
+    {
+      "suite": "test_user_gui_workflow.py",
+      "tests": 32,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.466598299999987
+    },
+    {
+      "suite": "test_drawing_quality.py",
+      "tests": 16,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 3.379884099999799
+    },
+    {
+      "suite": "test_lineart_accel.py",
+      "tests": 7,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 20.88058760000058
+    },
+    {
+      "suite": "test_cloud_transport.py",
+      "tests": 12,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.030292600000393577
+    },
+    {
+      "suite": "test_planner_accel_lifetime.py",
+      "tests": 15,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 1.3241365000003498
+    },
+    {
+      "suite": "test_md0700r_runtime.py",
+      "tests": 6,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "seconds": 0.07727919999979349
+    }
+  ],
+  "passed": true,
+  "tests": 211
+}

@@ -1,0 +1,16 @@
+{
+  "schema": "so101-platform-ready-v1",
+  "boot_id": "c7397a6c-8be7-4c5d-945f-49240d5ba205",
+  "build_id": "tcb705_r4_fclk1_20261017_r2",
+  "manifest_sha256": "56bc8323875d3d4a69ec80ba34b970bd344f561d58b055dda9483e5a63a5bc26",
+  "artifact_hashes": {
+    "tcb705_planner.bit": "b03a526eba535f64a5c8e163f60865a29bfb8a66754ed94e3fd7597b45360d6a",
+    "tcb705_planner.hwh": "8bd0297b878e672043571ccb4a89827907805f0b17f50ff2d630dbe5e03d94a8",
+    "tcb705_planner.registers.json": "393f5a51834a04235c57234a4e44ce1e8d65f21f4dac6b7ef28bb17158070a11"
+  },
+  "ip_name": "tcb_planner_accel_0",
+  "base": 1073741824,
+  "size": 65536,
+  "self_test": "PASS",
+  "accelerator_abi": "tcb705-planner-accel-v1"
+}

@@ -1,0 +1,17 @@
+{
+  "id": "poem_p17",
+  "category": "poem",
+  "title": "早发白帝城",
+  "author": "李白",
+  "dynasty": "唐",
+  "sentences": [
+    "朝辞白帝彩云间，",
+    "千里江陵一日还。",
+    "两岸猿声啼不住，",
+    "轻舟已过万重山。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

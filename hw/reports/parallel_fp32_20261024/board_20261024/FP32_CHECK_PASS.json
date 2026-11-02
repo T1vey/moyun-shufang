@@ -1,0 +1,34 @@
+{
+  "schema": "fp32-check-pass-v1",
+  "release": "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm",
+  "checked_at": "2026-10-24T23:20:32",
+  "platform_check": "PLATFORM_FILES_PASS tcb705-parallel-fp32-20261024",
+  "tests": {
+    "count": 94,
+    "passed": 94,
+    "suites": [
+      "test_tcb_fp32_contract",
+      "test_tcb_unknown_residuals",
+      "test_tcb_partial_prefix",
+      "test_tcb_execution_without_runtime_fk",
+      "test_tcb_planning_without_runtime_fk",
+      "test_lineart_capability",
+      "test_lineart_attachment",
+      "test_user_gui_workflow",
+      "test_brush_vision"
+    ],
+    "environment": "board xilinx user, umask 022, PYTHONPATH=tests, TCB705_PL_MANIFEST=not_loaded.json",
+    "log": "/home/xilinx/fp32_check/board_tests_umask022.log",
+    "note": "with umask 0002 test_lineart_attachment.test_every_access_rehashes_bytes_receipt_and_process fails because the test keeps the real group-writable mode of its temp receipt; environment artefact, product code unchanged"
+  },
+  "cache_patch": {
+    "files": {
+      "lineart_backend.py": "b0eb1e45b5f1a44e818bbca4002d32beb7594d1825134f209f12295dceeeda22",
+      "tests/test_lineart_capability.py": "e4a322975663e3d7597745df7ef6f0d7c5bf5040fa1d7c268714e3a69cb7a826"
+    },
+    "new_test": "test_identity_changes_invalidate_even_with_coarse_file_timestamps",
+    "previously_failing": "test_boot_and_receipt_changes_invalidate_positive_cache"
+  },
+  "fpga_loaded": false,
+  "robot_motion": false
+}

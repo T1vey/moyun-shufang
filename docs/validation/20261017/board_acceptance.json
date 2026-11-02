@@ -1,0 +1,81 @@
+{
+  "platform": {
+    "faulted": false,
+    "abi": "tcb705-planner-accel-v1",
+    "artifact_hashes": {
+      "tcb705_planner.bit": "b03a526eba535f64a5c8e163f60865a29bfb8a66754ed94e3fd7597b45360d6a",
+      "tcb705_planner.hwh": "8bd0297b878e672043571ccb4a89827907805f0b17f50ff2d630dbe5e03d94a8",
+      "tcb705_planner.registers.json": "393f5a51834a04235c57234a4e44ce1e8d65f21f4dac6b7ef28bb17158070a11"
+    },
+    "pl_load_policy": "attach",
+    "build_id": "tcb705_r4_fclk1_20261017_r2",
+    "clock_hz": 76923080
+  },
+  "display": {
+    "status": "RUNNING",
+    "width": 1024,
+    "height": 600,
+    "frames": 71,
+    "hardware_frames_verified": true,
+    "bit_sha256": "b03a526eba535f64a5c8e163f60865a29bfb8a66754ed94e3fd7597b45360d6a",
+    "manifest_sha256": "56bc8323875d3d4a69ec80ba34b970bd344f561d58b055dda9483e5a63a5bc26",
+    "build_id": "tcb705_r4_fclk1_20261017_r2"
+  },
+  "touch": {
+    "status": "RUNNING",
+    "packet": "0xd00000",
+    "packets": 1,
+    "presses": 0,
+    "releases": 0,
+    "pressed": false,
+    "x": 0,
+    "y": 0,
+    "sequence": 3
+  },
+  "version": "0.2.0-tcb705-pl-batch",
+  "calibration": {
+    "method": "armvision-ab-z-uvw-v1",
+    "a_mm": [
+      -509.605,
+      -67.854
+    ],
+    "b_mm": [
+      -359.39,
+      80.666
+    ],
+    "z_table_mm": 206.31,
+    "pose_uvw_deg": [
+      180.0,
+      0.0,
+      0.0
+    ],
+    "robot_id": 1,
+    "lift_mm": 8,
+    "final_lift_mm": 60,
+    "draw_speed_percent": 100,
+    "swap_xy": true,
+    "tool": 0,
+    "coord": 0,
+    "extool": 0,
+    "table": {
+      "x_min": -509.605,
+      "x_max": -359.39,
+      "y_min": -67.854,
+      "y_max": 80.666,
+      "z_table": 206.31
+    },
+    "image": {
+      "target_width_mm": 148.5,
+      "target_height_mm": 150.2
+    }
+  },
+  "motion_supported": false,
+  "physical_motion": false,
+  "fpga_state": "operating",
+  "services": {
+    "so101-platform": "active",
+    "tcb705-ui": "active",
+    "so101-md0700r": "active",
+    "so101-gt911": "active"
+  }
+}

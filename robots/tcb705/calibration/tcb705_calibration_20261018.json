@@ -1,0 +1,201 @@
+{
+ "schema": "tcb705-calibration-record-v1",
+ "date": "2026-10-18",
+ "robot": "TCB705 (controller type kSttJushen_7R, firmware 1.9.71-main.aarch64.TIANLIAN)",
+ "kinematics": {
+  "source": "controller_dh",
+  "read_from": "r_dh_1_ (controller 1.9.71, 2026-10-18)",
+  "dh": [
+   [
+    0,
+    263.0,
+    90,
+    0
+   ],
+   [
+    0,
+    0,
+    -90,
+    0
+   ],
+   [
+    0,
+    320.5,
+    90,
+    0
+   ],
+   [
+    0,
+    0,
+    -90,
+    0
+   ],
+   [
+    0,
+    279.5,
+    90,
+    0
+   ],
+   [
+    0,
+    0,
+    -90,
+    0
+   ],
+   [
+    0,
+    161.5,
+    0,
+    0
+   ]
+  ],
+  "joint_limits_deg": [
+   [
+    -178.9,
+    178.9
+   ],
+   [
+    -134.9,
+    134.9
+   ],
+   [
+    -178.9,
+    178.9
+   ],
+   [
+    -143.0,
+    143.0
+   ],
+   [
+    -178.9,
+    178.9
+   ],
+   [
+    -133.0,
+    133.0
+   ],
+   [
+    -178.9,
+    178.9
+   ]
+  ]
+ },
+ "kinematics_source": {
+  "variables": [
+   "r_dh_1_ (DH a,d,alpha,theta per joint)",
+   "r_classic_1_ (z 263, l12 320.5, l23 279.5, l56 161.5 - same values)"
+  ],
+  "current_tool": "r_tool_1_ = 0 (controller TCP = flange)",
+  "current_user_frame": "r_user_1_ = 0 (base frame)",
+  "joint_mapping": "controller joint degrees = model joint angles (sign +1, offset 0)",
+  "joint_limits_note": "official URDF limits converted to the controller zero (J4 +-143, J6 +-133); the controller does not expose its own limits over the Web API"
+ },
+ "verification": {
+  "method": "FK of the controller DH vs controller r_world_fb_pos for recorded and live joint readings",
+  "pairs": [
+   {
+    "joints": [
+     -0.008239746094,
+     34.43183899,
+     -0.005493164062,
+     70.90026855,
+     -0.00617980957,
+     78.83995056,
+     -0.001373291016
+    ],
+    "pose_mm": [
+     -439.0218506,
+     0.1133498251,
+     292.3725891
+    ]
+   },
+   {
+    "joints": [
+     -0.008,
+     39.84,
+     -0.005,
+     78.74,
+     -0.006,
+     65.593,
+     0.0
+    ],
+    "pose_mm": [
+     -439.0218506,
+     0.1133498251,
+     214.31
+    ]
+   },
+   {
+    "joints": [
+     -0.009,
+     33.027,
+     -0.006,
+     92.984,
+     -0.007,
+     58.162,
+     0.0
+    ],
+    "pose_mm": [
+     -389.0218506,
+     0.1133498251,
+     206.31
+    ]
+   },
+   {
+    "joints": [
+     -0.019,
+     28.51,
+     -0.037,
+     86.486,
+     -0.042,
+     71.207,
+     -0.002
+    ],
+    "pose_mm": [
+     -388.854,
+     0.464,
+     265.994
+    ]
+   },
+   {
+    "joints": [
+     -2.439,
+     30.328,
+     -0.439,
+     82.849,
+     -0.128,
+     73.748,
+     -1.742
+    ],
+    "pose_mm": [
+     -398.809,
+     19.952,
+     269.319
+    ]
+   }
+  ],
+  "max_position_error_mm": 0.019,
+  "max_orientation_error_deg": 0.0005
+ },
+ "paper": {
+  "contact_flange_z_mm": 219.3,
+  "pen": "hard-mounted, vertical (UVW 180,0,180)",
+  "method": "air run 15 mm above 214.31 judged ~10 mm above paper, then contact ramp 223.3->218.3 over 40 mm at Y -45 (normal line, no damage); 219.3 chosen (ink present, 1 mm shallower than the ramp end)",
+  "verified_region_mm": {
+   "x": [
+    -449.5,
+    -400
+   ],
+   "y": [
+    -45,
+    21.4
+   ]
+  },
+  "tilted_pen_history": "214.31 with the pen tilted ~6 deg (2026-10-17 line/circle, controller IK)"
+ },
+ "drawings": [
+  "50 mm line + 30 mm circle (controller IK, 2026-10-17)",
+  "30 mm circle in joint mode on paper: 72.5 s, deviation <=0.15 mm, radius 14.84-15.09 mm (2026-10-18)"
+ ],
+ "evidence": "build/tcb705/calibration/ and build/tcb705/deployment/ logs"
+}

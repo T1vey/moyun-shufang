@@ -1,0 +1,104 @@
+test_authority_and_full_phone_flow (tests.test_text_calligraphy.HttpTextTests.test_authority_and_full_phone_flow) ... ok
+test_cancel_between_pages_revokes_next_page (tests.test_text_calligraphy.HttpTextTests.test_cancel_between_pages_revokes_next_page) ... ok
+test_cancel_motion_preserves_home_and_never_writes_next_page (tests.test_text_calligraphy.HttpTextTests.test_cancel_motion_preserves_home_and_never_writes_next_page) ... ok
+test_duplicate_submit_and_other_owner_cannot_replay (tests.test_text_calligraphy.HttpTextTests.test_duplicate_submit_and_other_owner_cannot_replay) ... ok
+test_preview_no_motion_and_page_confirmation (tests.test_text_calligraphy.HttpTextTests.test_preview_no_motion_and_page_confirmation) ... ok
+test_screen_next_page_keeps_complete_workflow_state (tests.test_text_calligraphy.HttpTextTests.test_screen_next_page_keeps_complete_workflow_state) ... ok
+test_stale_preview_and_config_change_do_not_start (tests.test_text_calligraphy.HttpTextTests.test_stale_preview_and_config_change_do_not_start) ... ok
+test_uncertain_motion_blocks_other_jobs (tests.test_text_calligraphy.HttpTextTests.test_uncertain_motion_blocks_other_jobs) ... ok
+test_line_break_spaces_and_input_rejection (tests.test_text_calligraphy.LayoutTests.test_line_break_spaces_and_input_rejection) ... ok
+test_modern_order_autowrap_and_pagination (tests.test_text_calligraphy.LayoutTests.test_modern_order_autowrap_and_pagination) ... ok
+test_all_3500_at_size_extremes_are_bounded_and_released (tests.test_text_calligraphy.LibraryTests.test_all_3500_at_size_extremes_are_bounded_and_released) ... ok
+test_exact_repertoire_and_source_stroke_order (tests.test_text_calligraphy.LibraryTests.test_exact_repertoire_and_source_stroke_order) ... ok
+test_reconstruction_rejects_geometry_pressure_or_version_tampering (tests.test_text_calligraphy.LibraryTests.test_reconstruction_rejects_geometry_pressure_or_version_tampering) ... ok
+test_cancel_between_pages_revokes_next_page (tests.test_text_calligraphy.TextWorkflowTests.test_cancel_between_pages_revokes_next_page) ... ok
+test_cancel_motion_preserves_home_and_never_writes_next_page (tests.test_text_calligraphy.TextWorkflowTests.test_cancel_motion_preserves_home_and_never_writes_next_page) ... ok
+test_duplicate_submit_and_other_owner_cannot_replay (tests.test_text_calligraphy.TextWorkflowTests.test_duplicate_submit_and_other_owner_cannot_replay) ... ok
+test_preview_no_motion_and_page_confirmation (tests.test_text_calligraphy.TextWorkflowTests.test_preview_no_motion_and_page_confirmation) ... ok
+test_stale_preview_and_config_change_do_not_start (tests.test_text_calligraphy.TextWorkflowTests.test_stale_preview_and_config_change_do_not_start) ... ok
+test_uncertain_motion_blocks_other_jobs (tests.test_text_calligraphy.TextWorkflowTests.test_uncertain_motion_blocks_other_jobs) ... ok
+test_corrupt_manifest_or_missing_database_row_is_rejected (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_corrupt_manifest_or_missing_database_row_is_rejected) ... ERROR
+test_new_common_characters_and_missing_character (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_new_common_characters_and_missing_character) ... ok
+test_runtime_cache_stays_bounded (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_runtime_cache_stays_bounded) ... ok
+test_catalog_auth_profile_and_full_prepare_execute (tests.test_calligraphy.HttpTests.test_catalog_auth_profile_and_full_prepare_execute) ... ok
+test_frozen_saved_metadata_and_integrity (tests.test_calligraphy.PlanningTests.test_frozen_saved_metadata_and_integrity) ... ok
+test_joint_preparation_and_sdk_use_one_gui_speed (tests.test_calligraphy.PlanningTests.test_joint_preparation_and_sdk_use_one_gui_speed) ... ok
+test_order_and_depth_survive_actual_ik (tests.test_calligraphy.PlanningTests.test_order_and_depth_survive_actual_ik) ... ok
+test_all_curves_bounded_continuous_and_preserve_authored_knots (tests.test_calligraphy.PresetTests.test_all_curves_bounded_continuous_and_preserve_authored_knots) ... ok
+test_catalog_paging_filtering_and_empty_selection (tests.test_calligraphy.PresetTests.test_catalog_paging_filtering_and_empty_selection) ... ok
+test_enclosures_meet_and_no_old_version_reuse (tests.test_calligraphy.PresetTests.test_enclosures_meet_and_no_old_version_reuse) ... ok
+test_expanded_components_order_and_membership (tests.test_calligraphy.PresetTests.test_expanded_components_order_and_membership) ... ok
+test_library_and_correct_radical_order (tests.test_calligraphy.PresetTests.test_library_and_correct_radical_order) ... ok
+test_no_assumed_depth_and_calibration_invalidation (tests.test_calligraphy.PresetTests.test_no_assumed_depth_and_calibration_invalidation) ... ok
+test_panel_request_timeout_and_late_reply_never_retry (tests.test_calligraphy.PresetTests.test_panel_request_timeout_and_late_reply_never_retry) ... ok
+test_preview_curves_have_no_gaps_and_match_backend (tests.test_calligraphy.PresetTests.test_preview_curves_have_no_gaps_and_match_backend) ... ok
+test_size_does_not_scale_compression_and_tampering_rejected (tests.test_calligraphy.PresetTests.test_size_does_not_scale_compression_and_tampering_rejected) ... ok
+test_structural_joins_reach_neighbouring_strokes (tests.test_calligraphy.PresetTests.test_structural_joins_reach_neighbouring_strokes) ... ok
+test_brush_home_program_fallback_uses_same_gui_speed (tests.test_calligraphy_speed.BrushSpeedTests.test_brush_home_program_fallback_uses_same_gui_speed) ... ok
+test_home_ordinary_and_uniform_brush_blocks_share_global_speed (tests.test_calligraphy_speed.BrushSpeedTests.test_home_ordinary_and_uniform_brush_blocks_share_global_speed) ... ok
+test_legacy_feed_never_overrides_live_gui_global_speed (tests.test_calligraphy_speed.BrushSpeedTests.test_legacy_feed_never_overrides_live_gui_global_speed) ... ok
+test_small_ratio_is_not_rounded_to_zero_global_override (tests.test_calligraphy_speed.BrushSpeedTests.test_small_ratio_is_not_rounded_to_zero_global_override) ... ok
+test_speed_is_not_geometry_or_calibration (tests.test_calligraphy_speed.BrushSpeedTests.test_speed_is_not_geometry_or_calibration) ... ok
+test_strict_alarm_read_distinguishes_empty_and_unknown (tests.test_calligraphy_home.AlarmFeedbackTests.test_strict_alarm_read_distinguishes_empty_and_unknown) ... ok
+test_bad_feedback_prevents_immediate_refill (tests.test_calligraphy_home.BrushHomeTests.test_bad_feedback_prevents_immediate_refill) ... ok
+test_brush_requires_enabled_existing_home_before_motion (tests.test_calligraphy_home.BrushHomeTests.test_brush_requires_enabled_existing_home_before_motion) ... ok
+test_low_auto_start_homes_without_switching_mode (tests.test_calligraphy_home.BrushHomeTests.test_low_auto_start_homes_without_switching_mode) ... ok
+test_low_manual_start_never_switches_or_moves (tests.test_calligraphy_home.BrushHomeTests.test_low_manual_start_never_switches_or_moves) ... ok
+test_motion_fault_does_not_trigger_return (tests.test_calligraphy_home.BrushHomeTests.test_motion_fault_does_not_trigger_return) ... ok
+test_second_stop_aborts_return_and_never_retries (tests.test_calligraphy_home.BrushHomeTests.test_second_stop_aborts_return_and_never_retries) ... ok
+test_segment_wait_reduced_by_one_third_and_feedback_refills_without_sleep (tests.test_calligraphy_home.BrushHomeTests.test_segment_wait_reduced_by_one_third_and_feedback_refills_without_sleep) ... ok
+test_start_and_finish_home_with_ordered_sdk_moves (tests.test_calligraphy_home.BrushHomeTests.test_start_and_finish_home_with_ordered_sdk_moves) ... ok
+test_stop_during_feedback_prevents_immediate_refill (tests.test_calligraphy_home.BrushHomeTests.test_stop_during_feedback_prevents_immediate_refill) ... ok
+test_strict_home_joint_read_failure_is_bounded (tests.test_calligraphy_home.BrushHomeTests.test_strict_home_joint_read_failure_is_bounded) ... ok
+test_strict_home_no_progress_cannot_wait_forever (tests.test_calligraphy_home.BrushHomeTests.test_strict_home_no_progress_cannot_wait_forever) ... ok
+test_strict_home_rejects_alarm_during_return (tests.test_calligraphy_home.BrushHomeTests.test_strict_home_rejects_alarm_during_return) ... ok
+test_strict_home_rejects_feedback_loss_or_departure (tests.test_calligraphy_home.BrushHomeTests.test_strict_home_rejects_feedback_loss_or_departure) ... ok
+test_unconfirmed_second_stop_never_reports_cancelled (tests.test_calligraphy_home.BrushHomeTests.test_unconfirmed_second_stop_never_reports_cancelled) ... ok
+test_unknown_or_faulted_stop_state_blocks_return (tests.test_calligraphy_home.BrushHomeTests.test_unknown_or_faulted_stop_state_blocks_return) ... ok
+test_user_stop_returns_home_without_second_mode_switch (tests.test_calligraphy_home.BrushHomeTests.test_user_stop_returns_home_without_second_mode_switch) ... ok
+test_acceptance_race_sends_one_initial_stop_and_explicit_second_still_works (tests.test_calligraphy_stop_workflow.StopPollingTests.test_acceptance_race_sends_one_initial_stop_and_explicit_second_still_works) ... ok
+test_late_cancel_after_normal_home_keeps_confirmed_home_result (tests.test_calligraphy_stop_workflow.StopPollingTests.test_late_cancel_after_normal_home_keeps_confirmed_home_result) ... ok
+test_lost_execute_reply_clears_pending_and_never_retries_motion (tests.test_calligraphy_stop_workflow.StopPollingTests.test_lost_execute_reply_clears_pending_and_never_retries_motion) ... ok
+test_lost_stop_reply_does_not_automatically_send_second_stop (tests.test_calligraphy_stop_workflow.StopPollingTests.test_lost_stop_reply_does_not_automatically_send_second_stop) ... ok
+test_return_failure_is_not_reported_as_return_complete (tests.test_calligraphy_stop_workflow.StopPollingTests.test_return_failure_is_not_reported_as_return_complete) ... ok
+test_second_click_during_execute_post_is_not_lost (tests.test_calligraphy_stop_workflow.StopPollingTests.test_second_click_during_execute_post_is_not_lost) ... ok
+test_waits_for_actual_backend_exit_and_never_repeats_first_stop (tests.test_calligraphy_stop_workflow.StopPollingTests.test_waits_for_actual_backend_exit_and_never_repeats_first_stop) ... ok
+test_bridge_forwards_recovery_cancel_without_motion (tests.test_calligraphy_stop_workflow.StopRequestsTests.test_bridge_forwards_recovery_cancel_without_motion) ... ok
+test_only_second_request_cancels_return_and_clear_resets (tests.test_calligraphy_stop_workflow.StopRequestsTests.test_only_second_request_cancels_return_and_clear_resets) ... ok
+test_workbench_persists_home_result_even_when_execution_cancelled (tests.test_calligraphy_stop_workflow.StopRequestsTests.test_workbench_persists_home_result_even_when_execution_cancelled) ... ok
+test_cancel_waits_and_keeps_second_stop_available_until_home_done (tests.test_calligraphy_stop_workflow.WorkflowStopTests.test_cancel_waits_and_keeps_second_stop_available_until_home_done) ... ok
+test_failed_return_keeps_stop_and_never_reports_home_done (tests.test_calligraphy_stop_workflow.WorkflowStopTests.test_failed_return_keeps_stop_and_never_reports_home_done) ... ok
+test_normal_completion_claims_home_only_with_confirmed_stage (tests.test_calligraphy_stop_workflow.WorkflowStopTests.test_normal_completion_claims_home_only_with_confirmed_stage) ... ok
+
+======================================================================
+ERROR: test_corrupt_manifest_or_missing_database_row_is_rejected (tests.test_glyph_library_integrity.LibraryIntegrityTests.test_corrupt_manifest_or_missing_database_row_is_rejected)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\gongj\miniconda3\Lib\shutil.py", line 632, in _rmtree_unsafe
+    os.unlink(fullname)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\gongj\\AppData\\Local\\Temp\\tmpd47wq6q3\\bad.sqlite'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\zhiliao\TCB705_ZYNQ-10-15\ZYNQArm\tests\test_glyph_library_integrity.py", line 25, in test_corrupt_manifest_or_missing_database_row_is_rejected
+    with tempfile.TemporaryDirectory() as folder:
+  File "C:\Users\gongj\miniconda3\Lib\tempfile.py", line 943, in __exit__
+    self.cleanup()
+  File "C:\Users\gongj\miniconda3\Lib\tempfile.py", line 947, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+  File "C:\Users\gongj\miniconda3\Lib\tempfile.py", line 929, in _rmtree
+    _shutil.rmtree(name, onerror=onerror)
+  File "C:\Users\gongj\miniconda3\Lib\shutil.py", line 787, in rmtree
+    return _rmtree_unsafe(path, onerror)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gongj\miniconda3\Lib\shutil.py", line 634, in _rmtree_unsafe
+    onerror(os.unlink, fullname, sys.exc_info())
+  File "C:\Users\gongj\miniconda3\Lib\tempfile.py", line 893, in onerror
+    _os.unlink(path)
+PermissionError: [WinError 32] 另一个程序正在使用此文件，进程无法访问。: 'C:\\Users\\gongj\\AppData\\Local\\Temp\\tmpd47wq6q3\\bad.sqlite'
+
+----------------------------------------------------------------------
+Ran 71 tests in 225.681s
+
+FAILED (errors=1)

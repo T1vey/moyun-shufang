@@ -1,0 +1,5 @@
+25/106 checked, failures=0
+50/106 checked, failures=0
+75/106 checked, failures=0
+100/106 checked, failures=0
+{"profile": "build\\workspace_500_20261022\\machine-readonly.json", "profile_sha256": "735b3325525db7fa9dd71efa57715a5d53dbf3d60a55a44115d5bbf83e47afb2", "library": "common3500-20261022-9c3b110f7218", "library_count": 3500, "verified_characters": "矗罐囊瓤镶蠢赣躏露霸霹髓乙术压讳丽弟拇岳审胡俗扁哥颁剥晦焊散策缔筷碱磊篱黯机械臂智能科技程序控制墨韵翰赢鹰", "coverage": "representative subset", "layout_test": "individual at 40 and 70 mm", "physical_motion": false, "press_mm": 4.0, "elapsed_s": 179.73039080001763, "passed": 106, "failed": 0}

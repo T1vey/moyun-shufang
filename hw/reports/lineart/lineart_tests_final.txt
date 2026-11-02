@@ -1,0 +1,14 @@
+test_convergence_and_dma_lifetime (test_lineart_accel.LineartTransport.test_convergence_and_dma_lifetime) ... ok
+test_fallback_from_missing_core_is_exact (test_lineart_accel.LineartTransport.test_fallback_from_missing_core_is_exact) ... ok
+test_generated_hls_register_header (test_lineart_accel.LineartTransport.test_generated_hls_register_header) ... ok
+test_invalid_input_releases_claim_before_dma (test_lineart_accel.LineartTransport.test_invalid_input_releases_claim_before_dma) ... ok
+test_mapping_rejects_overlap (test_lineart_accel.LineartTransport.test_mapping_rejects_overlap) ... ok
+test_packing_nonbyte_rows (test_lineart_accel.LineartTransport.test_packing_nonbyte_rows) ... ok
+test_timeout_pins_buffers_and_lease (test_lineart_accel.LineartTransport.test_timeout_pins_buffers_and_lease) ... ok
+test_distance_equal (test_lineart_accel.NativeLineart.test_distance_equal) ... ok
+test_random_masks_exact_thin_graph (test_lineart_accel.NativeLineart.test_random_masks_exact_thin_graph) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 18.744s
+
+OK

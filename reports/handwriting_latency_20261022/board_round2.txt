@@ -1,0 +1,26 @@
+test_actual_rounded_joint_limits_are_checked (test_short_stroke.ShortStrokeTests) ... ok
+test_actual_segment_collision_failure_propagates (test_short_stroke.ShortStrokeTests) ... ok
+test_cancellation_and_no_sdk_connection (test_short_stroke.ShortStrokeTests) ... ok
+test_curve_cache_is_immutable_and_tracks_edits_and_scale (test_short_stroke.ShortStrokeTests) ... ok
+test_matches_full_planner_geometry_and_guards_non_executable_contract (test_short_stroke.ShortStrokeTests) ... ok
+test_modified_pressure_and_multiple_strokes_are_rejected (test_short_stroke.ShortStrokeTests) ... ok
+test_rounding_matches_real_sdk_serialization (test_short_stroke.ShortStrokeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.707s
+
+OK
+{"run": 0, "plan_s": 0.18573373800063564, "nodes_s": 0.0, "prepare_s": 0.4563491429998976, "total_s": 0.6420828810005332, "nodes": 256, "frames": 0, "blocks": 37, "error_mm": [0.019304450963641556, 0.10518649284557705], "ik_cpu_batch_s": 0.026889864000622765}
+{"run": 1, "plan_s": 0.17330975200002285, "nodes_s": 0.0, "prepare_s": 0.3995979339997575, "total_s": 0.5729076859997804, "nodes": 256, "frames": 0, "blocks": 37, "error_mm": [0.019304450963641556, 0.10518649284557705], "ik_cpu_batch_s": 0.028411579000021447}
+{"run": 2, "plan_s": 0.17508083899974736, "nodes_s": 0.0, "prepare_s": 0.40103627300049993, "total_s": 0.5761171120002473, "nodes": 256, "frames": 0, "blocks": 37, "error_mm": [0.019304450963641556, 0.10518649284557705], "ik_cpu_batch_s": 0.02574441700016905}
+{"run": 0, "plan_s": 0.196902184999999, "nodes_s": 0.0, "prepare_s": 0.4225062079995041, "total_s": 0.6194083929995031, "nodes": 283, "frames": 0, "blocks": 35, "error_mm": [0.01985118487968077, 0.10530970377375455], "ik_cpu_batch_s": 0.03064505200018175}
+{"run": 1, "plan_s": 0.1918798169999718, "nodes_s": 0.0, "prepare_s": 0.4120484220002254, "total_s": 0.6039282390001972, "nodes": 283, "frames": 0, "blocks": 35, "error_mm": [0.01985118487968077, 0.10530970377375455], "ik_cpu_batch_s": 0.03240013400136377}
+{"run": 2, "plan_s": 0.1887906620004287, "nodes_s": 0.0, "prepare_s": 0.41076521499962837, "total_s": 0.5995558770000571, "nodes": 283, "frames": 0, "blocks": 35, "error_mm": [0.01985118487968077, 0.10530970377375455], "ik_cpu_batch_s": 0.029275930000949302}
+{"run": 0, "plan_s": 0.26155207700048777, "nodes_s": 0.0, "prepare_s": 0.5459013319996302, "total_s": 0.807453409000118, "nodes": 364, "frames": 0, "blocks": 53, "error_mm": [0.019604691600354912, 0.10640245119617112], "ik_cpu_batch_s": 0.03757311199842661}
+{"run": 1, "plan_s": 0.2470488610006214, "nodes_s": 0.0, "prepare_s": 0.5457965099994908, "total_s": 0.7928453710001122, "nodes": 364, "frames": 0, "blocks": 53, "error_mm": [0.019604691600354912, 0.10640245119617112], "ik_cpu_batch_s": 0.036996351999732724}
+{"run": 2, "plan_s": 0.24647054100023524, "nodes_s": 0.0, "prepare_s": 0.5333303079996767, "total_s": 0.779800848999912, "nodes": 364, "frames": 0, "blocks": 53, "error_mm": [0.019604691600354912, 0.10640245119617112], "ik_cpu_batch_s": 0.03988230399954773}
+{"run": 0, "plan_s": 0.6430979229999139, "nodes_s": 0.013934487999904377, "prepare_s": 0.252908970000135, "total_s": 0.9099413809999533, "nodes": 281, "frames": 6543, "blocks": 44, "error_mm": [0.01989117177564316, 0.10984557021447391], "ik_cpu_batch_s": 0.029957489000480564}
+{"run": 1, "plan_s": 0.590900361000422, "nodes_s": 0.015780881999489793, "prepare_s": 0.250062674000219, "total_s": 0.8567439170001308, "nodes": 281, "frames": 6543, "blocks": 44, "error_mm": [0.01989117177564316, 0.10984557021447391], "ik_cpu_batch_s": 0.029104102999554016}
+{"run": 2, "plan_s": 0.5975202210001953, "nodes_s": 0.014378029999534192, "prepare_s": 0.2509501780004939, "total_s": 0.8628484290002234, "nodes": 281, "frames": 6543, "blocks": 44, "error_mm": [0.01989117177564316, 0.10984557021447391], "ik_cpu_batch_s": 0.035686598000211234}
+
+REMOTE_EXIT=0

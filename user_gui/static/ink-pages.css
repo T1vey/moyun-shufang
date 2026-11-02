@@ -1,0 +1,65 @@
+/* 墨韵书坊 · 书画主题 for the 屏上手写 and 字迹识别 pages, which keep their own tokens.
+   WebKitGTK 2.28: no flex gap, no inset shorthand. */
+@font-face { font-family: "InkBrush"; src: url("/static/fonts/brush.ttf") format("truetype"); font-display: swap; }
+@font-face { font-family: "InkKai"; src: url("/static/fonts/wenkai.ttf") format("truetype"); font-display: swap; }
+:root {
+  color-scheme: light;
+  --bg: #f3ead7; --panel: #fbf5e8; --panel2: #f3e9d4; --panel3: #eadcc0;
+  --text: #1f1a16; --muted: #7c6f61; --gold: #b3261e; --hi: #1f1a16; --deep: #7d1812; --red: #b3261e;
+  --line: rgba(110, 82, 45, .38); --soft: rgba(110, 82, 45, .2); --ok: #3f6b5c;
+  --font: "InkKai", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+  --brush: "InkBrush", "InkKai", "KaiTi", serif;
+}
+html, body { background: #2a241f; }
+/* 2026-10-28: flat page background. The board's WebKit draws without a GPU and repainted the two
+   full-screen radial gradients under every change: about 0.7-1.4 s per tap, 0.16-0.22 s without them. */
+#app { background: var(--bg); color: var(--text); }
+button { background: var(--panel); color: var(--text); border-color: var(--line); }
+button:hover:enabled { background: #fff6e3; border-color: #a88a5c; }
+header { background: linear-gradient(180deg, #fbf5e8, #f1e6cf); border-bottom-color: #c9b48d; }
+.brand strong { font-family: var(--brush); font-weight: 400; font-size: 30px; color: var(--text); letter-spacing: .08em; }
+.logo-fish { display: none; }
+.brand:before { content: "墨韵书坊"; display: inline-block; width: 40px; height: 40px; padding: 3px; margin-right: 12px; background: var(--red); color: #fbeee0;
+  border-radius: 5px; font: 16px/17px var(--brush); text-align: center; letter-spacing: 0; word-break: break-all; box-sizing: border-box; overflow: hidden; transform: rotate(-2deg); }
+.seal { background: var(--red); color: #fbeee0; border-color: rgba(255, 235, 220, .45); box-shadow: none; }
+.nav button { color: var(--muted); font-family: var(--brush); font-size: 18px; }
+.nav button.active { background: var(--text); border-color: var(--text); color: #f6ecd8; }
+.settings svg circle { fill: var(--panel); }
+.settings svg path { stroke: var(--text); }
+.toast { background: var(--text); border-color: var(--text); color: #f6ecd8; box-shadow: 0 8px 24px rgba(0, 0, 0, .3); }
+.overlay { background: rgba(42, 36, 31, .55); backdrop-filter: none; }
+.dialog { background: var(--panel); border-color: #b49b70; box-shadow: 0 14px 40px rgba(0, 0, 0, .35); }
+.dialog h2 { font-family: var(--brush); font-weight: 400; }
+.primary { border-color: var(--text); background: linear-gradient(180deg, #3a322b, #1f1a16); color: #f6ecd8; box-shadow: 0 2px 0 rgba(0, 0, 0, .25);
+  font-family: var(--brush); font-weight: 400; letter-spacing: .12em; }
+.primary:hover:enabled { background: linear-gradient(180deg, #3a322b, #1f1a16); }
+.primary:disabled { background: #d9ccb2; border-color: #cbbb9c; color: #8d8170; }
+.stop { color: var(--red); border-color: var(--red); background: #fbe9e4; }
+
+/* 屏上手写 */
+.board-panel { background: var(--panel); border-color: #c9b48d; border-radius: 4px; }
+.board-head h1 { font-family: var(--brush); font-weight: 400; font-size: 22px; color: var(--text); }
+.board { background: #fffaf0; border: 2px solid var(--red); box-shadow: inset 0 0 0 6px #fffaf0, inset 0 0 0 7px rgba(179, 38, 30, .35); }
+.board:before, .board:after { display: none; }
+.grid line { stroke: rgba(179, 38, 30, .28); }
+.empty-hint b { color: #b8a88f; }
+.status-symbol { border-color: var(--line); }
+.status-symbol.stopped span { background: var(--red); }
+.status-title { font-family: var(--brush); font-size: 21px; }
+.presets button.selected, .chip.writing { background: var(--text); border-color: var(--text); color: #f6ecd8; }
+.chip i { background: var(--ok); }
+.chip.cancelled i { background: var(--red); }
+.speed-output { color: var(--red); }
+.caption, .preview, .side-note, .canvas-note, .board-foot .small, .label-row .small, #speedNote, .parameter-note:not(.pending), .empty-hint span { display: none; }
+
+/* 字迹识别 */
+.camera-panel, .result-panel { background: var(--panel); border-color: #c9b48d; }
+.panel-head h1 { font-family: var(--brush); font-weight: 400; }
+.toggle.on, .choice.on { background: var(--text); border-color: var(--text); color: #f6ecd8; }
+.hw.pl { color: var(--ok); border-color: rgba(63, 107, 92, .5); }
+.back { font-family: var(--brush); font-size: 18px; }
+.total { color: var(--red); font-family: var(--brush); }
+.char { font-family: var(--brush); }
+.hint { background: rgba(31, 26, 22, .7); color: #f6ecd8; }
+#timing, #camInfo, .images figcaption, .top5 { display: none; }
+.brand .seal { display: none; }

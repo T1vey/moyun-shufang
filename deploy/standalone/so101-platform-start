@@ -1,0 +1,4 @@
+#!/bin/sh
+set -eu
+. /etc/so101/desktop.env
+exec "${SO101_PYTHON:-/usr/bin/python3}" -B "$SO101_APP/scripts/load_platform.py" --manifest "$SO101_PLATFORM" --backend-port "${SO101_PORT:-8765}"

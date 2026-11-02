@@ -1,0 +1,17 @@
+{
+  "id": "poem_p12",
+  "category": "poem",
+  "title": "杂诗",
+  "author": "王维",
+  "dynasty": "唐",
+  "sentences": [
+    "君自故乡来，",
+    "应知故乡事。",
+    "来日绮窗前，",
+    "寒梅著花未。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

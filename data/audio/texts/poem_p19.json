@@ -1,0 +1,17 @@
+{
+  "id": "poem_p19",
+  "category": "poem",
+  "title": "黄鹤楼送孟浩然之广陵",
+  "author": "李白",
+  "dynasty": "唐",
+  "sentences": [
+    "故人西辞黄鹤楼，",
+    "烟花三月下扬州。",
+    "孤帆远影碧空尽，",
+    "唯见长江天际流。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

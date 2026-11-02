@@ -1,0 +1,17 @@
+{
+  "id": "poem_p34",
+  "category": "poem",
+  "title": "绝句",
+  "author": "杜甫",
+  "dynasty": "唐",
+  "sentences": [
+    "两个黄鹂鸣翠柳，",
+    "一行白鹭上青天。",
+    "窗含西岭千秋雪，",
+    "门泊东吴万里船。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

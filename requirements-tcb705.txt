@@ -1,0 +1,5 @@
+# ZYNQ Python 3.8: install the versions compatible with the existing PYNQ image.
+numpy>=1.19
+Pillow>=8
+opencv-python>=4.5,<5
+# Existing AI/image dependencies are listed in requirements-workbench.txt.

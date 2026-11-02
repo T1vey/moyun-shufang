@@ -1,0 +1,7 @@
+{
+  "schema": "so101-runtime-v1",
+  "ik_engine": "wls",
+  "pl_mode": "ps",
+  "port": 8765,
+  "note": "Explicit PS comparison profile; no FPGA download"
+}

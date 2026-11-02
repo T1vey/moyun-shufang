@@ -1,0 +1,78 @@
+{
+  "schema": "so101-platform-v1",
+  "build_id": "tcb705_vision_20261024_r1",
+  "display": "md0700r-1024x600",
+  "display_backend": "pynq-mmio",
+  "kernel_release": null,
+  "dtbo": null,
+  "bitfile": "tcb705_planner.bit",
+  "ip_name": "tcb_planner_accel_0",
+  "accelerator_abi": "tcb705-planner-accel-v1",
+  "accelerator_clock_hz": 76923080,
+  "touch_backend": "gt911-pl-gpio",
+  "display_contract": {
+    "schema": "so101-md0700r-mmio-v1",
+    "width": 1024,
+    "height": 600,
+    "pixel_clock_hz": 51200000,
+    "framebuffer_format": 29,
+    "stride_bytes": 3072,
+    "x11_display": ":9",
+    "touch_packet_offset": 8,
+    "register_window_bytes": 65536,
+    "ips": {
+      "clock": {
+        "instance": "clk_wiz_0",
+        "base": 1136852992
+      },
+      "lcd_id": {
+        "instance": "lcd_out_lcd_id",
+        "base": 1092616192
+      },
+      "pwm": {
+        "instance": "lcd_out_lcd_pl_pwm",
+        "base": 1136656384
+      },
+      "vtc": {
+        "instance": "lcd_out_lcd_vtc",
+        "base": 1136721920
+      },
+      "framebuffer": {
+        "instance": "lcd_out_v_frmbuf_rd_0",
+        "base": 1136787456
+      },
+      "reset_touch": {
+        "instance": "rest_gpio",
+        "base": 1092747264
+      }
+    },
+    "touch_module": "touch_pl",
+    "touch_packet_format": "gt911-seq10-pressed1-valid1-x10-y10"
+  },
+  "files": {
+    "ge_pl.dtbo": "9bc8cc0a49ca0f8471d65aa30987bb512ca60c8ea5ad0c35f64dd9c6754a5176",
+    "tcb705_planner.artifacts.json": "0179d25263b8152ee22c28b86f9763741d3e4c53cd10f203901e022e861efa3b",
+    "tcb705_planner.bit": "256eb0191a47521b36f6c0a81e6907750d7350c7871eb0289301277bebb9be3e",
+    "tcb705_planner.hwh": "bdafd7791574351e8ab896c52bd07347f09c6c813416069d4b218cc09fff2387",
+    "tcb705_planner.registers.json": "393f5a51834a04235c57234a4e44ce1e8d65f21f4dac6b7ef28bb17158070a11",
+    "tcb_brush_recog.registers.json": "e811b790552eed44b2adba48f06287014eae4d06fb1a80437a9ac0d4319f721f"
+  },
+  "board_acceptance": "SEE_BOARD_REPORT_AND_BOOT_RECEIPT",
+  "ge_pl": {
+    "dtbo": "ge_pl.dtbo",
+    "phy_address": 4,
+    "bridge_address": 8,
+    "reset_gpio_offset": 54,
+    "reference_clock_hz": 200000000,
+    "kernel_release": "5.4.0-xilinx-v2020.2"
+  },
+  "vision": {
+    "abi": "tcb705-brushrecog-v1",
+    "ip_name": "tcb_brush_recog_0",
+    "base": 1074003968,
+    "size": 65536,
+    "clock_hz": 100000000,
+    "camera": "usb-uvc-yuyv-640x480",
+    "registers": "tcb_brush_recog.registers.json"
+  }
+}

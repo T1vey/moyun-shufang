@@ -1,0 +1,17 @@
+{
+  "id": "poem_p15",
+  "category": "poem",
+  "title": "夜宿山寺",
+  "author": "李白",
+  "dynasty": "唐",
+  "sentences": [
+    "危楼高百尺，",
+    "手可摘星辰。",
+    "不敢高声语，",
+    "恐惊天上人。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

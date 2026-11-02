@@ -1,0 +1,525 @@
+{
+  "machine": {
+    "schema": "so101-machine-v1",
+    "joints": [
+      {
+        "name": "shoulder_pan",
+        "id": 1,
+        "direction": 1,
+        "zero_count": 2048,
+        "min_count": 0,
+        "max_count": 4095
+      },
+      {
+        "name": "shoulder_lift",
+        "id": 2,
+        "direction": 1,
+        "zero_count": 2048,
+        "min_count": 0,
+        "max_count": 4095
+      },
+      {
+        "name": "elbow_flex",
+        "id": 3,
+        "direction": 1,
+        "zero_count": 2048,
+        "min_count": 0,
+        "max_count": 4095
+      },
+      {
+        "name": "wrist_flex",
+        "id": 4,
+        "direction": 1,
+        "zero_count": 2048,
+        "min_count": 0,
+        "max_count": 4095
+      },
+      {
+        "name": "wrist_roll",
+        "id": 5,
+        "direction": 1,
+        "zero_count": 2048,
+        "min_count": 0,
+        "max_count": 4095
+      }
+    ],
+    "checks": {
+      "limits": true,
+      "kinematics": true,
+      "single_joint": true
+    },
+    "model": {
+      "version": "so101-upstream-ab4207c-nominal-v1",
+      "model_status": "nominal_simulation_only",
+      "source_commit": "ab4207c87a4317d835adb914ca9e4db7948e6aa3",
+      "source_files": [
+        "others/ik/robot.py:create_so101_5dof",
+        "src/ik_solver_hls/lm_solver_so101.hpp:SO101_Params"
+      ],
+      "units": "m_rad",
+      "convention": "T = product(translate_before_joint_i * positive_right_hand_axis_rotation(q_i)); tip = T * tool_translation",
+      "offsets_m": [
+        [
+          0.0612,
+          0,
+          0.0598
+        ],
+        [
+          0.02943,
+          0,
+          0.05504
+        ],
+        [
+          0.02798,
+          0,
+          0.1127
+        ],
+        [
+          0.15504,
+          0,
+          0.00519
+        ],
+        [
+          0.0593,
+          0,
+          0.00996
+        ]
+      ],
+      "axes": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "limits_rad": [
+        [
+          -3.14159,
+          3.14159
+        ],
+        [
+          -3.14159,
+          3.14159
+        ],
+        [
+          -3.14159,
+          3.14159
+        ],
+        [
+          -3.14159,
+          3.14159
+        ],
+        [
+          -3.14159,
+          3.14159
+        ]
+      ],
+      "tool_translation_m": [
+        0,
+        0,
+        0
+      ],
+      "tool_axis_local": [
+        0.9914633168036856,
+        -0.043520279211242095,
+        0.12290840788981879
+      ],
+      "tool_note": "Zero tool length matches upstream flange endpoint. +X is an explicit simulation task convention, NOT a measured pen mounting. Real pen tip/axis, encoder zero and limits remain uncalibrated.",
+      "pen_axis_calibration": {
+        "kind": "axis",
+        "measured_counts": {
+          "1": 2090,
+          "2": 1591,
+          "3": 2547,
+          "4": 3108,
+          "5": 1971
+        },
+        "model_tip_m": [
+          0.1969004999487814,
+          0.008754919156804335,
+          0.15414261301753743
+        ],
+        "scope": "user-confirmed physical pose; encoder model calibration, no contact sensor",
+        "previous_axis_local": [
+          0.9882575677307496,
+          -0.005389804415780989,
+          -0.1527020950454273
+        ],
+        "tool_axis_local": [
+          0.9914633168036856,
+          -0.043520279211242095,
+          0.12290840788981879
+        ],
+        "paper_normal": [
+          -0.00975850563263848,
+          0.028163417748889336,
+          0.9995556980321403
+        ],
+        "source": "USER_CONFIRMED_VERTICAL_BOARD_ENCODER_20261005"
+      }
+    },
+    "paper": {
+      "origin_m": [
+        0.20966212082183813,
+        0.0,
+        0.13
+      ],
+      "u": [
+        1,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        1,
+        0
+      ],
+      "normal": [
+        0,
+        0,
+        1
+      ],
+      "pen_axis": [
+        0.05775415859170182,
+        -0.004818267264146897,
+        -0.9983192082024346
+      ],
+      "home_height_offset_m": 0.06,
+      "draw_height_offset_m": -0.004,
+      "drawing_offset_mm": [
+        0.0,
+        0.0
+      ],
+      "contact_height_offset_m": 0.0,
+      "geometry_mode": "four_point",
+      "four_point_side_mm": 200.0,
+      "xy_calibration": {
+        "schema": "so101-four-point-plane-v1",
+        "distance_mm": 200.0,
+        "captures": {
+          "A": {
+            "counts": {
+              "1": 1510,
+              "2": 2144,
+              "3": 2206,
+              "4": 2923,
+              "5": 1851
+            },
+            "signature": "78ff1a27d23d74987282eaa570364250b5c8382663c5a55edf2180899431481c",
+            "side_mm": 200.0
+          },
+          "B": {
+            "counts": {
+              "1": 1799,
+              "2": 2575,
+              "3": 1525,
+              "4": 2942,
+              "5": 1854
+            },
+            "signature": "78ff1a27d23d74987282eaa570364250b5c8382663c5a55edf2180899431481c",
+            "side_mm": 200.0
+          },
+          "C": {
+            "counts": {
+              "1": 2217,
+              "2": 2382,
+              "3": 1853,
+              "4": 2859,
+              "5": 1854
+            },
+            "signature": "78ff1a27d23d74987282eaa570364250b5c8382663c5a55edf2180899431481c",
+            "side_mm": 200.0
+          },
+          "D": {
+            "counts": {
+              "1": 2573,
+              "2": 1432,
+              "3": 2839,
+              "4": 2977,
+              "5": 1853
+            },
+            "signature": "78ff1a27d23d74987282eaa570364250b5c8382663c5a55edf2180899431481c",
+            "side_mm": 200.0
+          }
+        },
+        "model_points_m": {
+          "A": [
+            0.20999996297811047,
+            -0.16116917654316135,
+            0.10799440393327636
+          ],
+          "B": [
+            0.34560438594103676,
+            -0.11424199881729122,
+            0.1203974508869885
+          ],
+          "C": [
+            0.33020606941959046,
+            0.07134333359643599,
+            0.11382630125746507
+          ],
+          "D": [
+            0.1360100792988882,
+            0.0778548896035813,
+            0.10734499545220443
+          ]
+        },
+        "matrix": [
+          [
+            0.8245010327090714,
+            -0.22347050050167133
+          ],
+          [
+            0.10103905429681206,
+            1.0615234964011748
+          ]
+        ],
+        "translation_mm": [
+          45.7930035875683,
+          -31.55323804010883
+        ],
+        "contact_plane_enabled": true,
+        "fit": {
+          "origin_m": [
+            0.25545512440940643,
+            -0.03155323804010883,
+            0.11239078788248358
+          ],
+          "axes_m_per_m": [
+            [
+              0.8245010327090714,
+              -0.22347050050167133
+            ],
+            [
+              0.10103905429681206,
+              1.0615234964011748
+            ],
+            [
+              0.047210881897431986,
+              -0.01805139527648838
+            ]
+          ],
+          "normal": [
+            -0.05775415859170182,
+            0.004818267264146897,
+            0.9983192082024346
+          ],
+          "fit_residual_mm": {
+            "A": 19.88048198488525,
+            "B": 19.88048198488523,
+            "C": 19.8804819848853,
+            "D": 19.88048198488524
+          },
+          "max_fit_residual_mm": 19.8804819848853,
+          "rms_fit_residual_mm": 19.880481984885254,
+          "fit_limit_mm": 5.000000000000001,
+          "residual_limit_exceeded": true,
+          "residual_override_applied": true,
+          "physical_points_mm": {
+            "A": [
+              -100.0,
+              -100.0
+            ],
+            "B": [
+              100.0,
+              -100.0
+            ],
+            "C": [
+              100.0,
+              100.0
+            ],
+            "D": [
+              -100.0,
+              100.0
+            ]
+          }
+        },
+        "contact_scope": "four user-confirmed light contacts; affine 3D fit",
+        "scope": "A top-left B top-right C bottom-right D bottom-left; square centre is drawing origin",
+        "residual_override": {
+          "accepted": true,
+          "reason": "user_requested",
+          "accepted_max_residual_mm": 19.8804819848853
+        }
+      }
+    },
+    "trajectory": {
+      "motion_profile": "continuous_quintic",
+      "max_velocity_rad_s": 0.36,
+      "max_acceleration_rad_s2": 0.9,
+      "command_period_s": 0.05,
+      "min_segment_s": 0.02,
+      "lift_m": 0.02,
+      "stroke_end_pause_s": 0.0,
+      "lift_ready_pause_s": 0.8,
+      "lower_ready_pause_s": 0.2,
+      "travel_ready_pause_s": 0.1,
+      "min_lift_motion_s": 0.6,
+      "min_lower_motion_s": 0.4
+    },
+    "note": "null \u586b\u5b9e\u6d4b\u8ba1\u6570\uff1bzero_count \u662f\u6a21\u578b q=0 \u5bf9\u5e94\u7f16\u7801\u5668\u8bfb\u6570\uff0c\u4e0d\u662f\u968f\u610f\u53d6\u4e2d\u70b9\u3002paper \u539f\u70b9\u662f\u7ed8\u56fe\u6846\u4e2d\u5fc3\u3002",
+    "execution": {
+      "feedback_control": {
+        "max_correction_counts": 64.0,
+        "max_correction_rate_counts_s": 80.0,
+        "filter_s": 0.08
+      },
+      "measured_pen_release": true,
+      "measured_pen_release_correction_cap_counts": {
+        "1": 64,
+        "2": 96,
+        "3": 64,
+        "4": 64,
+        "5": 64
+      },
+      "elbow_first_lift": true
+    }
+  },
+  "sample": {
+    "nominal_time_s": 75.9999999999975,
+    "elapsed_s": 80.1458454800013,
+    "phase": "LIFT",
+    "stroke": 1,
+    "source_segment_id": null,
+    "nominal_counts": {
+      "1": 2204,
+      "2": 2126,
+      "3": 2135,
+      "4": 2955,
+      "5": 1918
+    },
+    "issued_counts": {
+      "1": 2209,
+      "2": 2051,
+      "3": 2085,
+      "4": 2963,
+      "5": 1919
+    },
+    "feedback_counts": {
+      "1": 2214,
+      "2": 2121,
+      "3": 2146,
+      "4": 2953,
+      "5": 1921
+    },
+    "normal_feedback": {
+      "version": "normal-feedback-v1",
+      "enabled": true,
+      "extra_normal_offset_m": 0.0,
+      "scope": "encoder FK model height only; no physical contact or pressure sensor",
+      "active": false
+    },
+    "measured_release": {
+      "version": "measured-release-id3-first-v3",
+      "frozen_tip_m": [
+        0.281499479951173,
+        0.056260813522482224,
+        0.10904936889265116
+      ],
+      "release_stage": "coordinated_lift",
+      "requested_tip_m": [
+        0.2803203213212668,
+        0.05635918741562262,
+        0.12943191343070268
+      ],
+      "reference_tip_m": [
+        0.28031984964005363,
+        0.05635906524854864,
+        0.12943196365246887
+      ],
+      "issued_tip_m": [
+        0.2834105305913608,
+        0.056023233789105766,
+        0.16516721820930574
+      ],
+      "load_bias_counts": [
+        0.0,
+        0.9999999999999966,
+        -27.000000000000018,
+        0.0,
+        0.0
+      ],
+      "correction_counts": [
+        -3,
+        -68,
+        -60,
+        10,
+        -3
+      ],
+      "phase": "LIFT",
+      "feedback_hold": false,
+      "correction_saturated_joint_ids": [],
+      "cancelled_lateral_counts": [
+        25.999999999999986,
+        0.0,
+        0.0,
+        -13.000000000000064,
+        5.999999999999997
+      ],
+      "held_pen_axis": false,
+      "clearance": {
+        "version": "measured-release-id3-first-v3",
+        "fresh": true,
+        "anchored": true,
+        "clearance_confirmed": false,
+        "required_rise_m": 0.0195,
+        "required_plane_height_m": 0.0195,
+        "release_stage": "coordinated_lift",
+        "scope": "encoder FK; no physical contact sensor",
+        "actual_rise_m": 0.019617356912722306,
+        "actual_plane_height_m": 0.01920049588211851,
+        "actual_xy_drift_m": 0.000693828081529104
+      }
+    },
+    "lift_completion": {
+      "version": "measured-release-id3-first-v3",
+      "fresh": true,
+      "anchored": true,
+      "clearance_confirmed": false,
+      "required_rise_m": 0.0195,
+      "required_plane_height_m": 0.0195,
+      "release_stage": "coordinated_lift",
+      "scope": "encoder FK; no physical contact sensor",
+      "actual_rise_m": 0.019617356912722306,
+      "actual_plane_height_m": 0.01920049588211851,
+      "actual_xy_drift_m": 0.000693828081529104
+    },
+    "tip_error_m": 0.003825761739001167,
+    "normal_error_m": 0.0008002414092197749,
+    "source_path_error_m": 0.003830310514466093,
+    "signed_normal_error_m": -0.0008002414092197749,
+    "model_tip_m": [
+      0.28002289031526895,
+      0.05695767510275614,
+      0.12861096792322457
+    ],
+    "model_pen_axis": [
+      0.052758405297113814,
+      -0.005801061580557251,
+      -0.9985904557700539
+    ],
+    "pen_axis_error_deg": 0.2921358199983808,
+    "qualified": false
+  },
+  "source_job_id": "b9bd8d9b4f3e486db28164b524875de3"
+}

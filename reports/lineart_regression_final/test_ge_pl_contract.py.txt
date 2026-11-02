@@ -1,0 +1,11 @@
+test_clock_setup_keeps_linux_slcr_writable_and_preserves_other_clocks (test_ge_pl_contract.GePlContractTests.test_clock_setup_keeps_linux_slcr_writable_and_preserves_other_clocks) ... ok
+test_missing_address_configuration_leaves_interface_unassigned (test_ge_pl_contract.GePlContractTests.test_missing_address_configuration_leaves_interface_unassigned) ... ok
+test_pc_peer_config_and_conflicting_legacy_address (test_ge_pl_contract.GePlContractTests.test_pc_peer_config_and_conflicting_legacy_address) ... ok
+test_real_export_and_corrupted_reset_clock_phy (test_ge_pl_contract.GePlContractTests.test_real_export_and_corrupted_reset_clock_phy) ... ok
+test_robot_subnet_never_overlaps_existing_control_connection (test_ge_pl_contract.GePlContractTests.test_robot_subnet_never_overlaps_existing_control_connection) ... ok
+test_static_robot_address_does_not_add_gateway (test_ge_pl_contract.GePlContractTests.test_static_robot_address_does_not_add_gateway) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.565s
+
+OK

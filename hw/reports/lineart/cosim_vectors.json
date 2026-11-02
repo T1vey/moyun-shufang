@@ -1,0 +1,82 @@
+[
+  {
+    "name": "random_1x1",
+    "shape": [
+      1,
+      1
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_65x3",
+    "shape": [
+      3,
+      65
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_17x19",
+    "shape": [
+      19,
+      17
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_1536x17",
+    "shape": [
+      17,
+      1536
+    ],
+    "passes": 1
+  },
+  {
+    "name": "random_17x1536",
+    "shape": [
+      1536,
+      17
+    ],
+    "passes": 1
+  },
+  {
+    "name": "empty",
+    "shape": [
+      31,
+      33
+    ],
+    "passes": 1
+  },
+  {
+    "name": "solid_repeat",
+    "shape": [
+      71,
+      77
+    ],
+    "passes": 10
+  },
+  {
+    "name": "20261002_194317_043321_legacy_b4f67d28.png",
+    "shape": [
+      96,
+      96
+    ],
+    "passes": 1
+  },
+  {
+    "name": "20261002_202121_224468_legacy_3bffa07c.png",
+    "shape": [
+      96,
+      96
+    ],
+    "passes": 1
+  },
+  {
+    "name": "20261003_185428_498276_legacy_4f02960d.png",
+    "shape": [
+      96,
+      96
+    ],
+    "passes": 1
+  }
+]

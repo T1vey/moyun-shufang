@@ -1,0 +1,17 @@
+{
+  "id": "poem_p28",
+  "category": "poem",
+  "title": "晓出净慈寺送林子方",
+  "author": "杨万里",
+  "dynasty": "宋",
+  "sentences": [
+    "毕竟西湖六月中，",
+    "风光不与四时同。",
+    "接天莲叶无穷碧，",
+    "映日荷花别样红。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

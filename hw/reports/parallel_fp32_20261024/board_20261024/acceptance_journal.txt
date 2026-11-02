@@ -1,0 +1,22 @@
+** WARNING: connection is not using a post-quantum key exchange algorithm.
+** This session may be vulnerable to "store now, decrypt later" attacks.
+** The server may need to be upgraded. See https://openssh.com/pq.html
+Oct 24 15:24:27 pynq python[282]: TCB705_PHYSICAL_CLOCK_HZ 99999999.0
+Oct 24 15:24:27 pynq python[282]: TCB705_AXI_PROBE_BEGIN
+Oct 24 15:24:27 pynq python[282]: TCB705_AXI_CONTROL 0x4
+Oct 24 15:24:28 pynq python[282]: TCB705_FP32_IK_PROTOCOL_SELF_TEST_PASS: 3 legal IK rows, cancellation and rejected model; geometric residuals not evaluated
+Oct 24 15:24:30 pynq python[282]: VISION_BOOT_SELFTEST_PASS {'otsu': 119, 'threshold': 119, 'hist_n': 14241, 'hist_s': 2602331}
+Oct 24 15:24:30 pynq python[282]: PLATFORM_READY tcb705-parallel-fp32-20261024
+5
+calibration.sha256
+previous_ready.json
+previous_release.txt
+so101-gt911.effective.txt
+so101-md0700r.effective.txt
+so101-platform.effective.txt
+tcb705-ge-pl.effective.txt
+tcb705-ui.effective.txt
+Oct 24 15:25:44 pynq python[844]:   File "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm/app.py", line 328, in do_GET
+Oct 24 15:25:44 pynq python[844]:   File "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm/app.py", line 253, in send
+Oct 24 15:25:44 pynq python[844]:   File "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm/app.py", line 328, in do_GET
+Oct 24 15:25:44 pynq python[844]:   File "/home/xilinx/tcb705_releases/20261024_fp32_r1/ZYNQArm/app.py", line 253, in send

@@ -1,0 +1,17 @@
+{
+  "id": "poem_p30",
+  "category": "poem",
+  "title": "江南春",
+  "author": "杜牧",
+  "dynasty": "唐",
+  "sentences": [
+    "千里莺啼绿映红，",
+    "水村山郭酒旗风。",
+    "南朝四百八十寺，",
+    "多少楼台烟雨中。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

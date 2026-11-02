@@ -1,0 +1,39 @@
+test_contain_keeps_aspect_and_centres (test_tcb705_web.CanvasFitTests.test_contain_keeps_aspect_and_centres) ... ok
+test_dh_model_reproduces_controller_poses (test_tcb705_web.ControllerDHModelTests.test_dh_model_reproduces_controller_poses) ... ok
+test_joint_lerp_between_dense_nodes_stays_on_segment (test_tcb705_web.JointInterpolationTests.test_joint_lerp_between_dense_nodes_stays_on_segment) ... ok
+test_merge_reduces_blocks_within_tolerance (test_tcb705_web.JointMergeTests.test_merge_reduces_blocks_within_tolerance) ... ok
+test_air_plane_does_not_change_physical_clearance (test_tcb705_web.ModeSwitchSafetyTests.test_air_plane_does_not_change_physical_clearance) ... ok
+test_low_start_refuses_before_power_or_program (test_tcb705_web.ModeSwitchSafetyTests.test_low_start_refuses_before_power_or_program) ... ok
+test_low_stop_never_switches_mode_or_lifts (test_tcb705_web.ModeSwitchSafetyTests.test_low_stop_never_switches_mode_or_lifts) ... ok
+test_unreadable_pose_never_switches_mode (test_tcb705_web.ModeSwitchSafetyTests.test_unreadable_pose_never_switches_mode) ... ok
+test_current_uvw_used_for_blocks (test_tcb705_web.PlanningOnlyModeTests.test_current_uvw_used_for_blocks) ... ok
+test_web_profile_gates (test_tcb705_web.PlanningOnlyModeTests.test_web_profile_gates) ... ok
+test_post_restore_transient_is_recorded (test_tcb705_web.PostRestoreTests.test_post_restore_transient_is_recorded) ... ok
+test_smooth_only_at_gentle_vertices (test_tcb705_web.SmoothAssignmentTests.test_smooth_only_at_gentle_vertices) ... ok
+test_lagging_arm_is_not_reported_as_deviation (test_tcb705_web.TrackerTests.test_lagging_arm_is_not_reported_as_deviation) ... ok
+test_board_stop_then_goes_home (test_tcb705_web.WebExecutorTests.test_board_stop_then_goes_home) ... ok
+test_cartesian_merge_and_chunking (test_tcb705_web.WebExecutorTests.test_cartesian_merge_and_chunking) ... ok
+test_chunked_execution (test_tcb705_web.WebExecutorTests.test_chunked_execution) ... ok
+test_deviation_only_warns_in_home_mode (test_tcb705_web.WebExecutorTests.test_deviation_only_warns_in_home_mode) ... ok
+test_execute_cartesian_completes_and_restores (test_tcb705_web.WebExecutorTests.test_execute_cartesian_completes_and_restores) ... ok
+test_execute_joint_mode_completes (test_tcb705_web.WebExecutorTests.test_execute_joint_mode_completes) ... ok
+test_home_before_and_after_drawing (test_tcb705_web.WebExecutorTests.test_home_before_and_after_drawing) ... ok
+test_home_from_low_start_draws (test_tcb705_web.WebExecutorTests.test_home_from_low_start_draws) ... ok
+test_home_validation (test_tcb705_web.WebExecutorTests.test_home_validation) ... ok
+test_in_memory_plan_matches_files (test_tcb705_web.WebExecutorTests.test_in_memory_plan_matches_files) ... ok
+test_in_memory_plan_rejects_changed_config (test_tcb705_web.WebExecutorTests.test_in_memory_plan_rejects_changed_config) ... ok
+test_joint_mode_blocks (test_tcb705_web.WebExecutorTests.test_joint_mode_blocks) ... ok
+test_large_sag_refused_without_program (test_tcb705_web.WebExecutorTests.test_large_sag_refused_without_program) ... ok
+test_no_progress_stops (test_tcb705_web.WebExecutorTests.test_no_progress_stops) ... ok
+test_path_deviation_stops (test_tcb705_web.WebExecutorTests.test_path_deviation_stops) ... ok
+test_persistent_sag_cannot_bypass_path_watchdog (test_tcb705_web.WebExecutorTests.test_persistent_sag_cannot_bypass_path_watchdog) ... ok
+test_plan_not_from_home_refused_before_motion (test_tcb705_web.WebExecutorTests.test_plan_not_from_home_refused_before_motion) ... ok
+test_pose_read_error_is_retried (test_tcb705_web.WebExecutorTests.test_pose_read_error_is_retried) ... ok
+test_power_on_small_residual_shift_settles (test_tcb705_web.WebExecutorTests.test_power_on_small_residual_shift_settles) ... ok
+test_readiness_and_validation (test_tcb705_web.WebExecutorTests.test_readiness_and_validation) ... ok
+test_start_mismatch_and_disabled (test_tcb705_web.WebExecutorTests.test_start_mismatch_and_disabled) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 5.653s
+
+OK

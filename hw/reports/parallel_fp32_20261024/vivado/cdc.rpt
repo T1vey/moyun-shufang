@@ -1,0 +1,174 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sat Oct 24 22:59:48 2026
+| Host         : DESKTOP-FPGA running 64-bit major release  (build 9200)
+| Command      : report_cdc -details -file C:/fpga_build/p32full_20261024/export/cdc.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+CDC Report
+
+ID      Severity  Count  Description
+------  --------  -----  -------------------------------------------------------
+CDC-1   Critical      2  1-bit unknown CDC circuitry
+CDC-3   Info         72  1-bit synchronized with ASYNC_REG property
+CDC-6   Warning       1  Multi-bit synchronized with ASYNC_REG property
+CDC-9   Info          1  Asynchronous reset synchronized with ASYNC_REG property
+CDC-13  Critical      6  1-bit CDC path on a non-FD primitive
+
+Source Clock: clk_fpga_1
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                                                               Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  ------------------------------------------------------------------------------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C                system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C                system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C                 system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+
+Source Clock: input port clock
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)       Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  ------------------  --------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      5  False Path  lcd_rgb_tri_io[23]  system_i/lcd_out/lcd_id/U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[0].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      5  False Path  lcd_rgb_tri_io[15]  system_i/lcd_out/lcd_id/U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[1].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      5  False Path  lcd_rgb_tri_io[7]   system_i/lcd_out/lcd_id/U0/gpio_core_1/Not_Dual.INPUT_DOUBLE_REGS3/GENERATE_LEVEL_P_S_CDC.MULTI_BIT.FOR_IN_cdc_to[2].CROSS2_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+
+Source Clock: lcd_pclk_system_clk_wiz_0_0
+Destination Clock: clk_fpga_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                     Depth  Exception            Source (From)                                                                                                                               Destination (To)
+---  -----  --------  ----------------------------------------------  -----  -------------------  ------------------------------------------------------------------------------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  <hidden>                                                                                                                                    <hidden>
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  <hidden>                                                                                                                                    <hidden>
+  3  CDC-6  Warning   Multi-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.ipif_RdData_reg[31:0]/C                                                        system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2PROCCLK_I/data_sync_reg[0][31:0]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/dest_ack_reg/C                system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/dest_ack_reg/C                system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/dest_ack_reg/C                 system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property          3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+
+Source Clock: clk_fpga_0
+Destination Clock: clk_fpga_1
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)                                                                                                                               Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  ------------------------------------------------------------------------------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C   system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C                system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  False Path  system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C                system_i/ps7_0_axi_periph/m06_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+
+Source Clock: input port clock
+Destination Clock: clk_fpga_2
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)       Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  ------------------  ----------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      8  False Path  ge_pl_mdio_mdio_io  <hidden>
+
+Source Clock: clk_fpga_2
+Destination Clock: gmii_clk_125m_out
+CDC Type: User Ignored
+
+Row  ID      Severity  Description                                              Depth  Exception   Source (From)  Destination (To)
+---  ------  --------  -------------------------------------------------------  -----  ----------  -------------  ---------------------------------------------------------
+  1  CDC-9   Info      Asynchronous reset synchronized with ASYNC_REG property      6  False Path  <hidden>       <hidden>
+  2  CDC-13  Critical  1-bit CDC path on a non-FD primitive                         0  False Path  <hidden>       <hidden>
+  3  CDC-13  Critical  1-bit CDC path on a non-FD primitive                         0  False Path  <hidden>       <hidden>
+  4  CDC-13  Critical  1-bit CDC path on a non-FD primitive                         0  False Path  <hidden>       <hidden>
+  5  CDC-13  Critical  1-bit CDC path on a non-FD primitive                         0  False Path  <hidden>       <hidden>
+  6  CDC-1   Critical  1-bit unknown CDC circuitry                                  0  False Path  <hidden>       system_i/processing_system7_0/inst/ENET1_GMII_COL_i_reg/D
+  7  CDC-1   Critical  1-bit unknown CDC circuitry                                  0  False Path  <hidden>       system_i/processing_system7_0/inst/ENET1_GMII_CRS_i_reg/D
+
+Source Clock: ge_pl_rxc
+Destination Clock: gmii_clk_125m_out
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception   Source (From)  Destination (To)
+---  -----  --------  ------------------------------------------  -----  ----------  -------------  ----------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      6  False Path  <hidden>       <hidden>
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      6  False Path  <hidden>       <hidden>
+
+Source Clock: clk_fpga_2
+Destination Clock: gmii_clk_25m_out
+CDC Type: User Ignored
+
+Row  ID      Severity  Description                           Depth  Exception   Source (From)  Destination (To)
+---  ------  --------  ------------------------------------  -----  ----------  -------------  ------------------------------------------------------------------------------
+  1  CDC-13  Critical  1-bit CDC path on a non-FD primitive      0  False Path  <hidden>       system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk_25m_2_5m/CE1
+
+Source Clock: clk_fpga_2
+Destination Clock: gmii_clk_2_5m_out
+CDC Type: User Ignored
+
+Row  ID      Severity  Description                           Depth  Exception   Source (From)  Destination (To)
+---  ------  --------  ------------------------------------  -----  ----------  -------------  ------------------------------------------------------------------------------
+  1  CDC-13  Critical  1-bit CDC path on a non-FD primitive      0  False Path  <hidden>       system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk_25m_2_5m/CE0
+
+Source Clock: clk_fpga_0
+Destination Clock: lcd_pclk_system_clk_wiz_0_0
+CDC Type: No Common Primary Clock
+
+Row  ID     Severity  Description                                 Depth  Exception            Source (From)                                                                                                                               Destination (To)
+---  -----  --------  ------------------------------------------  -----  -------------------  ------------------------------------------------------------------------------------------------------------------------------------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+  1  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[0]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][0]/D
+  2  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[1]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][1]/D
+  3  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[2]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][2]/D
+  4  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[3]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][3]/D
+  5  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[4]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][4]/D
+  6  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[5]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][5]/D
+  7  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[6]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][6]/D
+  8  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[7]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][7]/D
+  9  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[8]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][8]/D
+ 10  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[9]/C                                                            system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][9]/D
+ 11  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[10]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][10]/D
+ 12  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[11]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][11]/D
+ 13  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[12]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][12]/D
+ 14  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[13]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][13]/D
+ 15  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[14]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][14]/D
+ 16  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[15]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][15]/D
+ 17  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[16]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][16]/D
+ 18  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[17]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][17]/D
+ 19  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[18]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][18]/D
+ 20  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[19]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][19]/D
+ 21  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[20]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][20]/D
+ 22  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[21]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][21]/D
+ 23  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[22]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][22]/D
+ 24  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[23]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][23]/D
+ 25  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[24]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][24]/D
+ 26  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[25]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][25]/D
+ 27  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[26]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][26]/D
+ 28  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[27]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][27]/D
+ 29  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[28]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][28]/D
+ 30  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[29]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][29]/D
+ 31  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[30]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][30]/D
+ 32  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[31]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][31]/D
+ 33  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[34]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][34]/D
+ 34  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[35]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][35]/D
+ 35  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[36]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][36]/D
+ 36  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[37]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][37]/D
+ 37  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[38]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][38]/D
+ 38  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[39]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][39]/D
+ 39  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[41]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][41]/D
+ 40  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[42]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][42]/D
+ 41  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[43]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][43]/D
+ 42  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.proc_sync1_reg[44]/C                                                           system_i/lcd_out/lcd_vtc/U0/U_VIDEO_CTRL/AXI4_LITE_INTERFACE.SYNC2VIDCLK_I/data_sync_reg[0][44]/D
+ 43  CDC-3  Info      1-bit synchronized with ASYNC_REG property      4  Asynch Clock Groups  system_i/rest_gpio/U0/gpio_core_1/Dual.gpio_Data_Out_reg[2]/C                                                                               system_i/lcd_out/proc_sys_reset_0/U0/EXT_LPF/ACTIVE_LOW_AUX.ACT_LO_AUX/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+ 44  CDC-3  Info      1-bit synchronized with ASYNC_REG property      4  Asynch Clock Groups  system_i/rst_ps7_0_100M/U0/ACTIVE_LOW_PR_OUT_DFF[0].FDRE_PER_N/C                                                                            system_i/lcd_out/proc_sys_reset_0/U0/EXT_LPF/ACTIVE_LOW_EXT.ACT_LO_EXT/GENERATE_LEVEL_P_S_CDC.SINGLE_BIT.CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to/D
+ 45  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_ar/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+ 46  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/src_sendd_ff_reg/C  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_aw/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+ 47  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/src_sendd_ff_reg/C   system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_fwd_w/handshake/xpm_cdc_single_src2dest_inst/syncstages_ff_reg[0]/D
+ 48  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/dest_ack_reg/C                system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_b/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+ 49  CDC-3  Info      1-bit synchronized with ASYNC_REG property      3  Asynch Clock Groups  system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/dest_ack_reg/C                system_i/ps7_0_axi_periph/m03_couplers/auto_cc/inst/gen_clock_conv.gen_async_lite_conv.clock_conv_lite_resp_r/handshake/xpm_cdc_single_dest2src_inst/syncstages_ff_reg[0]/D
+

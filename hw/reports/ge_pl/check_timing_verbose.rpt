@@ -1,0 +1,142 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.2 (win64) Build 5239630 Fri Nov 08 22:35:27 MST 2024
+| Date         : Sat Oct 17 15:51:40 2026
+| Host         : DESKTOP-FPGA running 64-bit major release  (build 9200)
+| Command      : check_timing -verbose -file D:/zhiliao/TCB705_ZYNQ-10-15/ZYNQArm/hw/reports/ge_pl/check_timing_verbose.rpt
+| Design       : system_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -2  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (5)
+6. checking no_output_delay (34)
+7. checking multiple_clock (1)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (5)
+------------------------------
+ There are 5 input ports with no input delay specified. (HIGH)
+
+ge_pl_mdio_mdio_io
+i2c_touch_sda_io
+lcd_rgb_tri_io[15]
+lcd_rgb_tri_io[23]
+lcd_rgb_tri_io[7]
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (34)
+--------------------------------
+ There are 33 ports with no output delay specified. (HIGH)
+
+gpio_touch_tri_io[0]
+gpio_touch_tri_io[1]
+i2c_touch_scl_io
+i2c_touch_sda_io
+lcd_bl[0]
+lcd_de
+lcd_hs
+lcd_rgb_tri_io[0]
+lcd_rgb_tri_io[10]
+lcd_rgb_tri_io[11]
+lcd_rgb_tri_io[12]
+lcd_rgb_tri_io[13]
+lcd_rgb_tri_io[14]
+lcd_rgb_tri_io[15]
+lcd_rgb_tri_io[16]
+lcd_rgb_tri_io[17]
+lcd_rgb_tri_io[18]
+lcd_rgb_tri_io[19]
+lcd_rgb_tri_io[1]
+lcd_rgb_tri_io[20]
+lcd_rgb_tri_io[21]
+lcd_rgb_tri_io[22]
+lcd_rgb_tri_io[23]
+lcd_rgb_tri_io[2]
+lcd_rgb_tri_io[3]
+lcd_rgb_tri_io[4]
+lcd_rgb_tri_io[5]
+lcd_rgb_tri_io[6]
+lcd_rgb_tri_io[7]
+lcd_rgb_tri_io[8]
+lcd_rgb_tri_io[9]
+lcd_rst[0]
+lcd_vs
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There is 1 port with no output delay but with a timing clock defined on it or propagating through it (LOW)
+
+ge_pl_rgmii_txc
+
+
+7. checking multiple_clock (1)
+------------------------------
+ There is 1 register/latch pin with multiple clocks. (HIGH)
+
+system_i/ge_pl_bridge/U0/i_gmii_to_rgmii_block/i_bufgmux_gmii_clk/I0
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+

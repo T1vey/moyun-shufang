@@ -1,0 +1,69 @@
+{
+  "version": "0.2.0-tcb705-pl-batch",
+  "robot_type": "TCB705",
+  "simulation": false,
+  "drawing_pipeline_version": "drawing-quality-v2",
+  "allow_real": true,
+  "motion_supported": false,
+  "physical_authorized": false,
+  "sugar_calibration_ready": true,
+  "sugar_calibration_detail": "使用 ArmVision A/B、落笔 Z 与 UVW",
+  "motion_algorithm_version": "tcb705-c2-v2-batch",
+  "motion_modes": [
+    "tcb705"
+  ],
+  "production_motion_modes": [
+    "tcb705"
+  ],
+  "default_motion_mode": "tcb705",
+  "ik_backend": "ZYNQ_PL_7R_BATCH",
+  "ik_metrics": {
+    "faulted": false,
+    "abi": "tcb705-planner-accel-v1",
+    "artifact_hashes": {
+      "tcb705_planner.bit": "5dd9af8eb01979c4680049887232cc3fd5a11420940d33ef2132552927a683a4",
+      "tcb705_planner.hwh": "4ed2250495f14fa5fcb9761db9585d28d6d1ff9911a5983954e081ae4e45d44b",
+      "tcb705_planner.registers.json": "393f5a51834a04235c57234a4e44ce1e8d65f21f4dac6b7ef28bb17158070a11"
+    },
+    "pl_load_policy": "attach",
+    "build_id": "tcb705_lineart_20261020_r1",
+    "clock_hz": 76923080
+  },
+  "background_plan_save_supported": false,
+  "drawing_size_supported": true,
+  "readiness": {
+    "physical_ready": true,
+    "missing": [],
+    "offline_ready": true,
+    "execution_path": "sdk_joint"
+  },
+  "token": "[redacted]",
+  "session_id": "20261022_051748_d59690f8",
+  "events": [
+    {
+      "time_utc": "2026-10-22T05:17:48.870086+00:00",
+      "event": "START",
+      "detail": {
+        "allow_real": true,
+        "version": "1.10.5-sugar-fast"
+      }
+    }
+  ],
+  "cloud_configured": false
+}
+SDK_INFO {'lib_version': 'V2.4.1', 'host_version': '1.9.84-main.aarch64.WEB.e53f3e9d'}
+SDK_STATE {'move': 0, 'paused': False, 'link': True}
+SDK_ALARMS []
+SPEED 10.0
+SDK_JOINTS ['-1.063614', '30.688248', '0.352936', '72.049026', '-0.163422', '77.785263', '-0.712051'] MS 0.7469869997294154
+STATE {'_phc_ctrlkey': '0', '_phc_key': '0', 'g_servo_statero_': '0', '_phc_alarm_': '0', 'g_state_': '1'}
+Y_SAMPLE 6.382 16.046818000177154
+Y_SAMPLE 6.382 15.647449999960372
+Y_SAMPLE 6.382 15.612189999956172
+Y_SAMPLE 6.382 15.35375200000999
+Y_SAMPLE 6.382 15.57060499999352
+Y_SAMPLE 6.382 15.517829000600614
+Y_SAMPLE 6.382 15.653108000151406
+Y_SAMPLE 6.382 15.504568999858748
+
+REMOTE_EXIT=0

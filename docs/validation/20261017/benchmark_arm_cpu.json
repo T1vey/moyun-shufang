@@ -1,0 +1,153 @@
+{
+  "platform": "Linux-5.4.0-xilinx-v2020.2-armv7l-with-glibc2.29",
+  "python": "3.8.2 (default, Mar 13 2020, 10:14:16) \n[GCC 9.3.0]",
+  "physical_motion": false,
+  "results": [
+    {
+      "case": "two_strokes",
+      "strokes": 2,
+      "sample_step_m": 0.001,
+      "durations_s": {
+        "before": [
+          11.68360488899998,
+          11.464865595999981,
+          11.556333888999688
+        ],
+        "after": [
+          1.0509643909999795,
+          0.8883756369996263,
+          1.0512365089998639
+        ]
+      },
+      "median_before_s": 11.556333888999688,
+      "median_after_s": 1.0509643909999795,
+      "max_q_difference_rad": 0.0,
+      "max_time_difference_s": 1.538325022920617e-12,
+      "metrics": {
+        "ik_iterations": 371,
+        "time_stretch": 3.289591661275954,
+        "nodes": 187,
+        "duration_s": 25.373746615772568,
+        "corner_stops": 0,
+        "max_path_error_m": 1.7252325601233822e-06,
+        "max_orientation_error_rad": 8.661972072401116e-06,
+        "max_joint_step_rad": 0.007506750609264756,
+        "ik_batches": 3,
+        "ik_batch_limit": 64,
+        "ik_prefix_invalidations": 0,
+        "ik_accel_fallbacks": 0,
+        "ik_accel_unavailable_reason": "Seven-axis platform is not configured; native CPU batches active",
+        "ik_backend": "ZYNQ_CPU_NATIVE_7R_BATCH",
+        "joint_peak_velocity_rad_s": [
+          0.06696247596710611,
+          0.04033519267850091,
+          0.026217078974938565,
+          0.12783455022606502,
+          0.024838788246667392,
+          0.09207824971161728,
+          0.04967240566554558
+        ],
+        "joint_peak_acceleration_rad_s2": [
+          0.11075457382828406,
+          0.07610932183816183,
+          0.04042453969527765,
+          0.1993376519785402,
+          0.04741329984335508,
+          0.1737661604997449,
+          0.10210290248331516
+        ],
+        "joint_peak_jerk_rad_s3": [
+          3.9405950372392393,
+          1.6320627138051003,
+          0.9636880272920093,
+          3.9405950372392406,
+          1.0928045001838678,
+          3.6960349735185596,
+          3.8303335890072363
+        ],
+        "geometry_fk_batches": 2,
+        "geometry_probe_samples": 1674,
+        "geometry_batch_limit": 1024,
+        "planning_s": 1.042807337999875,
+        "frames": 6345,
+        "motion_algorithm_version": "tcb705-c2-v2-batch",
+        "motion_mode": "tcb705",
+        "collision_model_verified": false
+      },
+      "speedup": 10.99593286695849
+    },
+    {
+      "case": "portrait_excerpt_8strokes_100mm",
+      "strokes": 8,
+      "sample_step_m": 0.0005,
+      "durations_s": {
+        "before": [
+          155.98042420599995,
+          157.1581262990003,
+          161.3347221969998
+        ],
+        "after": [
+          13.334838898000271,
+          13.761964401000114,
+          12.585897320000186
+        ]
+      },
+      "median_before_s": 157.1581262990003,
+      "median_after_s": 13.334838898000271,
+      "max_q_difference_rad": 3.32895137011846e-08,
+      "max_time_difference_s": 4.5929482439532876e-11,
+      "metrics": {
+        "ik_iterations": 4931,
+        "time_stretch": 6.850006429558611,
+        "nodes": 2467,
+        "duration_s": 397.8524788787542,
+        "corner_stops": 38,
+        "max_path_error_m": 2.1622720230554566e-05,
+        "max_orientation_error_rad": 8.661972072401116e-06,
+        "max_joint_step_rad": 0.00396266679482471,
+        "ik_batches": 39,
+        "ik_batch_limit": 64,
+        "ik_prefix_invalidations": 0,
+        "ik_accel_fallbacks": 0,
+        "ik_accel_unavailable_reason": "Seven-axis platform is not configured; native CPU batches active",
+        "ik_backend": "ZYNQ_CPU_NATIVE_7R_BATCH",
+        "joint_peak_velocity_rad_s": [
+          0.06852857510835832,
+          0.037464681820449756,
+          0.02245197407666034,
+          0.08769672289021309,
+          0.024446680321936757,
+          0.084366509445394,
+          0.03360956791664586
+        ],
+        "joint_peak_acceleration_rad_s2": [
+          0.13487301621660666,
+          0.06669847398970784,
+          0.04418639226465569,
+          0.17128996815496472,
+          0.04656169238044196,
+          0.14715252319520966,
+          0.09822434178810102
+        ],
+        "joint_peak_jerk_rad_s3": [
+          3.940595037239243,
+          1.7161863536839792,
+          1.163586428744423,
+          3.940595037239243,
+          1.1706487157549021,
+          3.8091736211405447,
+          3.940595037239242
+        ],
+        "geometry_fk_batches": 22,
+        "geometry_probe_samples": 22194,
+        "geometry_batch_limit": 1024,
+        "planning_s": 11.729741721999744,
+        "frames": 99465,
+        "motion_algorithm_version": "tcb705-c2-v2-batch",
+        "motion_mode": "tcb705",
+        "collision_model_verified": false
+      },
+      "speedup": 11.78552868175769
+    }
+  ]
+}

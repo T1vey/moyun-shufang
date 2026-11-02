@@ -1,0 +1,44 @@
+{
+  "kind": "air-only-5mm-line-response",
+  "real_motion": true,
+  "includes_handwriting_recognition": false,
+  "includes_pen_contact": false,
+  "sensor_timestamp_available": false,
+  "sdk": {
+    "lib_version": "V2.4.1",
+    "host_version": "1.9.84-main.aarch64.WEB.e53f3e9d"
+  },
+  "records": [],
+  "before": {
+    "pose": [
+      -434.675,
+      6.382,
+      315.501,
+      -179.973,
+      0.522,
+      179.988
+    ],
+    "state": {
+      "_phc_ctrlkey": "0",
+      "_phc_key": "0",
+      "g_servo_statero_": "0",
+      "_phc_alarm_": "0",
+      "g_state_": "1"
+    },
+    "geometry": {
+      "nodes": 21,
+      "segment_probes": 129,
+      "line_error_mm": 0.007169959959163164
+    }
+  },
+  "speed_pct": 60.0,
+  "ready_pose": [
+    -434.667,
+    6.411,
+    315.483,
+    -179.974,
+    0.522,
+    179.99
+  ],
+  "error": "RuntimeError: ENDPOINT_ERROR"
+}

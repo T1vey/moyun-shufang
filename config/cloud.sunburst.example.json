@@ -1,0 +1,8 @@
+{
+  "protocol": "image_edits",
+  "endpoint": "https://vip.auto-code.net/v1/images/edits",
+  "model": "gpt-image-2.5-sunburst",
+  "api_key_env": "SO101_IMAGE_API_KEY",
+  "timeout_s": 300,
+  "extra": {"size": "1024x1024"}
+}

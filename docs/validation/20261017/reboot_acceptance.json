@@ -1,0 +1,8 @@
+{
+  "reboot_verified": true,
+  "kind": "software_reboot",
+  "boot_id_before": "62c31ec8-1a8b-4833-bd24-602f08b1a201",
+  "boot_id_after": "c7397a6c-8be7-4c5d-945f-49240d5ba205",
+  "build_id": "tcb705_r4_fclk1_20261017_r2",
+  "self_test": "PASS"
+}

@@ -1,0 +1,15 @@
+{
+  "archive": "ArmVision2.0_source_20260917.rar",
+  "source": "用户提供的压缩包",
+  "modified": false,
+  "files": {
+    "dxf_converter.py": {
+      "sha256": "0204f7d61da6e0fbbd651b435437c1bee2cd9c39fb4f54db69fc7236d8a3e580",
+      "source": "backend/utils/dxf_converter.py"
+    },
+    "image_processor.py": {
+      "sha256": "fb365e78aa475bf55ba5b4a1b0175d0db47ae8653fab88035476aabd40325e95",
+      "source": "backend/core/image_processor.py"
+    }
+  }
+}

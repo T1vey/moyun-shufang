@@ -1,0 +1,17 @@
+{
+  "id": "poem_p08",
+  "category": "poem",
+  "title": "寻隐者不遇",
+  "author": "贾岛",
+  "dynasty": "唐",
+  "sentences": [
+    "松下问童子，",
+    "言师采药去。",
+    "只在此山中，",
+    "云深不知处。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

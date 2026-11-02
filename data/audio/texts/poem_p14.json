@@ -1,0 +1,17 @@
+{
+  "id": "poem_p14",
+  "category": "poem",
+  "title": "梅花",
+  "author": "王安石",
+  "dynasty": "宋",
+  "sentences": [
+    "墙角数枝梅，",
+    "凌寒独自开。",
+    "遥知不是雪，",
+    "为有暗香来。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

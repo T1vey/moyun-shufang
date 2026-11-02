@@ -1,0 +1,17 @@
+{
+  "id": "poem_p31",
+  "category": "poem",
+  "title": "回乡偶书",
+  "author": "贺知章",
+  "dynasty": "唐",
+  "sentences": [
+    "少小离家老大回，",
+    "乡音无改鬓毛衰。",
+    "儿童相见不相识，",
+    "笑问客从何处来。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

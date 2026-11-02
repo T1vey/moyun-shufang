@@ -1,0 +1,218 @@
+{
+  "passed": true,
+  "platform": "Windows-10-10.0.26200-SP0",
+  "machine": "",
+  "images": [
+    {
+      "image": "20261002_194317_043321_legacy_b4f67d28.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.05955290000019886,
+      "cpp_thin_s": 0.014902500000061991,
+      "subiterations": 20,
+      "cpu_graph_s": 0.029728800000157207,
+      "cpp_graph_s": 0.014637499999935244,
+      "strokes": 22,
+      "path_sha256": "15b49afbbd3e97756ac7e87451cfd78d744363f09d46c926712e642c4dd9adde",
+      "exact": true
+    },
+    {
+      "image": "20261002_202121_224468_legacy_3bffa07c.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.039795000000140135,
+      "cpp_thin_s": 0.010434699999677832,
+      "subiterations": 12,
+      "cpu_graph_s": 0.08715449999999691,
+      "cpp_graph_s": 0.02339269999993121,
+      "strokes": 102,
+      "path_sha256": "233eb2fc5f8afa73a29cf1170087e4a204b57de6eb0923a4fe8703d0de3892ff",
+      "exact": true
+    },
+    {
+      "image": "20261003_185428_498276_legacy_4f02960d.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.027764200000092387,
+      "cpp_thin_s": 0.009203499999784981,
+      "subiterations": 12,
+      "cpu_graph_s": 0.024019699999826116,
+      "cpp_graph_s": 0.009686500000043452,
+      "strokes": 8,
+      "path_sha256": "ccbf24c90f09ff5b5ea5501ebca9b9dc511c23ad14a39b239b4ad3c817e3db83",
+      "exact": true
+    },
+    {
+      "image": "20261003_214111_285308_legacy_42c3c541.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.05501490000006015,
+      "cpp_thin_s": 0.015095900000233087,
+      "subiterations": 20,
+      "cpu_graph_s": 0.02018180000004577,
+      "cpp_graph_s": 0.00791239999989557,
+      "strokes": 6,
+      "path_sha256": "d99e0e9b60a7907c9e38363269fd56cf98c6cc0cba33d94f6bcabfcee0b14cce",
+      "exact": true
+    },
+    {
+      "image": "20261003_214129_313221_legacy_062ba6e7.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.13883720000012545,
+      "cpp_thin_s": 0.022561700000096607,
+      "subiterations": 28,
+      "cpu_graph_s": 0.040899500000250555,
+      "cpp_graph_s": 0.013630999999804772,
+      "strokes": 14,
+      "path_sha256": "5b898dd824225d6dd33979d038d5829a39279abfe25d2d10a9ffc0c094c2f480",
+      "exact": true
+    },
+    {
+      "image": "20261003_214145_296229_legacy_f97a21f0.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.11122609999983979,
+      "cpp_thin_s": 0.018653500000255008,
+      "subiterations": 22,
+      "cpu_graph_s": 0.04438610000033805,
+      "cpp_graph_s": 0.013661799999681534,
+      "strokes": 18,
+      "path_sha256": "2376ba3a79dbe4ac34f2a691615a89dfc8aa6a86f0ae309c1293a944c83c153f",
+      "exact": true
+    },
+    {
+      "image": "20261003_214314_503835_legacy_e4d6b955.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.060452799999893614,
+      "cpp_thin_s": 0.017920499999945605,
+      "subiterations": 12,
+      "cpu_graph_s": 0.19620209999993676,
+      "cpp_graph_s": 0.03792909999992844,
+      "strokes": 103,
+      "path_sha256": "0bc7a34cd8b9859c7a123fdfb9af59f533715ce1ed95a328e829c7136cc781e7",
+      "exact": true
+    },
+    {
+      "image": "20261003_215721_992454_legacy_f14d1bc6.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.11120290000008026,
+      "cpp_thin_s": 0.019145899999784888,
+      "subiterations": 14,
+      "cpu_graph_s": 0.12685629999987214,
+      "cpp_graph_s": 0.03140540000003966,
+      "strokes": 56,
+      "path_sha256": "78efea8dabb9212734b9a974dd74f983ef3f9f2e30fd836f3979dab55ffe6ca1",
+      "exact": true
+    },
+    {
+      "image": "20261003_220153_913102_legacy_dac5cba7.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.2587306999998873,
+      "cpp_thin_s": 0.038211800000226503,
+      "subiterations": 34,
+      "cpu_graph_s": 0.10471999999981563,
+      "cpp_graph_s": 0.030325599999741826,
+      "strokes": 44,
+      "path_sha256": "436363a49e9940d2e9f89a3e0d976fb14568f28df6aad63327f843bf03a74c79",
+      "exact": true
+    },
+    {
+      "image": "20261003_220947_074835_legacy_52871452.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.26487459999998464,
+      "cpp_thin_s": 0.0389682999998513,
+      "subiterations": 34,
+      "cpu_graph_s": 0.1184480000001713,
+      "cpp_graph_s": 0.0306391000003714,
+      "strokes": 36,
+      "path_sha256": "132ee3b057be738a0b9fe0c091175061a7fa4d9bfe11bd45efac0a73915fb97c",
+      "exact": true
+    },
+    {
+      "image": "20261003_222404_049978_legacy_fce2d0fd.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.09894679999979417,
+      "cpp_thin_s": 0.019646499999907974,
+      "subiterations": 18,
+      "cpu_graph_s": 0.054662200000166195,
+      "cpp_graph_s": 0.017587999999705062,
+      "strokes": 9,
+      "path_sha256": "e1a0a32bf704c2fb1e126b1170ce1edf024f78681bab7c67b4042019c73bdcd5",
+      "exact": true
+    },
+    {
+      "image": "20261004_003949_425856_legacy_24958dfa.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.13597099999969942,
+      "cpp_thin_s": 0.02946879999990415,
+      "subiterations": 28,
+      "cpu_graph_s": 0.0893553000000793,
+      "cpp_graph_s": 0.02051569999957792,
+      "strokes": 63,
+      "path_sha256": "43968d7970472446861cb3d4ac47fc8e7803508915b9d9681ca40488c99c8187",
+      "exact": true
+    },
+    {
+      "image": "20261004_173005_190281_seedream_b340d080.png",
+      "shape": [
+        1024,
+        1024
+      ],
+      "cpu_thin_s": 0.042962400000305934,
+      "cpp_thin_s": 0.014953700000205572,
+      "subiterations": 12,
+      "cpu_graph_s": 0.053293399999802205,
+      "cpp_graph_s": 0.016018199999962235,
+      "strokes": 10,
+      "path_sha256": "418cb6f4cf9e023b45525722bfa5765f7cda34cee2b0bb501f3985f409cb71c1",
+      "exact": true
+    },
+    {
+      "image": "20261007_214055_014090_seedream_a78a8441.png",
+      "shape": [
+        1024,
+        988
+      ],
+      "cpu_thin_s": 0.05486679999967237,
+      "cpp_thin_s": 0.009807100000216451,
+      "subiterations": 8,
+      "cpu_graph_s": 0.02389389999962077,
+      "cpp_graph_s": 0.009285700000418728,
+      "strokes": 1,
+      "path_sha256": "8196227eed139c2f56059a9e238f92f91dc9605fe2f9fe6eddaa7d70161eb7cf",
+      "exact": true
+    }
+  ],
+  "scope": "CPU/native equality only; no FPGA performance claim"
+}

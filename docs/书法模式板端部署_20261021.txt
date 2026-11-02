@@ -1,0 +1,60 @@
+书法模式 v4 板端部署记录
+任务日期：2026-10-21（Asia/Shanghai）
+
+结果：已激活，已读取板端发布回执并核验显示帧与服务状态。
+板子地址：192.168.2.99
+发布目录：/home/xilinx/tcb705_releases/20261021_calligraphy_v4_r1/ZYNQArm
+旧版目录：/home/xilinx/tcb705_releases/20261020_lineart_r1/ZYNQArm
+/home/xilinx/ZYNQArm 已指向新版。
+
+功能：主界面“书法模式”，35 种基本/组合笔画、53 个偏旁与部件；
+分类、名称/别名检索、分页、提按示意预览、连续曲线及下压/进给变化。
+模块版本：brush-modules-20261021-v4。
+毛笔：墨管供墨，毛长 9 mm，最大直径 2 mm。
+
+本次更新应用代码和界面，不重新加载或编译 FPGA。
+FPGA 继续使用 tcb705_lineart_20261020_r1；线稿与七轴规划加速状态正常。
+so101-platform、tcb705-ge-pl、so101-gt911 保持原配置；
+tcb705-ui 和 so101-md0700r 通过新的 systemd drop-in 使用本次发布。
+五个服务均为 active；LCD 的 hardware_frames_verified 为 true。
+
+严格保留板端实机配置，更新前后 tcb705.machine.json 的 SHA-256 均为：
+0c0cc14003fa59f9f80ddff060b1902387d5b1e470a463ae8cd0f5874545605e
+落笔 Z 仍为 219.3 mm；未导入参考 ArmVision 的 -4.559 mm。
+没有修改 A/B、TCP、笔轴姿态、抬笔高度、归位姿态或网络配置。
+当前未保存毛笔实测下压标定：max_press_mm=0、verified=false。
+可查看、检索和预览模块；实机书法规划/书写需先核对当前毛笔落纸零点及实测下压上限。
+原笔的接触高度不等于新毛笔已完成接触标定。
+
+验证：
+1. 本机书法回归 13 项通过。
+2. 板端 ARMv7 / Python 3.8 书法回归 13 项通过，包含真实本地 IK、冻结轨迹、模拟 SDK 下发与 HTTP 业务链。
+3. 板端界面流程回归 32 项通过。
+4. 板载 WebKit 独立窗口检查：12 项分页，偏旁总数 53，搜索“走之底”正确得到“辶”。
+   首次仅截图失败（缺少 gi-cairo 转换器）；改用 GDK 抓取窗口后通过，未安装额外包。
+5. 新版真实服务返回 88 项模块，simulation=false；标定文件哈希一致。
+6. LCD 已完成帧检查；已取得新版主界面截图。
+本次未发出机械臂运动指令。
+
+切换前发现旧版有执行请求，随后该请求自行以 SDK_TIMEOUT: CONNECT 无应答结束。
+通过原界面取消/重置接口清除错误任务界面，确认后台空闲后才切换服务。
+这个控制器连接问题未在本次软件更新中修复，不能把部署成功视为实机书写验收。
+
+回执和本地记录：build/calligraphy/deployment_20261021/
+  activation_receipt.json：发布、标定哈希、模块计数、FPGA/LCD 状态。
+  activation.log：实际激活输出。
+  source_manifest.json：23 个更新文件的校验值。
+  board_home.png：板端显示缓冲区的主界面截图。
+  brush_picker.png / webkit_result.json：板载浏览器验证图与结果。
+
+旧服务和标定备份：
+/home/xilinx/tcb705_releases/20261021_calligraphy_v4_r1/service_backup_20261020_144338
+注意：备份目录时间来自板子自身时钟；文档日期使用本次任务日期，不据此修改板子系统时间。
+
+回退方法（确认没有执行中的任务后，由有管理权限的维护者操作）：
+停止 so101-md0700r 与 tcb705-ui；只移除以下两个本次新增 drop-in：
+/etc/systemd/system/tcb705-ui.service.d/zzzzzzzzzzzzzz-calligraphy-v4.conf
+/etc/systemd/system/so101-md0700r.service.d/zzzzzzzzzzzzzz-calligraphy-v4.conf
+运行 systemctl daemon-reload，然后依次启动 tcb705-ui、so101-md0700r。
+将 /home/xilinx/ZYNQArm 符号链接恢复为旧版目录。
+无需覆盖标定文件，也无需重新下载 FPGA。旧发布目录已保留。

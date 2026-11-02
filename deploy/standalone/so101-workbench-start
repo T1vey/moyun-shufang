@@ -1,0 +1,6 @@
+#!/bin/sh
+set -eu
+. /etc/so101/desktop.env
+set -- --profile "${SO101_PROFILE:-/etc/so101/runtime.desktop.json}" --data-dir "$SO101_DATA"
+if [ "${SO101_ALLOW_MOTION:-0}" = 1 ]; then set -- "$@" --allow-motion; fi
+exec "${SO101_PYTHON:-/usr/bin/python3}" -B "$SO101_APP/scripts/run_board.py" "$@"

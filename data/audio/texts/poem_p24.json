@@ -1,0 +1,17 @@
+{
+  "id": "poem_p24",
+  "category": "poem",
+  "title": "山行",
+  "author": "杜牧",
+  "dynasty": "唐",
+  "sentences": [
+    "远上寒山石径斜，",
+    "白云生处有人家。",
+    "停车坐爱枫林晚，",
+    "霜叶红于二月花。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

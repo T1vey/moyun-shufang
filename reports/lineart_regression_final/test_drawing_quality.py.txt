@@ -1,0 +1,21 @@
+test_old_real_plan_is_retained_but_rejected_before_serial_open (test_drawing_quality.BoardPathOwnershipTests.test_old_real_plan_is_retained_but_rejected_before_serial_open) ... ok
+test_uploaded_bad_digest_cannot_register_paths (test_drawing_quality.BoardPathOwnershipTests.test_uploaded_bad_digest_cannot_register_paths) ... ok
+test_uploaded_summary_is_computed_and_preview_matches_payload (test_drawing_quality.BoardPathOwnershipTests.test_uploaded_summary_is_computed_and_preview_matches_payload) ... ok
+test_bad_uploaded_coordinates_reject (test_drawing_quality.DrawingQualityTests.test_bad_uploaded_coordinates_reject) ... ok
+test_blank_and_over_budget_reject_without_partial_paths (test_drawing_quality.DrawingQualityTests.test_blank_and_over_budget_reject_without_partial_paths) ... ok
+test_closed_circle_drawn_once_and_closed (test_drawing_quality.DrawingQualityTests.test_closed_circle_drawn_once_and_closed) ... ok
+test_crossing_keeps_straight_branches (test_drawing_quality.DrawingQualityTests.test_crossing_keeps_straight_branches) ... ok
+test_desktop_preserves_old_canvas_direction_and_common_engine (test_drawing_quality.DrawingQualityTests.test_desktop_preserves_old_canvas_direction_and_common_engine) ... ok
+test_geometry_gate_rejects_model_path_deviation (test_drawing_quality.DrawingQualityTests.test_geometry_gate_rejects_model_path_deviation) ... ok
+test_nested_rings_are_ordered_outer_to_inner (test_drawing_quality.DrawingQualityTests.test_nested_rings_are_ordered_outer_to_inner) ... ok
+test_old_edge_extraction_cannot_be_replanned_as_new_centerline (test_drawing_quality.DrawingQualityTests.test_old_edge_extraction_cannot_be_replanned_as_new_centerline) ... ok
+test_open_arc_is_one_open_stroke (test_drawing_quality.DrawingQualityTests.test_open_arc_is_one_open_stroke) ... ok
+test_real_parallel_lines_are_not_deduplicated_or_bridged (test_drawing_quality.DrawingQualityTests.test_real_parallel_lines_are_not_deduplicated_or_bridged) ... ok
+test_t_junction_has_two_trails_and_no_repeated_edge (test_drawing_quality.DrawingQualityTests.test_t_junction_has_two_trails_and_no_repeated_edge) ... ok
+test_thick_line_is_one_open_stroke_without_retrace (test_drawing_quality.DrawingQualityTests.test_thick_line_is_one_open_stroke_without_retrace) ... ok
+test_user_duck_head_first_and_each_eye_single_open_stroke (test_drawing_quality.DrawingQualityTests.test_user_duck_head_first_and_each_eye_single_open_stroke) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 3.448s
+
+OK

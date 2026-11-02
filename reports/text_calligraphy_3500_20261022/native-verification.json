@@ -1,0 +1,574 @@
+{
+  "profile": "build\\workspace_500_20261022\\machine-readonly.json",
+  "profile_sha256": "735b3325525db7fa9dd71efa57715a5d53dbf3d60a55a44115d5bbf83e47afb2",
+  "library": "common3500-20261022-9c3b110f7218",
+  "library_count": 3500,
+  "verified_characters": "矗罐囊瓤镶蠢赣躏露霸霹髓乙术压讳丽弟拇岳审胡俗扁哥颁剥晦焊散策缔筷碱磊篱黯机械臂智能科技程序控制墨韵翰赢鹰",
+  "coverage": "representative subset",
+  "physical_motion": false,
+  "press_mm": 4.0,
+  "elapsed_s": 69.69438610001816,
+  "cases": [
+    {
+      "text": "矗罐囊瓤镶蠢",
+      "size_mm": 40,
+      "status": "FAIL",
+      "error": "FRAME_BUDGET: 采样帧数超过 ZYNQ 内存预算，减少图形复杂度后重试"
+    },
+    {
+      "text": "赣躏露霸霹髓",
+      "size_mm": 40,
+      "nodes": 21693,
+      "planning_s": 2.723981499992078,
+      "max_path_error_m": 2.3289468278976126e-05,
+      "max_orientation_error_rad": 7.254279520892115e-07,
+      "program_checked": true,
+      "blocks": 3236,
+      "status": "PASS"
+    },
+    {
+      "text": "乙术压讳丽弟",
+      "size_mm": 40,
+      "nodes": 7469,
+      "planning_s": 0.9181546000181697,
+      "max_path_error_m": 3.0514977970203805e-05,
+      "max_orientation_error_rad": 7.780061651591624e-07,
+      "program_checked": true,
+      "blocks": 1067,
+      "status": "PASS"
+    },
+    {
+      "text": "拇岳审胡俗扁",
+      "size_mm": 40,
+      "nodes": 10563,
+      "planning_s": 1.2671952999953646,
+      "max_path_error_m": 2.3409457098152896e-05,
+      "max_orientation_error_rad": 7.468440584028935e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "哥颁剥晦焊散",
+      "size_mm": 40,
+      "nodes": 12675,
+      "planning_s": 1.5537601000105496,
+      "max_path_error_m": 2.864690695527632e-05,
+      "max_orientation_error_rad": 7.782915149450853e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "策缔筷碱磊篱",
+      "size_mm": 40,
+      "nodes": 14591,
+      "planning_s": 1.7577858000004198,
+      "max_path_error_m": 2.324010179903991e-05,
+      "max_orientation_error_rad": 7.254279520892115e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "黯机械臂智能",
+      "size_mm": 40,
+      "nodes": 14264,
+      "planning_s": 1.764587699988624,
+      "max_path_error_m": 2.7522595824844732e-05,
+      "max_orientation_error_rad": 7.468440584028935e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "科技程序控制",
+      "size_mm": 40,
+      "nodes": 10642,
+      "planning_s": 1.2572991000197362,
+      "max_path_error_m": 2.844792603415836e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "墨韵翰赢鹰",
+      "size_mm": 40,
+      "nodes": 14068,
+      "planning_s": 1.7076032999902964,
+      "max_path_error_m": 2.6151770554331775e-05,
+      "max_orientation_error_rad": 7.780061651591624e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "矗",
+      "size_mm": 70,
+      "nodes": 5233,
+      "planning_s": 0.618570999999065,
+      "max_path_error_m": 2.9625810275744326e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "罐",
+      "size_mm": 70,
+      "nodes": 4861,
+      "planning_s": 0.5635788000072353,
+      "max_path_error_m": 2.7652233779661288e-05,
+      "max_orientation_error_rad": 7.474384429445711e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "囊",
+      "size_mm": 70,
+      "nodes": 4853,
+      "planning_s": 0.5912242000049446,
+      "max_path_error_m": 3.0112428160515132e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "瓤",
+      "size_mm": 70,
+      "nodes": 4809,
+      "planning_s": 0.5641918999899644,
+      "max_path_error_m": 2.7698547831176583e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "镶",
+      "size_mm": 70,
+      "nodes": 4805,
+      "planning_s": 0.5799138000002131,
+      "max_path_error_m": 2.6863989587168107e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "蠢",
+      "size_mm": 70,
+      "nodes": 4792,
+      "planning_s": 0.5548950000084005,
+      "max_path_error_m": 2.5715168447791723e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "赣",
+      "size_mm": 70,
+      "nodes": 4560,
+      "planning_s": 0.5408468000241555,
+      "max_path_error_m": 2.5826956121804752e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "躏",
+      "size_mm": 70,
+      "nodes": 4573,
+      "planning_s": 0.5491490999993403,
+      "max_path_error_m": 2.8676160862138627e-05,
+      "max_orientation_error_rad": 7.257339752844684e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "露",
+      "size_mm": 70,
+      "nodes": 4448,
+      "planning_s": 0.5497749999922235,
+      "max_path_error_m": 2.6882544325572373e-05,
+      "max_orientation_error_rad": 7.480323551900044e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "霸",
+      "size_mm": 70,
+      "nodes": 4631,
+      "planning_s": 0.5479302999738138,
+      "max_path_error_m": 2.9828680172221253e-05,
+      "max_orientation_error_rad": 7.468440584028935e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "霹",
+      "size_mm": 70,
+      "nodes": 4359,
+      "planning_s": 0.5199782999989111,
+      "max_path_error_m": 2.6022935895570646e-05,
+      "max_orientation_error_rad": 7.462492004364255e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "髓",
+      "size_mm": 70,
+      "nodes": 4952,
+      "planning_s": 0.6198740999971051,
+      "max_path_error_m": 2.9275146498879922e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "乙",
+      "size_mm": 70,
+      "nodes": 1026,
+      "planning_s": 0.15252289999625646,
+      "max_path_error_m": 3.883853420647801e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "术",
+      "size_mm": 70,
+      "nodes": 1853,
+      "planning_s": 0.2273228999983985,
+      "max_path_error_m": 3.571613584414628e-05,
+      "max_orientation_error_rad": 7.477354580339593e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "压",
+      "size_mm": 70,
+      "nodes": 1896,
+      "planning_s": 0.21650109998881817,
+      "max_path_error_m": 3.264695106524244e-05,
+      "max_orientation_error_rad": 7.480323551900044e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "讳",
+      "size_mm": 70,
+      "nodes": 2149,
+      "planning_s": 0.2601884000177961,
+      "max_path_error_m": 3.6104396537043346e-05,
+      "max_orientation_error_rad": 7.462492004364255e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "丽",
+      "size_mm": 70,
+      "nodes": 2319,
+      "planning_s": 0.2762882999959402,
+      "max_path_error_m": 3.269298427654755e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "弟",
+      "size_mm": 70,
+      "nodes": 2192,
+      "planning_s": 0.2578294000122696,
+      "max_path_error_m": 3.233720199777987e-05,
+      "max_orientation_error_rad": 7.782915149450853e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "拇",
+      "size_mm": 70,
+      "nodes": 2708,
+      "planning_s": 0.3245759000128601,
+      "max_path_error_m": 3.660329094492657e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "岳",
+      "size_mm": 70,
+      "nodes": 2223,
+      "planning_s": 0.26703799999086186,
+      "max_path_error_m": 3.4263855158067454e-05,
+      "max_orientation_error_rad": 7.477354580339593e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "审",
+      "size_mm": 70,
+      "nodes": 2342,
+      "planning_s": 0.2655801000073552,
+      "max_path_error_m": 3.2788701231207254e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "胡",
+      "size_mm": 70,
+      "nodes": 2659,
+      "planning_s": 0.3167935999808833,
+      "max_path_error_m": 3.392575348323451e-05,
+      "max_orientation_error_rad": 7.257339752844684e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "俗",
+      "size_mm": 70,
+      "nodes": 2427,
+      "planning_s": 0.28325449998374097,
+      "max_path_error_m": 2.8097589232047458e-05,
+      "max_orientation_error_rad": 7.477354580339593e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "扁",
+      "size_mm": 70,
+      "nodes": 2612,
+      "planning_s": 0.3052927999815438,
+      "max_path_error_m": 3.214244246563006e-05,
+      "max_orientation_error_rad": 7.474384429445711e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "哥",
+      "size_mm": 70,
+      "nodes": 2743,
+      "planning_s": 0.32675860001472756,
+      "max_path_error_m": 3.488741643819496e-05,
+      "max_orientation_error_rad": 7.402743308767381e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "颁",
+      "size_mm": 70,
+      "nodes": 2815,
+      "planning_s": 0.35298920000786893,
+      "max_path_error_m": 3.006678608722693e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "剥",
+      "size_mm": 70,
+      "nodes": 2706,
+      "planning_s": 0.31978549997438677,
+      "max_path_error_m": 3.6307917800483084e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "晦",
+      "size_mm": 70,
+      "nodes": 3230,
+      "planning_s": 0.43811489999643527,
+      "max_path_error_m": 3.248948532873037e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "焊",
+      "size_mm": 70,
+      "nodes": 2887,
+      "planning_s": 0.33750080000027083,
+      "max_path_error_m": 3.5197521587652635e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "散",
+      "size_mm": 70,
+      "nodes": 3181,
+      "planning_s": 0.3677421000029426,
+      "max_path_error_m": 2.7751429590075873e-05,
+      "max_orientation_error_rad": 7.468440584028935e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "策",
+      "size_mm": 70,
+      "nodes": 2832,
+      "planning_s": 0.35155560000566766,
+      "max_path_error_m": 2.8698196758721057e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "缔",
+      "size_mm": 70,
+      "nodes": 3002,
+      "planning_s": 0.3741370000061579,
+      "max_path_error_m": 3.0279316403230486e-05,
+      "max_orientation_error_rad": 7.429689682911751e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "筷",
+      "size_mm": 70,
+      "nodes": 3222,
+      "planning_s": 0.3601503999962006,
+      "max_path_error_m": 3.177030141938002e-05,
+      "max_orientation_error_rad": 7.257339752844684e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "碱",
+      "size_mm": 70,
+      "nodes": 3467,
+      "planning_s": 0.4171435000025667,
+      "max_path_error_m": 3.1270572103288656e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "磊",
+      "size_mm": 70,
+      "nodes": 3531,
+      "planning_s": 0.4313841999974102,
+      "max_path_error_m": 2.7573279275611624e-05,
+      "max_orientation_error_rad": 7.785767601498045e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "篱",
+      "size_mm": 70,
+      "nodes": 3449,
+      "planning_s": 0.41709860000992194,
+      "max_path_error_m": 2.9390248530809564e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "黯",
+      "size_mm": 70,
+      "nodes": 4382,
+      "planning_s": 0.5041663000010885,
+      "max_path_error_m": 2.2986779379405658e-05,
+      "max_orientation_error_rad": 7.266512715957688e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "机",
+      "size_mm": 70,
+      "nodes": 2106,
+      "planning_s": 0.2615837999910582,
+      "max_path_error_m": 3.5566964880213276e-05,
+      "max_orientation_error_rad": 7.46546688668468e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "械",
+      "size_mm": 70,
+      "nodes": 3119,
+      "planning_s": 0.3520929999940563,
+      "max_path_error_m": 3.777571084303192e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "臂",
+      "size_mm": 70,
+      "nodes": 3908,
+      "planning_s": 0.4614323999849148,
+      "max_path_error_m": 2.773011165405816e-05,
+      "max_orientation_error_rad": 7.46546688668468e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "智",
+      "size_mm": 70,
+      "nodes": 2991,
+      "planning_s": 0.3792103999876417,
+      "max_path_error_m": 2.750446839354391e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "能",
+      "size_mm": 70,
+      "nodes": 2771,
+      "planning_s": 0.35311570001067594,
+      "max_path_error_m": 3.2069976888291865e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "科",
+      "size_mm": 70,
+      "nodes": 2383,
+      "planning_s": 0.27635930001270026,
+      "max_path_error_m": 3.618005831082533e-05,
+      "max_orientation_error_rad": 7.78861900888223e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "技",
+      "size_mm": 70,
+      "nodes": 2255,
+      "planning_s": 0.27464280001004227,
+      "max_path_error_m": 3.6705644819040985e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "程",
+      "size_mm": 70,
+      "nodes": 3068,
+      "planning_s": 0.3573098999913782,
+      "max_path_error_m": 3.262908574103746e-05,
+      "max_orientation_error_rad": 7.78861900888223e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "序",
+      "size_mm": 70,
+      "nodes": 2192,
+      "planning_s": 0.2466726999846287,
+      "max_path_error_m": 3.245392671319359e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "控",
+      "size_mm": 70,
+      "nodes": 2750,
+      "planning_s": 0.32658579997951165,
+      "max_path_error_m": 2.99163374973677e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "制",
+      "size_mm": 70,
+      "nodes": 2570,
+      "planning_s": 0.3062575000221841,
+      "max_path_error_m": 3.615849478576568e-05,
+      "max_orientation_error_rad": 7.2603986949206e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "墨",
+      "size_mm": 70,
+      "nodes": 3445,
+      "planning_s": 0.40444439998827875,
+      "max_path_error_m": 3.094125307284322e-05,
+      "max_orientation_error_rad": 7.78861900888223e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "韵",
+      "size_mm": 70,
+      "nodes": 3175,
+      "planning_s": 0.3797594000061508,
+      "max_path_error_m": 2.9616007695342094e-05,
+      "max_orientation_error_rad": 7.263456348749523e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "翰",
+      "size_mm": 70,
+      "nodes": 3797,
+      "planning_s": 0.4519140000047628,
+      "max_path_error_m": 2.666389290388571e-05,
+      "max_orientation_error_rad": 7.450580596924001e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "赢",
+      "size_mm": 70,
+      "nodes": 4218,
+      "planning_s": 0.5039169999945443,
+      "max_path_error_m": 2.8933273608901803e-05,
+      "max_orientation_error_rad": 7.486257962632634e-07,
+      "status": "PASS"
+    },
+    {
+      "text": "鹰",
+      "size_mm": 70,
+      "nodes": 3988,
+      "planning_s": 0.4776294000039343,
+      "max_path_error_m": 3.4465236692089407e-05,
+      "max_orientation_error_rad": 7.456538679121192e-07,
+      "status": "PASS"
+    }
+  ],
+  "passed": 61,
+  "failed": 1
+}

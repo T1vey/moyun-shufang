@@ -1,0 +1,21 @@
+{
+  "reference": "D:\\zhiliao\\work107\\SO101_FPGA_ArmSystem-1013\\SO101_FPGA_ArmSystem-105\\SO101_FPGA_ArmSystem",
+  "sha256": {
+    "hls_source/planner_accel_v2.cpp": "e8fbe5ed5aa314cc6a9bbe364cd9ea349eedd8765c8a88d895f398e431f2afa7",
+    "hls_source/planner_accel_v2.h": "edc9893561ace2c0cf67ac68b32b0f459e29ce4dc77efbc3834ff0cd45964aea",
+    "hls_source/planner_accel_v2_2024.cfg": "3b2c6055a59dddd6a0d3ed3b8124e1318038fbc88c56026666aaedb0ea200d57",
+    "hls_source/build_planner_accel_v2.ps1": "ec3d4ad58d3512fe198b20d04e435e620ec3fffa4d58dbb832077c2f30b6befe",
+    "planner_accel_backend.py": "4aa48b33aa75beb3de203d5d4b85a35b341c45453d94bbbf7fcaa5cec9accdc4",
+    "planner_accel_contract.py": "0bd23bd35ccb94af97e317cd95032ad1ea8ddcf12d463aee62b3ce0c9f1cadd8",
+    "planner_accel_lease.py": "df57aa66d8779c2370b3c49183e9b6a6841ed0ce2f12cd8705ac1bbd0ceb6986",
+    "native/geometry.cpp": "92d5be43c98d55a8ba1aa0abab749a0901a85b17e5e55770ca2fb566d73fb4c3",
+    "planner_source/r1b/continuous.py": "d685e10dba75df55f6011e6c148c6f9f438b8e9fec3e467967c149dc60206198",
+    "planner_source/r1b/smooth.py": "577cbf8cc343663fd0fa1eb2699bf20688d676c5b313c298ef7832b0cfcfa9f1",
+    "hw/md0700r/create_fused.tcl": "375676c48f4705881c6c18e0769825203c9082558db32c90ec2bb06d380f2df1",
+    "hw/md0700r/build_fused.tcl": "edf16c9d0ead2da8b2c52ab35154b520beea290c82c7d11d7ffcaa8b4694b463",
+    "hw/md0700r/display_timing.xdc": "2e95fa4038c46c4f1a7eac7ce5f2f29ee529af745b72d0ce0ca677e3c85811a5",
+    "hw/md0700r/touch_pins.xdc": "4bae97625ddad90569af25ec1ece2d66543f4949cda7f8382d1ebe6cd8acb072",
+    "hw/target_ik/ps7_board.tcl": "b45fb27a16faaef80e3be3248ac31795fb82a12cdd598af52eb56bd3dfbe2b7f"
+  },
+  "method": "1013 DDR IK_CHAIN/FK_ROWS; native FP64 seven-axis math; 64/1024 batches; seed invalidation; original lease"
+}

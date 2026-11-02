@@ -1,0 +1,42 @@
+{
+  "release": "/home/xilinx/tcb705_releases/20261022_text300_r1/ZYNQArm",
+  "characters": 300,
+  "version": "common300-20261022-170f61a8612f",
+  "preview_checks": [
+    {
+      "font_size_mm": 40,
+      "columns": 3,
+      "rows": 2,
+      "pages": 2,
+      "preview_seconds": 0.413
+    },
+    {
+      "font_size_mm": 70,
+      "columns": 1,
+      "rows": 1,
+      "pages": 7,
+      "preview_seconds": 0.567
+    }
+  ],
+  "services": {
+    "tcb705-ui": "active",
+    "so101-md0700r": "active",
+    "so101-gt911": "active",
+    "so101-platform": "active"
+  },
+  "wifi_ip": "10.217.38.90",
+  "machine_sha256_unchanged": "72c4ebd4e18bd88e34a48ba718de32c18dea69282bd0bdfe3dbe1dd5b242236f",
+  "display": {
+    "status": "RUNNING",
+    "width": 1024,
+    "height": 600,
+    "frames": 81,
+    "hardware_frames_verified": true,
+    "bit_sha256": "5dd9af8eb01979c4680049887232cc3fd5a11420940d33ef2132552927a683a4",
+    "manifest_sha256": "39dc89905d0e7d556480fbe2df5f9dca6e5f6fbc835db4e8fc014e9203b2a9e8",
+    "build_id": "tcb705_lineart_20261020_r1"
+  },
+  "kiosk_roundtrip_s": 0.022,
+  "robot_motion": false,
+  "physical_ink_test": false
+}

@@ -1,0 +1,247 @@
+{
+  "schema": "tcb705-machine-v1",
+  "robot_type": "TCB705",
+  "robot_id": 1,
+  "calibration_verified": false,
+  "dynamics_verified": false,
+  "sdk_mapping_verified": false,
+  "collision_model_verified": false,
+  "T_flange_tcp": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0.08
+    ],
+    [
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "sdk_mapping": {
+    "sdk_to_model_index": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "sign": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "offset_rad": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "paper": {
+    "origin_m": [
+      -0.35939,
+      -0.067854,
+      0.20631
+    ],
+    "x_axis": [
+      0,
+      1,
+      0
+    ],
+    "y_axis": [
+      -1,
+      0,
+      0
+    ],
+    "width_mm": 148.51999999999998,
+    "height_mm": 150.21500000000003
+  },
+  "tool_rotation": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "q_start_rad": [
+    0,
+    -0.8,
+    0,
+    -1.8,
+    0,
+    -0.9,
+    0
+  ],
+  "ik": {
+    "position_tolerance_m": 1e-07,
+    "orientation_tolerance_rad": 1e-06,
+    "max_iterations": 220,
+    "step_limit_rad": 0.15,
+    "damping": 0.0001,
+    "reference_weight": 1e-09
+  },
+  "planning": {
+    "lift_m": 0.008,
+    "sample_step_m": 0.001,
+    "max_joint_step_rad": 0.12,
+    "max_refinement_depth": 10,
+    "max_nodes": 30000,
+    "max_plan_seconds": 300,
+    "draw_speed_m_s": 0.02,
+    "air_speed_m_s": 0.04,
+    "lower_speed_m_s": 0.008,
+    "period_s": 0.004,
+    "path_tolerance_m": 0.0001,
+    "orientation_tolerance_rad": 0.0035,
+    "max_duration_s": 7200,
+    "verify_step_rad": 0.006,
+    "max_frames": 800000,
+    "final_lift_m": 0.06
+  },
+  "limits": {
+    "velocity_rad_s": [
+      0.35,
+      0.35,
+      0.35,
+      0.35,
+      0.35,
+      0.35,
+      0.35
+    ],
+    "acceleration_rad_s2": [
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8,
+      0.8
+    ],
+    "jerk_rad_s3": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      4,
+      4
+    ]
+  },
+  "collision": {
+    "link_radius_m": 0.025,
+    "self_check": true,
+    "excluded_pairs": [
+      [
+        0,
+        2
+      ],
+      [
+        1,
+        3
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        3,
+        5
+      ],
+      [
+        4,
+        6
+      ]
+    ],
+    "boxes": []
+  },
+  "controller": {
+    "local_ip": "",
+    "remote_ip": "",
+    "port": 8001,
+    "web_port": 8010
+  },
+  "execution": {
+    "transport_contract_verified": false,
+    "commissioning_report": "",
+    "deadline_tolerance_s": 0.001,
+    "start_tolerance_rad": 0.01
+  },
+  "note": "ArmVision A/B + landing Z/UVW imported verbatim. TCP, joint mapping and model/controller frame remain unverified; T_flange_tcp and q_start_rad are inherited placeholders, not ArmVision measurements.",
+  "armvision": {
+    "method": "armvision-ab-z-uvw-v1",
+    "a_mm": [
+      -509.605,
+      -67.854
+    ],
+    "b_mm": [
+      -359.39,
+      80.666
+    ],
+    "z_table_mm": 206.31,
+    "pose_uvw_deg": [
+      180.0,
+      0.0,
+      0.0
+    ],
+    "robot_id": 1,
+    "lift_mm": 8,
+    "final_lift_mm": 60,
+    "draw_speed_percent": 100,
+    "swap_xy": true,
+    "tool": 0,
+    "coord": 0,
+    "extool": 0,
+    "table": {
+      "x_min": -509.605,
+      "x_max": -359.39,
+      "y_min": -67.854,
+      "y_max": 80.666,
+      "z_table": 206.31
+    },
+    "image": {
+      "target_width_mm": 148.5,
+      "target_height_mm": 150.2
+    }
+  },
+  "calibration_source": {
+    "path": "D:\\ArmVision2.0_User\\backend\\config\\settings.yaml",
+    "sha256": "9f610438389a88b5ceb8f51b85326ed5bf3ec77487416424f9f2570830d2b1ac",
+    "imported_fields_only": true,
+    "physical_setup_verified": false,
+    "note": "原文件保存的是排序后的范围；初始 A/B 按最小/最大角显示。重新采集保留两点原始值。"
+  }
+}

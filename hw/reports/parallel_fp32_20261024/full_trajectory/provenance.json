@@ -1,0 +1,140 @@
+{
+  "sources": {
+    "nodes.json": {
+      "path": "D:\\zhiliao\\TCB705_ZYNQ-10-15\\ZYNQArm\\build\\tcb705\\startup_speed_20261020\\nodes.json",
+      "sha256": "b6b9cd1df4b3ee3a49aabc5ce3084cc8ead785b62a34419f2e7be0f87da2674d"
+    },
+    "machine.json": {
+      "path": "D:\\zhiliao\\TCB705_ZYNQ-10-15\\ZYNQArm\\build\\tcb705\\startup_speed_20261020\\machine.json",
+      "sha256": "0c0cc14003fa59f9f80ddff060b1902387d5b1e470a463ae8cd0f5874545605e"
+    },
+    "board_benchmark.json": {
+      "path": "D:\\zhiliao\\TCB705_ZYNQ-10-15\\ZYNQArm\\build\\tcb705\\startup_speed_20261020\\board_benchmark.json",
+      "sha256": "23f303fddcf130165ecb83466edcd8a842a6d6628071313c6f6913dce0911fe2"
+    }
+  },
+  "physical_motion": false,
+  "source_model": {
+    "source": "controller_dh",
+    "read_from": "r_dh_1_ (controller 1.9.71, 2026-10-18)",
+    "dh": [
+      [
+        0,
+        263.0,
+        90,
+        0
+      ],
+      [
+        0,
+        0,
+        -90,
+        0
+      ],
+      [
+        0,
+        320.5,
+        90,
+        0
+      ],
+      [
+        0,
+        0,
+        -90,
+        0
+      ],
+      [
+        0,
+        279.5,
+        90,
+        0
+      ],
+      [
+        0,
+        0,
+        -90,
+        0
+      ],
+      [
+        0,
+        161.5,
+        0,
+        0
+      ]
+    ],
+    "joint_limits_deg": [
+      [
+        -178.9,
+        178.9
+      ],
+      [
+        -134.9,
+        134.9
+      ],
+      [
+        -178.9,
+        178.9
+      ],
+      [
+        -143.0,
+        143.0
+      ],
+      [
+        -178.9,
+        178.9
+      ],
+      [
+        -133.0,
+        133.0
+      ],
+      [
+        -178.9,
+        178.9
+      ]
+    ]
+  },
+  "fixed_target_rotation": [
+    [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      1.0,
+      0.0
+    ],
+    [
+      -0.0,
+      0.0,
+      -1.0
+    ]
+  ],
+  "source_node_count": 21680,
+  "target_count_excluding_seed": 21679,
+  "target_phase_counts": {
+    "3": 2582,
+    "4": 6865,
+    "1": 5448,
+    "2": 6784
+  },
+  "recorded_seed_sdk_degrees": [
+    -1.0598,
+    30.2312,
+    0.3517,
+    71.97909999999999,
+    -0.1812,
+    77.7902,
+    -0.7176
+  ],
+  "home_seed_max_difference_deg": 1.4210854715202004e-14,
+  "batch_size": 64,
+  "formal_source_sha256": {
+    "parallel_atan2_fp32.hpp": "ca6c2feb9df12c3e6a05789431a7ecf419dd93d61fcd111890faf3bd5195d6c9",
+    "parallel_math_fp32.hpp": "d7653448ddf375e0fc83fc1a6e9b25ea9f9d78d3364289544ac5f19059b947a6",
+    "parallel_srs_fp32.hpp": "be50f5b256e44e7bafcc10625df4afaf2e076fe118e7ab200e0dccd50f3fd1b6",
+    "parallel_srs_pipeline_fp32.hpp": "984d58bad5faa48f84bce9a50a21d1608f0dc262adec7fd65c20a68c2be6b1ae",
+    "tcb_planner_parallel.cpp": "0ff9a40504571bae8b1f6b7eca9ca4b9384eb145198c91c372c420963eb0d021",
+    "tcb_planner_parallel.h": "6c51c83079f652541f5dda006ca93f4b2f2220b4f8349513dc1ec14c82e52843"
+  },
+  "input_text_sha256": "97a46a9edf7ca1c1d3cbebeef24d2ac2d44b5090ab50caf21351afb6f80bfcc0"
+}

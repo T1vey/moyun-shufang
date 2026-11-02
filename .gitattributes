@@ -1,0 +1,2 @@
+# Preserve byte-exact imported sources, evidence hashes and third-party headers.
+* -text

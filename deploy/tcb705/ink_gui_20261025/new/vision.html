@@ -1,0 +1,32 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>墨韵书坊 · 字迹识别</title><link rel="stylesheet" href="/static/vision.css"><link rel="stylesheet" href="/static/ink-pages.css?v=ink-20261025-1"><script src="/static/vision.js" defer></script></head><body><div id="app">
+<header><div class="brand"><span class="seal">识</span><strong>字迹识别</strong><span class="caption">USB 摄像头 · FPGA 识别与评分</span></div><div class="hw" id="hwBadge">读取中</div><button id="returnBtn" class="back">返回</button></header>
+<main>
+<section class="camera-panel">
+  <div class="panel-head"><h1>摄像头画面</h1><span class="small" id="camInfo">等待画面</span></div>
+  <div class="view" id="view"><img id="preview" alt="摄像头实时画面"><canvas id="overlay" width="480" height="360"></canvas><div class="hint" id="calHint" hidden></div></div>
+  <div class="row cam-actions">
+    <button id="liveBtn">暂停画面</button><button id="calBtn">标定纸面</button><button id="viewBtn">看二值图</button>
+  </div>
+  <div class="row thresh"><span class="label">阈值</span><button id="otsuBtn" class="toggle on">自动</button><button id="biasMinus">−</button><span class="value" id="biasValue">0</span><button id="biasPlus">+</button><button id="morphBtn" class="toggle on">去噪 开</button><button id="flatBtn" class="toggle on">光照校正</button></div>
+</section>
+<section class="result-panel">
+  <div class="row modes"><button data-mode="single" class="choice on">单字</button><button data-mode="auto" class="choice">多字</button><span class="spacer"></span><button data-cand="all" class="choice on">3500 字</button><button data-cand="common300" class="choice">常用 300</button></div>
+  <div class="row cats"><span class="label">书体</span><button data-cat="楷书" class="choice on">楷</button><button data-cat="行书" class="choice on">行</button><button data-cat="草书" class="choice on">草</button><button data-cat="隶书" class="choice on">隶</button><button data-cat="魏碑" class="choice on">魏</button></div>
+  <button id="shotBtn" class="primary">拍照识别</button>
+  <div class="result" id="result">
+    <div class="empty" id="emptyState">把写好的毛笔字放到框内，<br>点“拍照识别”。</div>
+    <div class="card" id="card" hidden>
+      <div class="glyph"><div class="char" id="char">字</div><div class="small" id="styleName"></div></div>
+      <div class="score"><div class="total" id="total">--</div><div class="grade" id="grade"></div></div>
+      <div class="bars" id="bars"></div>
+      <div class="images"><figure><img id="normImg" alt="写的字"><figcaption>写的字</figcaption></figure><figure><img id="tplImg" alt="标准字"><figcaption>标准字</figcaption></figure></div>
+      <div class="comments" id="comments"></div>
+      <div class="small top5" id="top5"></div>
+    </div>
+    <div class="chips" id="chips" hidden></div>
+  </div>
+  <div class="timing small" id="timing"></div>
+</section>
+</main>
+<div class="toast" id="toast" role="status" hidden></div>
+</div></body></html>

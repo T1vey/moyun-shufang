@@ -1,0 +1,25 @@
+[Unit]
+Description=SO101 Android Bluetooth picture inbox
+After=bluetooth.service
+Wants=bluetooth.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+User=xilinx
+Group=xilinx
+EnvironmentFile=/etc/so101-bluetooth.env
+Environment=PYTHONDONTWRITEBYTECODE=1
+RuntimeDirectory=so101-bluetooth
+RuntimeDirectoryMode=0700
+UMask=0077
+ExecStart=/usr/bin/dbus-run-session -- /usr/bin/python3 -B ${SO101_RUNTIME}/scripts/bluetooth_receiver.py --data-dir ${SO101_DATA_DIR}
+Restart=on-failure
+RestartSec=5
+TimeoutStopSec=10
+KillMode=control-group
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

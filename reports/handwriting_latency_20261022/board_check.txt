@@ -1,0 +1,50 @@
+test_batching_cannot_merge_a_phase_boundary_or_corner (test_brush_batch_latency.BatchLatencyTests) ... ok
+test_cached_checks_preserve_probe_positions_knots_and_failure_codes (test_brush_batch_latency.BatchLatencyTests) ... ok
+test_mixed_phase_batch_retains_air_contact_guard (test_brush_batch_latency.BatchLatencyTests) ... ok
+test_sdk_mapping_is_bit_identical_including_permutation_sign_and_offset (test_brush_batch_latency.BatchLatencyTests) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.406s
+
+OK
+test_invalid_original_interval_remains_rejected (test_calligraphy_merge.BrushMergeTests) ... ok
+test_loose_requested_draw_merge_cannot_relax_twenty_micron_limit (test_calligraphy_merge.BrushMergeTests) ... ok
+test_native_and_python_candidates_result_in_same_valid_brush_blocks (test_calligraphy_merge.BrushMergeTests) ... ok
+test_orientation_depth_and_paper_shortcuts_split_instead_of_rejecting_plan (test_calligraphy_merge.BrushMergeTests) ... ok
+test_preparation_cache_tracks_algorithm_but_not_gui_speed (test_calligraphy_merge.BrushMergeTests) ... ok
+test_real_forty_mm_horizontal_reduces_blocks_with_geometry_preserved (test_calligraphy_merge.BrushMergeTests) ... ok
+test_small_pressure_peak_is_not_shortcut_and_boundaries_are_retained (test_calligraphy_merge.BrushMergeTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 5.739s
+
+OK
+test_cached_execution_skips_geometry_but_keeps_live_checks (test_tcb705_preparation.PreparationTests) ... ok
+test_cancel_before_power_with_valid_cache (test_tcb705_preparation.PreparationTests) ... ok
+test_changed_tolerance_recomputes_and_speed_rebuilds_blocks (test_tcb705_preparation.PreparationTests) ... ok
+test_invalidation_covers_geometry_and_execution_tolerances (test_tcb705_preparation.PreparationTests) ... ok
+test_native_matches_reference_for_mapping_base_phases_and_stops (test_tcb705_preparation.PreparationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 7.197s
+
+OK
+{"run": 0, "plan_s": 1.2571022429997356, "nodes_s": 0.017432432000077824, "prepare_s": 0.3858193979999669, "total_s": 1.6603540729997803, "nodes": 558, "frames": 26719, "blocks": 61, "error_mm": [0.019891171948633372, 0.06929290269113772]}
+{"run": 1, "plan_s": 1.354487455999788, "nodes_s": 0.023486411000249063, "prepare_s": 0.4393583949999993, "total_s": 1.8173322620000363, "nodes": 558, "frames": 26719, "blocks": 61, "error_mm": [0.019891171948633372, 0.06929290269113772]}
+{"run": 2, "plan_s": 1.542091378999885, "nodes_s": 0.01912055299999338, "prepare_s": 0.3883759350001128, "total_s": 1.949587866999991, "nodes": 558, "frames": 26719, "blocks": 61, "error_mm": [0.019891171948633372, 0.06929290269113772]}
+Traceback (most recent call last):
+  File "scripts/benchmark_brush_latency.py", line 84, in <module>
+    main()
+  File "scripts/benchmark_brush_latency.py", line 59, in main
+    plan = _plan(paths, config, q0)
+  File "/tmp/tcb-latency-check-20261022/tcb705/planner.py", line 60, in _plan
+    started=time.perf_counter();validate(config)
+  File "/tmp/tcb-latency-check-20261022/tcb705/config.py", line 23, in validate
+    try:return _validate(c)
+  File "/tmp/tcb-latency-check-20261022/tcb705/config.py", line 72, in _validate
+    check_consistency(c)
+  File "/tmp/tcb-latency-check-20261022/tcb705/calibration.py", line 62, in check_consistency
+    if abs(config['planning'][key]-a[source]/1000)>1e-12:raise ValueError('ArmVision 抬笔高度不一致')
+ValueError: ArmVision 抬笔高度不一致
+
+REMOTE_EXIT=1

@@ -1,0 +1,8 @@
+{
+  "protocol": "image_json",
+  "endpoint": "https://YOUR_PROVIDER/FULL_IMAGE_ENDPOINT",
+  "model": "YOUR_IMAGE_TO_IMAGE_MODEL",
+  "api_key_env": "SO101_IMAGE_API_KEY",
+  "timeout_s": 180,
+  "extra": {}
+}

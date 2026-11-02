@@ -1,0 +1,17 @@
+{
+  "id": "poem_p27",
+  "category": "poem",
+  "title": "饮湖上初晴后雨",
+  "author": "苏轼",
+  "dynasty": "宋",
+  "sentences": [
+    "水光潋滟晴方好，",
+    "山色空蒙雨亦奇。",
+    "欲把西湖比西子，",
+    "淡妆浓抹总相宜。"
+  ],
+  "source_url": "",
+  "source_note": "沿用项目诗词库正文；普通话合成，古音与多音字待人工试听。",
+  "verification_status": "project-text",
+  "source_file": "data/calligraphy/poems/poems.json"
+}

@@ -1,0 +1,17 @@
+APP_STATUS {"readiness": {"physical_ready": true, "missing": [], "offline_ready": true, "execution_path": "sdk_joint"}, "events": [{"time_utc": "2026-10-22T05:17:48.870086+00:00", "event": "START", "detail": {"allow_real": true, "version": "1.10.5-sugar-fast"}}], "version": "0.2.0-tcb705-pl-batch"}
+SDK_INFO {'lib_version': 'V2.4.1', 'host_version': '1.9.84-main.aarch64.WEB.e53f3e9d'}
+SDK_STATE {'move': 0, 'paused': False, 'link': True}
+SDK_ALARMS []
+SPEED 10.0
+SDK_JOINTS ['-1.674000', '30.694000', '0.248566', '72.032997', '-0.127716', '77.786003', '-1.409683'] MS 1.0222949995295494
+STATE {'_phc_ctrlkey': '100', '_phc_key': '200', 'g_servo_statero_': '1', '_phc_alarm_': '0', 'g_state_': '1'}
+Y_SAMPLE 11.559 15.687594999690191
+Y_SAMPLE 11.559 15.578841000206012
+Y_SAMPLE 11.559 15.455522999218374
+Y_SAMPLE 11.522 15.883359999861568
+Y_SAMPLE 11.522 16.058494000390056
+Y_SAMPLE 11.522 18.014634999417467
+Y_SAMPLE 11.512 16.451918999337067
+Y_SAMPLE 11.512 15.810744000191335
+
+REMOTE_EXIT=0
