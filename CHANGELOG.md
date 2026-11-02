@@ -1,5 +1,12 @@
 # Changelog
 
+## 2026.11 — editorial poster revision
+
+- Select direction A and replace the illustrated cover with a cutout from the project's robot photograph.
+- Set calligraphic headings, sans-serif body text and clear numeric typography.
+- Expand the poster into eight A3 pages covering functions, architecture, FPGA implementation, measurements and real works.
+- Publish a standalone cover, full poster set, page previews, asset provenance and reproducible layout source.
+
 ## 2026.11 — competition source release
 
 - Publish the 2026-10-29 seven-axis Zynq application snapshot with original module layout.

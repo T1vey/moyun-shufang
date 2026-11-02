@@ -1,0 +1,75 @@
+{
+  "edition": "A revision 2, eight pages",
+  "assets": [
+    {
+      "path": "docs/posters/editorial_v2/assets/handwriting.png",
+      "sha256": "fc34730452fac78e00dbd03202bb8bb7dc91fbfce1ba8c3cecaaca23174152a8",
+      "source": "project supplied photo/screenshot handwriting.png",
+      "source_sha256": "fc34730452fac78e00dbd03202bb8bb7dc91fbfce1ba8c3cecaaca23174152a8",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/posters/editorial_v2/assets/robot_cutout.png",
+      "sha256": "baf798246739f89538d58fda6a2bbc9b7fde688a40653a0ff659b10737abb0fb",
+      "source": "project photo arm_front.jpg",
+      "source_sha256": "196dd9fadfff4cc2b2dbbddff42056c90e53de133d0d5cf9ad613ec95a5a9af4",
+      "process": "built-in image_gen background removal; transparent cutout; original photo retained locally"
+    },
+    {
+      "path": "docs/posters/editorial_v2/assets/ui_audio.png",
+      "sha256": "07e0234c729b820d5c4cba2edf0d9cbf738294b0010427d3d2a4078e21171b3e",
+      "source": "project supplied photo/screenshot ui_audio.png",
+      "source_sha256": "07e0234c729b820d5c4cba2edf0d9cbf738294b0010427d3d2a4078e21171b3e",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/posters/editorial_v2/assets/ui_calli.png",
+      "sha256": "cfc170ca17a258d730fb61c4df4a5b5265016e55d0863a8bca15c0b25cb31757",
+      "source": "project supplied photo/screenshot ui_calli.png",
+      "source_sha256": "cfc170ca17a258d730fb61c4df4a5b5265016e55d0863a8bca15c0b25cb31757",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/posters/editorial_v2/assets/ui_home.png",
+      "sha256": "96c14ade972bf752684b59b42fff223634b75d3da44e86edf8850fb74b62107a",
+      "source": "project supplied photo/screenshot ui_home.png",
+      "source_sha256": "96c14ade972bf752684b59b42fff223634b75d3da44e86edf8850fb74b62107a",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/posters/editorial_v2/assets/ui_photo.png",
+      "sha256": "bbec5a658a3136ca693d3e521398ea576275b2109b37a1e10aab7d2005a1e48b",
+      "source": "project supplied photo/screenshot ui_photo.png",
+      "source_sha256": "bbec5a658a3136ca693d3e521398ea576275b2109b37a1e10aab7d2005a1e48b",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/posters/editorial_v2/assets/writing.jpg",
+      "sha256": "40cd4c46acdcc99be814697091d39206bbe6c19e6bcf2ddf19308f71bb9dd605",
+      "source": "project supplied photo/screenshot writing.jpg",
+      "source_sha256": "40cd4c46acdcc99be814697091d39206bbe6c19e6bcf2ddf19308f71bb9dd605",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/media/results_calligraphy.jpg",
+      "sha256": "cb2a23125030c9b9220b37c4149912180257934ff15a2a3603ea3dbffbe2f9f5",
+      "source": "project supplied photo results_calligraphy.jpg",
+      "source_sha256": "cb2a23125030c9b9220b37c4149912180257934ff15a2a3603ea3dbffbe2f9f5",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/media/results_portrait.jpg",
+      "sha256": "985702582470344957f365b2ade51d8143023687d24927a83f5f3d65cd2901d7",
+      "source": "project supplied photo results_portrait.jpg",
+      "source_sha256": "985702582470344957f365b2ade51d8143023687d24927a83f5f3d65cd2901d7",
+      "process": "original bitmap unchanged; placed in PDF"
+    },
+    {
+      "path": "docs/media/board.jpg",
+      "sha256": "eefcf1bef36fefa29b2bea88fd5e8d8e6de26a28f01ede5b27a5fcfa353648e4",
+      "source": "project supplied photo board.jpg",
+      "source_sha256": "eefcf1bef36fefa29b2bea88fd5e8d8e6de26a28f01ede5b27a5fcfa353648e4",
+      "process": "original bitmap unchanged; placed in PDF"
+    }
+  ]
+}

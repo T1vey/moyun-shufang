@@ -1,0 +1,7 @@
+{
+  "mode": "built-in image_gen edit",
+  "input": "project photo arm_front.jpg",
+  "output": "assets/robot_cutout.png",
+  "purpose": "background removal for editorial cover; original photos retained",
+  "prompt": "EDIT TARGET: the foreground WHITE collaborative robot arm in the reference photo. Produce a clean transparent-background photographic cutout of ONLY that exact real white arm including its cylindrical mounting base at lower right, connected links, grey joint collars and metal tool holder at left. Preserve the exact pose, topology, white shell shapes, proportions, real surface details and the original photographic realism. It arches from lower right toward upper center and extends left downward. Remove the entire room, wall, posters, other red robot, table, paper, cables unrelated to the arm, railings, and all background objects. Remove only printed identifiers on the white base and wrist so there are no legible text or logos. Keep subtle natural photographic light, not an illustration, not a CAD render, no invented brush, no extra joints, no new parts, no stylization or embellishment. Tight but comfortable crop around the isolated real arm. Genuine transparent alpha outside the silhouette. This is for restrained editorial typography on an off-white competition project poster; fidelity to actual project hardware is the priority."
+}

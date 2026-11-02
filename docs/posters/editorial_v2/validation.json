@@ -1,0 +1,13 @@
+{
+  "edition": "A editorial v2",
+  "pages": 8,
+  "pdf_size_limit_bytes": 50000000,
+  "page_size_mm": [
+    297,
+    420
+  ],
+  "visual_review": "all eight rendered pages inspected",
+  "text_check": "all key metrics and titles present; no replacement glyphs",
+  "font_fix": "CJK units use sans-serif fallback in numeric labels",
+  "source_check": "428 Python sources parse; no credential-like tokens"
+}
